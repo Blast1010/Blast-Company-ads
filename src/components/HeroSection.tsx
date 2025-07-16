@@ -3,7 +3,7 @@ import { Mail, Target, TrendingUp } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
 import heroProfessional from "@/assets/hero-professional.jpg";
 export function HeroSection() {
-  return <section className="relative min-h-screen flex flex-col justify-center px-4 py-20 bg-block-hero overflow-hidden border-b border-border">
+  return <section className="relative min-h-screen flex flex-col justify-center px-4 py-20 bg-block-hero overflow-hidden border-b border-primary/10 shadow-block">
       {/* Cinematic Light Effects - Emerging from Below */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Primary light emerging from bottom - Main cinematographic effect */}

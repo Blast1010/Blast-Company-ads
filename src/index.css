@@ -42,20 +42,23 @@ All colors MUST be HSL.
     --input: 0 0% 8%;
     --ring: 217 100% 55%;
 
-    /* Block-specific backgrounds */
-    --block-hero: 0 0% 2%;
-    --block-clients: 0 0% 4%;
-    --block-trust: 217 30% 6%;
-    --block-services: 0 0% 3%;
-    --block-analytics: 217 25% 5%;
-    --block-cta: 217 100% 8%;
+    /* Block-specific backgrounds - Alternating contrast */
+    --block-hero: 0 0% 1%;                    /* Ultra dark black */
+    --block-clients: 217 60% 12%;             /* Deep blue */
+    --block-trust: 0 0% 2%;                   /* Almost black */
+    --block-services: 217 45% 8%;             /* Dark blue */
+    --block-analytics: 0 0% 1%;               /* Ultra dark black */
+    --block-cta: 217 100% 15%;                /* Rich blue */
 
     /* Design system extensions */
     --gradient-primary: linear-gradient(135deg, hsl(217 100% 55%), hsl(217 85% 45%));
     --gradient-secondary: linear-gradient(180deg, hsl(217 30% 6%), hsl(0 0% 2%));
     --gradient-block: linear-gradient(135deg, hsl(217 50% 8%), hsl(217 30% 4%));
+    --gradient-clients: linear-gradient(135deg, hsl(217 60% 12%), hsl(217 50% 8%));
+    --gradient-cta: linear-gradient(135deg, hsl(217 100% 15%), hsl(217 80% 12%));
     --shadow-glow: 0 0 40px hsl(217 100% 55% / 0.4);
-    --shadow-block: 0 20px 50px -10px hsl(0 0% 0% / 0.6);
+    --shadow-block: 0 20px 50px -10px hsl(0 0% 0% / 0.8);
+    --shadow-blue: 0 20px 50px -10px hsl(217 100% 15% / 0.6);
     --shadow-subtle: 0 10px 30px -10px hsl(0 0% 0% / 0.5);
     
     --radius: 0.75rem;
@@ -157,4 +160,20 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* Section separators with contrasting effects */
+  .section-separator {
+    position: relative;
+  }
+  
+  .section-separator::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.5), transparent);
+  }
+}
 }

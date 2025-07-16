@@ -4,7 +4,7 @@ import { FormModal } from "@/components/FormModal";
 
 export function CTASection() {
   return (
-    <section className="py-20 px-4 bg-block-cta relative overflow-hidden shadow-block">
+    <section className="py-20 px-4 bg-gradient-cta relative overflow-hidden shadow-blue">
       <div className="container mx-auto max-w-4xl text-center">
         <div className="space-y-8">
           <div className="space-y-4">

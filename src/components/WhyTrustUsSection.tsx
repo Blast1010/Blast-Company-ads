@@ -25,7 +25,7 @@ export function WhyTrustUsSection() {
     image: teamworkImage,
     imageAlt: "Trabalho em equipe colaborativo"
   }];
-  return <section className="py-20 px-4 bg-block-trust border-b border-border shadow-block">
+  return <section className="py-20 px-4 bg-block-trust border-b border-primary/10 shadow-block relative overflow-hidden">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">

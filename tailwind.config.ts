@@ -66,7 +66,9 @@ export default {
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-secondary': 'var(--gradient-secondary)',
-				'gradient-block': 'var(--gradient-block)'
+				'gradient-block': 'var(--gradient-block)',
+				'gradient-clients': 'var(--gradient-clients)',
+				'gradient-cta': 'var(--gradient-cta)'
 			},
 			backgroundColor: {
 				'block-hero': 'hsl(var(--block-hero))',
@@ -79,6 +81,7 @@ export default {
 			boxShadow: {
 				'glow': 'var(--shadow-glow)',
 				'block': 'var(--shadow-block)',
+				'blue': 'var(--shadow-blue)',
 				'subtle': 'var(--shadow-subtle)'
 			},
 			borderRadius: {
