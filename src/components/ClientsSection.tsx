@@ -68,7 +68,7 @@ export function ClientsSection() {
                 {companyLogos.map((company, index) => (
                   <div
                     key={`first-${index}`}
-                    className="flex-shrink-0 w-32 h-20 bg-white/90 backdrop-blur-sm border border-border/30 rounded-xl flex items-center justify-center group hover:bg-white transition-all duration-300 hover:scale-105 shadow-sm hover:shadow-md"
+                    className="flex-shrink-0 w-32 h-20 bg-card border border-border rounded-xl flex items-center justify-center group hover:border-primary/50 transition-all duration-300 hover:scale-105"
                   >
                     <img 
                       src={company.logo} 
@@ -81,7 +81,7 @@ export function ClientsSection() {
                 {companyLogos.map((company, index) => (
                   <div
                     key={`second-${index}`}
-                    className="flex-shrink-0 w-32 h-20 bg-white/90 backdrop-blur-sm border border-border/30 rounded-xl flex items-center justify-center group hover:bg-white transition-all duration-300 hover:scale-105 shadow-sm hover:shadow-md"
+                    className="flex-shrink-0 w-32 h-20 bg-card border border-border rounded-xl flex items-center justify-center group hover:border-primary/50 transition-all duration-300 hover:scale-105"
                   >
                     <img 
                       src={company.logo} 
@@ -95,7 +95,7 @@ export function ClientsSection() {
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 p-8 bg-gradient-to-br from-card/40 to-card/20 backdrop-blur-sm border border-border/50 rounded-2xl">
+          <div className="mt-16 p-8 bg-card border border-border rounded-2xl">
             <div className="space-y-6">
               <h3 className="text-2xl font-bold">
                 Pronto para ser nosso próximo{" "}

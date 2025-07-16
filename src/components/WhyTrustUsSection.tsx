@@ -46,26 +46,25 @@ export function WhyTrustUsSection() {
           {reasons.map((reason, index) => (
             <Card 
               key={index} 
-              className="relative bg-card/40 backdrop-blur-sm border-border/50 hover:shadow-glow transition-all duration-500 group overflow-hidden"
+              className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden"
             >
               {/* Background Image */}
-              <div className="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
+              <div className="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
                 <img 
                   src={reason.image} 
                   alt={reason.imageAlt}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
               </div>
               
               <CardContent className="p-8 relative z-10">
                 <div className="text-center space-y-6">
                   {/* Icon */}
                   <div className="relative">
-                    <div className="w-20 h-20 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto shadow-glow group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
                       <reason.icon className="h-10 w-10 text-primary-foreground" />
                     </div>
-                    <div className="absolute inset-0 bg-primary/30 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                   
                   {/* Content */}

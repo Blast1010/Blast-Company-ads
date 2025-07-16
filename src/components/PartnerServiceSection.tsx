@@ -47,16 +47,15 @@ export function PartnerServiceSection() {
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className="relative bg-card/40 backdrop-blur-sm border-border/50 hover:shadow-glow transition-all duration-500 group"
+              className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group"
             >
               <CardContent className="p-8">
                 <div className="space-y-6">
                   {/* Icon */}
                   <div className="relative">
-                    <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center shadow-glow group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <service.icon className="h-8 w-8 text-primary-foreground" />
                     </div>
-                    <div className="absolute inset-0 bg-primary/30 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                   
                   {/* Content */}
