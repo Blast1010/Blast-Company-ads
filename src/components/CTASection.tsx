@@ -9,15 +9,14 @@ export function CTASection() {
         <div className="space-y-8">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Chega de{" "}
+              Pronto para{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                QUEIMAR BUDGET
+                VENDER MAIS
               </span>{" "}
-              sem resultado
+              investindo menos?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Transformamos seu tráfego pago em uma <span className="text-primary font-semibold">máquina de vendas previsível</span>. 
-              Vamos escalar suas campanhas com ROAS consistente.
+              Entre em contato agora e descubra como podemos <span className="text-primary font-semibold">turbinar suas vendas</span> com estratégias comprovadas.
             </p>
           </div>
           
@@ -29,13 +28,13 @@ export function CTASection() {
                 className="group"
               >
                 <MessageCircle className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                QUERO ESCALAR MINHAS CAMPANHAS
+                QUERO VENDER MAIS
               </Button>
             </FormModal>
           </div>
           
           <div className="text-sm text-muted-foreground">
-            Auditoria gratuita das suas campanhas • Estratégia personalizada • ROAS 8x garantido
+            Análise gratuita • Estratégia personalizada • Resultados garantidos
           </div>
         </div>
       </div>

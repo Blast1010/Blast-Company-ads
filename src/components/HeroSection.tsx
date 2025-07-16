@@ -36,7 +36,7 @@ export function HeroSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-3 px-6 py-3 bg-red-500/10 border border-red-500/30 rounded-full mb-6">
             <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-            <span className="text-red-400 font-bold text-sm">VAGAS LIMITADAS - APENAS 5 CONTAS POR MÊS</span>
+            <span className="text-red-400 font-bold text-sm">APENAS 7 VAGAS DISPONÍVEIS ESTE MÊS</span>
           </div>
           <h2 className="text-2xl md:text-2xl font-bold tracking-tight">
             Blast Company <span className="text-primary">ads</span>
@@ -48,10 +48,10 @@ export function HeroSection() {
           {/* Left Column - Text Content */}
           <div className="space-y-8">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-center">
-              <span className="text-primary text-lg md:text-xl font-medium tracking-wide uppercase">SEU TRÁFEGO PAGO</span><br />
-              <span className="text-4xl md:text-5xl lg:text-6xl">ESTÁ QUEIMANDO</span><br />
+              <span className="text-primary text-lg md:text-xl font-medium tracking-wide uppercase">PARE DE PERDER DINHEIRO</span><br />
+              <span className="text-4xl md:text-5xl lg:text-6xl">SEU MARKETING</span><br />
               <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl">
-                SEU DINHEIRO?
+                NÃO VENDE?
               </span>
             </h1>
             
@@ -60,14 +60,14 @@ export function HeroSection() {
               
               <div className="space-y-4 text-center">
                 <p className="text-lg md:text-xl text-muted-foreground font-medium leading-relaxed">
-                  <span className="text-red-400 font-bold">CAC alto, ROAS baixo</span> e campanhas sem performance? 
-                  Seus <span className="text-primary font-bold">concorrentes estão dominando</span> Facebook, Google e TikTok Ads.
+                  <span className="text-red-400 font-bold">Cansou de queimar dinheiro</span> em campanhas que não geram resultado? 
+                  Enquanto você lê isso, seus <span className="text-primary font-bold">concorrentes estão vendendo mais</span>.
                 </p>
                 
                 <p className="text-base md:text-lg text-muted-foreground/90 leading-relaxed">
-                  Somos especialistas em <span className="text-foreground font-medium">tráfego pago de alta performance</span>. 
-                  Reduzimos CAC em até <span className="text-primary font-bold">70%</span> e aumentamos ROAS para 
-                  <span className="text-primary font-bold">8x ou mais</span> em 60 dias.
+                  <span className="text-foreground font-medium">Chega de desculpas.</span> Nosso método já fez empresas 
+                  aumentarem suas vendas em <span className="text-primary font-bold">300% em 90 dias</span>, 
+                  investindo <span className="text-primary font-bold">50% menos</span> que antes.
                 </p>
               </div>
             </div>
@@ -119,9 +119,9 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-primary/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="flex-1">
-              <h3 className="text-lg font-semibold text-foreground mb-2">ROAS 8x Garantido</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Resultados em 30 Dias</h3>
               <p className="text-muted-foreground font-medium leading-relaxed">
-                Ou otimizamos de graça até atingir a meta
+                Ou devolvemos 100% do seu investimento
               </p>
             </div>
           </div>
@@ -134,9 +134,9 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-primary/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="flex-1">
-              <h3 className="text-lg font-semibold text-foreground mb-2">CAC Reduzido em 70%</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Mais Vendas, Menos Gasto</h3>
               <p className="text-muted-foreground font-medium leading-relaxed">
-                Estratégias avançadas de segmentação e otimização
+                Sistema comprovado que multiplica seu faturamento
               </p>
             </div>
           </div>
