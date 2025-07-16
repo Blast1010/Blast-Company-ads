@@ -83,35 +83,33 @@ export function HeroSection() {
         </div>
 
         {/* Bottom Features */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-24 max-w-3xl mx-auto">
-          <div className="text-center space-y-6 group">
-            <div className="relative">
-              <div className="w-20 h-20 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border border-border/50 rounded-2xl flex items-center justify-center mx-auto shadow-lg group-hover:shadow-primary/20 transition-all duration-300">
-                <Target className="h-10 w-10 text-primary group-hover:scale-110 transition-transform duration-300" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20 max-w-4xl mx-auto">
+          <div className="flex items-center space-x-6 text-left group">
+            <div className="relative flex-shrink-0">
+              <div className="w-16 h-16 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border border-border/50 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-primary/20 transition-all duration-300">
+                <Target className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <div className="absolute inset-0 bg-primary/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-primary/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
-            <div>
+            <div className="flex-1">
               <h3 className="text-lg font-semibold text-foreground mb-2">Metodologia Comprovada</h3>
               <p className="text-muted-foreground font-medium leading-relaxed">
-                Estratégias testadas e<br />
-                validadas no mercado
+                Estratégias testadas e validadas no mercado
               </p>
             </div>
           </div>
           
-          <div className="text-center space-y-6 group">
-            <div className="relative">
-              <div className="w-20 h-20 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border border-border/50 rounded-2xl flex items-center justify-center mx-auto shadow-lg group-hover:shadow-primary/20 transition-all duration-300">
-                <TrendingUp className="h-10 w-10 text-primary group-hover:scale-110 transition-transform duration-300" />
+          <div className="flex items-center space-x-6 text-left group">
+            <div className="relative flex-shrink-0">
+              <div className="w-16 h-16 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border border-border/50 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-primary/20 transition-all duration-300">
+                <TrendingUp className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <div className="absolute inset-0 bg-primary/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-primary/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
-            <div>
+            <div className="flex-1">
               <h3 className="text-lg font-semibold text-foreground mb-2">Resultados Garantidos</h3>
               <p className="text-muted-foreground font-medium leading-relaxed">
-                Decisões baseadas em<br />
-                dados e performance
+                Decisões baseadas em dados e performance
               </p>
             </div>
           </div>
