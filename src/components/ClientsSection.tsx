@@ -1,23 +1,26 @@
 import { Button } from "@/components/ui/button";
 import { Handshake, ArrowRight } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
-import companyLogos from "@/assets/company-logos-collection.png";
+import googleLogo from "@/assets/logos/google-logo.svg";
+import microsoftLogo from "@/assets/logos/microsoft-logo.svg";
+import amazonLogo from "@/assets/logos/amazon-logo.png";
+import appleLogo from "@/assets/logos/apple-logo.png";
+import netflixLogo from "@/assets/logos/netflix-logo.svg";
+import spotifyLogo from "@/assets/logos/spotify-logo.svg";
+import facebookLogo from "@/assets/logos/facebook-logo.svg";
+import instagramLogo from "@/assets/logos/instagram-logo.svg";
 
 export function ClientsSection() {
-  // Company logos for the carousel
+  // Real company logos for the carousel
   const companyLogos = [
-    { name: "TechFlow Solutions", color: "bg-blue-500" },
-    { name: "Verde Consulting", color: "bg-green-500" },
-    { name: "Horizon Partners", color: "bg-navy-600" },
-    { name: "Nexus Digital", color: "bg-purple-500" },
-    { name: "Bright Innovations", color: "bg-orange-500" },
-    { name: "Atlas Manufacturing", color: "bg-blue-800" },
-    { name: "Quantum Systems", color: "bg-indigo-500" },
-    { name: "Nova Enterprises", color: "bg-red-500" },
-    { name: "Stellar Dynamics", color: "bg-cyan-500" },
-    { name: "Prime Solutions", color: "bg-yellow-500" },
-    { name: "Focus Ventures", color: "bg-pink-500" },
-    { name: "Impact Digital", color: "bg-teal-500" }
+    { name: "Google", logo: googleLogo },
+    { name: "Microsoft", logo: microsoftLogo },
+    { name: "Amazon", logo: amazonLogo },
+    { name: "Apple", logo: appleLogo },
+    { name: "Netflix", logo: netflixLogo },
+    { name: "Spotify", logo: spotifyLogo },
+    { name: "Facebook", logo: facebookLogo },
+    { name: "Instagram", logo: instagramLogo }
   ];
 
   return (
@@ -65,22 +68,26 @@ export function ClientsSection() {
                 {companyLogos.map((company, index) => (
                   <div
                     key={`first-${index}`}
-                    className="flex-shrink-0 w-32 h-20 bg-card/40 backdrop-blur-sm border border-border/30 rounded-xl flex items-center justify-center group hover:bg-card/60 transition-all duration-300 hover:scale-105"
+                    className="flex-shrink-0 w-32 h-20 bg-white/90 backdrop-blur-sm border border-border/30 rounded-xl flex items-center justify-center group hover:bg-white transition-all duration-300 hover:scale-105 shadow-sm hover:shadow-md"
                   >
-                    <div className="w-16 h-12 bg-gradient-to-br from-muted/40 to-muted/20 rounded-lg flex items-center justify-center">
-                      <div className={`w-8 h-8 ${company.color.replace('bg-', 'bg-')} rounded opacity-60 group-hover:opacity-80 transition-opacity`}></div>
-                    </div>
+                    <img 
+                      src={company.logo} 
+                      alt={`${company.name} logo`}
+                      className="max-w-24 max-h-12 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                    />
                   </div>
                 ))}
                 {/* Duplicate set for seamless loop */}
                 {companyLogos.map((company, index) => (
                   <div
                     key={`second-${index}`}
-                    className="flex-shrink-0 w-32 h-20 bg-card/40 backdrop-blur-sm border border-border/30 rounded-xl flex items-center justify-center group hover:bg-card/60 transition-all duration-300 hover:scale-105"
+                    className="flex-shrink-0 w-32 h-20 bg-white/90 backdrop-blur-sm border border-border/30 rounded-xl flex items-center justify-center group hover:bg-white transition-all duration-300 hover:scale-105 shadow-sm hover:shadow-md"
                   >
-                    <div className="w-16 h-12 bg-gradient-to-br from-muted/40 to-muted/20 rounded-lg flex items-center justify-center">
-                      <div className={`w-8 h-8 ${company.color.replace('bg-', 'bg-')} rounded opacity-60 group-hover:opacity-80 transition-opacity`}></div>
-                    </div>
+                    <img 
+                      src={company.logo} 
+                      alt={`${company.name} logo`}
+                      className="max-w-24 max-h-12 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                    />
                   </div>
                 ))}
               </div>
