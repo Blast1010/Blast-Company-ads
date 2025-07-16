@@ -1,5 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { BarChart3, TrendingUp, Eye, Target } from "lucide-react";
+import dashboardImage from "@/assets/dashboard-analytics.jpg";
+import teamImage from "@/assets/team-analytics.jpg";
+import metricsImage from "@/assets/metrics-dashboard.jpg";
 
 export function AnalyticsSection() {
   const features = [
@@ -46,35 +49,68 @@ export function AnalyticsSection() {
           <div className="w-24 h-0.5 bg-gradient-primary mx-auto rounded-full mt-6"></div>
         </div>
 
-        {/* Main Image Section */}
-        <div className="mb-16">
+        {/* Main Images Section */}
+        <div className="mb-16 space-y-8">
+          {/* Primary Dashboard */}
           <Card className="relative bg-card/30 backdrop-blur-sm border-border/50 overflow-hidden shadow-2xl">
             <div className="relative">
-              {/* Hero Image */}
-              <div className="relative h-96 md:h-[500px] overflow-hidden">
+              <div className="relative h-80 md:h-96 overflow-hidden">
                 <img 
-                  src="/lovable-uploads/55a1dad1-20d1-48a8-9d57-85e671dbb72c.png" 
-                  alt="Dashboard profissional com análises e métricas em tempo real"
+                  src={dashboardImage} 
+                  alt="Dashboard profissional com métricas de marketing digital"
                   className="w-full h-full object-cover"
                 />
                 {/* Cinematic Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-background/20"></div>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-accent/10"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-background/30"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/15 via-transparent to-accent/15"></div>
                 
                 {/* Floating Elements */}
-                <div className="absolute top-6 right-6 bg-primary/90 backdrop-blur-sm text-primary-foreground px-4 py-2 rounded-lg shadow-lg">
-                  <span className="text-sm font-semibold">Dados em Tempo Real</span>
+                <div className="absolute top-6 right-6 bg-primary/90 backdrop-blur-sm text-primary-foreground px-4 py-2 rounded-lg shadow-glow">
+                  <span className="text-sm font-semibold">ROI em Tempo Real</span>
                 </div>
                 
                 <div className="absolute bottom-6 left-6 bg-card/90 backdrop-blur-sm border border-border/50 p-4 rounded-xl shadow-lg">
                   <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                    <span className="text-sm font-medium">Sistema Ativo</span>
+                    <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                    <span className="text-sm font-medium">Campanhas Ativas</span>
                   </div>
                 </div>
               </div>
             </div>
           </Card>
+
+          {/* Secondary Images Grid */}
+          <div className="grid md:grid-cols-2 gap-6">
+            <Card className="relative bg-card/30 backdrop-blur-sm border-border/50 overflow-hidden shadow-xl group">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src={teamImage} 
+                  alt="Equipe analisando dados de performance"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-foreground">
+                  <h3 className="text-lg font-bold mb-1">Análise Colaborativa</h3>
+                  <p className="text-sm text-muted-foreground">Decisões baseadas em dados</p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="relative bg-card/30 backdrop-blur-sm border-border/50 overflow-hidden shadow-xl group">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src={metricsImage} 
+                  alt="Interface de métricas e conversões"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-foreground">
+                  <h3 className="text-lg font-bold mb-1">Métricas Avançadas</h3>
+                  <p className="text-sm text-muted-foreground">Controle total de performance</p>
+                </div>
+              </div>
+            </Card>
+          </div>
         </div>
 
         {/* Features Grid */}
