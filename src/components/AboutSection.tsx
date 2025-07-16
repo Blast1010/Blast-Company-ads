@@ -5,36 +5,36 @@ export function AboutSection() {
   const services = [
     {
       icon: Target,
-      title: "Full Campaign Management",
-      description: "Complete management on Meta Ads and Google Ads with expert oversight."
+      title: "Gestão Completa de Campanhas",
+      description: "Gestão completa no Meta Ads e Google Ads com supervisão especializada."
     },
     {
       icon: TrendingUp,
-      title: "Customized Strategies",
-      description: "Tailored strategies designed specifically for your business goals."
+      title: "Estratégias Personalizadas",
+      description: "Estratégias sob medida desenvolvidas especificamente para os objetivos do seu negócio."
     },
     {
       icon: BarChart3,
-      title: "Continuous Optimization",
-      description: "Ongoing optimization to maximize ROI and campaign performance."
+      title: "Otimização Contínua",
+      description: "Otimização constante para maximizar ROI e performance das campanhas."
     }
   ];
 
   const benefits = [
     {
       icon: Users,
-      title: "More Sales, Less Waste",
-      description: "Increase revenue while reducing wasted ad spend"
+      title: "Mais Vendas, Menos Desperdício",
+      description: "Aumente a receita enquanto reduz gastos desperdiçados com anúncios"
     },
     {
       icon: BarChart3,
-      title: "Weekly Reports",
-      description: "Clear performance metrics delivered weekly"
+      title: "Relatórios Semanais",
+      description: "Métricas de performance claras entregues semanalmente"
     },
     {
       icon: Target,
-      title: "Direct Support",
-      description: "Direct access to our team of specialists"
+      title: "Suporte Direto",
+      description: "Acesso direto à nossa equipe de especialistas"
     }
   ];
 
@@ -43,10 +43,10 @@ export function AboutSection() {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            What We Do
+            O Que Fazemos
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            We specialize in turning your advertising budget into measurable business growth.
+            Somos especializados em transformar seu orçamento de publicidade em crescimento mensurável do negócio.
           </p>
         </div>
 
@@ -70,7 +70,7 @@ export function AboutSection() {
         {/* Benefits */}
         <div className="text-center mb-16">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            Why Choose Us
+            Por Que Nos Escolher
           </h3>
         </div>
 

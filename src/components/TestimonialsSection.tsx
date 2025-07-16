@@ -5,14 +5,14 @@ export function TestimonialsSection() {
   const testimonials = [
     {
       name: "João M.",
-      role: "Online Store CEO",
-      text: "Blast Company Ads completely changed the game for our e-commerce. We tripled our revenue in just 3 months!",
+      role: "CEO de Loja Online",
+      text: "A Blast Company Ads mudou completamente o jogo para nosso e-commerce. Triplicamos nossa receita em apenas 3 meses!",
       rating: 5
     },
     {
       name: "Larissa P.",
-      role: "Entrepreneur",
-      text: "Extremely professional team and real results. We can't live without paid traffic anymore!",
+      role: "Empreendedora",
+      text: "Equipe extremamente profissional e resultados reais. Não conseguimos mais viver sem tráfego pago!",
       rating: 5
     }
   ];
@@ -22,10 +22,10 @@ export function TestimonialsSection() {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            What Our Clients Say
+            O Que Nossos Clientes Dizem
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Real results from real businesses who trusted us with their growth.
+            Resultados reais de negócios reais que confiaram em nós para seu crescimento.
           </p>
         </div>
 

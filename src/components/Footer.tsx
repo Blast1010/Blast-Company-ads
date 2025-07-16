@@ -11,13 +11,13 @@ export function Footer() {
               Blast Company Ads
             </h3>
             <p className="text-muted-foreground">
-              Transforming clicks into customers with proven paid traffic strategies.
+              Transformando cliques em clientes com estratégias comprovadas de tráfego pago.
             </p>
           </div>
           
           {/* Contact */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Contact</h4>
+            <h4 className="text-lg font-semibold">Contato</h4>
             <div className="space-y-2">
               <a 
                 href="#" 
@@ -38,7 +38,7 @@ export function Footer() {
           
           {/* Social */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Follow Us</h4>
+            <h4 className="text-lg font-semibold">Siga-nos</h4>
             <div className="flex gap-4">
               <a 
                 href="#" 
@@ -58,7 +58,7 @@ export function Footer() {
         
         {/* Copyright */}
         <div className="pt-8 border-t border-border/50 text-center text-muted-foreground">
-          <p>&copy; 2025 Blast Company Ads – All rights reserved.</p>
+          <p>&copy; 2025 Blast Company Ads – Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

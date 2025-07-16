@@ -6,26 +6,26 @@ export function HowItWorksSection() {
     {
       number: "01",
       icon: Search,
-      title: "We understand your business",
-      description: "Deep dive into your goals, target audience, and current challenges to create a foundation for success."
+      title: "Entendemos seu negócio",
+      description: "Mergulhamos fundo em seus objetivos, público-alvo e desafios atuais para criar uma base sólida para o sucesso."
     },
     {
       number: "02",
       icon: Lightbulb,
-      title: "We plan and build a paid media strategy",
-      description: "Develop a comprehensive strategy tailored to your specific business needs and market conditions."
+      title: "Planejamos e construímos uma estratégia de mídia paga",
+      description: "Desenvolvemos uma estratégia abrangente sob medida para as necessidades específicas do seu negócio e condições de mercado."
     },
     {
       number: "03",
       icon: Rocket,
-      title: "We create and manage campaigns",
-      description: "Launch and actively manage your campaigns across Meta Ads and Google Ads platforms."
+      title: "Criamos e gerenciamos campanhas",
+      description: "Lançamos e gerenciamos ativamente suas campanhas nas plataformas Meta Ads e Google Ads."
     },
     {
       number: "04",
       icon: BarChart,
-      title: "We analyze results and optimize constantly",
-      description: "Continuous monitoring, analysis, and optimization to ensure maximum ROI and performance."
+      title: "Analisamos resultados e otimizamos constantemente",
+      description: "Monitoramento contínuo, análise e otimização para garantir máximo ROI e performance."
     }
   ];
 
@@ -34,10 +34,10 @@ export function HowItWorksSection() {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            How It Works
+            Como Funciona
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Our proven 4-step process that transforms your advertising into a revenue-generating machine.
+            Nosso processo comprovado de 4 etapas que transforma sua publicidade em uma máquina geradora de receita.
           </p>
         </div>
 

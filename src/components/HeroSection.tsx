@@ -11,14 +11,14 @@ export function HeroSection() {
           <div className="space-y-8 text-center lg:text-left">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                We turn{" "}
+                Transformamos{" "}
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
-                  clicks into customers
+                  cliques em clientes
                 </span>{" "}
-                every single day.
+                todos os dias.
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">
-                Boost your sales with paid traffic strategies that actually work.
+                Aumente suas vendas com estratégias de tráfego pago que realmente funcionam.
               </p>
             </div>
             
@@ -28,7 +28,7 @@ export function HeroSection() {
                 size="xl" 
                 className="group"
               >
-                I want to scale my business
+                Quero escalar meu negócio
                 <Rocket className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
@@ -39,7 +39,7 @@ export function HeroSection() {
             <div className="relative">
               <img
                 src={heroImage}
-                alt="Professional working with performance analytics"
+                alt="Profissional trabalhando com análise de performance"
                 className="rounded-2xl shadow-subtle w-full h-auto"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent rounded-2xl"></div>
