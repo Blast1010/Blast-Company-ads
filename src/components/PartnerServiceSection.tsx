@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { MessageSquare, Users, Shield, BarChart3 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { MessageSquare, Users, Shield, BarChart3, Mail } from "lucide-react";
+import { FormModal } from "@/components/FormModal";
 
 export function PartnerServiceSection() {
   const services = [
@@ -77,7 +79,7 @@ export function PartnerServiceSection() {
         </div>
 
         {/* Bottom highlight */}
-        <div className="text-center mt-16">
+        <div className="text-center mt-16 space-y-6">
           <div className="inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl border border-primary/20">
             <MessageSquare className="h-6 w-6 text-primary" />
             <div className="text-left">
@@ -89,6 +91,13 @@ export function PartnerServiceSection() {
               </p>
             </div>
           </div>
+          
+          <FormModal>
+            <Button variant="outline" className="group">
+              <Mail className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+              Solicitar Orçamento
+            </Button>
+          </FormModal>
         </div>
       </div>
     </section>

@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Handshake, Users, Target, Lightbulb } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Handshake, Users, Target, Lightbulb, Mail } from "lucide-react";
+import { FormModal } from "@/components/FormModal";
 import partnershipImage from "@/assets/partnership-image.jpg";
 import teamworkImage from "@/assets/teamwork-image.jpg";
 import strategyImage from "@/assets/strategy-image.jpg";
@@ -91,13 +93,20 @@ export function WhyTrustUsSection() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16">
+        <div className="text-center mt-16 space-y-6">
           <div className="inline-flex items-center space-x-3 px-6 py-3 bg-primary/10 rounded-full border border-primary/20">
             <Lightbulb className="h-5 w-5 text-primary" />
             <span className="text-primary font-semibold">
               Metodologia comprovada em centenas de empresas
             </span>
           </div>
+          
+          <FormModal>
+            <Button variant="outline" className="group">
+              <Mail className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+              Solicitar Orçamento
+            </Button>
+          </FormModal>
         </div>
       </div>
     </section>

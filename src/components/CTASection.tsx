@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
+import { FormModal } from "@/components/FormModal";
 
 export function CTASection() {
   return (
@@ -19,14 +20,16 @@ export function CTASection() {
           </div>
           
           <div className="flex justify-center">
-            <Button 
-              variant="cta" 
-              size="xl" 
-              className="group"
-            >
-              <MessageCircle className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              Solicitar Diagnóstico Gratuito
-            </Button>
+            <FormModal>
+              <Button 
+                variant="cta" 
+                size="xl" 
+                className="group"
+              >
+                <MessageCircle className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+                Solicitar Diagnóstico Gratuito
+              </Button>
+            </FormModal>
           </div>
           
           <div className="text-sm text-muted-foreground">

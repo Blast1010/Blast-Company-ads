@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { BarChart3, TrendingUp, Eye, Target } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { BarChart3, TrendingUp, Eye, Target, Mail } from "lucide-react";
+import { FormModal } from "@/components/FormModal";
 import dashboardImage from "@/assets/dashboard-analytics.jpg";
 import teamImage from "@/assets/team-analytics.jpg";
 import metricsImage from "@/assets/metrics-dashboard.jpg";
@@ -149,7 +151,7 @@ export function AnalyticsSection() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16">
+        <div className="text-center mt-16 space-y-6">
           <div className="inline-flex items-center space-x-4 px-8 py-4 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl border border-primary/20 backdrop-blur-sm">
             <BarChart3 className="h-8 w-8 text-primary" />
             <div className="text-left">
@@ -161,6 +163,13 @@ export function AnalyticsSection() {
               </p>
             </div>
           </div>
+          
+          <FormModal>
+            <Button variant="outline" className="group">
+              <Mail className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+              Solicitar Orçamento
+            </Button>
+          </FormModal>
         </div>
       </div>
     </section>

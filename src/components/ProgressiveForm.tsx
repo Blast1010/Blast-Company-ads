@@ -13,7 +13,12 @@ interface FormData {
   timeline: string;
   phone: string;
 }
-export function ProgressiveForm() {
+
+interface ProgressiveFormProps {
+  onComplete?: () => void;
+}
+
+export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
   const [currentStep, setCurrentStep] = useState(0);
   const [formData, setFormData] = useState<FormData>({
     name: "",
@@ -114,6 +119,7 @@ export function ProgressiveForm() {
       timeline: "",
       phone: ""
     });
+    onComplete?.();
   };
   const handleKeyPress = (e: React.KeyboardEvent) => {
     if (e.key === "Enter") {
