@@ -18,21 +18,21 @@ All colors MUST be HSL.
     --popover: 0 0% 12%;
     --popover-foreground: 0 0% 98%;
 
-    /* Primary - Electric Green */
-    --primary: 120 91% 50%;
+    /* Primary - Turquoise Blue */
+    --primary: 180 100% 50%;
     --primary-foreground: 0 0% 98%;
-    --primary-glow: 120 100% 60%;
+    --primary-glow: 185 100% 55%;
 
-    /* Secondary - Deep Green */
-    --secondary: 120 60% 25%;
+    /* Secondary - Deep Turquoise */
+    --secondary: 185 100% 35%;
     --secondary-foreground: 0 0% 98%;
 
     /* Muted - Dark gray */
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 70%;
 
-    /* Accent - Bright Green */
-    --accent: 120 80% 60%;
+    /* Accent - Bright Turquoise */
+    --accent: 175 100% 60%;
     --accent-foreground: 0 0% 8%;
 
     --destructive: 0 84% 60%;
@@ -40,25 +40,25 @@ All colors MUST be HSL.
 
     --border: 0 0% 20%;
     --input: 0 0% 12%;
-    --ring: 120 91% 50%;
+    --ring: 180 100% 50%;
 
-    /* Block-specific backgrounds - Black and Green themed */
-    --block-hero: 0 0% 4%;                    /* Deep black */
-    --block-clients: 120 60% 15%;             /* Dark green */
-    --block-trust: 0 0% 8%;                   /* Dark black */
-    --block-services: 120 45% 12%;            /* Darker green */
-    --block-analytics: 0 0% 6%;               /* Very dark black */
-    --block-cta: 120 80% 20%;                 /* Rich green */
+    /* Block-specific backgrounds - All Black */
+    --block-hero: 0 0% 0%;                    /* Pure black */
+    --block-clients: 0 0% 0%;                 /* Pure black */
+    --block-trust: 0 0% 0%;                   /* Pure black */
+    --block-services: 0 0% 0%;                /* Pure black */
+    --block-analytics: 0 0% 0%;               /* Pure black */
+    --block-cta: 0 0% 0%;                     /* Pure black */
 
-    /* Design system extensions - Green gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(120 91% 50%), hsl(120 80% 40%));
-    --gradient-secondary: linear-gradient(180deg, hsl(120 40% 8%), hsl(0 0% 4%));
-    --gradient-block: linear-gradient(135deg, hsl(120 30% 12%), hsl(120 20% 8%));
-    --gradient-clients: linear-gradient(135deg, hsl(120 60% 15%), hsl(120 50% 12%));
-    --gradient-cta: linear-gradient(135deg, hsl(120 80% 20%), hsl(120 70% 15%));
-    --shadow-glow: 0 0 30px hsl(120 91% 50% / 0.3);
+    /* Design system extensions - Turquoise gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(180 100% 50%), hsl(185 100% 40%));
+    --gradient-secondary: linear-gradient(180deg, hsl(180 40% 8%), hsl(0 0% 0%));
+    --gradient-block: linear-gradient(135deg, hsl(180 30% 12%), hsl(180 20% 8%));
+    --gradient-clients: linear-gradient(135deg, hsl(180 60% 15%), hsl(180 50% 12%));
+    --gradient-cta: linear-gradient(135deg, hsl(180 80% 20%), hsl(180 70% 15%));
+    --shadow-glow: 0 0 30px hsl(180 100% 50% / 0.3);
     --shadow-block: 0 15px 35px -5px hsl(0 0% 0% / 0.7);
-    --shadow-green: 0 15px 35px -5px hsl(120 91% 50% / 0.2);
+    --shadow-turquoise: 0 15px 35px -5px hsl(180 100% 50% / 0.2);
     --shadow-subtle: 0 8px 20px -3px hsl(0 0% 0% / 0.4);
     
     --radius: 0.75rem;

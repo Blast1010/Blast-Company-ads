@@ -53,7 +53,7 @@ const Index = () => {
                         style={{ animationDelay: '4s', animationDuration: '3s' }}></div>
       </div>
 
-      {/* Hero Section - Deep Black */}
+      {/* Hero Section - Black */}
       <div className="bg-black relative z-10">
         <HeroSection />
       </div>
@@ -63,13 +63,13 @@ const Index = () => {
         <GoogleMetaAdsSection />
       </div>
       
-      {/* Services Section - Very Dark Gray/Black */}
-      <div className="bg-gray-950 relative z-10">
+      {/* Services Section - Black */}
+      <div className="bg-black relative z-10">
         <ServicesSection />
       </div>
       
-      {/* Clients Section - Blue */}
-      <div className="bg-blue-800 relative z-10">
+      {/* Clients Section - Black */}
+      <div className="bg-black relative z-10">
         <ClientsSection />
       </div>
       
@@ -78,18 +78,18 @@ const Index = () => {
         <WhyTrustUsSection />
       </div>
       
-      {/* Partner Service Section - Dark Blue */}
-      <div className="bg-blue-900 relative z-10">
+      {/* Partner Service Section - Black */}
+      <div className="bg-black relative z-10">
         <PartnerServiceSection />
       </div>
       
-      {/* Analytics Section - Dark Gray */}
-      <div className="bg-gray-900 relative z-10">
+      {/* Analytics Section - Black */}
+      <div className="bg-black relative z-10">
         <AnalyticsSection />
       </div>
       
-      {/* CTA Section - Primary Blue */}
-      <div className="bg-blue-600 relative z-10">
+      {/* CTA Section - Black */}
+      <div className="bg-black relative z-10">
         <CTASection />
       </div>
       
