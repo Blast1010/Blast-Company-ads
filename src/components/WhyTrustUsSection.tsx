@@ -5,14 +5,7 @@ import { FormModal } from "@/components/FormModal";
 import businessMeeting from "@/assets/business-meeting.jpg";
 import teamworkImage from "@/assets/team-collaboration.jpg";
 import strategyImage from "@/assets/workspace-overview.jpg";
-import { useInView } from "@/hooks/useInView";
 export function WhyTrustUsSection() {
-  const [titleRef, titleInView] = useInView({
-    threshold: 0.2
-  });
-  const [cardsRef, cardsInView] = useInView({
-    threshold: 0.2
-  });
   const reasons = [{
     icon: Target,
     title: "Expertise Técnica",
@@ -88,8 +81,8 @@ export function WhyTrustUsSection() {
           </div>
           
           <FormModal>
-            <Button variant="outline" size="lg" className="group border-primary/20 hover:border-primary bg-background/5 backdrop-blur-sm">
-              Falar com Especialista
+            <Button size="lg" className="bg-accent hover:bg-accent/90">
+              Começar Agora
             </Button>
           </FormModal>
         </div>

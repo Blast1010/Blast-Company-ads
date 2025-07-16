@@ -9,11 +9,7 @@ import netflixLogo from "@/assets/logos/netflix-logo.svg";
 import spotifyLogo from "@/assets/logos/spotify-logo.svg";
 import facebookLogo from "@/assets/logos/facebook-logo.svg";
 import instagramLogo from "@/assets/logos/instagram-logo.svg";
-import { useInView } from "@/hooks/useInView";
 export function ClientsSection() {
-  const [titleRef, titleInView] = useInView({ threshold: 0.2 });
-  const [carouselRef, carouselInView] = useInView({ threshold: 0.2 });
-  const [ctaRef, ctaInView] = useInView({ threshold: 0.2 });
   // Real company logos for the carousel
   const companyLogos = [{
     name: "Google",

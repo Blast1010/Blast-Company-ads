@@ -9,19 +9,11 @@ import facebookAds from "@/assets/facebook-ads.png";
 import youtubeAds from "@/assets/youtube-ads.png";
 import instagramAds from "@/assets/instagram-ads.png";
 import inpulsoMetaMockup from "@/assets/inpulso-meta-mockup.png";
-import { useInView } from "@/hooks/useInView";
 export function GoogleMetaAdsSection() {
-  const [googleRef, googleInView] = useInView({ threshold: 0.2 });
-  const [metaRef, metaInView] = useInView({ threshold: 0.2 });
   return <section className="py-12 md:py-16 lg:py-20 px-4 text-white overflow-hidden relative">
       <div className="container mx-auto max-w-6xl">
         {/* Google Ads Section */}
-        <div 
-          ref={googleRef as any}
-          className={`grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-16 md:mb-20 items-center transition-all duration-700 ${
-            googleInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-          }`}
-        >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-16 md:mb-20 items-center">
           <div className="order-2 lg:order-1 space-y-6">
             <div className="transform translate-y-0 opacity-100 transition-all duration-1000 ease-out">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-white leading-tight">
@@ -116,12 +108,7 @@ export function GoogleMetaAdsSection() {
         </div>
 
         {/* Meta Ads Section */}
-        <div 
-          ref={metaRef as any}
-          className={`grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center transition-all duration-700 ${
-            metaInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-          }`}
-        >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="flex justify-center relative">
             {/* Composição Meta com elementos animados */}
             <div className="relative w-full max-w-lg h-[400px]">
