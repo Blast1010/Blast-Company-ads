@@ -9,22 +9,34 @@ import netflixLogo from "@/assets/logos/netflix-logo.svg";
 import spotifyLogo from "@/assets/logos/spotify-logo.svg";
 import facebookLogo from "@/assets/logos/facebook-logo.svg";
 import instagramLogo from "@/assets/logos/instagram-logo.svg";
-
 export function ClientsSection() {
   // Real company logos for the carousel
-  const companyLogos = [
-    { name: "Google", logo: googleLogo },
-    { name: "Microsoft", logo: microsoftLogo },
-    { name: "Amazon", logo: amazonLogo },
-    { name: "Apple", logo: appleLogo },
-    { name: "Netflix", logo: netflixLogo },
-    { name: "Spotify", logo: spotifyLogo },
-    { name: "Facebook", logo: facebookLogo },
-    { name: "Instagram", logo: instagramLogo }
-  ];
-
-  return (
-    <section className="py-20 px-4 bg-gradient-clients border-b border-primary/20 relative overflow-hidden shadow-blue">
+  const companyLogos = [{
+    name: "Google",
+    logo: googleLogo
+  }, {
+    name: "Microsoft",
+    logo: microsoftLogo
+  }, {
+    name: "Amazon",
+    logo: amazonLogo
+  }, {
+    name: "Apple",
+    logo: appleLogo
+  }, {
+    name: "Netflix",
+    logo: netflixLogo
+  }, {
+    name: "Spotify",
+    logo: spotifyLogo
+  }, {
+    name: "Facebook",
+    logo: facebookLogo
+  }, {
+    name: "Instagram",
+    logo: instagramLogo
+  }];
+  return <section className="py-20 px-4 bg-gradient-clients border-b border-primary/20 relative overflow-hidden shadow-blue">
       <div className="container mx-auto max-w-6xl">
         {/* Icon and Main Content */}
         <div className="text-center space-y-12">
@@ -48,7 +60,7 @@ export function ClientsSection() {
 
             <div className="w-20 h-0.5 bg-gradient-primary mx-auto rounded-full"></div>
 
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-0 px-[11px]">
               <span className="text-primary font-semibold">Desenvolvemos parcerias estratégicas</span> 
               através do entendimento profundo dos objetivos de negócio, garantindo 
               soluções personalizadas e resultados sustentáveis.
@@ -65,31 +77,13 @@ export function ClientsSection() {
             <div className="relative overflow-hidden">
               <div className="flex animate-[scroll_40s_linear_infinite] space-x-8">
                 {/* First set */}
-                {companyLogos.map((company, index) => (
-                  <div
-                    key={`first-${index}`}
-                    className="flex-shrink-0 w-32 h-20 bg-card border border-border rounded-xl flex items-center justify-center group hover:border-primary/50 transition-all duration-300 hover:scale-105"
-                  >
-                    <img 
-                      src={company.logo} 
-                      alt={`${company.name} logo`}
-                      className="max-w-24 max-h-12 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                ))}
+                {companyLogos.map((company, index) => <div key={`first-${index}`} className="flex-shrink-0 w-32 h-20 bg-card border border-border rounded-xl flex items-center justify-center group hover:border-primary/50 transition-all duration-300 hover:scale-105">
+                    <img src={company.logo} alt={`${company.name} logo`} className="max-w-24 max-h-12 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300" />
+                  </div>)}
                 {/* Duplicate set for seamless loop */}
-                {companyLogos.map((company, index) => (
-                  <div
-                    key={`second-${index}`}
-                    className="flex-shrink-0 w-32 h-20 bg-card border border-border rounded-xl flex items-center justify-center group hover:border-primary/50 transition-all duration-300 hover:scale-105"
-                  >
-                    <img 
-                      src={company.logo} 
-                      alt={`${company.name} logo`}
-                      className="max-w-24 max-h-12 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                ))}
+                {companyLogos.map((company, index) => <div key={`second-${index}`} className="flex-shrink-0 w-32 h-20 bg-card border border-border rounded-xl flex items-center justify-center group hover:border-primary/50 transition-all duration-300 hover:scale-105">
+                    <img src={company.logo} alt={`${company.name} logo`} className="max-w-24 max-h-12 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300" />
+                  </div>)}
               </div>
             </div>
           </div>
@@ -114,6 +108,5 @@ export function ClientsSection() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
