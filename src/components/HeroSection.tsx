@@ -43,13 +43,11 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-8">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.2] tracking-tight text-left">
-              Especialistas em<br />
-              <span className="text-muted-foreground/80">Crescimento Digital</span><br />
-              para Empresas{" "}
-              <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                Visionárias<br />
-                e Ambiciosas
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-left">
+              <span className="text-primary text-lg md:text-xl font-medium tracking-wide uppercase">BLAST COMPANY ADS</span><br />
+              <span className="text-4xl md:text-5xl lg:text-6xl">MARKETING É</span><br />
+              <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl">
+                RESULTADO
               </span>
             </h1>
             
@@ -57,21 +55,15 @@ export function HeroSection() {
               <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-full"></div>
               
               <div className="space-y-4 text-left">
-                <p className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
-                  Consultoria estratégica em marketing digital e performance.
+                <p className="text-lg md:text-xl text-muted-foreground font-medium leading-relaxed">
+                  Nosso trabalho é fazer você <span className="text-primary font-bold">vender o máximo</span> que puder, 
+                  investindo o <span className="text-primary font-bold">mínimo possível</span> para isso.
                 </p>
                 
                 <p className="text-base md:text-lg text-muted-foreground/90 leading-relaxed">
-                  Desenvolvemos soluções <span className="text-foreground font-medium">personalizadas</span> para 
-                  acelerar o crescimento do seu negócio com{" "}
-                  <span className="text-primary font-medium">ROI comprovado e sustentável</span>.
-                </p>
-                
-                <p className="text-base md:text-lg text-muted-foreground/90 leading-relaxed">
-                  Potencialize seu alcance e conversões através das principais{" "}
-                  <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent font-semibold">
-                    plataformas digitais
-                  </span>.
+                  Somos especialistas que atuam como <span className="text-foreground font-medium">parceiros estratégicos</span>, 
+                  criando campanhas vencedoras e cuidando do seu investimento{" "}
+                  <span className="text-primary font-medium">como se o dinheiro fosse nosso</span>.
                 </p>
               </div>
             </div>
@@ -123,9 +115,9 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-primary/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="flex-1">
-              <h3 className="text-lg font-semibold text-foreground mb-2">Metodologia Comprovada</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Estratégias Vencedoras</h3>
               <p className="text-muted-foreground font-medium leading-relaxed">
-                Processos estruturados baseados em análise de dados
+                Metodologia focada em conversão e resultados reais
               </p>
             </div>
           </div>
@@ -138,9 +130,9 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-primary/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="flex-1">
-              <h3 className="text-lg font-semibold text-foreground mb-2">Excelência Operacional</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-2">ROI Maximizado</h3>
               <p className="text-muted-foreground font-medium leading-relaxed">
-                Gestão focada em métricas e otimização contínua
+                Investimento otimizado para máximo retorno financeiro
               </p>
             </div>
           </div>

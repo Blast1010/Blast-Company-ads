@@ -9,13 +9,14 @@ export function CTASection() {
         <div className="space-y-8">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Pronto para acelerar o crescimento com{" "}
+              Pronto para{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                marketing digital?
-              </span>
+                VENDER MAIS
+              </span>{" "}
+              investindo menos?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Conecte-se com nossos especialistas e descubra estratégias personalizadas para maximizar seus resultados.
+              Entre em contato agora e descubra como podemos <span className="text-primary font-semibold">turbinar suas vendas</span> com estratégias comprovadas.
             </p>
           </div>
           
@@ -27,13 +28,13 @@ export function CTASection() {
                 className="group"
               >
                 <MessageCircle className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                Solicitar Consultoria Estratégica
+                QUERO VENDER MAIS
               </Button>
             </FormModal>
           </div>
           
           <div className="text-sm text-muted-foreground">
-            Análise personalizada • Retorno em até 24 horas
+            Análise gratuita • Estratégia personalizada • Resultados garantidos
           </div>
         </div>
       </div>
