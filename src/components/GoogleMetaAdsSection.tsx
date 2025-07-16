@@ -1,5 +1,5 @@
 import inpulsoGoogleSection from "@/assets/inpulso-google-section.webp";
-import inpulsoMetaSection from "@/assets/inpulso-meta-section.webp";
+import inpulsoMetaMockup from "@/assets/inpulso-meta-mockup.png";
 
 export function GoogleMetaAdsSection() {
   return (
@@ -52,7 +52,7 @@ export function GoogleMetaAdsSection() {
           <div className="flex justify-center relative">
             <div className="relative w-full max-w-lg">
               <img 
-                src={inpulsoMetaSection} 
+                src={inpulsoMetaMockup} 
                 alt="Meta Ads Marketing" 
                 className="w-full h-auto object-contain transform hover:scale-105 transition-all duration-500"
               />
