@@ -78,8 +78,8 @@ export function PartnerServiceSection() {
           </div>
           
           <FormModal>
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-black font-semibold px-8 py-3 rounded-xl">
-              Solicitar Atendimento Especializado
+            <Button size="lg" className="bg-accent hover:bg-accent/90">
+              Começar Agora
             </Button>
           </FormModal>
         </div>

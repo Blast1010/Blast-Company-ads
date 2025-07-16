@@ -5,33 +5,25 @@ import { FormModal } from "@/components/FormModal";
 import dashboardScreens from "@/assets/dashboard-screens.jpg";
 import teamOffice from "@/assets/team-office.jpg";
 import metricsImage from "@/assets/workspace-overview.jpg";
-
 export function AnalyticsSection() {
-  const features = [
-    {
-      icon: BarChart3,
-      title: "Dashboard Completo",
-      description: "Acompanhe todas as métricas importantes em tempo real com relatórios detalhados e insights precisos."
-    },
-    {
-      icon: TrendingUp,
-      title: "Análise de Performance",
-      description: "Monitoramento contínuo de conversões, ROI e otimizações para maximizar seus resultados."
-    },
-    {
-      icon: Eye,
-      title: "Transparência Total",
-      description: "Acesso completo aos dados das suas campanhas com relatórios diários e semanais."
-    },
-    {
-      icon: Target,
-      title: "Otimização Precisa",
-      description: "Identificação de oportunidades e ajustes estratégicos baseados em dados reais."
-    }
-  ];
-
-  return (
-    <section className="py-20 px-4 text-white">
+  const features = [{
+    icon: BarChart3,
+    title: "Dashboard Completo",
+    description: "Acompanhe todas as métricas importantes em tempo real com relatórios detalhados e insights precisos."
+  }, {
+    icon: TrendingUp,
+    title: "Análise de Performance",
+    description: "Monitoramento contínuo de conversões, ROI e otimizações para maximizar seus resultados."
+  }, {
+    icon: Eye,
+    title: "Transparência Total",
+    description: "Acesso completo aos dados das suas campanhas com relatórios diários e semanais."
+  }, {
+    icon: Target,
+    title: "Otimização Precisa",
+    description: "Identificação de oportunidades e ajustes estratégicos baseados em dados reais."
+  }];
+  return <section className="py-20 px-4 text-white">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-white">
@@ -51,11 +43,7 @@ export function AnalyticsSection() {
           <Card className="relative bg-card border-border overflow-hidden shadow-2xl">
             <div className="relative">
               <div className="relative h-80 md:h-96 overflow-hidden">
-                <img 
-                  src={dashboardScreens} 
-                  alt="Dashboard profissional com métricas de marketing digital reais"
-                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
-                />
+                <img src={dashboardScreens} alt="Dashboard profissional com métricas de marketing digital reais" className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" />
                 {/* Cinematic Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-background/30"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/15 via-transparent to-accent/15"></div>
@@ -83,11 +71,7 @@ export function AnalyticsSection() {
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="relative bg-card border-border overflow-hidden shadow-xl group">
               <div className="relative h-64 overflow-hidden">
-                <img 
-                  src={teamOffice} 
-                  alt="Equipe de marketing digital trabalhando com estratégias"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+                <img src={teamOffice} alt="Equipe de marketing digital trabalhando com estratégias" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-foreground">
                   <h3 className="text-lg font-bold mb-1">Estratégia Colaborativa</h3>
@@ -103,11 +87,7 @@ export function AnalyticsSection() {
 
             <Card className="relative bg-card border-border overflow-hidden shadow-xl group">
               <div className="relative h-64 overflow-hidden">
-                <img 
-                  src={metricsImage} 
-                  alt="Workspace com múltiplos dashboards ativos"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+                <img src={metricsImage} alt="Workspace com múltiplos dashboards ativos" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-foreground">
                   <h3 className="text-lg font-bold mb-1">Multi-Dashboard</h3>
@@ -125,11 +105,7 @@ export function AnalyticsSection() {
 
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((feature, index) => (
-            <Card 
-              key={index} 
-              className="relative bg-card border-border hover:shadow-lg transition-all duration-500 group"
-            >
+          {features.map((feature, index) => <Card key={index} className="relative bg-card border-border hover:shadow-lg transition-all duration-500 group">
               <CardContent className="p-6 text-center">
                 <div className="space-y-4">
                   {/* Icon */}
@@ -153,8 +129,7 @@ export function AnalyticsSection() {
               
               {/* Bottom accent */}
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Bottom CTA */}
@@ -172,13 +147,11 @@ export function AnalyticsSection() {
           </div>
           
           <FormModal>
-            <Button variant="outline" className="group">
-              <Mail className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-              Solicitar Orçamento
+            <Button size="lg" className="bg-accent hover:bg-accent/90">
+              Começar Agora
             </Button>
           </FormModal>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
