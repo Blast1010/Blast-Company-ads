@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Mail, Target, TrendingUp } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
 export function HeroSection() {
-  return <section className="relative min-h-screen flex flex-col justify-center px-4 py-20 bg-background overflow-hidden">
+  return <section className="relative min-h-screen flex flex-col justify-center px-4 py-20 overflow-hidden text-white">
       {/* Simplified Light Effects */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Main ambient light - simplified */}

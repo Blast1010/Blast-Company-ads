@@ -31,10 +31,10 @@ export function AnalyticsSection() {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-muted/5 to-background border-b border-primary/10">
+    <section className="py-20 px-4 text-white">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-white">
             Tecnologia e Transparência
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-center">
