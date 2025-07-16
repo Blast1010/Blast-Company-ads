@@ -27,10 +27,12 @@ export function PartnerServiceSection() {
 
   return (
     <section className="relative py-20 px-4 bg-white overflow-hidden">
-      {/* Efeito de luz minimalista azul turquesa */}
+      {/* Efeito de luz minimalista azul turquesa cinematográfico */}
       <div className="absolute inset-0">
-        <div className="absolute top-32 left-16 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
-        <div className="absolute bottom-32 right-16 w-48 h-48 bg-accent/5 rounded-full blur-2xl"></div>
+        <div className="absolute top-32 left-16 w-32 h-32 bg-primary/10 rounded-full blur-2xl animate-pulse delay-400"></div>
+        <div className="absolute bottom-32 right-16 w-48 h-48 bg-accent/5 rounded-full blur-2xl animate-pulse delay-800"></div>
+        <div className="absolute top-60 right-32 w-20 h-20 bg-primary/8 rounded-full blur-xl animate-pulse delay-1200"></div>
+        <div className="absolute bottom-60 left-32 w-28 h-28 bg-accent/3 rounded-full blur-xl animate-pulse delay-600"></div>
       </div>
       
       <div className="container mx-auto max-w-6xl relative z-10">
@@ -43,7 +45,7 @@ export function PartnerServiceSection() {
             <span className="text-primary font-semibold text-sm">Direto com o gestor</span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
             Atendimento de Parceiro
           </h2>
           <div className="w-24 h-0.5 bg-gradient-primary mx-auto rounded-full"></div>
@@ -66,10 +68,10 @@ export function PartnerServiceSection() {
                   
                   {/* Content */}
                   <div className="space-y-4">
-                    <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+                    <h3 className="text-xl font-bold text-gray-800 group-hover:text-primary transition-colors duration-300">
                       {service.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed font-medium">
+                    <p className="text-gray-600 leading-relaxed font-medium">
                       {service.description}
                     </p>
                   </div>
@@ -90,7 +92,7 @@ export function PartnerServiceSection() {
               <p className="text-primary font-semibold">
                 Atendimento diferenciado
               </p>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-gray-600 text-sm">
                 Contato direto com especialistas, sem burocracias
               </p>
             </div>

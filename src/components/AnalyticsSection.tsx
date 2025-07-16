@@ -30,18 +30,20 @@ export function AnalyticsSection() {
 
   return (
     <section className="relative py-20 px-4 bg-white overflow-hidden">
-      {/* Efeito de luz minimalista preta */}
+      {/* Efeito de luz minimalista preta cinematográfico */}
       <div className="absolute inset-0">
-        <div className="absolute top-40 right-10 w-40 h-40 bg-black/5 rounded-full blur-2xl"></div>
-        <div className="absolute bottom-40 left-10 w-60 h-60 bg-gray-900/5 rounded-full blur-2xl"></div>
+        <div className="absolute top-40 right-10 w-40 h-40 bg-black/5 rounded-full blur-2xl animate-pulse delay-200"></div>
+        <div className="absolute bottom-40 left-10 w-60 h-60 bg-gray-900/5 rounded-full blur-2xl animate-pulse delay-600"></div>
+        <div className="absolute top-60 left-20 w-24 h-24 bg-gray-800/3 rounded-full blur-xl animate-pulse delay-1000"></div>
+        <div className="absolute bottom-60 right-20 w-32 h-32 bg-black/3 rounded-full blur-xl animate-pulse delay-400"></div>
       </div>
 
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             Tecnologia e Transparência
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
             Nossa plataforma oferece controle total sobre suas campanhas com{" "}
             <span className="text-primary font-semibold">dados em tempo real</span> e 
             relatórios detalhados para decisões estratégicas precisas.
@@ -132,10 +134,10 @@ export function AnalyticsSection() {
                   
                   {/* Content */}
                   <div className="space-y-2">
-                    <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+                    <h3 className="text-lg font-bold text-gray-800 group-hover:text-primary transition-colors duration-300">
                       {feature.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <p className="text-sm text-gray-600 leading-relaxed">
                       {feature.description}
                     </p>
                   </div>
@@ -153,10 +155,10 @@ export function AnalyticsSection() {
           <div className="inline-flex items-center space-x-4 px-8 py-4 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl border border-primary/20 backdrop-blur-sm">
             <BarChart3 className="h-8 w-8 text-primary" />
             <div className="text-left">
-              <p className="text-lg font-bold text-foreground">
+              <p className="text-lg font-bold text-gray-800">
                 Controle Total das Suas Campanhas
               </p>
-              <p className="text-muted-foreground">
+              <p className="text-gray-600">
                 Dashboards profissionais e relatórios detalhados sempre à sua disposição
               </p>
             </div>

@@ -31,10 +31,12 @@ export function WhyTrustUsSection() {
 
   return (
     <section className="relative py-20 px-4 bg-primary overflow-hidden">
-      {/* Efeito minimalista */}
+      {/* Efeito minimalista cinematográfico */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 right-20 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
-        <div className="absolute bottom-20 left-20 w-48 h-48 bg-white/5 rounded-full blur-2xl"></div>
+        <div className="absolute top-20 right-20 w-32 h-32 bg-white/10 rounded-full blur-xl animate-pulse delay-300"></div>
+        <div className="absolute bottom-20 left-20 w-48 h-48 bg-white/5 rounded-full blur-2xl animate-pulse delay-700"></div>
+        <div className="absolute top-40 left-40 w-20 h-20 bg-white/8 rounded-full blur-lg animate-pulse delay-1100"></div>
+        <div className="absolute bottom-40 right-40 w-24 h-24 bg-white/6 rounded-full blur-lg animate-pulse delay-500"></div>
       </div>
       
       <div className="container mx-auto max-w-6xl relative z-10">
