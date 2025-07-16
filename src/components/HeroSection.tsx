@@ -53,18 +53,18 @@ export function HeroSection() {
           <div className="space-y-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-center">
               <span className="text-foreground">
-                Maximize o ROI dos seus
+                Temos como trabalho aumentar as vendas da empresa com
               </span><br />
               <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                Anúncios Digitais
+                Tráfego de verdade
               </span>
             </h1>
             
             <div className="space-y-10 mt-12">
               <div className="max-w-3xl mx-auto space-y-8">
                 <p className="text-lg md:text-xl text-center leading-relaxed text-muted-foreground font-medium">
-                  Estratégias baseadas em dados para maximizar conversões e reduzir custo de aquisição. 
-                  Metodologia comprovada que já gerou <span className="text-primary font-semibold">R$ 2.3 milhões</span> em retorno para empresas parceiras.
+                  Somos uma agência parceira da sua empresa, desenvolvemos estratégias vencedoras para aumentar as vendas do seu negócio com o mínimo de investimento possível. 
+                  Entenda como crescer ainda mais a sua empresa com <span className="text-primary font-semibold">tráfego de verdade</span>.
                 </p>
                 
                 <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-full mx-auto"></div>
