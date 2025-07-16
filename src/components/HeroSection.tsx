@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Target, TrendingUp } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
-import { FormModal } from "@/components/FormModal";
 export function HeroSection() {
   return <section className="relative min-h-screen flex flex-col justify-center px-4 py-20 bg-block-hero overflow-hidden border-b border-primary/10 shadow-block">
       {/* Cinematic Light Effects - Emerging from Below */}
@@ -43,38 +42,38 @@ export function HeroSection() {
           </h2>
         </div>
 
-        {/* Main Content - Formulário de Amostra e Botão */}
-        <div className="max-w-md mx-auto">
-          {/* Formulário de Amostra Visível */}
-          <div className="mb-8">
-            <div className="text-center mb-8">
-              <h1 className="text-2xl md:text-3xl font-bold leading-tight text-center mb-4">
-                <span className="text-primary text-sm md:text-base font-medium tracking-wide uppercase">VEJA UMA AMOSTRA</span><br />
-                <span className="text-xl md:text-2xl">Do Nosso Formulário</span>
-              </h1>
-              <p className="text-muted-foreground text-sm">
-                Este é apenas uma demonstração. Para solicitar orçamento, clique no botão abaixo.
-              </p>
+        {/* Main Content - Centered Layout */}
+        <div className="max-w-4xl mx-auto">
+          {/* Text Content */}
+          <div className="space-y-8">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-center">
+              <span className="text-primary text-lg md:text-xl font-medium tracking-wide uppercase">PARE DE PERDER DINHEIRO</span><br />
+              <span className="text-4xl md:text-5xl lg:text-6xl">SEU MARKETING</span><br />
+              <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl">
+                NÃO VENDE?
+              </span>
+            </h1>
+            
+            <div className="space-y-6">
+              <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-full mx-auto"></div>
+              
+              <div className="space-y-4 text-center">
+                <p className="text-lg md:text-xl text-muted-foreground font-medium leading-relaxed">
+                  <span className="text-red-400 font-bold">Cansou de queimar dinheiro</span> em campanhas que não geram resultado? 
+                  Enquanto você lê isso, seus <span className="text-primary font-bold">concorrentes estão vendendo mais</span>.
+                </p>
+                
+                <p className="text-base md:text-lg text-muted-foreground/90 leading-relaxed">
+                  <span className="text-foreground font-medium">Chega de desculpas.</span> Nosso método já fez empresas 
+                  aumentarem suas vendas em <span className="text-primary font-bold">300% em 90 dias</span>, 
+                  investindo <span className="text-primary font-bold">50% menos</span> que antes.
+                </p>
+              </div>
             </div>
-            <ProgressiveForm />
-          </div>
 
-          {/* Botão para Abrir Modal com Formulário Real */}
-          <div className="text-center">
-            <FormModal>
-              <Button 
-                size="lg" 
-                className="bg-gradient-primary hover:shadow-glow px-12 py-4 rounded-full flex items-center space-x-3 shadow-glow hover:scale-105 transition-all duration-300 text-primary-foreground font-bold text-lg relative overflow-hidden group mx-auto"
-              >
-                {/* Button glow effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <span className="relative z-10">SOLICITAR ORÇAMENTO REAL</span>
-                <Target className="h-5 w-5 relative z-10" />
-              </Button>
-            </FormModal>
-            <p className="text-xs text-muted-foreground mt-3">
-              Clique para preencher o formulário completo e receber sua proposta personalizada
-            </p>
+            <div className="flex justify-center">
+              <ProgressiveForm />
+            </div>
           </div>
         </div>
 
