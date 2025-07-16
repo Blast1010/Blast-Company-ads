@@ -41,8 +41,8 @@ export function HeroSection() {
         </div>
 
         {/* Main Content */}
-        <div className="text-center space-y-16">
-          <div className="space-y-12">
+        <div className="text-center space-y-12">
+          <div className="space-y-8">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.2] tracking-tight">
               Temos como trabalho<br />
               <span className="text-muted-foreground/80">Aumentar as Vendas da</span><br />
@@ -53,27 +53,27 @@ export function HeroSection() {
               </span>
             </h1>
             
-            <div className="space-y-8 max-w-4xl mx-auto">
-              <div className="w-24 h-1 bg-gradient-to-r from-primary to-primary/50 mx-auto rounded-full"></div>
+            <div className="space-y-6 max-w-4xl mx-auto">
+              <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-primary/50 mx-auto rounded-full"></div>
               
-              <p className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
-                Somos uma agência parceira da sua empresa.
-              </p>
-              
-              <p className="text-base md:text-lg text-muted-foreground/90 leading-relaxed max-w-3xl mx-auto">
-                Desenvolvemos estratégias <span className="text-foreground font-medium">Vencedoras</span> para<br />
-                Aumentar as vendas do seu negócio com o<br />
-                <span className="text-primary font-medium">mínimo investimento possível</span>.
-              </p>
-              
-              <p className="text-base md:text-lg text-muted-foreground/90 leading-relaxed max-w-3xl mx-auto">
-                Entenda como crescer ainda mais a sua<br />
-                empresa por meio das maiores fontes de{" "}
-                <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent font-semibold">
-                  Tráfego<br />
-                  do mundo
-                </span>.
-              </p>
+              <div className="space-y-4">
+                <p className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
+                  Somos uma agência parceira da sua empresa.
+                </p>
+                
+                <p className="text-base md:text-lg text-muted-foreground/90 leading-relaxed max-w-3xl mx-auto">
+                  Desenvolvemos estratégias <span className="text-foreground font-medium">Vencedoras</span> para 
+                  aumentar as vendas do seu negócio com o{" "}
+                  <span className="text-primary font-medium">mínimo investimento possível</span>.
+                </p>
+                
+                <p className="text-base md:text-lg text-muted-foreground/90 leading-relaxed max-w-3xl mx-auto">
+                  Entenda como crescer ainda mais a sua empresa por meio das maiores fontes de{" "}
+                  <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent font-semibold">
+                    Tráfego do mundo
+                  </span>.
+                </p>
+              </div>
             </div>
           </div>
           
