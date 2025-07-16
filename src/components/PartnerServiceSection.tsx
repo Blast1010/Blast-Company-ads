@@ -26,8 +26,14 @@ export function PartnerServiceSection() {
   ];
 
   return (
-    <section className="py-20 px-4 bg-background">
-      <div className="container mx-auto max-w-6xl">
+    <section className="relative py-20 px-4 bg-white overflow-hidden">
+      {/* Efeito de luz minimalista azul turquesa */}
+      <div className="absolute inset-0">
+        <div className="absolute top-32 left-16 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-32 right-16 w-48 h-48 bg-accent/5 rounded-full blur-2xl"></div>
+      </div>
+      
+      <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center mb-16">
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/20 mb-6">

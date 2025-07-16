@@ -24,8 +24,14 @@ export function ClientsSection() {
   ];
 
   return (
-    <section className="py-20 px-4 bg-background">
-      <div className="container mx-auto max-w-6xl">
+    <section className="relative py-20 px-4 bg-white overflow-hidden">
+      {/* Efeito de luz minimalista preta */}
+      <div className="absolute inset-0">
+        <div className="absolute top-40 left-10 w-40 h-40 bg-black/5 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-40 right-10 w-60 h-60 bg-gray-900/5 rounded-full blur-2xl"></div>
+      </div>
+      
+      <div className="container mx-auto max-w-6xl relative z-10">
         {/* Icon and Main Content */}
         <div className="text-center space-y-12">
           {/* Handshake Icon */}
