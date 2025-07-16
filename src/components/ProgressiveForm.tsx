@@ -14,7 +14,7 @@ interface FormData {
   phone: string;
 }
 export function ProgressiveForm() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [currentStep, setCurrentStep] = useState(0);
   const [formData, setFormData] = useState<FormData>({
     name: "",
