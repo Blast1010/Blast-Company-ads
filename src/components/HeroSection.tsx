@@ -37,6 +37,16 @@ export function HeroSection() {
             <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
             <span className="text-red-400 font-bold text-sm">APENAS 7 VAGAS DISPONÍVEIS ESTE MÊS</span>
           </div>
+          
+          {/* User Logo */}
+          <div className="mb-4">
+            <img 
+              src="/lovable-uploads/4d532483-6243-4d77-8dcf-9eb94e9e47fe.png" 
+              alt="Logo" 
+              className="w-16 h-16 rounded-full mx-auto object-cover border-2 border-primary/20"
+            />
+          </div>
+          
           <h2 className="text-2xl md:text-2xl font-bold tracking-tight">
             Blast Company <span className="text-primary">ads</span>
           </h2>
