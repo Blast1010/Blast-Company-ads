@@ -191,38 +191,38 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto">
-      <Card className="bg-white border border-gray-200 shadow-lg overflow-hidden">
+    <div className="w-full max-w-3xl mx-auto">
+      <Card className="bg-black border border-border/20 shadow-2xl overflow-hidden">
         {/* Typeform-style progress bar */}
-        <div className="h-2 bg-gray-100">
+        <div className="h-2 bg-gray-800">
           <div 
             className="h-full bg-primary transition-all duration-500 ease-out"
             style={{ width: `${((currentStep + 1) / steps.length) * 100}%` }}
           />
         </div>
 
-        <div className="p-8 min-h-[500px] flex flex-col justify-center">
+        <div className="p-8 md:p-12 min-h-[550px] flex flex-col justify-center">
           {/* Question number */}
           <div className="mb-6">
-            <span className="text-sm text-gray-500 font-medium">
+            <span className="text-sm text-gray-400 font-medium">
               {currentStep + 1} → {steps.length}
             </span>
           </div>
 
           {/* Main content */}
-          <div className="space-y-6 flex-1 flex flex-col justify-center">
+          <div className="space-y-8 flex-1 flex flex-col justify-center">
             {/* Icon */}
             <div className="text-primary">
               {steps[currentStep].icon}
             </div>
 
             {/* Question */}
-            <div className="space-y-2">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
+            <div className="space-y-3">
+              <h3 className="text-2xl md:text-3xl font-bold text-white leading-tight">
                 {steps[currentStep].title}
               </h3>
               {steps[currentStep].subtitle && (
-                <p className="text-lg text-gray-600">
+                <p className="text-lg text-gray-300">
                   {steps[currentStep].subtitle}
                 </p>
               )}
@@ -235,12 +235,12 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
                   value={formData[steps[currentStep].field]}
                   onChange={(e) => handleInputChange(steps[currentStep].field, e.target.value)}
                   onKeyDown={handleKeyPress}
-                  className="w-full p-4 text-lg border-0 border-b-2 border-gray-200 focus:border-primary focus:outline-none bg-transparent transition-colors"
+                  className="w-full p-4 text-lg border-0 border-b-2 border-gray-600 focus:border-primary focus:outline-none bg-transparent transition-colors text-white"
                   autoFocus
                 >
-                  <option value="">{steps[currentStep].placeholder}</option>
+                  <option value="" className="bg-black text-gray-400">{steps[currentStep].placeholder}</option>
                   {steps[currentStep].options?.map((option) => (
-                    <option key={option} value={option}>
+                    <option key={option} value={option} className="bg-black text-white">
                       {option}
                     </option>
                   ))}
@@ -252,14 +252,14 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
                   value={formData[steps[currentStep].field]}
                   onChange={(e) => handleInputChange(steps[currentStep].field, e.target.value)}
                   onKeyDown={handleKeyPress}
-                  className="w-full p-4 text-lg border-0 border-b-2 border-gray-200 focus:border-primary focus:outline-none bg-transparent transition-colors rounded-none"
+                  className="w-full p-4 text-lg border-0 border-b-2 border-gray-600 focus:border-primary focus:outline-none bg-transparent transition-colors rounded-none text-white placeholder:text-gray-400"
                   autoFocus
                 />
               )}
 
               {/* Instructions */}
-              <p className="text-sm text-gray-500">
-                Pressione <kbd className="px-2 py-1 bg-gray-100 rounded text-xs">Enter ↵</kbd> para continuar
+              <p className="text-sm text-gray-400">
+                Pressione <kbd className="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">Enter ↵</kbd> para continuar
               </p>
             </div>
           </div>
@@ -271,7 +271,7 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
               variant="ghost"
               onClick={handlePrevious}
               disabled={currentStep === 0}
-              className="flex items-center space-x-2 text-gray-600 hover:text-gray-900"
+              className="flex items-center space-x-2 text-gray-400 hover:text-white"
             >
               <ChevronLeft className="h-4 w-4" />
               <span>Voltar</span>
