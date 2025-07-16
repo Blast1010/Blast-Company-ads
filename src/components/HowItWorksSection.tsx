@@ -53,7 +53,7 @@ export function HowItWorksSection() {
                   
                   {/* Icon */}
                   <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                    <step.icon className="h-8 w-8 text-primary-foreground" />
+                    <step.icon className="h-8 w-8 text-black" />
                   </div>
                   
                   {/* Content */}
