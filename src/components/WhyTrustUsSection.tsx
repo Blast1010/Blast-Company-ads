@@ -25,8 +25,7 @@ export function WhyTrustUsSection() {
     image: teamworkImage,
     imageAlt: "Trabalho em equipe colaborativo"
   }];
-  return (
-    <section className="py-20 px-4 text-white">
+  return <section className="py-20 px-4 text-white">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
@@ -39,8 +38,7 @@ export function WhyTrustUsSection() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {reasons.map((reason, index) => (
-            <Card key={index} className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden">
+          {reasons.map((reason, index) => <Card key={index} className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden">
               {/* Background Image */}
               <div className="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
                 <img src={reason.image} alt={reason.imageAlt} className="w-full h-full object-cover" />
@@ -70,8 +68,7 @@ export function WhyTrustUsSection() {
               
               {/* Bottom accent */}
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Bottom CTA */}
@@ -84,13 +81,9 @@ export function WhyTrustUsSection() {
           </div>
           
           <FormModal>
-            <Button variant="outline" className="group text-center">
-              <Mail className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-              Solicitar Orçamento
-            </Button>
+            
           </FormModal>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
