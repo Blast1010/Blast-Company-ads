@@ -1,9 +1,5 @@
-import googleAdsImage from "@/assets/google-ads-image.png";
-import metaAdsImage from "@/assets/meta-ads-image.png";
-import heroAnalytics from "@/assets/hero-analytics-animated.webp";
-import metaPhoneMockup from "@/assets/meta-phone-mockup.png";
-import metaShirtElement from "@/assets/meta-shirt-element.png";
-import metaAnalyticsChart from "@/assets/meta-analytics-chart.png";
+import inpulsoGoogleSection from "@/assets/inpulso-google-section.webp";
+import inpulsoMetaSection from "@/assets/inpulso-meta-section.webp";
 
 export function GoogleMetaAdsSection() {
   return (
@@ -41,30 +37,12 @@ export function GoogleMetaAdsSection() {
           </div>
 
           <div className="order-1 lg:order-2 flex justify-center relative">
-            {/* Composição complexa de elementos como no site original */}
-            <div className="relative w-full max-w-lg h-96">
-              {/* Imagem principal do analytics com animação de float */}
-              <div className="absolute top-0 right-0 w-80 h-80 animate-float" style={{ animationDelay: '0s' }}>
-                <img 
-                  src={heroAnalytics} 
-                  alt="Analytics Dashboard" 
-                  className="w-full h-full object-contain transform hover:scale-105 transition-all duration-500"
-                />
-              </div>
-
-              {/* Google Ads mockup flutuando */}
-              <div className="absolute bottom-4 left-4 w-40 h-32 animate-float" style={{ animationDelay: '1s' }}>
-                <img 
-                  src={googleAdsImage} 
-                  alt="Google Ads" 
-                  className="w-full h-full object-contain rounded-lg shadow-lg transform hover:rotate-3 transition-all duration-500"
-                />
-              </div>
-
-              {/* Elementos decorativos flutuantes */}
-              <div className="absolute top-8 left-8 w-6 h-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full animate-bounce shadow-lg" style={{ animationDelay: '0.5s' }}></div>
-              <div className="absolute bottom-20 right-12 w-4 h-4 bg-gradient-to-br from-green-500 to-green-600 rounded-lg animate-pulse shadow-lg"></div>
-              <div className="absolute top-1/2 left-0 w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full animate-float shadow-lg" style={{ animationDelay: '2s' }}></div>
+            <div className="relative w-full max-w-lg">
+              <img 
+                src={inpulsoGoogleSection} 
+                alt="Google Ads Dashboard" 
+                className="w-full h-auto object-contain transform hover:scale-105 transition-all duration-500"
+              />
             </div>
           </div>
         </div>
@@ -72,48 +50,12 @@ export function GoogleMetaAdsSection() {
         {/* Meta Ads Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="flex justify-center relative">
-            {/* Composição Meta Ads com camisa e elementos */}
-            <div className="relative w-full max-w-lg h-96">
-              {/* Mockup do celular principal */}
-              <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-48 h-80 animate-float" style={{ animationDelay: '0.2s' }}>
-                <img 
-                  src={metaPhoneMockup} 
-                  alt="Meta Ads Mobile" 
-                  className="w-full h-full object-contain transform hover:scale-105 transition-all duration-500"
-                />
-              </div>
-
-              {/* Elemento da camisa flutuando */}
-              <div className="absolute bottom-8 left-4 w-24 h-24 animate-float" style={{ animationDelay: '1.5s' }}>
-                <img 
-                  src={metaShirtElement} 
-                  alt="Product Shirt" 
-                  className="w-full h-full object-contain transform hover:rotate-12 transition-all duration-500"
-                />
-              </div>
-
-              {/* Gráfico de analytics */}
-              <div className="absolute top-12 right-0 w-32 h-24 animate-float" style={{ animationDelay: '0.8s' }}>
-                <img 
-                  src={metaAnalyticsChart} 
-                  alt="Analytics Chart" 
-                  className="w-full h-full object-contain transform hover:scale-110 transition-all duration-500"
-                />
-              </div>
-
-              {/* Interface do Meta Ads */}
-              <div className="absolute bottom-4 right-8 w-28 h-20 animate-float" style={{ animationDelay: '1.2s' }}>
-                <img 
-                  src={metaAdsImage} 
-                  alt="Meta Ads Interface" 
-                  className="w-full h-full object-contain rounded-lg shadow-lg transform hover:-rotate-3 transition-all duration-500"
-                />
-              </div>
-
-              {/* Elementos decorativos Meta */}
-              <div className="absolute top-1/3 left-2 w-5 h-5 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg animate-pulse shadow-lg"></div>
-              <div className="absolute bottom-1/3 right-4 w-7 h-7 bg-gradient-to-br from-pink-500 to-red-500 rounded-full animate-bounce shadow-lg" style={{ animationDelay: '0.7s' }}></div>
-              <div className="absolute top-8 left-1/3 w-3 h-3 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-full animate-float shadow-lg" style={{ animationDelay: '1.8s' }}></div>
+            <div className="relative w-full max-w-lg">
+              <img 
+                src={inpulsoMetaSection} 
+                alt="Meta Ads Marketing" 
+                className="w-full h-auto object-contain transform hover:scale-105 transition-all duration-500"
+              />
             </div>
           </div>
 
