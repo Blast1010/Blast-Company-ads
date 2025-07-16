@@ -26,16 +26,8 @@ export function ServicesSection() {
   ];
 
   return (
-    <section className="relative py-20 px-4 bg-white overflow-hidden">
-      {/* Efeito de luz minimalista azul turquesa cinematográfico */}
-      <div className="absolute inset-0">
-        <div className="absolute top-32 left-16 w-32 h-32 bg-primary/10 rounded-full blur-2xl animate-pulse delay-500"></div>
-        <div className="absolute bottom-32 right-16 w-48 h-48 bg-accent/5 rounded-full blur-2xl animate-pulse delay-900"></div>
-        <div className="absolute top-20 right-40 w-20 h-20 bg-primary/8 rounded-full blur-xl animate-pulse delay-1300"></div>
-        <div className="absolute bottom-20 left-40 w-28 h-28 bg-accent/3 rounded-full blur-xl animate-pulse delay-700"></div>
-      </div>
-      
-      <div className="container mx-auto max-w-6xl relative z-10">
+    <section className="py-20 px-4 bg-background">
+      <div className="container mx-auto max-w-6xl">
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {services.map((service, index) => (

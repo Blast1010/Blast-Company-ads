@@ -25,12 +25,10 @@ export function ClientsSection() {
 
   return (
     <section className="relative py-20 px-4 bg-white overflow-hidden">
-      {/* Efeito de luz minimalista preta cinematográfico */}
+      {/* Efeito de luz minimalista preta */}
       <div className="absolute inset-0">
-        <div className="absolute top-40 left-10 w-40 h-40 bg-black/5 rounded-full blur-2xl animate-pulse delay-300"></div>
-        <div className="absolute bottom-40 right-10 w-60 h-60 bg-gray-900/5 rounded-full blur-2xl animate-pulse delay-700"></div>
-        <div className="absolute top-20 right-20 w-24 h-24 bg-gray-800/3 rounded-full blur-xl animate-pulse delay-1000"></div>
-        <div className="absolute bottom-20 left-20 w-32 h-32 bg-black/3 rounded-full blur-xl animate-pulse delay-500"></div>
+        <div className="absolute top-40 left-10 w-40 h-40 bg-black/5 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-40 right-10 w-60 h-60 bg-gray-900/5 rounded-full blur-2xl"></div>
       </div>
       
       <div className="container mx-auto max-w-6xl relative z-10">
@@ -38,17 +36,14 @@ export function ClientsSection() {
         <div className="text-center space-y-12">
           {/* Handshake Icon */}
           <div className="flex justify-center mb-8">
-            <div className="relative">
-              <div className="w-24 h-24 bg-gradient-primary rounded-2xl flex items-center justify-center shadow-glow animate-pulse">
-                <Handshake className="h-12 w-12 text-primary-foreground" />
-              </div>
-              <div className="absolute inset-0 bg-primary/30 rounded-2xl blur-xl opacity-50 animate-pulse delay-300"></div>
+            <div className="w-24 h-24 bg-gradient-primary rounded-2xl flex items-center justify-center shadow-glow">
+              <Handshake className="h-12 w-12 text-primary-foreground" />
             </div>
           </div>
 
           {/* Main Text */}
           <div className="space-y-8 max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-relaxed text-gray-900">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-relaxed">
               Esses são alguns dos clientes que{" "}
               <span className="text-primary">escolheram a Blast Company ads</span>{" "}
               como empresa parceira para criar suas{" "}
@@ -59,7 +54,7 @@ export function ClientsSection() {
 
             <div className="w-20 h-0.5 bg-gradient-primary mx-auto rounded-full"></div>
 
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               <span className="text-primary font-semibold">Chamamos cada cliente de parceiro</span>, 
               pois entramos e entendemos cada detalhe dos seus negócios, para entregar 
               sucesso a cada um deles.
@@ -68,7 +63,7 @@ export function ClientsSection() {
 
           {/* Company Logos Carousel */}
           <div className="mt-16">
-            <h3 className="text-lg font-semibold text-gray-600 mb-8">
+            <h3 className="text-lg font-semibold text-muted-foreground mb-8">
               Empresas que confiam em nosso trabalho
             </h3>
             
@@ -108,7 +103,7 @@ export function ClientsSection() {
           {/* CTA Section */}
           <div className="mt-16 p-8 bg-card border border-border rounded-2xl">
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-gray-900">
+              <h3 className="text-2xl font-bold">
                 Pronto para ser nosso próximo{" "}
                 <span className="text-primary">parceiro de sucesso</span>?
               </h3>
