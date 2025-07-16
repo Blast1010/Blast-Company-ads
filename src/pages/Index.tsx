@@ -16,8 +16,8 @@ const Index = () => {
         <HeroSection />
       </div>
       
-      {/* Google/Meta Ads Section - Dark Blue */}
-      <div className="bg-blue-900">
+      {/* Google/Meta Ads Section - Black */}
+      <div className="bg-black">
         <GoogleMetaAdsSection />
       </div>
       
