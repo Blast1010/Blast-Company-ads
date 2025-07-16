@@ -30,19 +30,13 @@ export function WhyTrustUsSection() {
   ];
 
   return (
-    <section className="relative py-20 px-4 bg-primary overflow-hidden">
-      {/* Efeito minimalista */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 right-20 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
-        <div className="absolute bottom-20 left-20 w-48 h-48 bg-white/5 rounded-full blur-2xl"></div>
-      </div>
-      
-      <div className="container mx-auto max-w-6xl relative z-10">
+    <section className="py-20 px-4 bg-gradient-secondary">
+      <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Como vamos ajudar a sua empresa?
           </h2>
-          <h3 className="text-xl md:text-2xl text-white/90 font-semibold mb-4">
+          <h3 className="text-xl md:text-2xl text-primary font-semibold mb-4">
             Como confiar em nossa metodologia?
           </h3>
           <div className="w-24 h-0.5 bg-gradient-primary mx-auto rounded-full"></div>
@@ -52,7 +46,7 @@ export function WhyTrustUsSection() {
           {reasons.map((reason, index) => (
             <Card 
               key={index} 
-              className="relative bg-white/95 backdrop-blur-sm border-white/20 hover:bg-white transition-all duration-300 group overflow-hidden"
+              className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden"
             >
               {/* Background Image */}
               <div className="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
@@ -75,10 +69,10 @@ export function WhyTrustUsSection() {
                   
                   {/* Content */}
                   <div className="space-y-4">
-                    <h3 className="text-xl font-bold text-gray-800 group-hover:text-primary transition-colors duration-300">
+                    <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
                       {reason.title}
                     </h3>
-                    <p className="text-gray-600 leading-relaxed font-medium">
+                    <p className="text-muted-foreground leading-relaxed font-medium">
                       {reason.description}
                     </p>
                   </div>
@@ -98,9 +92,9 @@ export function WhyTrustUsSection() {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <div className="inline-flex items-center space-x-3 px-6 py-3 bg-white/20 rounded-full border border-white/30">
-            <Lightbulb className="h-5 w-5 text-white" />
-            <span className="text-white font-semibold">
+          <div className="inline-flex items-center space-x-3 px-6 py-3 bg-primary/10 rounded-full border border-primary/20">
+            <Lightbulb className="h-5 w-5 text-primary" />
+            <span className="text-primary font-semibold">
               Metodologia comprovada em centenas de empresas
             </span>
           </div>

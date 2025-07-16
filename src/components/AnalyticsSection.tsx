@@ -29,11 +29,11 @@ export function AnalyticsSection() {
   ];
 
   return (
-    <section className="relative py-20 px-4 bg-white overflow-hidden">
-      {/* Efeito de luz minimalista preta */}
-      <div className="absolute inset-0">
-        <div className="absolute top-40 right-10 w-40 h-40 bg-black/5 rounded-full blur-2xl"></div>
-        <div className="absolute bottom-40 left-10 w-60 h-60 bg-gray-900/5 rounded-full blur-2xl"></div>
+    <section className="py-20 px-4 bg-gradient-secondary relative overflow-hidden">
+      {/* Background Effects */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-40 bg-gradient-to-b from-primary/5 via-primary/3 to-transparent blur-xl opacity-50"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-radial from-primary/10 via-primary/5 to-transparent rounded-full blur-3xl opacity-30"></div>
       </div>
 
       <div className="container mx-auto max-w-6xl relative z-10">
