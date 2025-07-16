@@ -65,10 +65,20 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
-				'gradient-secondary': 'var(--gradient-secondary)'
+				'gradient-secondary': 'var(--gradient-secondary)',
+				'gradient-block': 'var(--gradient-block)'
+			},
+			backgroundColor: {
+				'block-hero': 'hsl(var(--block-hero))',
+				'block-clients': 'hsl(var(--block-clients))',
+				'block-trust': 'hsl(var(--block-trust))',
+				'block-services': 'hsl(var(--block-services))',
+				'block-analytics': 'hsl(var(--block-analytics))',
+				'block-cta': 'hsl(var(--block-cta))'
 			},
 			boxShadow: {
 				'glow': 'var(--shadow-glow)',
+				'block': 'var(--shadow-block)',
 				'subtle': 'var(--shadow-subtle)'
 			},
 			borderRadius: {

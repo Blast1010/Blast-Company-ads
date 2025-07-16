@@ -28,7 +28,7 @@ export function PartnerServiceSection() {
   ];
 
   return (
-    <section className="py-20 px-4 bg-background">
+    <section className="py-20 px-4 bg-block-services border-b border-border relative overflow-hidden">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           {/* Badge */}

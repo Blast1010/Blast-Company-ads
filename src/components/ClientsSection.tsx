@@ -24,7 +24,7 @@ export function ClientsSection() {
   ];
 
   return (
-    <section className="py-20 px-4 bg-background">
+    <section className="py-20 px-4 bg-block-clients border-b border-border relative overflow-hidden">
       <div className="container mx-auto max-w-6xl">
         {/* Icon and Main Content */}
         <div className="text-center space-y-12">

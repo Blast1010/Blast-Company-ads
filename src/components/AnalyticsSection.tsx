@@ -31,7 +31,7 @@ export function AnalyticsSection() {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-secondary relative overflow-hidden">
+    <section className="py-20 px-4 bg-block-analytics border-b border-border relative overflow-hidden shadow-block">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-40 bg-gradient-to-b from-primary/5 via-primary/3 to-transparent blur-xl opacity-50"></div>
