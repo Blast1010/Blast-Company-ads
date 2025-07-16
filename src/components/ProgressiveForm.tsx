@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Card } from "@/components/ui/card";
 import { Mail, ChevronRight, ChevronLeft, Check, Building, Target, DollarSign, Globe, TrendingUp, CreditCard, User, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -41,27 +40,31 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
     {
       id: "company",
       title: "Qual o nome da empresa?",
+      subtitle: "Vamos começar com o básico",
       placeholder: "Digite o nome da sua empresa",
-      icon: <Building className="h-6 w-6" />,
+      icon: <Building className="h-8 w-8" />,
       field: "company" as keyof FormData
     },
     {
       id: "problems",
       title: "Qual o principal problema da empresa?",
+      subtitle: "Conte-nos sobre seus desafios atuais",
       placeholder: "Ex: Baixas vendas, poucos leads, conversão baixa...",
-      icon: <Target className="h-6 w-6" />,
+      icon: <Target className="h-8 w-8" />,
       field: "problems" as keyof FormData
     },
     {
       id: "website",
       title: "Qual o site da empresa?",
+      subtitle: "Queremos conhecer melhor seu negócio",
       placeholder: "https://www.exemplo.com.br",
-      icon: <Globe className="h-6 w-6" />,
+      icon: <Globe className="h-8 w-8" />,
       field: "website" as keyof FormData
     },
     {
       id: "platforms",
       title: "Em quais plataformas já investiu?",
+      subtitle: "Nos ajude a entender sua experiência",
       placeholder: "Selecione uma opção",
       type: "select",
       options: [
@@ -71,12 +74,13 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
         "Nunca investi em tráfego pago",
         "Outros"
       ],
-      icon: <TrendingUp className="h-6 w-6" />,
+      icon: <TrendingUp className="h-8 w-8" />,
       field: "platforms" as keyof FormData
     },
     {
       id: "budget",
       title: "Qual orçamento mensal para tráfego?",
+      subtitle: "Isso nos ajuda a criar a estratégia ideal",
       placeholder: "Selecione uma faixa",
       type: "select",
       options: [
@@ -86,12 +90,13 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
         "R$ 10.000 - R$ 20.000",
         "Acima de R$ 20.000"
       ],
-      icon: <DollarSign className="h-6 w-6" />,
+      icon: <DollarSign className="h-8 w-8" />,
       field: "budget" as keyof FormData
     },
     {
       id: "revenue",
       title: "Qual o faturamento mensal atual?",
+      subtitle: "Informação confidencial - apenas para nossa análise",
       placeholder: "Selecione uma faixa",
       type: "select",
       options: [
@@ -101,30 +106,33 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
         "R$ 100.000 - R$ 500.000",
         "Acima de R$ 500.000"
       ],
-      icon: <CreditCard className="h-6 w-6" />,
+      icon: <CreditCard className="h-8 w-8" />,
       field: "revenue" as keyof FormData
     },
     {
       id: "name",
       title: "Qual seu nome?",
+      subtitle: "Como podemos te chamar?",
       placeholder: "Seu nome completo",
-      icon: <User className="h-6 w-6" />,
+      icon: <User className="h-8 w-8" />,
       field: "name" as keyof FormData
     },
     {
       id: "email",
       title: "Qual seu melhor email?",
+      subtitle: "Enviaremos sua proposta personalizada aqui",
       placeholder: "seu@email.com",
       type: "email",
-      icon: <Mail className="h-6 w-6" />,
+      icon: <Mail className="h-8 w-8" />,
       field: "email" as keyof FormData
     },
     {
       id: "phone",
       title: "Qual seu WhatsApp?",
+      subtitle: "Para agilizar o contato",
       placeholder: "(11) 99999-9999",
       type: "tel",
-      icon: <Phone className="h-6 w-6" />,
+      icon: <Phone className="h-8 w-8" />,
       field: "phone" as keyof FormData
     }
   ];
@@ -175,100 +183,115 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
     return formData[currentField].trim().length > 0;
   };
 
+  const handleKeyPress = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' && isCurrentStepValid()) {
+      handleNext();
+    }
+  };
+
   return (
-    <div className="w-full max-w-2xl mx-auto">
-      <Card className="bg-card/80 backdrop-blur border-primary/20 shadow-lg">
-        {/* Simple progress bar */}
-        <div className="h-1 bg-muted">
-          <div 
-            className="h-full bg-primary transition-all duration-300 ease-out"
-            style={{ width: `${((currentStep + 1) / steps.length) * 100}%` }}
-          />
+    <div className="fixed inset-0 bg-white z-50 flex flex-col">
+      {/* Typeform-style progress bar */}
+      <div className="h-1 bg-gray-200">
+        <div 
+          className="h-full bg-primary transition-all duration-500 ease-out"
+          style={{ width: `${((currentStep + 1) / steps.length) * 100}%` }}
+        />
+      </div>
+
+      <div className="flex-1 flex flex-col justify-center px-6 py-12 max-w-2xl mx-auto w-full">
+        {/* Question number */}
+        <div className="mb-8">
+          <span className="text-sm text-gray-500 font-medium">
+            {currentStep + 1} → {steps.length}
+          </span>
         </div>
 
-        <div className="p-8">
-          {/* Step counter */}
-          <div className="text-center mb-6">
-            <span className="text-sm text-muted-foreground">
-              Etapa {currentStep + 1} de {steps.length}
-            </span>
+        {/* Main content */}
+        <div className="space-y-8">
+          {/* Icon */}
+          <div className="text-primary">
+            {steps[currentStep].icon}
           </div>
 
-          {/* Form content */}
-          <div className="min-h-[200px] flex flex-col justify-center">
-            <div className="space-y-6">
-              {/* Icon and title */}
-              <div className="text-center space-y-4">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
-                  <div className="text-primary">
-                    {steps[currentStep].icon}
-                  </div>
-                </div>
-                
-                <h3 className="text-xl font-semibold text-foreground">
-                  {steps[currentStep].title}
-                </h3>
-              </div>
-
-              {/* Input field */}
-              <div className="space-y-2">
-                {steps[currentStep].type === "select" ? (
-                  <select
-                    value={formData[steps[currentStep].field]}
-                    onChange={(e) => handleInputChange(steps[currentStep].field, e.target.value)}
-                    className="w-full p-4 bg-input border border-border rounded-lg text-foreground focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
-                  >
-                    <option value="">{steps[currentStep].placeholder}</option>
-                    {steps[currentStep].options?.map((option) => (
-                      <option key={option} value={option}>
-                        {option}
-                      </option>
-                    ))}
-                  </select>
-                ) : (
-                  <Input
-                    type={steps[currentStep].type || "text"}
-                    placeholder={steps[currentStep].placeholder}
-                    value={formData[steps[currentStep].field]}
-                    onChange={(e) => handleInputChange(steps[currentStep].field, e.target.value)}
-                    className="w-full p-4 text-lg bg-input border-border focus:ring-primary/50 focus:border-primary"
-                  />
-                )}
-              </div>
-            </div>
+          {/* Question */}
+          <div className="space-y-3">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+              {steps[currentStep].title}
+            </h1>
+            {steps[currentStep].subtitle && (
+              <p className="text-lg text-gray-600">
+                {steps[currentStep].subtitle}
+              </p>
+            )}
           </div>
 
-          {/* Navigation buttons */}
-          <div className="flex justify-between items-center mt-8">
-            <Button
-              type="button"
-              variant="outline"
-              onClick={handlePrevious}
-              disabled={currentStep === 0}
-              className="flex items-center space-x-2"
-            >
-              <ChevronLeft className="h-4 w-4" />
-              <span>Anterior</span>
-            </Button>
+          {/* Input */}
+          <div className="space-y-6">
+            {steps[currentStep].type === "select" ? (
+              <select
+                value={formData[steps[currentStep].field]}
+                onChange={(e) => handleInputChange(steps[currentStep].field, e.target.value)}
+                onKeyDown={handleKeyPress}
+                className="w-full p-4 text-xl border-0 border-b-2 border-gray-200 focus:border-primary focus:outline-none bg-transparent transition-colors"
+                autoFocus
+              >
+                <option value="">{steps[currentStep].placeholder}</option>
+                {steps[currentStep].options?.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+            ) : (
+              <Input
+                type={steps[currentStep].type || "text"}
+                placeholder={steps[currentStep].placeholder}
+                value={formData[steps[currentStep].field]}
+                onChange={(e) => handleInputChange(steps[currentStep].field, e.target.value)}
+                onKeyDown={handleKeyPress}
+                className="w-full p-4 text-xl border-0 border-b-2 border-gray-200 focus:border-primary focus:outline-none bg-transparent transition-colors rounded-none"
+                autoFocus
+              />
+            )}
 
-            <Button
-              type="button"
-              onClick={handleNext}
-              disabled={!isCurrentStepValid()}
-              className="flex items-center space-x-2"
-            >
-              <span>
-                {currentStep === steps.length - 1 ? "Enviar" : "Próximo"}
-              </span>
-              {currentStep === steps.length - 1 ? (
-                <Check className="h-4 w-4" />
-              ) : (
-                <ChevronRight className="h-4 w-4" />
-              )}
-            </Button>
+            {/* Instructions */}
+            <p className="text-sm text-gray-500">
+              Pressione <kbd className="px-2 py-1 bg-gray-100 rounded text-xs">Enter ↵</kbd> para continuar
+            </p>
           </div>
         </div>
-      </Card>
+      </div>
+
+      {/* Bottom navigation */}
+      <div className="flex justify-between items-center p-6 max-w-2xl mx-auto w-full">
+        <Button
+          type="button"
+          variant="ghost"
+          onClick={handlePrevious}
+          disabled={currentStep === 0}
+          className="flex items-center space-x-2 text-gray-600 hover:text-gray-900"
+        >
+          <ChevronLeft className="h-4 w-4" />
+          <span>Voltar</span>
+        </Button>
+
+        <Button
+          type="button"
+          onClick={handleNext}
+          disabled={!isCurrentStepValid()}
+          className="flex items-center space-x-2 px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg"
+        >
+          <span>
+            {currentStep === steps.length - 1 ? "Enviar" : "OK"}
+          </span>
+          {currentStep === steps.length - 1 ? (
+            <Check className="h-4 w-4" />
+          ) : (
+            <ChevronRight className="h-4 w-4" />
+          )}
+        </Button>
+      </div>
     </div>
   );
 }
