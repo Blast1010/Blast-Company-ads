@@ -54,42 +54,42 @@ const Index = () => {
       </div>
 
       {/* Hero Section - Black */}
-      <div className="bg-black relative z-10 mb-16">
+      <div className="bg-black relative z-10">
         <HeroSection />
       </div>
       
       {/* Google/Meta Ads Section - Black */}
-      <div className="bg-black relative z-10 mb-16">
+      <div className="bg-black relative z-10">
         <GoogleMetaAdsSection />
       </div>
       
       {/* Services Section - Black */}
-      <div className="bg-black relative z-10 mb-16">
+      <div className="bg-black relative z-10">
         <ServicesSection />
       </div>
       
       {/* Clients Section - Black */}
-      <div className="bg-black relative z-10 mb-16">
+      <div className="bg-black relative z-10">
         <ClientsSection />
       </div>
       
       {/* Why Trust Us Section - Black */}
-      <div className="bg-black relative z-10 mb-16">
+      <div className="bg-black relative z-10">
         <WhyTrustUsSection />
       </div>
       
       {/* Partner Service Section - Black */}
-      <div className="bg-black relative z-10 mb-16">
+      <div className="bg-black relative z-10">
         <PartnerServiceSection />
       </div>
       
       {/* Analytics Section - Black */}
-      <div className="bg-black relative z-10 mb-16">
+      <div className="bg-black relative z-10">
         <AnalyticsSection />
       </div>
       
       {/* CTA Section - Black */}
-      <div className="bg-black relative z-10 mb-16">
+      <div className="bg-black relative z-10">
         <CTASection />
       </div>
       
