@@ -56,7 +56,7 @@ export function HeroSection() {
               
               <div className="space-y-4 text-center">
                 <p className="text-lg md:text-xl text-muted-foreground font-medium leading-relaxed text-left">
-                  <span className="text-red-400 font-bold">Cansou de queimar dinheiro</span> em campanhas que não geram resultado? 
+                  <span className="font-bold text-emerald-400">Cansou de queimar dinheiro</span> em campanhas que não geram resultado? 
                   Enquanto você lê isso, seus <span className="text-primary font-bold">concorrentes estão vendendo mais</span>.
                 </p>
                 
