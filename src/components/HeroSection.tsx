@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Target, TrendingUp } from "lucide-react";
+import { ProgressiveForm } from "@/components/ProgressiveForm";
 
 export function HeroSection() {
   return (
@@ -77,14 +78,7 @@ export function HeroSection() {
           </div>
           
           <div className="flex justify-center">
-            <Button 
-              variant="default" 
-              size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold rounded-full shadow-glow hover:shadow-glow/60 transition-all duration-300 hover:scale-105 group"
-            >
-              <Mail className="mr-3 h-6 w-6 group-hover:rotate-12 transition-transform duration-300" />
-              Solicite um Orçamento
-            </Button>
+            <ProgressiveForm />
           </div>
         </div>
 
