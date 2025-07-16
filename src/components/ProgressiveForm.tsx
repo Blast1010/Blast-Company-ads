@@ -122,15 +122,12 @@ export function ProgressiveForm() {
   };
   const currentStepData = steps[currentStep];
   const progress = (currentStep + 1) / steps.length * 100;
-  
-  return (
-    <Card className="w-full max-w-md bg-card/95 backdrop-blur-sm border border-border/50 shadow-2xl">
+  return <Card className="w-full max-w-md bg-card/95 backdrop-blur-sm border border-border/50 shadow-2xl">
       {/* Progress Bar */}
       <div className="h-2 bg-muted/30 rounded-t-lg overflow-hidden">
-        <div 
-          className="h-full bg-gradient-to-r from-primary to-primary/70 transition-all duration-500 ease-out" 
-          style={{ width: `${progress}%` }}
-        />
+        <div className="h-full bg-gradient-to-r from-primary to-primary/70 transition-all duration-500 ease-out" style={{
+        width: `${progress}%`
+      }} />
       </div>
 
       <div className="p-6">
@@ -156,39 +153,20 @@ export function ProgressiveForm() {
 
           {/* Input */}
           <div className="space-y-4">
-            <Input 
-              type={currentStepData.type || "text"}
-              placeholder={currentStepData.placeholder}
-              value={formData[currentStepData.field]}
-              onChange={(e) => handleInputChange(e.target.value)}
-              onKeyPress={handleKeyPress}
-              className="text-base py-3 h-12 bg-background/50 border-border/50 focus:border-primary focus:ring-primary/20"
-              autoFocus
-            />
+            <Input type={currentStepData.type || "text"} placeholder={currentStepData.placeholder} value={formData[currentStepData.field]} onChange={e => handleInputChange(e.target.value)} onKeyPress={handleKeyPress} className="text-base py-3 h-12 bg-background/50 border-border/50 focus:border-primary focus:ring-primary/20" autoFocus />
 
             {/* Navigation */}
             <div className="flex items-center justify-between pt-2">
-              <Button 
-                variant="ghost" 
-                onClick={handlePrevious} 
-                disabled={currentStep === 0}
-                className="flex items-center space-x-2 text-muted-foreground hover:text-foreground disabled:opacity-50"
-              >
+              <Button variant="ghost" onClick={handlePrevious} disabled={currentStep === 0} className="flex items-center space-x-2 text-muted-foreground hover:text-foreground disabled:opacity-50">
                 <ChevronLeft className="h-4 w-4" />
                 <span>Voltar</span>
               </Button>
 
-              <Button 
-                onClick={handleNext}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2 rounded-full flex items-center space-x-2 shadow-glow hover:shadow-glow/60 transition-all duration-300"
-              >
+              <Button onClick={handleNext} className="bg-primary hover:bg-primary/90 px-6 py-2 rounded-full flex items-center space-x-2 shadow-glow hover:shadow-glow/60 transition-all duration-300 text-slate-950">
                 <span>
                   {currentStep === steps.length - 1 ? "Enviar" : "Próximo"}
                 </span>
-                {currentStep === steps.length - 1 ? 
-                  <Check className="h-4 w-4" /> : 
-                  <ChevronRight className="h-4 w-4" />
-                }
+                {currentStep === steps.length - 1 ? <Check className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
               </Button>
             </div>
           </div>
@@ -201,6 +179,5 @@ export function ProgressiveForm() {
           </p>
         </div>
       </div>
-    </Card>
-  );
+    </Card>;
 }
