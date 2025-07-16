@@ -51,39 +51,36 @@ export function HeroSection() {
         <div className="max-w-4xl mx-auto">
           {/* Text Content */}
           <div className="space-y-8">
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-center">
-              <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                Transforme Sua Empresa
-              </span><br />
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-center">
               <span className="text-foreground">
-                com Anúncios que
-              </span> 
+                Maximize o ROI dos seus
+              </span><br />
               <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                VENDEM
+                Anúncios Digitais
               </span>
             </h1>
             
-            <div className="space-y-8 mt-12">
-              <div className="max-w-3xl mx-auto space-y-6">
-                <p className="text-xl md:text-2xl text-center leading-relaxed text-muted-foreground">
-                  Pare de desperdiçar dinheiro com anúncios que não convertem. 
-                  Nossa metodologia comprovada já gerou mais de <span className="text-primary font-bold">R$ 2.3 milhões</span> em vendas diretas para nossos clientes.
+            <div className="space-y-10 mt-12">
+              <div className="max-w-3xl mx-auto space-y-8">
+                <p className="text-lg md:text-xl text-center leading-relaxed text-muted-foreground font-medium">
+                  Estratégias baseadas em dados para maximizar conversões e reduzir custo de aquisição. 
+                  Metodologia comprovada que já gerou <span className="text-primary font-semibold">R$ 2.3 milhões</span> em retorno para empresas parceiras.
                 </p>
                 
-                <div className="w-24 h-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-full mx-auto"></div>
+                <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-full mx-auto"></div>
                 
-                <div className="grid md:grid-cols-3 gap-6 text-center">
-                  <div className="space-y-2">
-                    <div className="text-3xl font-bold text-primary">300%</div>
-                    <div className="text-sm text-muted-foreground">Aumento médio em ROI</div>
+                <div className="grid md:grid-cols-3 gap-8 text-center">
+                  <div className="space-y-3 p-6 rounded-xl bg-card/30 backdrop-blur-sm border border-primary/10">
+                    <div className="text-2xl font-bold text-primary">+280%</div>
+                    <div className="text-sm text-muted-foreground">Aumento médio em ROAS</div>
                   </div>
-                  <div className="space-y-2">
-                    <div className="text-3xl font-bold text-primary">24h</div>
-                    <div className="text-sm text-muted-foreground">Para primeiros resultados</div>
+                  <div className="space-y-3 p-6 rounded-xl bg-card/30 backdrop-blur-sm border border-primary/10">
+                    <div className="text-2xl font-bold text-primary">-45%</div>
+                    <div className="text-sm text-muted-foreground">Redução no CAC</div>
                   </div>
-                  <div className="space-y-2">
-                    <div className="text-3xl font-bold text-primary">R$ 2.3M</div>
-                    <div className="text-sm text-muted-foreground">Gerados para clientes</div>
+                  <div className="space-y-3 p-6 rounded-xl bg-card/30 backdrop-blur-sm border border-primary/10">
+                    <div className="text-2xl font-bold text-primary">R$ 2.3M</div>
+                    <div className="text-sm text-muted-foreground">Retorno gerado</div>
                   </div>
                 </div>
               </div>
@@ -93,45 +90,45 @@ export function HeroSection() {
               </div>
               
               <div className="text-center space-y-2">
-                <p className="text-sm text-red-400 font-semibold">
-                  ⏰ Seus concorrentes não vão esperar você decidir
+                <p className="text-sm text-muted-foreground font-medium">
+                  Análise gratuita da sua conta de anúncios
                 </p>
-                <p className="text-sm text-primary font-medium">
-                  🚀 Comece hoje e recupere o tempo perdido
+                <p className="text-xs text-primary">
+                  Identificamos oportunidades de otimização em 24h
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Stats - Credibilidade sem prova social direta */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto">
-          <div className="text-center group">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
-              <span className="text-primary font-bold text-lg">24h</span>
+        {/* Professional Benefits */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 max-w-4xl mx-auto">
+          <div className="text-center">
+            <div className="w-14 h-14 bg-gradient-to-br from-primary/15 to-primary/5 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300">
+              <span className="text-primary font-semibold text-sm">24h</span>
             </div>
-            <p className="text-sm text-muted-foreground">Setup inicial</p>
+            <p className="text-sm text-muted-foreground font-medium">Implementação rápida</p>
           </div>
           
-          <div className="text-center group">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
-              <span className="text-primary font-bold text-lg">0%</span>
+          <div className="text-center">
+            <div className="w-14 h-14 bg-gradient-to-br from-primary/15 to-primary/5 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300">
+              <span className="text-primary font-semibold text-sm">100%</span>
             </div>
-            <p className="text-sm text-muted-foreground">Taxa de setup</p>
+            <p className="text-sm text-muted-foreground font-medium">Transparência total</p>
           </div>
           
-          <div className="text-center group">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
-              <span className="text-primary font-bold text-lg">30</span>
+          <div className="text-center">
+            <div className="w-14 h-14 bg-gradient-to-br from-primary/15 to-primary/5 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300">
+              <span className="text-primary font-semibold text-sm">Data</span>
             </div>
-            <p className="text-sm text-muted-foreground">Dias para resultados</p>
+            <p className="text-sm text-muted-foreground font-medium">Decisões baseadas em dados</p>
           </div>
           
-          <div className="text-center group">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
-              <span className="text-primary font-bold text-lg">∞</span>
+          <div className="text-center">
+            <div className="w-14 h-14 bg-gradient-to-br from-primary/15 to-primary/5 rounded-xl flex items-center justify-center mx-auto mb-4 transition-all duration-300">
+              <span className="text-primary font-semibold text-sm">24/7</span>
             </div>
-            <p className="text-sm text-muted-foreground">Suporte incluído</p>
+            <p className="text-sm text-muted-foreground font-medium">Monitoramento contínuo</p>
           </div>
         </div>
       </div>
