@@ -147,7 +147,9 @@ export function AnalyticsSection() {
           </div>
           
           <FormModal>
-            
+            <Button size="lg" className="bg-accent hover:bg-accent/90">
+              Começar Agora
+            </Button>
           </FormModal>
         </div>
       </div>
