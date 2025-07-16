@@ -85,7 +85,7 @@ export function ServicesSection() {
                   {/* Icon Container */}
                   <div className="relative mb-6">
                     {/* Main Icon Circle */}
-                    <div className="w-20 h-20 bg-gradient-to-br from-primary to-primary/70 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                    <div className={`w-20 h-20 ${service.colors.bg} rounded-2xl flex items-center justify-center ${service.colors.shadow} shadow-xl group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
                       {service.isGoogleLogo ? (
                         <img 
                           src="/lovable-uploads/7314178c-83bf-47a5-be36-4f25a4df31d9.png" 
@@ -93,15 +93,15 @@ export function ServicesSection() {
                           className="h-12 w-12 object-contain transition-all duration-500 group-hover:scale-125" 
                         />
                       ) : (
-                        <service.icon className="h-10 w-10 text-black transition-all duration-500 group-hover:scale-125" />
+                        <service.icon className={`h-10 w-10 ${service.colors.icon} transition-all duration-500 group-hover:scale-125`} />
                       )}
                     </div>
                     
                     {/* Glow Effect */}
-                    <div className="absolute inset-0 bg-primary/30 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500 -z-10"></div>
+                    <div className={`absolute inset-0 ${service.colors.bg} rounded-2xl blur-xl opacity-30 group-hover:opacity-60 transition-all duration-500 -z-10`}></div>
                     
                     {/* Pulse Ring */}
-                    <div className="absolute inset-0 border-2 border-primary/30 rounded-2xl animate-ping opacity-0 group-hover:opacity-75 transition-opacity duration-500"></div>
+                    <div className={`absolute -inset-1 bg-gradient-to-r from-${service.colors.bg}/20 to-${service.colors.bg}/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10`}></div>
                   </div>
                   
                   {/* Text Content */}
