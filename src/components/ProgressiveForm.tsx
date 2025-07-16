@@ -2,15 +2,17 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
-import { Mail, ChevronRight, ChevronLeft, Check, Building, Target, DollarSign, Calendar, Phone } from "lucide-react";
+import { Mail, ChevronRight, ChevronLeft, Check, Building, Target, DollarSign, Globe, TrendingUp, CreditCard, User, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 interface FormData {
+  company: string;
+  problems: string;
+  website: string;
+  platforms: string;
+  budget: string;
+  revenue: string;
   name: string;
   email: string;
-  company: string;
-  budget: string;
-  objective: string;
-  timeline: string;
   phone: string;
 }
 
@@ -21,62 +23,101 @@ interface ProgressiveFormProps {
 export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
   const [currentStep, setCurrentStep] = useState(0);
   const [formData, setFormData] = useState<FormData>({
+    company: "",
+    problems: "",
+    website: "",
+    platforms: "",
+    budget: "",
+    revenue: "",
     name: "",
     email: "",
-    company: "",
-    budget: "",
-    objective: "",
-    timeline: "",
     phone: ""
   });
   const {
     toast
   } = useToast();
-  const steps = [{
-    id: "name",
-    title: "Vamos começar! Como você se chama?",
-    placeholder: "Digite seu nome",
-    icon: <Mail className="h-6 w-6" />,
-    field: "name" as keyof FormData
-  }, {
-    id: "email",
-    title: "Qual é o seu e-mail?",
-    placeholder: "seu@email.com",
-    icon: <Mail className="h-6 w-6" />,
-    field: "email" as keyof FormData,
-    type: "email"
-  }, {
-    id: "company",
-    title: "Qual é o nome da sua empresa?",
-    placeholder: "Nome da empresa",
-    icon: <Building className="h-6 w-6" />,
-    field: "company" as keyof FormData
-  }, {
-    id: "objective",
-    title: "Qual é o seu principal objetivo?",
-    placeholder: "Ex: Aumentar vendas, gerar leads, melhorar conversões...",
-    icon: <Target className="h-6 w-6" />,
-    field: "objective" as keyof FormData
-  }, {
-    id: "budget",
-    title: "Qual é o seu orçamento mensal para marketing digital?",
-    placeholder: "Ex: R$ 5.000 - R$ 10.000",
-    icon: <DollarSign className="h-6 w-6" />,
-    field: "budget" as keyof FormData
-  }, {
-    id: "timeline",
-    title: "Em quanto tempo espera ver os primeiros resultados?",
-    placeholder: "Ex: 30 dias, 3 meses...",
-    icon: <Calendar className="h-6 w-6" />,
-    field: "timeline" as keyof FormData
-  }, {
-    id: "phone",
-    title: "Por último, qual é o seu telefone?",
-    placeholder: "(11) 99999-9999",
-    icon: <Phone className="h-6 w-6" />,
-    field: "phone" as keyof FormData,
-    type: "tel"
-  }];
+  const steps = [
+    {
+      id: "company",
+      title: "Qual o nome da empresa?",
+      placeholder: "Digite o nome da sua empresa",
+      icon: <Building className="h-6 w-6" />,
+      field: "company" as keyof FormData
+    },
+    {
+      id: "problems",
+      title: "Quais problemas você precisa resolver?",
+      placeholder: "Ex: Baixas vendas, pouco tráfego, conversões ruins...",
+      icon: <Target className="h-6 w-6" />,
+      field: "problems" as keyof FormData
+    },
+    {
+      id: "website",
+      title: "Qual o site da empresa?",
+      placeholder: "https://www.suaempresa.com.br",
+      icon: <Globe className="h-6 w-6" />,
+      field: "website" as keyof FormData,
+      type: "url"
+    },
+    {
+      id: "platforms",
+      title: "Em quais plataformas você pretende investir?",
+      placeholder: "Selecione uma opção",
+      icon: <TrendingUp className="h-6 w-6" />,
+      field: "platforms" as keyof FormData,
+      type: "select",
+      options: [
+        "Google Ads (Recomendado)",
+        "Facebook Ads",
+        "Ambos"
+      ]
+    },
+    {
+      id: "budget",
+      title: "Quanto você investe ou pretende investir no tráfego pago? (Custo da campanha + agência)",
+      placeholder: "Selecione uma opção",
+      icon: <DollarSign className="h-6 w-6" />,
+      field: "budget" as keyof FormData,
+      type: "select",
+      options: [
+        "A partir de R$ 1.000",
+        "A partir de R$ 2.000",
+        "A partir de R$ 3.000",
+        "A partir de R$ 4.000 a R$ 5.000",
+        "Outro valor"
+      ]
+    },
+    {
+      id: "revenue",
+      title: "Qual seu faturamento mensal?",
+      placeholder: "Ex: R$ 50.000, R$ 100.000...",
+      icon: <CreditCard className="h-6 w-6" />,
+      field: "revenue" as keyof FormData
+    },
+    {
+      id: "name",
+      title: "Qual seu nome?",
+      placeholder: "Digite seu nome completo",
+      icon: <User className="h-6 w-6" />,
+      field: "name" as keyof FormData
+    },
+    {
+      id: "email",
+      title: "Qual seu email?",
+      placeholder: "seu@email.com",
+      icon: <Mail className="h-6 w-6" />,
+      field: "email" as keyof FormData,
+      type: "email"
+    },
+    {
+      id: "phone",
+      title: "Qual seu whatsapp?",
+      placeholder: "(11) 99999-9999",
+      icon: <Phone className="h-6 w-6" />,
+      field: "phone" as keyof FormData,
+      type: "tel"
+    }
+  ];
   const handleInputChange = (value: string) => {
     setFormData(prev => ({
       ...prev,
@@ -111,12 +152,14 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
     });
     setCurrentStep(0);
     setFormData({
+      company: "",
+      problems: "",
+      website: "",
+      platforms: "",
+      budget: "",
+      revenue: "",
       name: "",
       email: "",
-      company: "",
-      budget: "",
-      objective: "",
-      timeline: "",
       phone: ""
     });
     onComplete?.();
@@ -171,7 +214,33 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
 
           {/* Input */}
           <div className="space-y-4">
-            <Input type={currentStepData.type || "text"} placeholder={currentStepData.placeholder} value={formData[currentStepData.field]} onChange={e => handleInputChange(e.target.value)} onKeyPress={handleKeyPress} className="text-base py-3 h-12 bg-background/50 border-2 border-border/30 focus:border-primary focus:ring-primary/20 hover:border-primary/50 transition-all duration-300" autoFocus />
+            {currentStepData.type === "select" ? (
+              <div className="space-y-3">
+                {currentStepData.options?.map((option, index) => (
+                  <button
+                    key={index}
+                    onClick={() => handleInputChange(option)}
+                    className={`w-full p-4 text-left rounded-lg border-2 transition-all duration-300 ${
+                      formData[currentStepData.field] === option
+                        ? "border-primary bg-primary/10 text-primary"
+                        : "border-border/30 bg-background/50 hover:border-primary/50"
+                    }`}
+                  >
+                    {option}
+                  </button>
+                ))}
+              </div>
+            ) : (
+              <Input
+                type={currentStepData.type || "text"}
+                placeholder={currentStepData.placeholder}
+                value={formData[currentStepData.field]}
+                onChange={(e) => handleInputChange(e.target.value)}
+                onKeyPress={handleKeyPress}
+                className="text-base py-3 h-12 bg-background/50 border-2 border-border/30 focus:border-primary focus:ring-primary/20 hover:border-primary/50 transition-all duration-300"
+                autoFocus
+              />
+            )}
 
             {/* Navigation */}
             <div className="flex items-center justify-between pt-2">
