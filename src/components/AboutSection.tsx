@@ -1,6 +1,11 @@
 import { TrendingUp, Target, Users } from "lucide-react";
+import { useInView } from "@/hooks/useInView";
 
 export function AboutSection() {
+  const [titleRef, titleInView] = useInView({ threshold: 0.2 });
+  const [contentRef, contentInView] = useInView({ threshold: 0.2 });
+  const [statsRef, statsInView] = useInView({ threshold: 0.2 });
+  const [mockupRef, mockupInView] = useInView({ threshold: 0.2 });
   return (
     <section className="relative min-h-screen bg-background overflow-hidden py-24">
       {/* Floating background elements */}
@@ -15,14 +20,24 @@ export function AboutSection() {
           {/* Content Side */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <h2 className="text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+              <h2 
+                ref={titleRef as any}
+                className={`text-4xl lg:text-5xl font-bold text-foreground leading-tight transition-all duration-700 ${
+                  titleInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+                }`}
+              >
                 Por trás dos números,{" "}
                 <span className="bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
                   pessoas que pensam grande.
                 </span>
               </h2>
               
-              <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
+              <div 
+                ref={contentRef as any}
+                className={`space-y-4 text-muted-foreground text-lg leading-relaxed transition-all duration-700 delay-200 ${
+                  contentInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+                }`}
+              >
                 <p>
                   A <span className="text-accent font-semibold">Blast Company Ads</span> nasceu com um propósito claro: 
                   ajudar empresas a crescerem com inteligência, dados e estratégias reais.
@@ -40,7 +55,12 @@ export function AboutSection() {
             </div>
 
             {/* Stats Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div 
+              ref={statsRef as any}
+              className={`grid grid-cols-1 sm:grid-cols-3 gap-6 transition-all duration-700 delay-400 ${
+                statsInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+              }`}
+            >
               <div className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
                 <div className="relative bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl p-6 text-center group-hover:transform group-hover:scale-105 transition-all duration-300">
@@ -77,7 +97,12 @@ export function AboutSection() {
           </div>
 
           {/* Visual Side */}
-          <div className="relative">
+          <div 
+            ref={mockupRef as any}
+            className={`relative transition-all duration-700 delay-600 ${
+              mockupInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            }`}
+          >
             <div className="absolute inset-0 bg-gradient-to-tr from-accent/30 via-primary/20 to-accent/30 rounded-3xl blur-3xl"></div>
             <div className="relative bg-card/30 backdrop-blur-sm border border-border/50 rounded-3xl p-8 overflow-hidden">
               {/* Tech workspace mockup */}

@@ -1,11 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import { FormModal } from "@/components/FormModal";
+import { useInView } from "@/hooks/useInView";
 
 export function CTASection() {
+  const [ctaRef, ctaInView] = useInView({ threshold: 0.2 });
   return (
     <section className="py-20 px-4 bg-gradient-cta relative overflow-hidden shadow-blue">
-      <div className="container mx-auto max-w-4xl text-center">
+      <div 
+        ref={ctaRef as any}
+        className={`container mx-auto max-w-4xl text-center transition-all duration-700 ${
+          ctaInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+        }`}
+      >
         <div className="space-y-8">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">

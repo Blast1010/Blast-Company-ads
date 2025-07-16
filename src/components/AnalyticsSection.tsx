@@ -5,7 +5,10 @@ import { FormModal } from "@/components/FormModal";
 import dashboardScreens from "@/assets/dashboard-screens.jpg";
 import teamOffice from "@/assets/team-office.jpg";
 import metricsImage from "@/assets/workspace-overview.jpg";
+import { useInView } from "@/hooks/useInView";
 export function AnalyticsSection() {
+  const [titleRef, titleInView] = useInView({ threshold: 0.2 });
+  const [contentRef, contentInView] = useInView({ threshold: 0.2 });
   const features = [{
     icon: BarChart3,
     title: "Dashboard Completo",
@@ -25,7 +28,12 @@ export function AnalyticsSection() {
   }];
   return <section className="py-20 px-4 text-white">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
+        <div 
+          ref={titleRef as any}
+          className={`text-center mb-16 transition-all duration-700 ${
+            titleInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+          }`}
+        >
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-white">
             Tecnologia e Transparência
           </h2>
@@ -38,7 +46,12 @@ export function AnalyticsSection() {
         </div>
 
         {/* Main Images Section */}
-        <div className="mb-16 space-y-8">
+        <div 
+          ref={contentRef as any}
+          className={`mb-16 space-y-8 transition-all duration-700 delay-200 ${
+            contentInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+          }`}
+        >
           {/* Primary Dashboard */}
           <Card className="relative bg-card border-border overflow-hidden shadow-2xl">
             <div className="relative">

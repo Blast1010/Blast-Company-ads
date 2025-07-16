@@ -1,7 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Crown, Award } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
+import { useInView } from "@/hooks/useInView";
+
 export function HeroSection() {
+  const [titleRef, titleInView] = useInView({ threshold: 0.2 });
+  const [subtitleRef, subtitleInView] = useInView({ threshold: 0.2 });
+  const [ctaRef, ctaInView] = useInView({ threshold: 0.2 });
+  const [statsRef, statsInView] = useInView({ threshold: 0.2 });
   return <section className="relative min-h-screen flex flex-col justify-center px-4 py-20 overflow-hidden text-white">
       {/* Simplified Light Effects */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -31,7 +37,12 @@ export function HeroSection() {
             
           </div>
           
-          <h2 className="text-2xl md:text-2xl font-bold tracking-tight">
+          <h2 
+            ref={titleRef as any}
+            className={`text-2xl md:text-2xl font-bold tracking-tight transition-all duration-700 ${
+              titleInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            }`}
+          >
             Blast Company <span className="text-primary">ads</span>
           </h2>
         </div>
@@ -40,7 +51,12 @@ export function HeroSection() {
         <div className="max-w-4xl mx-auto">
           {/* Text Content */}
           <div className="space-y-8">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-center">
+            <h1 
+              ref={subtitleRef as any}
+              className={`text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-center transition-all duration-700 delay-200 ${
+                subtitleInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+              }`}
+            >
               <span className="text-primary text-lg md:text-xl font-medium tracking-wide uppercase">NOSSO TRABALHO É</span><br />
               <span className="text-4xl md:text-5xl lg:text-6xl">AUMENTAR AS VENDAS</span><br />
               <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl">
@@ -51,7 +67,11 @@ export function HeroSection() {
               </span>
             </h1>
             
-            <div className="space-y-6">
+            <div 
+              className={`space-y-6 transition-all duration-700 delay-400 ${
+                subtitleInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+              }`}
+            >
               <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-full mx-auto"></div>
               
               <div className="space-y-4 text-center">
@@ -68,14 +88,24 @@ export function HeroSection() {
               </div>
             </div>
 
-            <div className="flex justify-center">
+            <div 
+              ref={ctaRef as any}
+              className={`flex justify-center transition-all duration-700 delay-600 ${
+                ctaInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+              }`}
+            >
               <ProgressiveForm />
             </div>
           </div>
         </div>
 
         {/* Bottom Features */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20 max-w-4xl mx-auto">
+        <div 
+          ref={statsRef as any}
+          className={`grid grid-cols-1 md:grid-cols-2 gap-8 mt-20 max-w-4xl mx-auto transition-all duration-700 delay-800 ${
+            statsInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+          }`}
+        >
           <div className="flex flex-col items-center text-center group">
             <div className="relative flex-shrink-0 mb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border border-border/50 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-primary/20 transition-all duration-300">

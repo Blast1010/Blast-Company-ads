@@ -1,7 +1,10 @@
 import { Infinity, FolderOpen, BarChart3 } from "lucide-react";
 import googleLogo from "@/assets/logos/google-logo.svg";
+import { useInView } from "@/hooks/useInView";
 
 export function ServicesSection() {
+  const [titleRef, titleInView] = useInView({ threshold: 0.2 });
+  const [cardsRef, cardsInView] = useInView({ threshold: 0.2 });
   const services = [
     {
       icon: null,
@@ -64,7 +67,12 @@ export function ServicesSection() {
             <span className="text-primary font-semibold text-sm uppercase tracking-wider">Soluções Completas</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent">
+          <h2 
+            ref={titleRef as any}
+            className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent transition-all duration-700 ${
+              titleInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            }`}
+          >
             Nossos Serviços
           </h2>
           
@@ -72,7 +80,12 @@ export function ServicesSection() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+        <div 
+          ref={cardsRef as any}
+          className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-20 transition-all duration-700 delay-200 ${
+            cardsInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+          }`}
+        >
           {services.map((service, index) => (
             <div key={index} className="group cursor-pointer">
               {/* Service Card */}
