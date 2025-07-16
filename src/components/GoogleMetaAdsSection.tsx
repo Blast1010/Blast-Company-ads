@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Crown, Award } from "lucide-react";
-import { ProgressiveForm } from "@/components/ProgressiveForm";
 
 export function GoogleMetaAdsSection() {
   return (
@@ -99,7 +98,12 @@ export function GoogleMetaAdsSection() {
                 empresários frustrados em donos de negócios prósperos e previsíveis.
               </p>
             </div>
-            <ProgressiveForm />
+            <Button 
+              size="lg" 
+              className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/25 transition-all duration-300"
+            >
+              Solicitar Orçamento
+            </Button>
           </div>
         </div>
 
