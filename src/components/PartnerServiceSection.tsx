@@ -42,7 +42,7 @@ export function PartnerServiceSection() {
                   {/* Icon */}
                   <div className="relative">
                     <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                      <service.icon className="h-8 w-8 text-primary-foreground" />
+                      <service.icon className="h-8 w-8 text-black" />
                     </div>
                   </div>
                   
@@ -78,7 +78,9 @@ export function PartnerServiceSection() {
           </div>
           
           <FormModal>
-            
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-black font-semibold px-8 py-3 rounded-xl">
+              Solicitar Atendimento Especializado
+            </Button>
           </FormModal>
         </div>
       </div>

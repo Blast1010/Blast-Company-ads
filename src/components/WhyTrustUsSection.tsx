@@ -50,7 +50,7 @@ export function WhyTrustUsSection() {
                   {/* Icon */}
                   <div className="relative">
                     <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                      <reason.icon className="h-10 w-10 text-primary-foreground" />
+                      <reason.icon className="h-10 w-10 text-black" />
                     </div>
                   </div>
                   
@@ -81,7 +81,9 @@ export function WhyTrustUsSection() {
           </div>
           
           <FormModal>
-            
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-black font-semibold px-8 py-3 rounded-xl">
+              Solicitar Consultoria Gratuita
+            </Button>
           </FormModal>
         </div>
       </div>
