@@ -81,8 +81,8 @@ export function WhyTrustUsSection() {
           </div>
           
           <FormModal>
-            <Button size="lg" className="bg-accent hover:bg-accent/90">
-              Começar Agora
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-black font-semibold px-8 py-3 rounded-xl">
+              Solicitar Consultoria Gratuita
             </Button>
           </FormModal>
         </div>

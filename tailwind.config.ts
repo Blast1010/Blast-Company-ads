@@ -260,42 +260,6 @@ export default {
 						filter: 'blur(8px)'
 					}
 				},
-				'ambient-emerge': {
-					'0%': {
-						opacity: '0',
-						transform: 'scale(0.8) translateY(150px)',
-						filter: 'blur(30px)'
-					},
-					'30%': {
-						opacity: '0.3',
-						transform: 'scale(1) translateY(100px)',
-						filter: 'blur(20px)'
-					},
-					'60%': {
-						opacity: '0.6',
-						transform: 'scale(1.15) translateY(30px)',
-						filter: 'blur(10px)'
-					},
-					'100%': {
-						opacity: '0.4',
-						transform: 'scale(1) translateY(0px)',
-						filter: 'blur(15px)'
-					}
-				},
-				'ambient-pulse': {
-					'0%, 100%': {
-						opacity: '0.4',
-						transform: 'scale(1) translateY(0px)',
-						filter: 'blur(15px)',
-						boxShadow: '0 0 80px hsl(180 100% 50% / 0.2)'
-					},
-					'50%': {
-						opacity: '0.7',
-						transform: 'scale(1.1) translateY(-20px)',
-						filter: 'blur(10px)',
-						boxShadow: '0 0 120px hsl(180 100% 50% / 0.4)'
-					}
-				},
 				'cinematic-float': {
 					'0%, 100%': {
 						transform: 'translateY(0px) translateX(0px) rotate(0deg) scale(1)',
@@ -366,10 +330,8 @@ export default {
 				'typing': 'typing 2s steps(20, end), blink 1s infinite',
 				'morphing': 'morphing 8s ease-in-out infinite',
 				'cinematic-fade': 'cinematic-fade 1.2s cubic-bezier(0.22, 1, 0.36, 1)',
-				'cinematic-breathe': 'cinematic-breathe 8s ease-in-out infinite',
-				'cinematic-float': 'cinematic-float 10s ease-in-out infinite',
-				'ambient-emerge': 'ambient-emerge 3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards',
-				'ambient-pulse': 'ambient-pulse 6s ease-in-out infinite',
+				'cinematic-breathe': 'cinematic-breathe ease-in-out infinite',
+				'cinematic-float': 'cinematic-float ease-in-out infinite',
 				'materialize': 'materialize 1.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards'
 			}
 		}

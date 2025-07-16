@@ -5,7 +5,6 @@ import { ClientsSection } from "@/components/ClientsSection";
 import { WhyTrustUsSection } from "@/components/WhyTrustUsSection";
 import { PartnerServiceSection } from "@/components/PartnerServiceSection";
 import { AnalyticsSection } from "@/components/AnalyticsSection";
-import { AboutSection } from "@/components/AboutSection";
 import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
 
@@ -87,11 +86,6 @@ const Index = () => {
       {/* Analytics Section - Black */}
       <div className="bg-black relative z-10">
         <AnalyticsSection />
-      </div>
-      
-      {/* About Section - Black */}
-      <div className="bg-black relative z-10">
-        <AboutSection />
       </div>
       
       {/* CTA Section - Black */}
