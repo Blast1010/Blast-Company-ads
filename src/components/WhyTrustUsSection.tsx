@@ -7,8 +7,12 @@ import teamworkImage from "@/assets/team-collaboration.jpg";
 import strategyImage from "@/assets/workspace-overview.jpg";
 import { useInView } from "@/hooks/useInView";
 export function WhyTrustUsSection() {
-  const [titleRef, titleInView] = useInView({ threshold: 0.2 });
-  const [cardsRef, cardsInView] = useInView({ threshold: 0.2 });
+  const [titleRef, titleInView] = useInView({
+    threshold: 0.2
+  });
+  const [cardsRef, cardsInView] = useInView({
+    threshold: 0.2
+  });
   const reasons = [{
     icon: Target,
     title: "Expertise Técnica",
@@ -30,12 +34,7 @@ export function WhyTrustUsSection() {
   }];
   return <section className="py-20 px-4 text-white">
       <div className="container mx-auto max-w-6xl">
-        <div 
-          ref={titleRef as any}
-          className={`text-center mb-16 transition-all duration-700 ${
-            titleInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-          }`}
-        >
+        <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
             Diferenciais Competitivos
           </h2>
@@ -45,12 +44,7 @@ export function WhyTrustUsSection() {
           <div className="w-24 h-0.5 bg-gradient-to-r from-primary to-primary/50 mx-auto rounded-full"></div>
         </div>
 
-        <div 
-          ref={cardsRef as any}
-          className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-700 delay-200 ${
-            cardsInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-          }`}
-        >
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {reasons.map((reason, index) => <Card key={index} className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden">
               {/* Background Image */}
               <div className="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
@@ -94,9 +88,7 @@ export function WhyTrustUsSection() {
           </div>
           
           <FormModal>
-            <Button size="lg" className="bg-accent hover:bg-accent/90">
-              Começar Agora
-            </Button>
+            
           </FormModal>
         </div>
       </div>
