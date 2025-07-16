@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Target, TrendingUp } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
-import heroWorkspace from "@/assets/hero-workspace.jpg";
+import heroProfessional from "@/assets/hero-professional.jpg";
 export function HeroSection() {
   return <section className="relative min-h-screen flex flex-col justify-center px-4 py-20 bg-background overflow-hidden">
       {/* Cinematic Light Effects - Emerging from Below */}
@@ -77,8 +77,8 @@ export function HeroSection() {
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl group">
               <img 
-                src={heroWorkspace} 
-                alt="Workspace profissional com dashboards de analytics"
+                src={heroProfessional} 
+                alt="Profissional especialista em marketing digital trabalhando com dashboards"
                 className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700"
               />
               {/* Cinematic Overlay */}

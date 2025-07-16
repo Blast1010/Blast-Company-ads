@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Handshake, Users, Target, Lightbulb, Mail } from "lucide-react";
 import { FormModal } from "@/components/FormModal";
-import partnershipImage from "@/assets/business-presentation.jpg";
+import businessMeeting from "@/assets/business-meeting.jpg";
 import teamworkImage from "@/assets/team-collaboration.jpg";
 import strategyImage from "@/assets/workspace-overview.jpg";
 export function WhyTrustUsSection() {
@@ -16,8 +16,8 @@ export function WhyTrustUsSection() {
     icon: Handshake,
     title: "Parceria Estratégica",
     description: "Atuamos como extensão da sua equipe, otimizando cada investimento com responsabilidade e transparência.",
-    image: partnershipImage,
-    imageAlt: "Parceria de negócios sólida"
+    image: businessMeeting,
+    imageAlt: "Reunião estratégica de parceria"
   }, {
     icon: Users,
     title: "Análise Multidisciplinar",

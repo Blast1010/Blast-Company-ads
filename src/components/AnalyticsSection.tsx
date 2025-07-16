@@ -2,8 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BarChart3, TrendingUp, Eye, Target, Mail } from "lucide-react";
 import { FormModal } from "@/components/FormModal";
-import dashboardImage from "@/assets/dashboard-closeup.jpg";
-import teamImage from "@/assets/meeting-analytics.jpg";
+import dashboardScreens from "@/assets/dashboard-screens.jpg";
+import teamOffice from "@/assets/team-office.jpg";
 import metricsImage from "@/assets/workspace-overview.jpg";
 
 export function AnalyticsSection() {
@@ -58,8 +58,8 @@ export function AnalyticsSection() {
             <div className="relative">
               <div className="relative h-80 md:h-96 overflow-hidden">
                 <img 
-                  src={dashboardImage} 
-                  alt="Dashboard profissional em ação com métricas reais"
+                  src={dashboardScreens} 
+                  alt="Dashboard profissional com métricas de marketing digital reais"
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
                 />
                 {/* Cinematic Overlay */}
@@ -90,8 +90,8 @@ export function AnalyticsSection() {
             <Card className="relative bg-card/30 backdrop-blur-sm border-border/50 overflow-hidden shadow-xl group">
               <div className="relative h-64 overflow-hidden">
                 <img 
-                  src={teamImage} 
-                  alt="Reunião estratégica analisando performance"
+                  src={teamOffice} 
+                  alt="Equipe de marketing digital trabalhando com estratégias"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
