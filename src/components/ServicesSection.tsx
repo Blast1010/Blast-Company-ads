@@ -1,5 +1,5 @@
 import { Infinity, FolderOpen, BarChart3 } from "lucide-react";
-import boostrr021 from "@/assets/boostrr021.png";
+import googleLogo from "@/assets/logos/google-logo.svg";
 import googleAdsMockup from "@/assets/google-ads-mockup.png";
 import facebookAdsMockup from "@/assets/facebook-ads-mockup.png";
 
@@ -100,7 +100,7 @@ export function ServicesSection() {
                 <div className={`w-20 h-20 md:w-24 md:h-24 ${service.colors.bg} rounded-2xl md:rounded-3xl flex items-center justify-center ${service.colors.shadow} shadow-xl md:shadow-2xl transition-all duration-500 group-hover:shadow-3xl group-hover:rotate-3`}>
                   {service.isGoogleLogo ? (
                     <img 
-                      src={boostrr021} 
+                      src="/lovable-uploads/7314178c-83bf-47a5-be36-4f25a4df31d9.png" 
                       alt="Google" 
                       className="h-12 w-12 md:h-16 md:w-16 object-contain transition-all duration-500 group-hover:scale-125" 
                     />
