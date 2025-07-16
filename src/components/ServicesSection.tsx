@@ -58,13 +58,8 @@ export function ServicesSection() {
                 {/* Balão principal com gradiente específico */}
                 <div className={`w-24 h-24 ${service.colors.bg} rounded-3xl flex items-center justify-center ${service.colors.shadow} shadow-2xl transition-all duration-500 group-hover:shadow-3xl group-hover:rotate-3`}>
                   {service.isGoogleLogo ? (
-                    <div className="text-3xl font-bold transition-all duration-500 group-hover:scale-125">
+                    <div className="text-4xl font-bold transition-all duration-500 group-hover:scale-125" style={{fontFamily: 'Product Sans, Arial, sans-serif'}}>
                       <span style={{color: '#4285F4'}}>G</span>
-                      <span style={{color: '#EA4335'}}>o</span>
-                      <span style={{color: '#FBBC05'}}>o</span>
-                      <span style={{color: '#4285F4'}}>g</span>
-                      <span style={{color: '#34A853'}}>l</span>
-                      <span style={{color: '#EA4335'}}>e</span>
                     </div>
                   ) : (
                     <service.icon className={`h-12 w-12 ${service.colors.icon} transition-all duration-500 group-hover:scale-125`} />
