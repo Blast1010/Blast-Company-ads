@@ -196,7 +196,7 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
         {/* Typeform-style progress bar */}
         <div className="h-2 bg-gray-800">
           <div 
-            className="h-full bg-green-500 transition-all duration-500 ease-out"
+            className="h-full bg-primary transition-all duration-500 ease-out"
             style={{ width: `${((currentStep + 1) / steps.length) * 100}%` }}
           />
         </div>
@@ -212,7 +212,7 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
           {/* Main content */}
           <div className="space-y-8 flex-1 flex flex-col justify-center">
             {/* Icon */}
-            <div className="text-green-500">
+            <div className="text-primary">
               {steps[currentStep].icon}
             </div>
 
@@ -235,7 +235,7 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
                   value={formData[steps[currentStep].field]}
                   onChange={(e) => handleInputChange(steps[currentStep].field, e.target.value)}
                   onKeyDown={handleKeyPress}
-                  className="w-full p-4 text-lg border-0 border-b-2 border-gray-600 focus:border-green-500 focus:outline-none bg-transparent transition-colors text-white"
+                  className="w-full p-4 text-lg border-0 border-b-2 border-gray-600 focus:border-primary focus:outline-none bg-transparent transition-colors text-white"
                   autoFocus
                 >
                   <option value="" className="bg-black text-gray-400">{steps[currentStep].placeholder}</option>
@@ -252,7 +252,7 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
                   value={formData[steps[currentStep].field]}
                   onChange={(e) => handleInputChange(steps[currentStep].field, e.target.value)}
                   onKeyDown={handleKeyPress}
-                  className="w-full p-4 text-lg border-0 border-b-2 border-gray-600 focus:border-green-500 focus:outline-none bg-transparent transition-colors rounded-none text-white placeholder:text-gray-400"
+                  className="w-full p-4 text-lg border-0 border-b-2 border-gray-600 focus:border-primary focus:outline-none bg-transparent transition-colors rounded-none text-white placeholder:text-gray-400"
                   autoFocus
                 />
               )}
@@ -281,7 +281,7 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
               type="button"
               onClick={handleNext}
               disabled={!isCurrentStepValid()}
-              className="flex items-center space-x-2 px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg"
+              className="flex items-center space-x-2 px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg"
             >
               <span>
                 {currentStep === steps.length - 1 ? "Enviar" : "OK"}
