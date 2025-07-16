@@ -2,40 +2,30 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MessageSquare, Users, Shield, BarChart3, Mail } from "lucide-react";
 import { FormModal } from "@/components/FormModal";
-
 export function PartnerServiceSection() {
-  const services = [
-    {
-      icon: BarChart3,
-      title: "Transparência Operacional",
-      description: "Garantimos visibilidade completa das ações e investimentos, com relatórios detalhados e acesso às métricas em tempo real.",
-    },
-    {
-      icon: Users,
-      title: "Alinhamento Estratégico",
-      description: "Reuniões periódicas para análise de resultados, tomada de decisões colaborativas e planejamento de próximas etapas.",
-    },
-    {
-      icon: Shield,
-      title: "Comunicação Direta",
-      description: "Canal prioritário com especialistas sênior, garantindo agilidade na resolução de questões e otimizações.",
-    },
-    {
-      icon: MessageSquare,
-      title: "Tecnologia Integrada",
-      description: "Plataforma proprietária de gestão com integração completa ao seu CRM, permitindo análises precisas e otimizações baseadas em dados reais.",
-    }
-  ];
-
-  return (
-    <section className="py-20 px-4 bg-gradient-to-b from-background to-muted/5 border-b border-primary/20">
+  const services = [{
+    icon: BarChart3,
+    title: "Transparência Operacional",
+    description: "Garantimos visibilidade completa das ações e investimentos, com relatórios detalhados e acesso às métricas em tempo real."
+  }, {
+    icon: Users,
+    title: "Alinhamento Estratégico",
+    description: "Reuniões periódicas para análise de resultados, tomada de decisões colaborativas e planejamento de próximas etapas."
+  }, {
+    icon: Shield,
+    title: "Comunicação Direta",
+    description: "Canal prioritário com especialistas sênior, garantindo agilidade na resolução de questões e otimizações."
+  }, {
+    icon: MessageSquare,
+    title: "Tecnologia Integrada",
+    description: "Plataforma proprietária de gestão com integração completa ao seu CRM, permitindo análises precisas e otimizações baseadas em dados reais."
+  }];
+  return <section className="py-20 px-4 bg-gradient-to-b from-background to-muted/5 border-b border-primary/20">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/20 mb-6">
-            <div className="w-6 h-6 bg-primary text-primary-foreground rounded flex items-center justify-center font-bold text-sm">
-              B
-            </div>
+            
             <span className="text-primary font-semibold text-sm">Direto com o gestor</span>
           </div>
 
@@ -46,11 +36,7 @@ export function PartnerServiceSection() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {services.map((service, index) => (
-            <Card 
-              key={index} 
-              className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group"
-            >
+          {services.map((service, index) => <Card key={index} className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group">
               <CardContent className="p-8">
                 <div className="space-y-6 text-center">
                   {/* Icon */}
@@ -74,8 +60,7 @@ export function PartnerServiceSection() {
               
               {/* Bottom accent */}
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Bottom highlight */}
@@ -100,6 +85,5 @@ export function PartnerServiceSection() {
           </FormModal>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
