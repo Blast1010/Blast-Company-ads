@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Target, TrendingUp } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
-import heroProfessional from "@/assets/hero-professional.jpg";
 export function HeroSection() {
   return <section className="relative min-h-screen flex flex-col justify-center px-4 py-20 bg-block-hero overflow-hidden border-b border-primary/10 shadow-block">
       {/* Cinematic Light Effects - Emerging from Below */}
@@ -43,9 +42,9 @@ export function HeroSection() {
           </h2>
         </div>
 
-        {/* Main Content - Side by Side Layout */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Text Content */}
+        {/* Main Content - Centered Layout */}
+        <div className="max-w-4xl mx-auto">
+          {/* Text Content */}
           <div className="space-y-8">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-center">
               <span className="text-primary text-lg md:text-xl font-medium tracking-wide uppercase">PARE DE PERDER DINHEIRO</span><br />
@@ -56,7 +55,7 @@ export function HeroSection() {
             </h1>
             
             <div className="space-y-6">
-              <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-full"></div>
+              <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-full mx-auto"></div>
               
               <div className="space-y-4 text-center">
                 <p className="text-lg md:text-xl text-muted-foreground font-medium leading-relaxed">
@@ -74,33 +73,6 @@ export function HeroSection() {
 
             <div className="flex justify-center">
               <ProgressiveForm />
-            </div>
-          </div>
-
-          {/* Right Column - Cinematic Image */}
-          <div className="relative">
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl group">
-              <img src={heroProfessional} alt="Profissional especialista em marketing digital trabalhando com dashboards" className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700" />
-              {/* Cinematic Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
-              
-              
-              {/* Floating Elements */}
-              <div className="absolute top-6 right-6 bg-primary/90 backdrop-blur-sm text-primary-foreground px-4 py-2 rounded-lg shadow-glow animate-pulse">
-                <span className="text-sm font-semibold">Live Analytics</span>
-              </div>
-              
-              <div className="absolute bottom-6 left-6 bg-card/90 backdrop-blur-sm border border-border/50 p-4 rounded-xl shadow-lg">
-                <div className="flex items-center space-x-3">
-                  <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                  <span className="text-sm font-medium">Performance em Tempo Real</span>
-                </div>
-              </div>
-              
-              {/* Brand Badge */}
-              <div className="absolute top-6 left-6 bg-gradient-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold shadow-glow">
-                Blast Company
-              </div>
             </div>
           </div>
         </div>
