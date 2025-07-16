@@ -82,59 +82,7 @@ export function HeroSection() {
           </div>
 
           {/* Right Column - Logo B com Animação de Surgir */}
-          <div className="relative flex items-center justify-center">
-            <div className="relative">
-              {/* Logo B Container */}
-              <div className="relative w-64 h-64 lg:w-80 lg:h-80 flex items-center justify-center">
-                {/* Background Glow Effect */}
-                <div className="absolute inset-0 bg-gradient-radial from-primary/20 via-primary/10 to-transparent rounded-full blur-2xl animate-breathe"></div>
-                
-                {/* Main Logo B */}
-                <div className="relative z-10 w-48 h-48 lg:w-60 lg:h-60 bg-gradient-to-br from-background via-card to-background/90 backdrop-blur-sm border border-border/30 rounded-3xl flex items-center justify-center shadow-2xl animate-fade-in hover:scale-105 transition-transform duration-500 group">
-                  <span className="text-6xl lg:text-7xl font-bold bg-gradient-to-br from-primary via-primary to-primary/70 bg-clip-text text-transparent animate-scale-in filter drop-shadow-lg">
-                    B
-                  </span>
-                  
-                  {/* Subtle Inner Glow */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                </div>
-                
-                {/* Floating Particles */}
-                <div className="absolute top-8 left-8 w-1 h-1 bg-primary/60 rounded-full animate-pulse"></div>
-                <div className="absolute top-12 right-12 w-1.5 h-1.5 bg-accent/50 rounded-full animate-pulse animation-delay-300"></div>
-                <div className="absolute bottom-10 left-12 w-1 h-1 bg-primary/40 rounded-full animate-pulse animation-delay-700"></div>
-                <div className="absolute bottom-8 right-8 w-1 h-1 bg-accent/60 rounded-full animate-pulse animation-delay-500"></div>
-              </div>
-              
-              {/* Company Name Badge */}
-              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-card/90 backdrop-blur-sm border border-border/50 px-6 py-2 rounded-full shadow-lg animate-fade-in animation-delay-500">
-                <span className="text-sm font-semibold text-foreground">Blast Company</span>
-              </div>
-              
-              {/* Stats Badge */}
-              <div className="absolute -top-4 right-4 bg-primary/90 backdrop-blur-sm text-primary-foreground px-4 py-2 rounded-lg shadow-glow animate-fade-in animation-delay-700">
-                <div className="flex items-center space-x-2 text-xs">
-                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                  <span className="font-semibold">Ativo</span>
-                </div>
-              </div>
-              
-              {/* Results Stats */}
-              <div className="absolute -bottom-8 right-8 bg-card/95 backdrop-blur-sm border border-border/50 p-3 rounded-xl shadow-lg animate-fade-in animation-delay-1000">
-                <div className="flex items-center space-x-3 text-xs">
-                  <div className="text-center">
-                    <div className="text-primary font-bold">+300%</div>
-                    <div className="text-muted-foreground">ROI</div>
-                  </div>
-                  <div className="w-px h-6 bg-border"></div>
-                  <div className="text-center">
-                    <div className="text-green-400 font-bold">100+</div>
-                    <div className="text-muted-foreground">Clientes</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
 
         {/* Bottom Features */}
