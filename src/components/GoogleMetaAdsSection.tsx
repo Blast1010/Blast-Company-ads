@@ -1,6 +1,6 @@
 import googleAdsImage from "@/assets/google-ads-image.png";
 import metaAdsImage from "@/assets/meta-ads-image.png";
-import heroAnalytics from "@/assets/hero-analytics-animated.webp";
+import inpulsoAnalytics from "@/assets/inpulso-analytics-dashboard.webp";
 import metaPhoneMockup from "@/assets/meta-phone-mockup.png";
 import metaShirtElement from "@/assets/meta-shirt-element.png";
 import metaAnalyticsChart from "@/assets/meta-analytics-chart.png";
@@ -46,7 +46,7 @@ export function GoogleMetaAdsSection() {
               {/* Imagem principal do analytics com animação de float */}
               <div className="absolute top-0 right-0 w-80 h-80 animate-float" style={{ animationDelay: '0s' }}>
                 <img 
-                  src={heroAnalytics} 
+                  src={inpulsoAnalytics} 
                   alt="Analytics Dashboard" 
                   className="w-full h-full object-contain transform hover:scale-105 transition-all duration-500"
                 />
