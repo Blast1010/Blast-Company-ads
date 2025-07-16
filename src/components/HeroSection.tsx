@@ -2,10 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Mail, Target, TrendingUp } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
 import heroTeamImage from "@/assets/hero-team-success.jpg";
-
 export function HeroSection() {
-  return (
-    <section className="relative min-h-screen flex flex-col justify-center px-4 py-20 bg-background overflow-hidden">
+  return <section className="relative min-h-screen flex flex-col justify-center px-4 py-20 bg-background overflow-hidden">
       {/* Cinematic Light Effects - Emerging from Below */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Primary light emerging from bottom - Main cinematographic effect */}
@@ -86,14 +84,10 @@ export function HeroSection() {
           {/* Right Column - Image */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-              <img 
-                src={heroTeamImage} 
-                alt="Equipe de sucesso colaborando em estratégias de marketing digital"
-                className="w-full h-96 lg:h-[500px] object-cover"
-              />
+              <img src={heroTeamImage} alt="Equipe de sucesso colaborando em estratégias de marketing digital" className="w-full h-96 lg:h-[500px] object-cover" />
               {/* Cinematic Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-background/10"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/15 via-transparent to-accent/15"></div>
+              
               
               {/* Floating Badge */}
               <div className="absolute top-6 left-6 bg-primary/90 backdrop-blur-sm text-primary-foreground px-4 py-2 rounded-lg shadow-glow">
@@ -151,6 +145,5 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
