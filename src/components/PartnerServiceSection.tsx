@@ -78,10 +78,7 @@ export function PartnerServiceSection() {
           </div>
           
           <FormModal>
-            <Button variant="outline" className="group">
-              <Mail className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-              Solicitar Orçamento
-            </Button>
+            
           </FormModal>
         </div>
       </div>
