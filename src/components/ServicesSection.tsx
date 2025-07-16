@@ -61,7 +61,7 @@ export function ServicesSection() {
                     <img 
                       src="/lovable-uploads/7314178c-83bf-47a5-be36-4f25a4df31d9.png" 
                       alt="Google" 
-                      className="h-12 w-12 transition-all duration-500 group-hover:scale-125" 
+                      className="h-14 w-14 object-contain transition-all duration-500 group-hover:scale-125" 
                     />
                   ) : (
                     <service.icon className={`h-12 w-12 ${service.colors.icon} transition-all duration-500 group-hover:scale-125`} />
