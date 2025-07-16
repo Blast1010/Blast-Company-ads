@@ -1,14 +1,16 @@
-import { Search, Infinity, FolderOpen, BarChart3 } from "lucide-react";
+import { Infinity, FolderOpen, BarChart3 } from "lucide-react";
+import googleLogo from "@/assets/logos/google-logo.svg";
 
 export function ServicesSection() {
   const services = [
     {
-      icon: Search,
+      icon: null,
+      isGoogleLogo: true,
       title: "Google Ads",
       description: "Gere Demanda na Maior Ferramenta de Buscas e Vendas do Mundo",
       colors: {
         bg: "bg-white",
-        icon: "text-blue-500",
+        icon: "text-white",
         shadow: "shadow-lg"
       }
     },
@@ -55,7 +57,15 @@ export function ServicesSection() {
               <div className="relative mb-4 md:mb-6 transform transition-all duration-500 group-hover:scale-110 group-hover:-translate-y-2">
                 {/* Balão principal com gradiente específico - Tamanhos responsivos */}
                 <div className={`w-20 h-20 md:w-24 md:h-24 ${service.colors.bg} rounded-2xl md:rounded-3xl flex items-center justify-center ${service.colors.shadow} shadow-xl md:shadow-2xl transition-all duration-500 group-hover:shadow-3xl group-hover:rotate-3`}>
-                  <service.icon className={`h-10 w-10 md:h-12 md:w-12 ${service.colors.icon} transition-all duration-500 group-hover:scale-125`} />
+                  {service.isGoogleLogo ? (
+                    <img 
+                      src="/lovable-uploads/7314178c-83bf-47a5-be36-4f25a4df31d9.png" 
+                      alt="Google" 
+                      className="h-12 w-12 md:h-16 md:w-16 object-contain transition-all duration-500 group-hover:scale-125" 
+                    />
+                  ) : (
+                    <service.icon className={`h-10 w-10 md:h-12 md:w-12 ${service.colors.icon} transition-all duration-500 group-hover:scale-125`} />
+                  )}
                 </div>
                 
                 {/* Efeito de brilho animado */}
