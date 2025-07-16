@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/HeroSection";
+import { GoogleMetaAdsSection } from "@/components/GoogleMetaAdsSection";
 import { ServicesSection } from "@/components/ServicesSection";
 import { ClientsSection } from "@/components/ClientsSection";
 import { WhyTrustUsSection } from "@/components/WhyTrustUsSection";
@@ -11,6 +12,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <HeroSection />
+      <GoogleMetaAdsSection />
       <ServicesSection />
       <ClientsSection />
       <WhyTrustUsSection />
