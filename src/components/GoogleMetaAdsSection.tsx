@@ -1,5 +1,5 @@
-import inpulsoGoogleSection from "@/assets/inpulso-google-section.webp";
-import inpulsoMetaSection from "@/assets/inpulso-meta-section.webp";
+import googleSearchMockup from "@/assets/google-search-mockup.jpg";
+import instagramShirtMockup from "@/assets/instagram-shirt-mockup.jpg";
 
 export function GoogleMetaAdsSection() {
   return (
@@ -37,11 +37,11 @@ export function GoogleMetaAdsSection() {
           </div>
 
           <div className="order-1 lg:order-2 flex justify-center relative">
-            {/* Imagem principal da seção Google igual ao site Inpulso */}
+            {/* Mockup da pesquisa do Google */}
             <div className="relative w-full max-w-lg">
               <img 
-                src={inpulsoGoogleSection} 
-                alt="Google Ads Dashboard Analytics" 
+                src={googleSearchMockup} 
+                alt="Google Search Results Interface" 
                 className="w-full h-auto object-contain transform hover:scale-105 transition-all duration-500 rounded-lg shadow-lg"
               />
             </div>
@@ -51,11 +51,11 @@ export function GoogleMetaAdsSection() {
         {/* Meta Ads Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="flex justify-center relative">
-            {/* Imagem principal da seção Meta igual ao site Inpulso */}
-            <div className="relative w-full max-w-lg">
+            {/* Mockup do Instagram com camiseta */}
+            <div className="relative w-full max-w-sm">
               <img 
-                src={inpulsoMetaSection} 
-                alt="Meta Ads Marketing Dashboard" 
+                src={instagramShirtMockup} 
+                alt="Instagram T-shirt Marketing Campaign" 
                 className="w-full h-auto object-contain transform hover:scale-105 transition-all duration-500 rounded-lg shadow-lg"
               />
             </div>
