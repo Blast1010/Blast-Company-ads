@@ -47,10 +47,13 @@ export function HeroSection() {
           {/* Text Content */}
           <div className="space-y-8">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-center">
-              <span className="text-primary text-lg md:text-xl font-medium tracking-wide uppercase">PARE DE PERDER DINHEIRO</span><br />
-              <span className="text-4xl md:text-5xl lg:text-6xl">SEU MARKETING</span><br />
+              <span className="text-primary text-lg md:text-xl font-medium tracking-wide uppercase">NOSSO TRABALHO É</span><br />
+              <span className="text-4xl md:text-5xl lg:text-6xl">AUMENTAR AS VENDAS</span><br />
               <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl">
-                NÃO VENDE?
+                DA SUA EMPRESA
+              </span><br />
+              <span className="text-xl md:text-2xl lg:text-3xl text-muted-foreground font-semibold">
+                com tráfego de verdade
               </span>
             </h1>
             
