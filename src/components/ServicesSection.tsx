@@ -9,7 +9,7 @@ export function ServicesSection() {
       title: "Google Ads",
       description: "Gere Demanda na Maior Ferramenta de Buscas e Vendas do Mundo",
       colors: {
-        bg: "bg-card border border-border/50",
+        bg: "bg-white",
         icon: "text-white",
         shadow: "shadow-lg"
       }
@@ -19,9 +19,9 @@ export function ServicesSection() {
       title: "Meta Ads", 
       description: "Atraia a Atenção dos seus Clientes no Facebook e Instagram para Vender Mais",
       colors: {
-        bg: "bg-gradient-to-br from-blue-600 to-purple-600",
-        icon: "text-white",
-        shadow: "shadow-purple-500/30"
+        bg: "bg-white",
+        icon: "text-blue-500",
+        shadow: "shadow-lg"
       }
     },
     {
@@ -29,9 +29,9 @@ export function ServicesSection() {
       title: "CRM de Vendas",
       description: "Implementação de CRM, Funil de Vendas e Processos Inteligentes",
       colors: {
-        bg: "bg-gradient-to-br from-indigo-500 to-cyan-500",
-        icon: "text-white",
-        shadow: "shadow-indigo-500/30"
+        bg: "bg-white",
+        icon: "text-blue-600",
+        shadow: "shadow-lg"
       }
     },
     {
@@ -39,9 +39,9 @@ export function ServicesSection() {
       title: "Dashboards",
       description: "Acompanhe os Resultados do seu Investimento pelo Painel de Controle",
       colors: {
-        bg: "bg-gradient-to-br from-purple-500 to-pink-500",
-        icon: "text-white",
-        shadow: "shadow-purple-500/30"
+        bg: "bg-white",
+        icon: "text-blue-600",
+        shadow: "shadow-lg"
       }
     }
   ];
@@ -58,7 +58,14 @@ export function ServicesSection() {
                 {/* Balão principal com gradiente específico */}
                 <div className={`w-24 h-24 ${service.colors.bg} rounded-3xl flex items-center justify-center ${service.colors.shadow} shadow-2xl transition-all duration-500 group-hover:shadow-3xl group-hover:rotate-3`}>
                   {service.isGoogleLogo ? (
-                    <span className="text-3xl font-bold text-primary transition-all duration-500 group-hover:scale-125" style={{fontFamily: 'Product Sans, Arial, sans-serif'}}>G</span>
+                    <div className="text-3xl font-bold transition-all duration-500 group-hover:scale-125">
+                      <span style={{color: '#4285F4'}}>G</span>
+                      <span style={{color: '#EA4335'}}>o</span>
+                      <span style={{color: '#FBBC05'}}>o</span>
+                      <span style={{color: '#4285F4'}}>g</span>
+                      <span style={{color: '#34A853'}}>l</span>
+                      <span style={{color: '#EA4335'}}>e</span>
+                    </div>
                   ) : (
                     <service.icon className={`h-12 w-12 ${service.colors.icon} transition-all duration-500 group-hover:scale-125`} />
                   )}
