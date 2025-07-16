@@ -80,14 +80,10 @@ export function HeroSection() {
           {/* Right Column - Cinematic Image */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl group">
-              <img 
-                src={heroProfessional} 
-                alt="Profissional especialista em marketing digital trabalhando com dashboards"
-                className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700"
-              />
+              <img src={heroProfessional} alt="Profissional especialista em marketing digital trabalhando com dashboards" className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700" />
               {/* Cinematic Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-accent/20"></div>
+              
               
               {/* Floating Elements */}
               <div className="absolute top-6 right-6 bg-primary/90 backdrop-blur-sm text-primary-foreground px-4 py-2 rounded-lg shadow-glow animate-pulse">
