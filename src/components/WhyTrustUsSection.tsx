@@ -5,34 +5,27 @@ import { FormModal } from "@/components/FormModal";
 import partnershipImage from "@/assets/business-presentation.jpg";
 import teamworkImage from "@/assets/team-collaboration.jpg";
 import strategyImage from "@/assets/workspace-overview.jpg";
-
 export function WhyTrustUsSection() {
-  const reasons = [
-    {
-      icon: Target,
-      title: "Expertise Técnica",
-      description: "Combinamos seu conhecimento do mercado com nossa especialização em estratégias digitais de alta performance.",
-      image: strategyImage,
-      imageAlt: "Estratégias digitais profissionais"
-    },
-    {
-      icon: Handshake,
-      title: "Parceria Estratégica",
-      description: "Atuamos como extensão da sua equipe, otimizando cada investimento com responsabilidade e transparência.",
-      image: partnershipImage,
-      imageAlt: "Parceria de negócios sólida"
-    },
-    {
-      icon: Users,
-      title: "Análise Multidisciplinar",
-      description: "Integramos insights de todas as áreas da empresa para desenvolver estratégias holísticas e eficazes.",
-      image: teamworkImage,
-      imageAlt: "Trabalho em equipe colaborativo"
-    }
-  ];
-
-  return (
-    <section className="py-20 px-4 bg-gradient-secondary">
+  const reasons = [{
+    icon: Target,
+    title: "Expertise Técnica",
+    description: "Combinamos seu conhecimento do mercado com nossa especialização em estratégias digitais de alta performance.",
+    image: strategyImage,
+    imageAlt: "Estratégias digitais profissionais"
+  }, {
+    icon: Handshake,
+    title: "Parceria Estratégica",
+    description: "Atuamos como extensão da sua equipe, otimizando cada investimento com responsabilidade e transparência.",
+    image: partnershipImage,
+    imageAlt: "Parceria de negócios sólida"
+  }, {
+    icon: Users,
+    title: "Análise Multidisciplinar",
+    description: "Integramos insights de todas as áreas da empresa para desenvolver estratégias holísticas e eficazes.",
+    image: teamworkImage,
+    imageAlt: "Trabalho em equipe colaborativo"
+  }];
+  return <section className="py-20 px-4 bg-gradient-secondary">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -45,18 +38,10 @@ export function WhyTrustUsSection() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {reasons.map((reason, index) => (
-            <Card 
-              key={index} 
-              className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden"
-            >
+          {reasons.map((reason, index) => <Card key={index} className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden">
               {/* Background Image */}
               <div className="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
-                <img 
-                  src={reason.image} 
-                  alt={reason.imageAlt}
-                  className="w-full h-full object-cover"
-                />
+                <img src={reason.image} alt={reason.imageAlt} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
               </div>
               
@@ -82,14 +67,11 @@ export function WhyTrustUsSection() {
               </CardContent>
               
               {/* Connector line (except for last item on desktop) */}
-              {index < reasons.length - 1 && (
-                <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-primary/60 to-transparent"></div>
-              )}
+              {index < reasons.length - 1 && <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-primary/60 to-transparent"></div>}
               
               {/* Bottom accent */}
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Bottom CTA */}
@@ -102,13 +84,12 @@ export function WhyTrustUsSection() {
           </div>
           
           <FormModal>
-            <Button variant="outline" className="group">
+            <Button variant="outline" className="group text-center">
               <Mail className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
               Solicitar Orçamento
             </Button>
           </FormModal>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
