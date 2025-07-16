@@ -3,22 +3,33 @@ import { Mail, Crown, Award } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
 export function HeroSection() {
   return <section className="relative min-h-screen flex flex-col justify-center px-4 py-20 overflow-hidden text-white">
-      {/* Simplified Light Effects */}
+      {/* Cinematic Ambient Light Effects - Emerging from Bottom */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Main ambient light - simplified */}
-        <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 w-[100%] h-[60vh] 
-                        bg-gradient-radial from-primary/15 via-primary/8 to-transparent 
-                        rounded-full blur-2xl opacity-60 animate-breathe"></div>
+        {/* Primary ambient emergence - Main cinematic light from bottom */}
+        <div className="absolute -bottom-40 left-1/2 transform -translate-x-1/2 w-[200%] h-[100vh] 
+                        bg-gradient-radial from-primary/30 via-primary/15 via-primary/8 to-transparent 
+                        rounded-full animate-ambient-emerge"></div>
         
-        {/* Secondary glow */}
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[120%] h-[40vh] 
-                        bg-gradient-to-t from-primary/10 via-primary/5 to-transparent 
-                        blur-xl opacity-40 animate-breathe"></div>
+        {/* Secondary ambient pulse - Continuous breathing effect */}
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[150%] h-[80vh] 
+                        bg-gradient-to-t from-primary/20 via-primary/10 via-primary/5 to-transparent 
+                        blur-2xl animate-ambient-pulse"></div>
         
-        {/* Subtle top accent */}
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-32 
-                        bg-gradient-to-b from-primary/8 to-transparent 
-                        blur-xl opacity-25"></div>
+        {/* Floating accent lights */}
+        <div className="absolute bottom-20 left-[20%] w-32 h-32 
+                        bg-primary/20 rounded-full blur-xl animate-cinematic-float"
+                        style={{ animationDelay: '0s' }}></div>
+        <div className="absolute bottom-40 right-[15%] w-24 h-24 
+                        bg-primary/15 rounded-full blur-lg animate-cinematic-float"
+                        style={{ animationDelay: '3s' }}></div>
+        <div className="absolute bottom-10 left-[60%] w-20 h-20 
+                        bg-primary/25 rounded-full blur-lg animate-cinematic-float"
+                        style={{ animationDelay: '6s' }}></div>
+        
+        {/* Subtle atmospheric top accent */}
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-20 
+                        bg-gradient-to-b from-primary/5 to-transparent 
+                        blur-lg opacity-40 animate-cinematic-breathe"></div>
       </div>
       
       <div className="container mx-auto max-w-5xl relative z-10">
