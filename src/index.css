@@ -18,21 +18,21 @@ All colors MUST be HSL.
     --popover: 0 0% 4%;
     --popover-foreground: 0 0% 98%;
 
-    /* Primary - Turquoise */
-    --primary: 180 100% 45%;
+    /* Primary - Electric Blue */
+    --primary: 217 100% 55%;
     --primary-foreground: 0 0% 98%;
-    --primary-glow: 180 100% 55%;
+    --primary-glow: 217 100% 65%;
 
-    /* Secondary - Deep Turquoise */
-    --secondary: 180 85% 25%;
+    /* Secondary - Deep Blue */
+    --secondary: 217 85% 25%;
     --secondary-foreground: 0 0% 98%;
 
     /* Muted - Dark charcoal */
     --muted: 0 0% 8%;
     --muted-foreground: 0 0% 65%;
 
-    /* Accent - Bright Turquoise */
-    --accent: 180 90% 65%;
+    /* Accent - Bright Blue */
+    --accent: 217 90% 65%;
     --accent-foreground: 0 0% 2%;
 
     --destructive: 0 84% 60%;
@@ -40,25 +40,25 @@ All colors MUST be HSL.
 
     --border: 0 0% 12%;
     --input: 0 0% 8%;
-    --ring: 180 100% 45%;
+    --ring: 217 100% 55%;
 
     /* Block-specific backgrounds - Alternating contrast */
     --block-hero: 0 0% 1%;                    /* Ultra dark black */
-    --block-clients: 180 60% 12%;             /* Deep turquoise */
+    --block-clients: 217 60% 12%;             /* Deep blue */
     --block-trust: 0 0% 2%;                   /* Almost black */
-    --block-services: 180 45% 8%;             /* Dark turquoise */
+    --block-services: 217 45% 8%;             /* Dark blue */
     --block-analytics: 0 0% 1%;               /* Ultra dark black */
-    --block-cta: 180 100% 15%;                /* Rich turquoise */
+    --block-cta: 217 100% 15%;                /* Rich blue */
 
     /* Design system extensions */
-    --gradient-primary: linear-gradient(135deg, hsl(180 100% 45%), hsl(180 85% 35%));
-    --gradient-secondary: linear-gradient(180deg, hsl(180 30% 6%), hsl(0 0% 2%));
-    --gradient-block: linear-gradient(135deg, hsl(180 50% 8%), hsl(180 30% 4%));
-    --gradient-clients: linear-gradient(135deg, hsl(180 60% 12%), hsl(180 50% 8%));
-    --gradient-cta: linear-gradient(135deg, hsl(180 100% 15%), hsl(180 80% 12%));
-    --shadow-glow: 0 0 40px hsl(180 100% 45% / 0.4);
+    --gradient-primary: linear-gradient(135deg, hsl(217 100% 55%), hsl(217 85% 45%));
+    --gradient-secondary: linear-gradient(180deg, hsl(217 30% 6%), hsl(0 0% 2%));
+    --gradient-block: linear-gradient(135deg, hsl(217 50% 8%), hsl(217 30% 4%));
+    --gradient-clients: linear-gradient(135deg, hsl(217 60% 12%), hsl(217 50% 8%));
+    --gradient-cta: linear-gradient(135deg, hsl(217 100% 15%), hsl(217 80% 12%));
+    --shadow-glow: 0 0 40px hsl(217 100% 55% / 0.4);
     --shadow-block: 0 20px 50px -10px hsl(0 0% 0% / 0.8);
-    --shadow-blue: 0 20px 50px -10px hsl(180 100% 15% / 0.6);
+    --shadow-blue: 0 20px 50px -10px hsl(217 100% 15% / 0.6);
     --shadow-subtle: 0 10px 30px -10px hsl(0 0% 0% / 0.5);
     
     --radius: 0.75rem;
