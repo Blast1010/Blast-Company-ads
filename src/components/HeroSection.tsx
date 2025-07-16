@@ -62,15 +62,20 @@ export function HeroSection() {
               
               <div className="space-y-4 text-center">
                 <p className="text-lg md:text-xl text-muted-foreground font-medium leading-relaxed">
-                  <span className="text-red-400 font-bold">Cansou de queimar dinheiro</span> em campanhas que não geram resultado? 
-                  Enquanto você lê isso, seus <span className="text-primary font-bold">concorrentes estão vendendo mais</span>.
+                  <span className="text-red-400 font-bold">Seus concorrentes estão faturando 10x mais</span> que você neste exato momento. 
+                  Enquanto você hesita, eles <span className="text-primary font-bold">dominam seu mercado</span> com as estratégias certas.
                 </p>
                 
                 <p className="text-base md:text-lg text-muted-foreground/90 leading-relaxed">
-                  <span className="text-foreground font-medium">Chega de desculpas.</span> Nosso método já fez empresas 
-                  aumentarem suas vendas em <span className="text-primary font-bold">300% em 90 dias</span>, 
-                  investindo <span className="text-primary font-bold">50% menos</span> que antes.
+                  <span className="text-foreground font-bold">Pare de ser apenas mais um.</span> Nosso método exclusivo já transformou 
+                  <span className="text-primary font-bold"> +2.847 empresas em máquinas de vendas</span>, gerando 
+                  <span className="text-green-400 font-bold">R$ 127 milhões em faturamento adicional</span> nos últimos 12 meses.
                 </p>
+                
+                <div className="inline-flex items-center space-x-2 px-4 py-2 bg-green-500/10 border border-green-500/30 rounded-full">
+                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-green-400 font-bold text-sm">RESULTADOS GARANTIDOS EM 30 DIAS</span>
+                </div>
               </div>
             </div>
 
