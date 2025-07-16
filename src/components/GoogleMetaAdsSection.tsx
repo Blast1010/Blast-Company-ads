@@ -6,61 +6,100 @@ export function GoogleMetaAdsSection() {
   return (
     <section className="py-20 px-4 text-white overflow-hidden relative">
       <div className="container mx-auto max-w-5xl">
-        {/* Conteúdo da primeira dobra movido para cá */}
-        <div className="max-w-4xl mx-auto">
-          {/* Text Content */}
-          <div className="space-y-8">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-center">
-              <span className="text-primary text-lg md:text-xl font-medium tracking-wide uppercase">CANSADO DE VER</span><br />
-              <span className="text-4xl md:text-5xl lg:text-6xl">SEU DINHEIRO</span><br />
-              <span className="bg-gradient-to-r from-red-500 to-red-400 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl">
-                DESAPARECER?
-              </span><br />
-              <span className="text-xl md:text-2xl lg:text-3xl text-muted-foreground font-semibold">
-                Chegou a hora de mudar isso
-              </span>
-            </h1>
+        {/* Conteúdo em balões lado a lado */}
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             
-            <div className="space-y-8">
-              <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-full mx-auto"></div>
-              
-              <div className="space-y-6 text-center">
-                <p className="text-xl md:text-2xl text-red-400 font-bold leading-relaxed">
-                  Você investe na internet e não vê retorno?
-                </p>
-                
-                <div className="space-y-4 max-w-3xl mx-auto">
-                  <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                    <span className="text-red-400 font-semibold">✗</span> Gasta em anúncios que não trazem clientes<br/>
-                    <span className="text-red-400 font-semibold">✗</span> Vê os concorrentes crescendo enquanto você fica parado<br/>
-                    <span className="text-red-400 font-semibold">✗</span> Não sabe se o dinheiro investido está dando resultado
+            {/* Balão de Dor */}
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-3xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+              <div className="relative bg-card/80 backdrop-blur-sm border border-red-500/30 rounded-3xl p-8 md:p-10 shadow-2xl hover:shadow-red-500/20 transition-all duration-300">
+                <div className="text-center space-y-6">
+                  <div className="w-16 h-16 mx-auto bg-red-500/20 rounded-full flex items-center justify-center mb-6">
+                    <span className="text-3xl">💸</span>
+                  </div>
+                  
+                  <h2 className="text-2xl md:text-3xl font-bold text-red-400 leading-tight">
+                    CANSADO DE VER SEU<br />
+                    <span className="text-3xl md:text-4xl bg-gradient-to-r from-red-500 to-red-400 bg-clip-text text-transparent">
+                      DINHEIRO DESAPARECER?
+                    </span>
+                  </h2>
+                  
+                  <div className="w-16 h-0.5 bg-gradient-to-r from-red-500 to-red-400 rounded-full mx-auto"></div>
+                  
+                  <p className="text-lg md:text-xl text-red-400 font-semibold">
+                    Você investe na internet e não vê retorno?
                   </p>
+                  
+                  <div className="space-y-4 text-left">
+                    <div className="flex items-start space-x-3">
+                      <span className="text-red-400 font-bold text-xl mt-1">✗</span>
+                      <p className="text-lg text-muted-foreground">Gasta em anúncios que não trazem clientes</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-red-400 font-bold text-xl mt-1">✗</span>
+                      <p className="text-lg text-muted-foreground">Vê os concorrentes crescendo enquanto você fica parado</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-red-400 font-bold text-xl mt-1">✗</span>
+                      <p className="text-lg text-muted-foreground">Não sabe se o dinheiro investido está dando resultado</p>
+                    </div>
+                  </div>
                 </div>
-                
-                <div className="w-24 h-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-full mx-auto my-8"></div>
-                
-                <p className="text-xl md:text-2xl text-primary font-bold leading-relaxed">
-                  Imagine ter clientes chegando todo dia
-                </p>
-                
-                <div className="space-y-4 max-w-3xl mx-auto">
-                  <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                    <span className="text-primary font-semibold">✓</span> Seu telefone tocando com pessoas interessadas no seu produto<br/>
-                    <span className="text-primary font-semibold">✓</span> Vendas acontecendo mesmo quando você está dormindo<br/>
-                    <span className="text-primary font-semibold">✓</span> Seu negócio crescendo de forma consistente e previsível
-                  </p>
-                </div>
-                
-                <p className="text-base md:text-lg text-foreground font-medium leading-relaxed max-w-2xl mx-auto border-l-4 border-primary pl-4">
-                  <span className="text-primary font-bold">É exatamente isso que fazemos:</span> transformamos 
-                  empresários frustrados em donos de negócios prósperos e previsíveis.
-                </p>
               </div>
             </div>
 
-            <div className="flex justify-center">
-              <ProgressiveForm />
+            {/* Balão de Desejo */}
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/30 rounded-3xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+              <div className="relative bg-card/80 backdrop-blur-sm border border-primary/30 rounded-3xl p-8 md:p-10 shadow-2xl hover:shadow-primary/20 transition-all duration-300">
+                <div className="text-center space-y-6">
+                  <div className="w-16 h-16 mx-auto bg-primary/20 rounded-full flex items-center justify-center mb-6">
+                    <span className="text-3xl">🚀</span>
+                  </div>
+                  
+                  <h2 className="text-2xl md:text-3xl font-bold text-primary leading-tight">
+                    IMAGINE TER<br />
+                    <span className="text-3xl md:text-4xl bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+                      CLIENTES TODO DIA
+                    </span>
+                  </h2>
+                  
+                  <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-full mx-auto"></div>
+                  
+                  <p className="text-lg md:text-xl text-primary font-semibold">
+                    Seu negócio crescendo de forma previsível
+                  </p>
+                  
+                  <div className="space-y-4 text-left">
+                    <div className="flex items-start space-x-3">
+                      <span className="text-primary font-bold text-xl mt-1">✓</span>
+                      <p className="text-lg text-muted-foreground">Seu telefone tocando com pessoas interessadas no seu produto</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-primary font-bold text-xl mt-1">✓</span>
+                      <p className="text-lg text-muted-foreground">Vendas acontecendo mesmo quando você está dormindo</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-primary font-bold text-xl mt-1">✓</span>
+                      <p className="text-lg text-muted-foreground">Seu negócio crescendo de forma consistente e previsível</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="mt-12 text-center">
+            <div className="max-w-2xl mx-auto mb-8">
+              <p className="text-lg md:text-xl text-foreground font-medium leading-relaxed border-l-4 border-primary pl-6">
+                <span className="text-primary font-bold">É exatamente isso que fazemos:</span> transformamos 
+                empresários frustrados em donos de negócios prósperos e previsíveis.
+              </p>
+            </div>
+            <ProgressiveForm />
           </div>
         </div>
 
