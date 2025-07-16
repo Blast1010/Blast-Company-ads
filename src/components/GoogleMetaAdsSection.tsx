@@ -90,21 +90,105 @@ export function GoogleMetaAdsSection() {
             </div>
           </div>
 
-          {/* Call to Action */}
-          <div className="mt-12 text-center">
-            <div className="max-w-2xl mx-auto mb-8">
-              <p className="text-lg md:text-xl text-foreground font-medium leading-relaxed border-l-4 border-primary pl-6">
-                <span className="text-primary font-bold">É exatamente isso que fazemos:</span> transformamos 
-                empresários frustrados em donos de negócios prósperos e previsíveis.
-              </p>
-            </div>
-            <Button 
-              size="lg" 
-              className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/25 transition-all duration-300"
-            >
-              Solicitar Orçamento
-            </Button>
+        {/* Seção Google e Meta Ads */}
+        <div className="mt-20">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+              Domine o <span className="text-primary">Google</span> e <span className="text-blue-500">Meta</span>
+            </h2>
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              As duas plataformas mais poderosas para transformar visitantes em clientes pagantes
+            </p>
           </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* Google Ads */}
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary/5 rounded-3xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+              <div className="relative bg-card/50 backdrop-blur-sm border border-primary/20 rounded-3xl p-8 shadow-xl hover:shadow-primary/10 transition-all duration-300">
+                <div className="text-center space-y-6">
+                  <div className="w-20 h-20 mx-auto bg-primary/10 rounded-2xl flex items-center justify-center">
+                    <span className="text-4xl font-bold text-primary">G</span>
+                  </div>
+                  
+                  <h3 className="text-2xl md:text-3xl font-bold text-foreground">
+                    Google Ads
+                  </h3>
+                  
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    Capture clientes no exato momento que eles procuram por você
+                  </p>
+                  
+                  <div className="space-y-4 text-left">
+                    <div className="flex items-start space-x-3">
+                      <span className="text-primary font-bold text-lg mt-1">✓</span>
+                      <p className="text-base text-muted-foreground">Apareça primeiro nas pesquisas</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-primary font-bold text-lg mt-1">✓</span>
+                      <p className="text-base text-muted-foreground">Pague apenas por cliques reais</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-primary font-bold text-lg mt-1">✓</span>
+                      <p className="text-base text-muted-foreground">Controle total do orçamento</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Meta Ads */}
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-blue-500/5 rounded-3xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+              <div className="relative bg-card/50 backdrop-blur-sm border border-blue-500/20 rounded-3xl p-8 shadow-xl hover:shadow-blue-500/10 transition-all duration-300">
+                <div className="text-center space-y-6">
+                  <div className="w-20 h-20 mx-auto bg-blue-500/10 rounded-2xl flex items-center justify-center">
+                    <span className="text-4xl font-bold text-blue-500">M</span>
+                  </div>
+                  
+                  <h3 className="text-2xl md:text-3xl font-bold text-foreground">
+                    Meta Ads
+                  </h3>
+                  
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    Alcance milhões de pessoas no Facebook e Instagram
+                  </p>
+                  
+                  <div className="space-y-4 text-left">
+                    <div className="flex items-start space-x-3">
+                      <span className="text-blue-500 font-bold text-lg mt-1">✓</span>
+                      <p className="text-base text-muted-foreground">Segmentação ultra-precisa</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-blue-500 font-bold text-lg mt-1">✓</span>
+                      <p className="text-base text-muted-foreground">Conteúdo visual impactante</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-blue-500 font-bold text-lg mt-1">✓</span>
+                      <p className="text-base text-muted-foreground">Remarketing inteligente</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Call to Action Final */}
+        <div className="mt-16 text-center">
+          <div className="max-w-2xl mx-auto mb-8">
+            <p className="text-lg md:text-xl text-foreground font-medium leading-relaxed border-l-4 border-primary pl-6">
+              <span className="text-primary font-bold">É exatamente isso que fazemos:</span> transformamos 
+              empresários frustrados em donos de negócios prósperos e previsíveis.
+            </p>
+          </div>
+          <Button 
+            size="lg" 
+            className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/25 transition-all duration-300"
+          >
+            Solicitar Orçamento
+          </Button>
+        </div>
         </div>
 
         {/* Bottom Features */}
