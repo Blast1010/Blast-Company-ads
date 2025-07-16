@@ -81,33 +81,60 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Right Column - Image */}
-          <div className="relative">
-            <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-              <img src={heroTeamImage} alt="Equipe de sucesso colaborando em estratégias de marketing digital" className="w-full h-96 lg:h-[500px] object-cover" />
-              {/* Cinematic Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-background/10"></div>
-              
-              
-              {/* Floating Badge */}
-              <div className="absolute top-6 left-6 bg-primary/90 backdrop-blur-sm text-primary-foreground px-4 py-2 rounded-lg shadow-glow">
-                <span className="text-sm font-bold">Resultados Reais</span>
+          {/* Right Column - Logo with Cinematic Animation */}
+          <div className="relative flex items-center justify-center">
+            <div className="relative group">
+              {/* Main Logo Container with Cinematic Effects */}
+              <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden shadow-2xl">
+                {/* Animated Background Glow */}
+                <div className="absolute inset-0 bg-gradient-radial from-primary/30 via-primary/15 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000 animate-pulse"></div>
+                
+                {/* Logo Image with Cinematic Animation */}
+                <div className="relative w-full h-full bg-gradient-to-br from-background/10 to-background/30 backdrop-blur-sm border border-border/20 rounded-3xl flex items-center justify-center overflow-hidden group-hover:scale-105 transition-transform duration-700">
+                  <img 
+                    src="/lovable-uploads/649405e1-63b9-4e91-984d-f03230fd7ec9.png" 
+                    alt="Blast Company Ads Logo" 
+                    className="w-48 h-48 lg:w-56 lg:h-56 object-contain animate-fade-in group-hover:scale-110 transition-all duration-1000 filter drop-shadow-2xl"
+                  />
+                  
+                  {/* Cinematic Overlay Effects */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-background/10 opacity-60"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
+                </div>
+                
+                {/* Floating Particles Effect */}
+                <div className="absolute top-4 left-4 w-2 h-2 bg-primary/60 rounded-full animate-pulse opacity-70"></div>
+                <div className="absolute top-8 right-6 w-1 h-1 bg-accent/80 rounded-full animate-pulse opacity-50 animation-delay-300"></div>
+                <div className="absolute bottom-6 left-8 w-1.5 h-1.5 bg-primary/40 rounded-full animate-pulse opacity-60 animation-delay-700"></div>
+                <div className="absolute bottom-4 right-4 w-1 h-1 bg-accent/60 rounded-full animate-pulse opacity-80 animation-delay-500"></div>
+                
+                {/* Premium Light Streaks */}
+                <div className="absolute top-0 left-1/4 w-px h-full bg-gradient-to-b from-transparent via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000 animation-delay-200"></div>
+                <div className="absolute top-0 right-1/3 w-px h-full bg-gradient-to-b from-transparent via-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000 animation-delay-500"></div>
               </div>
               
-              {/* Bottom Stats */}
-              <div className="absolute bottom-6 right-6 bg-card/90 backdrop-blur-sm border border-border/50 p-4 rounded-xl shadow-lg">
+              {/* Floating Badge - Company Name */}
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary/90 backdrop-blur-sm text-primary-foreground px-6 py-2 rounded-full shadow-glow animate-fade-in animation-delay-500">
+                <span className="text-sm font-bold tracking-wide">Blast Company</span>
+              </div>
+              
+              {/* Bottom Stats with Animation */}
+              <div className="absolute -bottom-6 right-4 bg-card/95 backdrop-blur-sm border border-border/50 p-4 rounded-xl shadow-lg animate-fade-in animation-delay-700">
                 <div className="flex items-center space-x-4 text-sm">
                   <div className="text-center">
-                    <div className="text-primary font-bold text-lg">+300%</div>
+                    <div className="text-primary font-bold text-lg animate-scale-in">+300%</div>
                     <div className="text-muted-foreground">ROI Médio</div>
                   </div>
                   <div className="w-px h-8 bg-border"></div>
                   <div className="text-center">
-                    <div className="text-green-400 font-bold text-lg">100+</div>
+                    <div className="text-green-400 font-bold text-lg animate-scale-in animation-delay-200">100+</div>
                     <div className="text-muted-foreground">Clientes</div>
                   </div>
                 </div>
               </div>
+              
+              {/* Cinematic Halo Effect */}
+              <div className="absolute inset-0 rounded-3xl bg-gradient-radial from-transparent via-transparent to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none scale-110"></div>
             </div>
           </div>
         </div>
