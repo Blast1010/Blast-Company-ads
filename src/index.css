@@ -18,20 +18,20 @@ All colors MUST be HSL.
     --popover: 0 0% 6%;
     --popover-foreground: 0 0% 98%;
 
-    /* Primary - Professional Teal Blue */
-    --primary: 186 78% 45%;
+    /* Primary - Vibrant Turquoise */
+    --primary: 174 100% 45%;
     --primary-foreground: 0 0% 98%;
 
-    /* Secondary - Deep Professional Teal */
-    --secondary: 186 85% 25%;
+    /* Secondary - Deep Turquoise */
+    --secondary: 174 85% 35%;
     --secondary-foreground: 0 0% 98%;
 
     /* Muted - Dark gray */
     --muted: 0 0% 12%;
     --muted-foreground: 0 0% 60%;
 
-    /* Accent - Lighter Professional Teal */
-    --accent: 186 70% 55%;
+    /* Accent - Bright Turquoise */
+    --accent: 174 90% 55%;
     --accent-foreground: 0 0% 3%;
 
     --destructive: 0 84.2% 60.2%;
@@ -39,12 +39,12 @@ All colors MUST be HSL.
 
     --border: 0 0% 15%;
     --input: 0 0% 12%;
-    --ring: 186 78% 45%;
+    --ring: 174 100% 45%;
 
     /* Design system extensions */
-    --gradient-primary: linear-gradient(135deg, hsl(186 78% 45%), hsl(186 85% 25%));
-    --gradient-secondary: linear-gradient(180deg, hsl(186 20% 8%), hsl(0 0% 3%));
-    --shadow-glow: 0 0 40px hsl(186 78% 45% / 0.3);
+    --gradient-primary: linear-gradient(135deg, hsl(174 100% 45%), hsl(174 85% 35%));
+    --gradient-secondary: linear-gradient(180deg, hsl(174 20% 8%), hsl(0 0% 3%));
+    --shadow-glow: 0 0 40px hsl(174 100% 45% / 0.3);
     --shadow-subtle: 0 10px 30px -10px hsl(0 0% 0% / 0.5);
     
     --radius: 0.75rem;

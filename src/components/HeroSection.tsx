@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Target, TrendingUp } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
-import heroMarketingImage from "@/assets/hero-marketing.jpg";
+import heroTeamImage from "@/assets/hero-team-success.jpg";
 
 export function HeroSection() {
   return (
@@ -41,10 +41,11 @@ export function HeroSection() {
           </h2>
         </div>
 
-        {/* Main Content */}
-        <div className="text-center space-y-12">
+        {/* Main Content - Side by Side Layout */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Column - Text Content */}
           <div className="space-y-8">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.2] tracking-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.2] tracking-tight text-left">
               Temos como trabalho<br />
               <span className="text-muted-foreground/80">Aumentar as Vendas da</span><br />
               sua Empresa com{" "}
@@ -54,21 +55,21 @@ export function HeroSection() {
               </span>
             </h1>
             
-            <div className="space-y-6 max-w-4xl mx-auto">
-              <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-primary/50 mx-auto rounded-full"></div>
+            <div className="space-y-6">
+              <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-full"></div>
               
-              <div className="space-y-4">
+              <div className="space-y-4 text-left">
                 <p className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
                   Somos uma agência parceira da sua empresa.
                 </p>
                 
-                <p className="text-base md:text-lg text-muted-foreground/90 leading-relaxed max-w-3xl mx-auto">
+                <p className="text-base md:text-lg text-muted-foreground/90 leading-relaxed">
                   Desenvolvemos estratégias <span className="text-foreground font-medium">Vencedoras</span> para 
                   aumentar as vendas do seu negócio com o{" "}
                   <span className="text-primary font-medium">mínimo investimento possível</span>.
                 </p>
                 
-                <p className="text-base md:text-lg text-muted-foreground/90 leading-relaxed max-w-3xl mx-auto">
+                <p className="text-base md:text-lg text-muted-foreground/90 leading-relaxed">
                   Entenda como crescer ainda mais a sua empresa por meio das maiores fontes de{" "}
                   <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent font-semibold">
                     Tráfego do mundo
@@ -76,46 +77,44 @@ export function HeroSection() {
                 </p>
               </div>
             </div>
+
+            <div className="flex justify-start">
+              <ProgressiveForm />
+            </div>
           </div>
 
-          {/* Hero Image Section */}
-          <div className="mt-16 mb-8">
-            <div className="relative max-w-4xl mx-auto">
-              <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-                <img 
-                  src={heroMarketingImage} 
-                  alt="Estratégias de marketing digital para crescimento de vendas"
-                  className="w-full h-80 md:h-96 object-cover"
-                />
-                {/* Cinematic Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-background/20"></div>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-accent/20"></div>
-                
-                {/* Floating Badge */}
-                <div className="absolute top-6 left-6 bg-primary/90 backdrop-blur-sm text-primary-foreground px-4 py-2 rounded-lg shadow-glow">
-                  <span className="text-sm font-bold">Tráfego de Verdade</span>
-                </div>
-                
-                {/* Bottom Stats */}
-                <div className="absolute bottom-6 right-6 bg-card/90 backdrop-blur-sm border border-border/50 p-4 rounded-xl shadow-lg">
-                  <div className="flex items-center space-x-4 text-sm">
-                    <div className="text-center">
-                      <div className="text-primary font-bold text-lg">+300%</div>
-                      <div className="text-muted-foreground">ROI Médio</div>
-                    </div>
-                    <div className="w-px h-8 bg-border"></div>
-                    <div className="text-center">
-                      <div className="text-green-400 font-bold text-lg">24/7</div>
-                      <div className="text-muted-foreground">Suporte</div>
-                    </div>
+          {/* Right Column - Image */}
+          <div className="relative">
+            <div className="relative overflow-hidden rounded-3xl shadow-2xl">
+              <img 
+                src={heroTeamImage} 
+                alt="Equipe de sucesso colaborando em estratégias de marketing digital"
+                className="w-full h-96 lg:h-[500px] object-cover"
+              />
+              {/* Cinematic Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-background/10"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/15 via-transparent to-accent/15"></div>
+              
+              {/* Floating Badge */}
+              <div className="absolute top-6 left-6 bg-primary/90 backdrop-blur-sm text-primary-foreground px-4 py-2 rounded-lg shadow-glow">
+                <span className="text-sm font-bold">Resultados Reais</span>
+              </div>
+              
+              {/* Bottom Stats */}
+              <div className="absolute bottom-6 right-6 bg-card/90 backdrop-blur-sm border border-border/50 p-4 rounded-xl shadow-lg">
+                <div className="flex items-center space-x-4 text-sm">
+                  <div className="text-center">
+                    <div className="text-primary font-bold text-lg">+300%</div>
+                    <div className="text-muted-foreground">ROI Médio</div>
+                  </div>
+                  <div className="w-px h-8 bg-border"></div>
+                  <div className="text-center">
+                    <div className="text-green-400 font-bold text-lg">100+</div>
+                    <div className="text-muted-foreground">Clientes</div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          
-          <div className="flex justify-center">
-            <ProgressiveForm />
           </div>
         </div>
 
