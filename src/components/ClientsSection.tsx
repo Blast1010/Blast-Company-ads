@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Handshake, ArrowRight } from "lucide-react";
-import { ProgressiveForm } from "@/components/ProgressiveForm";
+import { FormModal } from "@/components/FormModal";
 import googleLogo from "@/assets/logos/google-logo.svg";
 import microsoftLogo from "@/assets/logos/microsoft-logo.svg";
 import amazonLogo from "@/assets/logos/amazon-logo.png";
@@ -103,7 +103,12 @@ export function ClientsSection() {
               </h3>
               
               <div className="flex justify-center">
-                <ProgressiveForm />
+                <FormModal>
+                  <Button variant="cta" size="xl" className="group">
+                    Solicitar Orçamento
+                    <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </FormModal>
               </div>
             </div>
           </div>
