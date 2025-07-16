@@ -52,41 +52,40 @@ export function HeroSection() {
           {/* Text Content */}
           <div className="space-y-8">
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-center">
-              <span className="text-2xl md:text-3xl lg:text-4xl text-red-400 font-semibold uppercase tracking-wide">Enquanto você hesita,</span><br />
               <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                SEUS CONCORRENTES
+                Transforme Sua Empresa
               </span><br />
-              <span className="bg-gradient-to-r from-red-500 to-red-400 bg-clip-text text-transparent">
-                DOMINAM O MERCADO
+              <span className="text-foreground">
+                com Anúncios que
+              </span> 
+              <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                VENDEM
               </span>
             </h1>
             
             <div className="space-y-8 mt-12">
               <div className="max-w-3xl mx-auto space-y-6">
-                <p className="text-2xl md:text-3xl font-bold text-center leading-tight">
-                  <span className="text-red-400">Eles faturam R$ 50.000+ por mês</span><br/>
-                  <span className="text-foreground">enquanto você ainda "pensa" em começar</span>
+                <p className="text-xl md:text-2xl text-center leading-relaxed text-muted-foreground">
+                  Pare de desperdiçar dinheiro com anúncios que não convertem. 
+                  Nossa metodologia comprovada já gerou mais de <span className="text-primary font-bold">R$ 2.3 milhões</span> em vendas diretas para nossos clientes.
                 </p>
                 
                 <div className="w-24 h-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-full mx-auto"></div>
                 
-                <p className="text-xl md:text-2xl text-center leading-relaxed text-muted-foreground">
-                  Cada dia que passa sem uma estratégia de anúncios eficiente é dinheiro 
-                  <span className="text-red-400 font-bold"> PERDIDO PARA SEMPRE</span>
-                </p>
-                
-                <div className="bg-card/30 backdrop-blur-sm border border-primary/20 rounded-2xl p-6 md:p-8">
-                  <p className="text-lg md:text-xl text-center leading-relaxed">
-                    <span className="text-primary font-bold text-2xl">"Mas e se eu te disser</span><br/>
-                    <span className="text-foreground">que você pode reverter essa situação em apenas</span>
-                    <span className="text-primary font-bold text-2xl"> 30 dias?"</span>
-                  </p>
+                <div className="grid md:grid-cols-3 gap-6 text-center">
+                  <div className="space-y-2">
+                    <div className="text-3xl font-bold text-primary">300%</div>
+                    <div className="text-sm text-muted-foreground">Aumento médio em ROI</div>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="text-3xl font-bold text-primary">24h</div>
+                    <div className="text-sm text-muted-foreground">Para primeiros resultados</div>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="text-3xl font-bold text-primary">R$ 2.3M</div>
+                    <div className="text-sm text-muted-foreground">Gerados para clientes</div>
+                  </div>
                 </div>
-                
-                <p className="text-base md:text-lg text-center text-muted-foreground leading-relaxed">
-                  Pare de ser espectador do sucesso dos outros. <span className="text-primary font-bold">É hora de ser o protagonista</span> 
-                  da sua própria história de sucesso.
-                </p>
               </div>
 
               <div className="flex justify-center">
