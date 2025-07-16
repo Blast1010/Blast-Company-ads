@@ -1,4 +1,4 @@
-import inpulsoGoogleSection from "@/assets/inpulso-google-section.webp";
+import inpulsoGoogleMockup from "@/assets/inpulso-google-mockup.png";
 import inpulsoMetaMockup from "@/assets/inpulso-meta-mockup.png";
 
 export function GoogleMetaAdsSection() {
@@ -39,7 +39,7 @@ export function GoogleMetaAdsSection() {
           <div className="order-1 lg:order-2 flex justify-center relative">
             <div className="relative w-full max-w-lg">
               <img 
-                src={inpulsoGoogleSection} 
+                src={inpulsoGoogleMockup} 
                 alt="Google Ads Dashboard" 
                 className="w-full h-auto object-contain transform hover:scale-105 transition-all duration-500"
               />
