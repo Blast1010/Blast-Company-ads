@@ -1,5 +1,7 @@
 import { Infinity, FolderOpen, BarChart3 } from "lucide-react";
 import googleLogo from "@/assets/logos/google-logo.svg";
+import googleAdsMockup from "@/assets/google-ads-mockup.png";
+import facebookAdsMockup from "@/assets/facebook-ads-mockup.png";
 
 export function ServicesSection() {
   const services = [
@@ -49,6 +51,45 @@ export function ServicesSection() {
   return (
     <section className="py-12 md:py-16 lg:py-20 px-4 bg-gradient-to-b from-background to-muted/10">
       <div className="container mx-auto max-w-6xl">
+        {/* Google e Meta Ads Preview Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-16 md:mb-20">
+          {/* Google Ads Preview */}
+          <div className="text-center group">
+            <div className="mb-6">
+              <img 
+                src={googleAdsMockup} 
+                alt="Google Ads Interface" 
+                className="w-full max-w-md mx-auto rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:scale-105"
+              />
+            </div>
+            <h3 className="text-xl md:text-2xl font-bold mb-3 text-foreground">
+              Fique no topo do <span className="text-primary">Google e venda mais</span>
+            </h3>
+            <p className="text-muted-foreground text-sm md:text-base leading-relaxed max-w-md mx-auto">
+              Queremos garantir que você utilize os <strong>principais recursos do Google</strong> da melhor forma possível, 
+              proporcionando a <strong>melhor performance</strong> do seu negócio no digital.
+            </p>
+          </div>
+
+          {/* Meta Ads Preview */}
+          <div className="text-center group">
+            <div className="mb-6">
+              <img 
+                src={facebookAdsMockup} 
+                alt="Facebook Ads Interface" 
+                className="w-full max-w-md mx-auto rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:scale-105"
+              />
+            </div>
+            <h3 className="text-xl md:text-2xl font-bold mb-3 text-foreground">
+              Campanhas <span className="text-primary">otimizadas e eficientes</span>
+            </h3>
+            <p className="text-muted-foreground text-sm md:text-base leading-relaxed max-w-md mx-auto">
+              Atraia o público certo para o seu perfil e gere <strong>leads qualificados</strong> para seu time comercial. 
+              Garantimos a criação de campanhas estratégicas e fazemos análises e sugestões no seu perfil para obter mais resultados.
+            </p>
+          </div>
+        </div>
+
         {/* Services Grid - Responsivo */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-12 md:mb-16">
           {services.map((service, index) => (
