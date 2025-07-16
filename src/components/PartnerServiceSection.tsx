@@ -82,7 +82,7 @@ export function PartnerServiceSection() {
         <div className="text-center mt-16 space-y-6">
           <div className="inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl border border-primary/20">
             <MessageSquare className="h-6 w-6 text-primary" />
-            <div className="text-left">
+            <div className="text-center">
               <p className="text-primary font-semibold">
                 Excelência no Atendimento
               </p>

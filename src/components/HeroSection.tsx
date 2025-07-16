@@ -43,7 +43,7 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-8">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-left">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-center">
               <span className="text-primary text-lg md:text-xl font-medium tracking-wide uppercase">BLAST COMPANY ADS</span><br />
               <span className="text-4xl md:text-5xl lg:text-6xl">MARKETING É</span><br />
               <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl">
@@ -54,7 +54,7 @@ export function HeroSection() {
             <div className="space-y-6">
               <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-full"></div>
               
-              <div className="space-y-4 text-left">
+              <div className="space-y-4 text-center">
                 <p className="text-lg md:text-xl text-muted-foreground font-medium leading-relaxed">
                   Nosso trabalho é fazer você <span className="text-primary font-bold">vender o máximo</span> que puder, 
                   investindo o <span className="text-primary font-bold">mínimo possível</span> para isso.
@@ -68,7 +68,7 @@ export function HeroSection() {
               </div>
             </div>
 
-            <div className="flex justify-start">
+            <div className="flex justify-center">
               <ProgressiveForm />
             </div>
           </div>
@@ -107,7 +107,7 @@ export function HeroSection() {
 
         {/* Bottom Features */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20 max-w-4xl mx-auto">
-          <div className="flex items-center space-x-6 text-left group">
+          <div className="flex items-center space-x-6 text-center group">
             <div className="relative flex-shrink-0">
               <div className="w-16 h-16 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border border-border/50 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-primary/20 transition-all duration-300">
                 <Target className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
@@ -122,7 +122,7 @@ export function HeroSection() {
             </div>
           </div>
           
-          <div className="flex items-center space-x-6 text-left group">
+          <div className="flex items-center space-x-6 text-center group">
             <div className="relative flex-shrink-0">
               <div className="w-16 h-16 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border border-border/50 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-primary/20 transition-all duration-300">
                 <TrendingUp className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />

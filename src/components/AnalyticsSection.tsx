@@ -168,7 +168,7 @@ export function AnalyticsSection() {
         <div className="text-center mt-16 space-y-6">
           <div className="inline-flex items-center space-x-4 px-8 py-4 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl border border-primary/20 backdrop-blur-sm">
             <BarChart3 className="h-8 w-8 text-primary" />
-            <div className="text-left">
+            <div className="text-center">
               <p className="text-lg font-bold text-foreground">
                 Controle Total das Suas Campanhas
               </p>
