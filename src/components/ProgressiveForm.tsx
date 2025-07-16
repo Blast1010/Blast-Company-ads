@@ -154,8 +154,8 @@ export function ProgressiveForm({
       handleNext();
     }
   };
-  return <div className="w-full max-w-2xl mx-auto">
-      <Card className="bg-black border border-border/20 shadow-2xl overflow-hidden">
+  return <div className="w-full max-w-2xl mx-auto animate-materialize">
+      <Card className="bg-black border border-border/20 shadow-2xl overflow-hidden relative">
         {/* Typeform-style progress bar */}
         <div className="h-1 bg-gray-800">
           <div className="h-full bg-primary transition-all duration-500 ease-out" style={{

@@ -273,6 +273,44 @@ export default {
 						transform: 'translateY(-10px) translateX(-10px) rotate(-0.5deg) scale(0.95)',
 						opacity: '0.5'
 					}
+				},
+				'materialize': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(80px) scale(0.8)',
+						filter: 'blur(20px)',
+						clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)'
+					},
+					'20%': {
+						opacity: '0.3',
+						transform: 'translateY(50px) scale(0.9)',
+						filter: 'blur(15px)',
+						clipPath: 'polygon(0 80%, 100% 80%, 100% 100%, 0% 100%)'
+					},
+					'40%': {
+						opacity: '0.6',
+						transform: 'translateY(20px) scale(0.95)',
+						filter: 'blur(8px)',
+						clipPath: 'polygon(0 40%, 100% 40%, 100% 100%, 0% 100%)'
+					},
+					'60%': {
+						opacity: '0.8',
+						transform: 'translateY(5px) scale(0.98)',
+						filter: 'blur(4px)',
+						clipPath: 'polygon(0 20%, 100% 20%, 100% 100%, 0% 100%)'
+					},
+					'80%': {
+						opacity: '0.9',
+						transform: 'translateY(-5px) scale(1.02)',
+						filter: 'blur(1px)',
+						clipPath: 'polygon(0 5%, 100% 5%, 100% 100%, 0% 100%)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0) scale(1)',
+						filter: 'blur(0px)',
+						clipPath: 'polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)'
+					}
 				}
 			},
 			animation: {
@@ -293,7 +331,8 @@ export default {
 				'morphing': 'morphing 8s ease-in-out infinite',
 				'cinematic-fade': 'cinematic-fade 1.2s cubic-bezier(0.22, 1, 0.36, 1)',
 				'cinematic-breathe': 'cinematic-breathe ease-in-out infinite',
-				'cinematic-float': 'cinematic-float ease-in-out infinite'
+				'cinematic-float': 'cinematic-float ease-in-out infinite',
+				'materialize': 'materialize 1.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards'
 			}
 		}
 	},
