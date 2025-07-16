@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Card } from "@/components/ui/card";
 import { Mail, ChevronRight, ChevronLeft, Check, Building, Target, DollarSign, Globe, TrendingUp, CreditCard, User, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -42,7 +43,7 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
       title: "Qual o nome da empresa?",
       subtitle: "Vamos começar com o básico",
       placeholder: "Digite o nome da sua empresa",
-      icon: <Building className="h-8 w-8" />,
+      icon: <Building className="h-6 w-6" />,
       field: "company" as keyof FormData
     },
     {
@@ -50,7 +51,7 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
       title: "Qual o principal problema da empresa?",
       subtitle: "Conte-nos sobre seus desafios atuais",
       placeholder: "Ex: Baixas vendas, poucos leads, conversão baixa...",
-      icon: <Target className="h-8 w-8" />,
+      icon: <Target className="h-6 w-6" />,
       field: "problems" as keyof FormData
     },
     {
@@ -58,7 +59,7 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
       title: "Qual o site da empresa?",
       subtitle: "Queremos conhecer melhor seu negócio",
       placeholder: "https://www.exemplo.com.br",
-      icon: <Globe className="h-8 w-8" />,
+      icon: <Globe className="h-6 w-6" />,
       field: "website" as keyof FormData
     },
     {
@@ -74,7 +75,7 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
         "Nunca investi em tráfego pago",
         "Outros"
       ],
-      icon: <TrendingUp className="h-8 w-8" />,
+      icon: <TrendingUp className="h-6 w-6" />,
       field: "platforms" as keyof FormData
     },
     {
@@ -90,7 +91,7 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
         "R$ 10.000 - R$ 20.000",
         "Acima de R$ 20.000"
       ],
-      icon: <DollarSign className="h-8 w-8" />,
+      icon: <DollarSign className="h-6 w-6" />,
       field: "budget" as keyof FormData
     },
     {
@@ -106,7 +107,7 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
         "R$ 100.000 - R$ 500.000",
         "Acima de R$ 500.000"
       ],
-      icon: <CreditCard className="h-8 w-8" />,
+      icon: <CreditCard className="h-6 w-6" />,
       field: "revenue" as keyof FormData
     },
     {
@@ -114,7 +115,7 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
       title: "Qual seu nome?",
       subtitle: "Como podemos te chamar?",
       placeholder: "Seu nome completo",
-      icon: <User className="h-8 w-8" />,
+      icon: <User className="h-6 w-6" />,
       field: "name" as keyof FormData
     },
     {
@@ -123,7 +124,7 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
       subtitle: "Enviaremos sua proposta personalizada aqui",
       placeholder: "seu@email.com",
       type: "email",
-      icon: <Mail className="h-8 w-8" />,
+      icon: <Mail className="h-6 w-6" />,
       field: "email" as keyof FormData
     },
     {
@@ -132,7 +133,7 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
       subtitle: "Para agilizar o contato",
       placeholder: "(11) 99999-9999",
       type: "tel",
-      icon: <Phone className="h-8 w-8" />,
+      icon: <Phone className="h-6 w-6" />,
       field: "phone" as keyof FormData
     }
   ];
@@ -190,108 +191,110 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
   };
 
   return (
-    <div className="fixed inset-0 bg-white z-50 flex flex-col">
-      {/* Typeform-style progress bar */}
-      <div className="h-1 bg-gray-200">
-        <div 
-          className="h-full bg-primary transition-all duration-500 ease-out"
-          style={{ width: `${((currentStep + 1) / steps.length) * 100}%` }}
-        />
-      </div>
-
-      <div className="flex-1 flex flex-col justify-center px-6 py-12 max-w-2xl mx-auto w-full">
-        {/* Question number */}
-        <div className="mb-8">
-          <span className="text-sm text-gray-500 font-medium">
-            {currentStep + 1} → {steps.length}
-          </span>
+    <div className="w-full max-w-2xl mx-auto">
+      <Card className="bg-white border border-gray-200 shadow-lg overflow-hidden">
+        {/* Typeform-style progress bar */}
+        <div className="h-2 bg-gray-100">
+          <div 
+            className="h-full bg-primary transition-all duration-500 ease-out"
+            style={{ width: `${((currentStep + 1) / steps.length) * 100}%` }}
+          />
         </div>
 
-        {/* Main content */}
-        <div className="space-y-8">
-          {/* Icon */}
-          <div className="text-primary">
-            {steps[currentStep].icon}
+        <div className="p-8 min-h-[500px] flex flex-col justify-center">
+          {/* Question number */}
+          <div className="mb-6">
+            <span className="text-sm text-gray-500 font-medium">
+              {currentStep + 1} → {steps.length}
+            </span>
           </div>
 
-          {/* Question */}
-          <div className="space-y-3">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-              {steps[currentStep].title}
-            </h1>
-            {steps[currentStep].subtitle && (
-              <p className="text-lg text-gray-600">
-                {steps[currentStep].subtitle}
+          {/* Main content */}
+          <div className="space-y-6 flex-1 flex flex-col justify-center">
+            {/* Icon */}
+            <div className="text-primary">
+              {steps[currentStep].icon}
+            </div>
+
+            {/* Question */}
+            <div className="space-y-2">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
+                {steps[currentStep].title}
+              </h3>
+              {steps[currentStep].subtitle && (
+                <p className="text-lg text-gray-600">
+                  {steps[currentStep].subtitle}
+                </p>
+              )}
+            </div>
+
+            {/* Input */}
+            <div className="space-y-4">
+              {steps[currentStep].type === "select" ? (
+                <select
+                  value={formData[steps[currentStep].field]}
+                  onChange={(e) => handleInputChange(steps[currentStep].field, e.target.value)}
+                  onKeyDown={handleKeyPress}
+                  className="w-full p-4 text-lg border-0 border-b-2 border-gray-200 focus:border-primary focus:outline-none bg-transparent transition-colors"
+                  autoFocus
+                >
+                  <option value="">{steps[currentStep].placeholder}</option>
+                  {steps[currentStep].options?.map((option) => (
+                    <option key={option} value={option}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
+              ) : (
+                <Input
+                  type={steps[currentStep].type || "text"}
+                  placeholder={steps[currentStep].placeholder}
+                  value={formData[steps[currentStep].field]}
+                  onChange={(e) => handleInputChange(steps[currentStep].field, e.target.value)}
+                  onKeyDown={handleKeyPress}
+                  className="w-full p-4 text-lg border-0 border-b-2 border-gray-200 focus:border-primary focus:outline-none bg-transparent transition-colors rounded-none"
+                  autoFocus
+                />
+              )}
+
+              {/* Instructions */}
+              <p className="text-sm text-gray-500">
+                Pressione <kbd className="px-2 py-1 bg-gray-100 rounded text-xs">Enter ↵</kbd> para continuar
               </p>
-            )}
+            </div>
           </div>
 
-          {/* Input */}
-          <div className="space-y-6">
-            {steps[currentStep].type === "select" ? (
-              <select
-                value={formData[steps[currentStep].field]}
-                onChange={(e) => handleInputChange(steps[currentStep].field, e.target.value)}
-                onKeyDown={handleKeyPress}
-                className="w-full p-4 text-xl border-0 border-b-2 border-gray-200 focus:border-primary focus:outline-none bg-transparent transition-colors"
-                autoFocus
-              >
-                <option value="">{steps[currentStep].placeholder}</option>
-                {steps[currentStep].options?.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
-            ) : (
-              <Input
-                type={steps[currentStep].type || "text"}
-                placeholder={steps[currentStep].placeholder}
-                value={formData[steps[currentStep].field]}
-                onChange={(e) => handleInputChange(steps[currentStep].field, e.target.value)}
-                onKeyDown={handleKeyPress}
-                className="w-full p-4 text-xl border-0 border-b-2 border-gray-200 focus:border-primary focus:outline-none bg-transparent transition-colors rounded-none"
-                autoFocus
-              />
-            )}
+          {/* Bottom navigation */}
+          <div className="flex justify-between items-center mt-8">
+            <Button
+              type="button"
+              variant="ghost"
+              onClick={handlePrevious}
+              disabled={currentStep === 0}
+              className="flex items-center space-x-2 text-gray-600 hover:text-gray-900"
+            >
+              <ChevronLeft className="h-4 w-4" />
+              <span>Voltar</span>
+            </Button>
 
-            {/* Instructions */}
-            <p className="text-sm text-gray-500">
-              Pressione <kbd className="px-2 py-1 bg-gray-100 rounded text-xs">Enter ↵</kbd> para continuar
-            </p>
+            <Button
+              type="button"
+              onClick={handleNext}
+              disabled={!isCurrentStepValid()}
+              className="flex items-center space-x-2 px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg"
+            >
+              <span>
+                {currentStep === steps.length - 1 ? "Enviar" : "OK"}
+              </span>
+              {currentStep === steps.length - 1 ? (
+                <Check className="h-4 w-4" />
+              ) : (
+                <ChevronRight className="h-4 w-4" />
+              )}
+            </Button>
           </div>
         </div>
-      </div>
-
-      {/* Bottom navigation */}
-      <div className="flex justify-between items-center p-6 max-w-2xl mx-auto w-full">
-        <Button
-          type="button"
-          variant="ghost"
-          onClick={handlePrevious}
-          disabled={currentStep === 0}
-          className="flex items-center space-x-2 text-gray-600 hover:text-gray-900"
-        >
-          <ChevronLeft className="h-4 w-4" />
-          <span>Voltar</span>
-        </Button>
-
-        <Button
-          type="button"
-          onClick={handleNext}
-          disabled={!isCurrentStepValid()}
-          className="flex items-center space-x-2 px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg"
-        >
-          <span>
-            {currentStep === steps.length - 1 ? "Enviar" : "OK"}
-          </span>
-          {currentStep === steps.length - 1 ? (
-            <Check className="h-4 w-4" />
-          ) : (
-            <ChevronRight className="h-4 w-4" />
-          )}
-        </Button>
-      </div>
+      </Card>
     </div>
   );
 }
