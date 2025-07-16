@@ -8,58 +8,58 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Base colors - Light and clean */
-    --background: 0 0% 98%;
-    --foreground: 0 0% 15%;
+    /* Base colors - Black and Blue theme */
+    --background: 0 0% 8%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 15%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 15%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 98%;
 
-    /* Primary - Soft Turquoise */
-    --primary: 180 60% 45%;
+    /* Primary - Electric Blue */
+    --primary: 217 91% 60%;
     --primary-foreground: 0 0% 98%;
-    --primary-glow: 180 70% 55%;
+    --primary-glow: 217 100% 70%;
 
-    /* Secondary - Light Turquoise */
-    --secondary: 180 30% 85%;
-    --secondary-foreground: 0 0% 15%;
+    /* Secondary - Deep Blue */
+    --secondary: 217 60% 25%;
+    --secondary-foreground: 0 0% 98%;
 
-    /* Muted - Light gray */
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    /* Muted - Dark gray */
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
 
-    /* Accent - Bright Turquoise */
-    --accent: 180 50% 60%;
-    --accent-foreground: 0 0% 98%;
+    /* Accent - Bright Blue */
+    --accent: 217 80% 65%;
+    --accent-foreground: 0 0% 8%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 98%;
-    --ring: 180 60% 45%;
+    --border: 0 0% 20%;
+    --input: 0 0% 12%;
+    --ring: 217 91% 60%;
 
-    /* Block-specific backgrounds - Clean and light */
-    --block-hero: 0 0% 99%;
-    --block-clients: 180 20% 97%;
-    --block-trust: 0 0% 98%;
-    --block-services: 180 15% 96%;
-    --block-analytics: 0 0% 99%;
-    --block-cta: 180 30% 95%;
+    /* Block-specific backgrounds - Black and Blue themed */
+    --block-hero: 0 0% 4%;                    /* Deep black */
+    --block-clients: 217 60% 15%;             /* Dark blue */
+    --block-trust: 0 0% 8%;                   /* Dark black */
+    --block-services: 217 45% 12%;            /* Darker blue */
+    --block-analytics: 0 0% 6%;               /* Very dark black */
+    --block-cta: 217 80% 20%;                 /* Rich blue */
 
-    /* Design system extensions - Light gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(180 60% 45%), hsl(180 50% 55%));
-    --gradient-secondary: linear-gradient(180deg, hsl(180 10% 96%), hsl(0 0% 98%));
-    --gradient-block: linear-gradient(135deg, hsl(180 20% 96%), hsl(180 10% 98%));
-    --gradient-clients: linear-gradient(135deg, hsl(180 20% 97%), hsl(180 15% 98%));
-    --gradient-cta: linear-gradient(135deg, hsl(180 30% 95%), hsl(180 25% 97%));
-    --shadow-glow: 0 0 20px hsl(180 60% 45% / 0.15);
-    --shadow-block: 0 10px 25px -5px hsl(0 0% 0% / 0.1);
-    --shadow-blue: 0 10px 25px -5px hsl(180 60% 45% / 0.15);
-    --shadow-subtle: 0 5px 15px -3px hsl(0 0% 0% / 0.1);
+    /* Design system extensions - Blue gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 80% 50%));
+    --gradient-secondary: linear-gradient(180deg, hsl(217 40% 8%), hsl(0 0% 4%));
+    --gradient-block: linear-gradient(135deg, hsl(217 30% 12%), hsl(217 20% 8%));
+    --gradient-clients: linear-gradient(135deg, hsl(217 60% 15%), hsl(217 50% 12%));
+    --gradient-cta: linear-gradient(135deg, hsl(217 80% 20%), hsl(217 70% 15%));
+    --shadow-glow: 0 0 30px hsl(217 91% 60% / 0.3);
+    --shadow-block: 0 15px 35px -5px hsl(0 0% 0% / 0.7);
+    --shadow-blue: 0 15px 35px -5px hsl(217 91% 60% / 0.2);
+    --shadow-subtle: 0 8px 20px -3px hsl(0 0% 0% / 0.4);
     
     --radius: 0.75rem;
 

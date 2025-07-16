@@ -12,13 +12,13 @@ import inpulsoMetaMockup from "@/assets/inpulso-meta-mockup.png";
 
 export function GoogleMetaAdsSection() {
   return (
-    <section className="py-12 md:py-16 lg:py-20 px-4 bg-gradient-to-b from-muted/5 to-background overflow-hidden relative">
+    <section className="py-12 md:py-16 lg:py-20 px-4 text-white overflow-hidden relative">
       <div className="container mx-auto max-w-6xl">
         {/* Google Ads Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-16 md:mb-20 items-center">
           <div className="order-2 lg:order-1 space-y-6">
             <div className="transform translate-y-0 opacity-100 transition-all duration-1000 ease-out">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-foreground leading-tight">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-white leading-tight">
                 Fique no topo do{" "}
                 <span className="text-primary relative">
                   Google e venda mais
@@ -28,11 +28,11 @@ export function GoogleMetaAdsSection() {
             </div>
             
             <div className="transform translate-y-4 opacity-0 animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base md:text-lg text-gray-300 leading-relaxed">
                 Queremos garantir que você utilize os{" "}
-                <span className="font-semibold text-foreground">principais recursos do Google</span>{" "}
+                <span className="font-semibold text-white">principais recursos do Google</span>{" "}
                 da melhor forma possível, proporcionando a{" "}
-                <span className="font-semibold text-foreground">melhor performance</span>{" "}
+                <span className="font-semibold text-white">melhor performance</span>{" "}
                 do seu negócio no digital.
               </p>
             </div>
@@ -141,19 +141,19 @@ export function GoogleMetaAdsSection() {
 
           <div className="space-y-6">
             <div className="transform translate-y-0 opacity-100 transition-all duration-1000 ease-out">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-foreground leading-tight">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-white leading-tight">
                 Campanhas{" "}
-                <span className="text-blue-600 relative">
+                <span className="text-primary relative">
                   otimizadas e eficientes
-                  <div className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-purple-500 rounded-full transform scale-x-0 animate-scaleX" style={{ animationDelay: '0.5s' }}></div>
+                  <div className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-primary to-primary/50 rounded-full transform scale-x-0 animate-scaleX" style={{ animationDelay: '0.5s' }}></div>
                 </span>
               </h2>
             </div>
             
             <div className="transform translate-y-4 opacity-0 animate-fadeInUp" style={{ animationDelay: '0.8s' }}>
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base md:text-lg text-gray-300 leading-relaxed">
                 Atraia o público certo para o seu perfil e gere{" "}
-                <span className="font-semibold text-foreground">leads qualificados</span>{" "}
+                <span className="font-semibold text-white">leads qualificados</span>{" "}
                 para seu time comercial. Garantimos a criação de campanhas estratégicas e fazemos 
                 análises e sugestões no seu perfil para obter mais resultados.
               </p>
