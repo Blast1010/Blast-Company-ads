@@ -25,20 +25,22 @@ export function WhyTrustUsSection() {
     image: teamworkImage,
     imageAlt: "Trabalho em equipe colaborativo"
   }];
-  return <section className="py-20 px-4 bg-block-trust border-b border-primary/10 shadow-block relative overflow-hidden">
+  return (
+    <section className="py-20 px-4 bg-gradient-to-b from-muted/5 to-background border-b border-primary/10">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
             Diferenciais Competitivos
           </h2>
-          <h3 className="text-xl md:text-2xl text-primary font-semibold mb-4">
+          <h3 className="text-xl md:text-2xl text-primary font-semibold mb-4 text-center">
             Por que escolher nossa consultoria?
           </h3>
-          <div className="w-24 h-0.5 bg-gradient-primary mx-auto rounded-full"></div>
+          <div className="w-24 h-0.5 bg-gradient-to-r from-primary to-primary/50 mx-auto rounded-full"></div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {reasons.map((reason, index) => <Card key={index} className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden">
+          {reasons.map((reason, index) => (
+            <Card key={index} className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden">
               {/* Background Image */}
               <div className="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
                 <img src={reason.image} alt={reason.imageAlt} className="w-full h-full object-cover" />
@@ -56,22 +58,20 @@ export function WhyTrustUsSection() {
                   
                   {/* Content */}
                   <div className="space-y-4">
-                    <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+                    <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300 text-center">
                       {reason.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed font-medium">
+                    <p className="text-muted-foreground leading-relaxed font-medium text-center">
                       {reason.description}
                     </p>
                   </div>
                 </div>
               </CardContent>
               
-              {/* Connector line (except for last item on desktop) */}
-              {index < reasons.length - 1 && <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-primary/60 to-transparent"></div>}
-              
               {/* Bottom accent */}
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </Card>)}
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </Card>
+          ))}
         </div>
 
         {/* Bottom CTA */}
@@ -91,5 +91,6 @@ export function WhyTrustUsSection() {
           </FormModal>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 }
