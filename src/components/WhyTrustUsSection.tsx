@@ -10,22 +10,22 @@ export function WhyTrustUsSection() {
   const reasons = [
     {
       icon: Target,
-      title: "Conhecimento Especializado",
-      description: "Você conhece seu negócio melhor do que ninguém, nós conhecemos as melhores estratégias para vender na internet.",
+      title: "Expertise Técnica",
+      description: "Combinamos seu conhecimento do mercado com nossa especialização em estratégias digitais de alta performance.",
       image: strategyImage,
       imageAlt: "Estratégias digitais profissionais"
     },
     {
       icon: Handshake,
-      title: "Parceria Verdadeira",
-      description: "Sempre trabalharemos juntos, cuidando de cada real investido como se fosse nosso próprio dinheiro.",
+      title: "Parceria Estratégica",
+      description: "Atuamos como extensão da sua equipe, otimizando cada investimento com responsabilidade e transparência.",
       image: partnershipImage,
       imageAlt: "Parceria de negócios sólida"
     },
     {
       icon: Users,
-      title: "Inteligência Coletiva",
-      description: "Nós atuamos como seu parceiro, extraindo inteligência de diretores, coordenadores, gerentes, times de vendas, times de atendimento e de clientes finais.",
+      title: "Análise Multidisciplinar",
+      description: "Integramos insights de todas as áreas da empresa para desenvolver estratégias holísticas e eficazes.",
       image: teamworkImage,
       imageAlt: "Trabalho em equipe colaborativo"
     }
@@ -36,10 +36,10 @@ export function WhyTrustUsSection() {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Como vamos ajudar a sua empresa?
+            Diferenciais Competitivos
           </h2>
           <h3 className="text-xl md:text-2xl text-primary font-semibold mb-4">
-            Como confiar em nossa metodologia?
+            Por que escolher nossa consultoria?
           </h3>
           <div className="w-24 h-0.5 bg-gradient-primary mx-auto rounded-full"></div>
         </div>
@@ -97,7 +97,7 @@ export function WhyTrustUsSection() {
           <div className="inline-flex items-center space-x-3 px-6 py-3 bg-primary/10 rounded-full border border-primary/20">
             <Lightbulb className="h-5 w-5 text-primary" />
             <span className="text-primary font-semibold">
-              Metodologia comprovada em centenas de empresas
+              Metodologia validada por resultados consistentes
             </span>
           </div>
           

@@ -44,12 +44,12 @@ export function HeroSection() {
           {/* Left Column - Text Content */}
           <div className="space-y-8">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.2] tracking-tight text-left">
-              Temos como trabalho<br />
-              <span className="text-muted-foreground/80">Aumentar as Vendas da</span><br />
-              sua Empresa com{" "}
+              Especialistas em<br />
+              <span className="text-muted-foreground/80">Crescimento Digital</span><br />
+              para Empresas{" "}
               <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                Tráfego<br />
-                de Verdade
+                Visionárias<br />
+                e Ambiciosas
               </span>
             </h1>
             
@@ -58,19 +58,19 @@ export function HeroSection() {
               
               <div className="space-y-4 text-left">
                 <p className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
-                  Somos uma agência parceira da sua empresa.
+                  Consultoria estratégica em marketing digital e performance.
                 </p>
                 
                 <p className="text-base md:text-lg text-muted-foreground/90 leading-relaxed">
-                  Desenvolvemos estratégias <span className="text-foreground font-medium">Vencedoras</span> para 
-                  aumentar as vendas do seu negócio com o{" "}
-                  <span className="text-primary font-medium">mínimo investimento possível</span>.
+                  Desenvolvemos soluções <span className="text-foreground font-medium">personalizadas</span> para 
+                  acelerar o crescimento do seu negócio com{" "}
+                  <span className="text-primary font-medium">ROI comprovado e sustentável</span>.
                 </p>
                 
                 <p className="text-base md:text-lg text-muted-foreground/90 leading-relaxed">
-                  Entenda como crescer ainda mais a sua empresa por meio das maiores fontes de{" "}
+                  Potencialize seu alcance e conversões através das principais{" "}
                   <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent font-semibold">
-                    Tráfego do mundo
+                    plataformas digitais
                   </span>.
                 </p>
               </div>
@@ -97,7 +97,7 @@ export function HeroSection() {
             <div className="flex-1">
               <h3 className="text-lg font-semibold text-foreground mb-2">Metodologia Comprovada</h3>
               <p className="text-muted-foreground font-medium leading-relaxed">
-                Estratégias testadas e validadas no mercado
+                Processos estruturados baseados em análise de dados
               </p>
             </div>
           </div>
@@ -110,9 +110,9 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-primary/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="flex-1">
-              <h3 className="text-lg font-semibold text-foreground mb-2">Resultados Garantidos</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Excelência Operacional</h3>
               <p className="text-muted-foreground font-medium leading-relaxed">
-                Decisões baseadas em dados e performance
+                Gestão focada em métricas e otimização contínua
               </p>
             </div>
           </div>

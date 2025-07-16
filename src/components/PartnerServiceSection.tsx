@@ -7,23 +7,23 @@ export function PartnerServiceSection() {
   const services = [
     {
       icon: BarChart3,
-      title: "Transparência Total",
-      description: "Fazer você vender é o nosso trabalho diário, mas sabemos o quão importante é para nossos parceiros acompanharem o que está sendo feito.",
+      title: "Transparência Operacional",
+      description: "Garantimos visibilidade completa das ações e investimentos, com relatórios detalhados e acesso às métricas em tempo real.",
     },
     {
       icon: Users,
-      title: "Reuniões Estratégicas",
-      description: "Sempre faremos reuniões estratégicas, seja para extrair informações de inteligência, para tomar decisões juntos com você ou apenas para mostrar os resultados do nosso trabalho.",
+      title: "Alinhamento Estratégico",
+      description: "Reuniões periódicas para análise de resultados, tomada de decisões colaborativas e planejamento de próximas etapas.",
     },
     {
       icon: Shield,
-      title: "Acesso Direto",
-      description: "Não criamos burocracias para falar conosco, terá contato direto com nossos estrategistas para se sentir sempre seguro.",
+      title: "Comunicação Direta",
+      description: "Canal prioritário com especialistas sênior, garantindo agilidade na resolução de questões e otimizações.",
     },
     {
       icon: MessageSquare,
-      title: "CRM Integrado",
-      description: "Diferente de outros gestores, nós contamos com CRM integrado na sua estrutura juntamente com Relatórios diários com rastreamento de conversas, fazendo assim identificarmos otimizações precisas e economizar o seu dinheiro.",
+      title: "Tecnologia Integrada",
+      description: "Plataforma proprietária de gestão com integração completa ao seu CRM, permitindo análises precisas e otimizações baseadas em dados reais.",
     }
   ];
 
@@ -84,10 +84,10 @@ export function PartnerServiceSection() {
             <MessageSquare className="h-6 w-6 text-primary" />
             <div className="text-left">
               <p className="text-primary font-semibold">
-                Atendimento diferenciado
+                Excelência no Atendimento
               </p>
               <p className="text-muted-foreground text-sm">
-                Contato direto com especialistas, sem burocracias
+                Suporte especializado com foco em resultados
               </p>
             </div>
           </div>

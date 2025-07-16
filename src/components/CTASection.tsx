@@ -9,13 +9,13 @@ export function CTASection() {
         <div className="space-y-8">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Pronto para escalar seu negócio com{" "}
+              Pronto para acelerar o crescimento com{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                tráfego pago?
+                marketing digital?
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Converse com um especialista e descubra como podemos ajudar você a transformar cliques em clientes.
+              Conecte-se com nossos especialistas e descubra estratégias personalizadas para maximizar seus resultados.
             </p>
           </div>
           
@@ -27,13 +27,13 @@ export function CTASection() {
                 className="group"
               >
                 <MessageCircle className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                Solicitar Diagnóstico Gratuito
+                Solicitar Consultoria Estratégica
               </Button>
             </FormModal>
           </div>
           
           <div className="text-sm text-muted-foreground">
-            Sem compromisso • Receba insights em 24 horas
+            Análise personalizada • Retorno em até 24 horas
           </div>
         </div>
       </div>
