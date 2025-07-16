@@ -88,7 +88,9 @@ export function WhyTrustUsSection() {
           </div>
           
           <FormModal>
-            
+            <Button variant="outline" size="lg" className="group border-primary/20 hover:border-primary bg-background/5 backdrop-blur-sm">
+              Falar com Especialista
+            </Button>
           </FormModal>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Crown, Award } from "lucide-react";
+import { Mail, Crown, Award, TrendingUp, Users } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
 import { useInView } from "@/hooks/useInView";
 
@@ -8,42 +8,56 @@ export function HeroSection() {
   const [subtitleRef, subtitleInView] = useInView({ threshold: 0.2 });
   const [ctaRef, ctaInView] = useInView({ threshold: 0.2 });
   const [statsRef, statsInView] = useInView({ threshold: 0.2 });
-  return <section className="relative min-h-screen flex flex-col justify-center px-4 py-20 overflow-hidden text-white">
-      {/* Simplified Light Effects */}
+  return <section className="relative min-h-screen flex flex-col justify-center px-4 py-20 overflow-hidden text-white bg-gradient-to-br from-background via-background/95 to-background/90">
+      {/* Professional Grid Pattern */}
+      <div className="absolute inset-0 opacity-[0.02]">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 1px 1px, rgb(255,255,255) 1px, transparent 0)`,
+          backgroundSize: '40px 40px'
+        }}></div>
+      </div>
+      
+      {/* Elegant Light Effects */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Main ambient light - simplified */}
-        <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 w-[100%] h-[60vh] 
-                        bg-gradient-radial from-primary/15 via-primary/8 to-transparent 
-                        rounded-full blur-2xl opacity-60 animate-breathe"></div>
+        {/* Main professional glow */}
+        <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] h-[50vh] 
+                        bg-gradient-radial from-primary/8 via-primary/4 to-transparent 
+                        rounded-full blur-3xl opacity-40"></div>
         
-        {/* Secondary glow */}
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[120%] h-[40vh] 
-                        bg-gradient-to-t from-primary/10 via-primary/5 to-transparent 
-                        blur-xl opacity-40 animate-breathe"></div>
+        {/* Side accent lights */}
+        <div className="absolute top-0 right-0 w-[30%] h-[40%] 
+                        bg-gradient-to-bl from-primary/6 to-transparent 
+                        blur-2xl opacity-30"></div>
         
-        {/* Subtle top accent */}
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-32 
-                        bg-gradient-to-b from-primary/8 to-transparent 
-                        blur-xl opacity-25"></div>
+        <div className="absolute bottom-0 left-0 w-[30%] h-[40%] 
+                        bg-gradient-to-tr from-primary/6 to-transparent 
+                        blur-2xl opacity-30"></div>
       </div>
       
       <div className="container mx-auto max-w-5xl relative z-10">
-        {/* Logo */}
-        <div className="text-center mb-16">
-          
-          
-          {/* User Logo */}
-          <div className="mb-4">
-            
-          </div>
-          
-          <h2 
+        {/* Professional Header */}
+        <div className="text-center mb-20">
+          <div 
             ref={titleRef as any}
-            className={`text-2xl md:text-2xl font-bold tracking-tight transition-all duration-700 ${
+            className={`inline-flex items-center gap-3 mb-6 px-6 py-3 rounded-full border border-primary/20 bg-background/10 backdrop-blur-sm transition-all duration-700 ${
               titleInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
-            Blast Company <span className="text-primary">ads</span>
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+            <span className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
+              Especialistas em Performance Digital
+            </span>
+          </div>
+          
+          <h2 
+            className={`text-3xl md:text-4xl font-bold tracking-tight transition-all duration-700 delay-100 ${
+              titleInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            }`}
+          >
+            <span className="bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
+              Blast Company 
+            </span>
+            <span className="text-primary ml-2">Ads</span>
           </h2>
         </div>
 
@@ -53,38 +67,49 @@ export function HeroSection() {
           <div className="space-y-8">
             <h1 
               ref={subtitleRef as any}
-              className={`text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-center transition-all duration-700 delay-200 ${
+              className={`text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.08] tracking-tight text-center transition-all duration-700 delay-200 ${
                 subtitleInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
               }`}
             >
-              <span className="text-primary text-lg md:text-xl font-medium tracking-wide uppercase">NOSSO TRABALHO É</span><br />
-              <span className="text-4xl md:text-5xl lg:text-6xl">AUMENTAR AS VENDAS</span><br />
-              <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl">
-                DA SUA EMPRESA
-              </span><br />
-              <span className="text-xl md:text-2xl lg:text-3xl text-muted-foreground font-semibold">
-                com tráfego de verdade
+              <span className="block text-foreground/90 mb-2">
+                Transformamos
+              </span>
+              <span className="block bg-gradient-to-r from-primary via-primary to-primary/80 bg-clip-text text-transparent mb-2">
+                Investimento
+              </span>
+              <span className="block text-foreground/90 text-3xl md:text-4xl lg:text-5xl">
+                em <span className="text-primary font-black">Resultados</span>
               </span>
             </h1>
             
             <div 
-              className={`space-y-6 transition-all duration-700 delay-400 ${
+              className={`space-y-8 transition-all duration-700 delay-400 ${
                 subtitleInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
               }`}
             >
-              <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-full mx-auto"></div>
+              <div className="w-20 h-0.5 bg-gradient-to-r from-primary/50 via-primary to-primary/50 rounded-full mx-auto"></div>
               
-              <div className="space-y-4 text-center">
-                <p className="text-lg md:text-xl text-muted-foreground font-medium leading-relaxed text-left">
-                  <span className="font-bold text-red-500">Cansou de queimar dinheiro</span> em campanhas que não geram resultado? 
-                  Enquanto você lê isso, seus <span className="text-primary font-bold">concorrentes estão vendendo mais</span>.
+              <div className="max-w-3xl mx-auto text-center space-y-6">
+                <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed font-light">
+                  Estratégias de <span className="text-primary font-semibold">tráfego pago</span> baseadas em dados, 
+                  otimizadas para <span className="text-foreground font-semibold">máximo ROI</span> e 
+                  <span className="text-primary font-semibold"> resultados mensuráveis</span>.
                 </p>
                 
-                <p className="text-base md:text-lg text-muted-foreground/90 leading-relaxed">
-                  <span className="text-foreground font-medium">Chega de desculpas.</span> Nosso método já fez empresas 
-                  aumentarem suas vendas em <span className="text-primary font-bold">300% em 90 dias</span>, 
-                  investindo <span className="text-primary font-bold">50% menos</span> que antes.
-                </p>
+                <div className="flex flex-wrap justify-center gap-6 pt-4">
+                  <div className="flex items-center gap-2 text-muted-foreground">
+                    <TrendingUp className="w-5 h-5 text-primary" />
+                    <span className="font-medium">ROI Comprovado</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-muted-foreground">
+                    <Users className="w-5 h-5 text-primary" />
+                    <span className="font-medium">+200 Clientes</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-muted-foreground">
+                    <Crown className="w-5 h-5 text-primary" />
+                    <span className="font-medium">5 Anos de Mercado</span>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -99,40 +124,38 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Bottom Features */}
+        {/* Professional Trust Indicators */}
         <div 
           ref={statsRef as any}
-          className={`grid grid-cols-1 md:grid-cols-2 gap-8 mt-20 max-w-4xl mx-auto transition-all duration-700 delay-800 ${
+          className={`grid grid-cols-1 md:grid-cols-2 gap-6 mt-16 max-w-2xl mx-auto transition-all duration-700 delay-800 ${
             statsInView ? 'animate-fade-in opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
-          <div className="flex flex-col items-center text-center group">
-            <div className="relative flex-shrink-0 mb-4">
-              <div className="w-16 h-16 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border border-border/50 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-primary/20 transition-all duration-300">
-                <Crown className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
+          <div className="flex items-center justify-center p-6 rounded-2xl bg-background/5 backdrop-blur-sm border border-border/20 hover:border-primary/30 transition-all duration-300 group">
+            <div className="flex items-center gap-4">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <Crown className="h-6 w-6 text-primary" />
+                </div>
               </div>
-              <div className="absolute inset-0 bg-primary/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </div>
-            <div className="flex-1">
-              <h3 className="text-lg font-semibold text-foreground mb-2">Resultados em 30 Dias</h3>
-              <p className="text-muted-foreground font-medium leading-relaxed">
-                Ou devolvemos 100% do seu investimento
-              </p>
+              <div>
+                <h3 className="text-lg font-semibold text-foreground">Garantia 30 Dias</h3>
+                <p className="text-sm text-muted-foreground">Resultados ou reembolso</p>
+              </div>
             </div>
           </div>
           
-          <div className="flex flex-col items-center text-center group">
-            <div className="relative flex-shrink-0 mb-4">
-              <div className="w-16 h-16 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border border-border/50 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-primary/20 transition-all duration-300">
-                <Award className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
+          <div className="flex items-center justify-center p-6 rounded-2xl bg-background/5 backdrop-blur-sm border border-border/20 hover:border-primary/30 transition-all duration-300 group">
+            <div className="flex items-center gap-4">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <Award className="h-6 w-6 text-primary" />
+                </div>
               </div>
-              <div className="absolute inset-0 bg-primary/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </div>
-            <div className="flex-1">
-              <h3 className="text-lg font-semibold text-foreground mb-2">Mais Vendas, Menos Gasto</h3>
-              <p className="text-muted-foreground font-medium leading-relaxed">
-                Sistema comprovado que multiplica seu faturamento
-              </p>
+              <div>
+                <h3 className="text-lg font-semibold text-foreground">ROI Garantido</h3>
+                <p className="text-sm text-muted-foreground">Performance comprovada</p>
+              </div>
             </div>
           </div>
         </div>

@@ -78,7 +78,9 @@ export function PartnerServiceSection() {
           </div>
           
           <FormModal>
-            
+            <Button variant="outline" size="lg" className="group border-primary/20 hover:border-primary bg-background/5 backdrop-blur-sm">
+              Começar Agora
+            </Button>
           </FormModal>
         </div>
       </div>
