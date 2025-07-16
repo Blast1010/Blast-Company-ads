@@ -52,25 +52,40 @@ export function HeroSection() {
           {/* Text Content */}
           <div className="space-y-8">
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-center">
-              <span className="text-3xl md:text-4xl lg:text-5xl text-muted-foreground font-medium">Seu concorrente está</span><br />
+              <span className="text-2xl md:text-3xl lg:text-4xl text-red-400 font-semibold uppercase tracking-wide">Enquanto você hesita,</span><br />
               <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                FATURANDO MILHÕES
+                SEUS CONCORRENTES
               </span><br />
-              <span className="text-xl md:text-2xl lg:text-3xl text-muted-foreground font-medium">
-                enquanto você lê isso
+              <span className="bg-gradient-to-r from-red-500 to-red-400 bg-clip-text text-transparent">
+                DOMINAM O MERCADO
               </span>
             </h1>
             
             <div className="space-y-8 mt-12">
-              <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-center leading-tight">
-                <span className="text-red-400">Pare de perder dinheiro.</span><br/>
-                <span className="text-foreground">Comece a ganhar hoje.</span>
-              </p>
-              
-              <div className="max-w-2xl mx-auto">
-                <p className="text-lg md:text-xl text-muted-foreground text-center leading-relaxed">
-                  Transformamos empresários frustrados em <span className="text-primary font-bold">máquinas de vendas online</span>. 
-                  Sem enrolação, sem promessas vazias.
+              <div className="max-w-3xl mx-auto space-y-6">
+                <p className="text-2xl md:text-3xl font-bold text-center leading-tight">
+                  <span className="text-red-400">Eles faturam R$ 50.000+ por mês</span><br/>
+                  <span className="text-foreground">enquanto você ainda "pensa" em começar</span>
+                </p>
+                
+                <div className="w-24 h-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-full mx-auto"></div>
+                
+                <p className="text-xl md:text-2xl text-center leading-relaxed text-muted-foreground">
+                  Cada dia que passa sem uma estratégia de anúncios eficiente é dinheiro 
+                  <span className="text-red-400 font-bold"> PERDIDO PARA SEMPRE</span>
+                </p>
+                
+                <div className="bg-card/30 backdrop-blur-sm border border-primary/20 rounded-2xl p-6 md:p-8">
+                  <p className="text-lg md:text-xl text-center leading-relaxed">
+                    <span className="text-primary font-bold text-2xl">"Mas e se eu te disser</span><br/>
+                    <span className="text-foreground">que você pode reverter essa situação em apenas</span>
+                    <span className="text-primary font-bold text-2xl"> 30 dias?"</span>
+                  </p>
+                </div>
+                
+                <p className="text-base md:text-lg text-center text-muted-foreground leading-relaxed">
+                  Pare de ser espectador do sucesso dos outros. <span className="text-primary font-bold">É hora de ser o protagonista</span> 
+                  da sua própria história de sucesso.
                 </p>
               </div>
 
@@ -79,11 +94,11 @@ export function HeroSection() {
               </div>
               
               <div className="text-center space-y-2">
-                <p className="text-sm text-muted-foreground">
-                  ⚡ Resposta em menos de 2 horas
+                <p className="text-sm text-red-400 font-semibold">
+                  ⏰ Seus concorrentes não vão esperar você decidir
                 </p>
-                <p className="text-sm text-muted-foreground">
-                  🎯 Análise gratuita do seu negócio
+                <p className="text-sm text-primary font-medium">
+                  🚀 Comece hoje e recupere o tempo perdido
                 </p>
               </div>
             </div>
