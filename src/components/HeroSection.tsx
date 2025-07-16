@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Target, TrendingUp } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
+import heroMarketingImage from "@/assets/hero-marketing.jpg";
 
 export function HeroSection() {
   return (
@@ -73,6 +74,42 @@ export function HeroSection() {
                     Tráfego do mundo
                   </span>.
                 </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Hero Image Section */}
+          <div className="mt-16 mb-8">
+            <div className="relative max-w-4xl mx-auto">
+              <div className="relative overflow-hidden rounded-3xl shadow-2xl">
+                <img 
+                  src={heroMarketingImage} 
+                  alt="Estratégias de marketing digital para crescimento de vendas"
+                  className="w-full h-80 md:h-96 object-cover"
+                />
+                {/* Cinematic Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-background/20"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-accent/20"></div>
+                
+                {/* Floating Badge */}
+                <div className="absolute top-6 left-6 bg-primary/90 backdrop-blur-sm text-primary-foreground px-4 py-2 rounded-lg shadow-glow">
+                  <span className="text-sm font-bold">Tráfego de Verdade</span>
+                </div>
+                
+                {/* Bottom Stats */}
+                <div className="absolute bottom-6 right-6 bg-card/90 backdrop-blur-sm border border-border/50 p-4 rounded-xl shadow-lg">
+                  <div className="flex items-center space-x-4 text-sm">
+                    <div className="text-center">
+                      <div className="text-primary font-bold text-lg">+300%</div>
+                      <div className="text-muted-foreground">ROI Médio</div>
+                    </div>
+                    <div className="w-px h-8 bg-border"></div>
+                    <div className="text-center">
+                      <div className="text-green-400 font-bold text-lg">24/7</div>
+                      <div className="text-muted-foreground">Suporte</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
