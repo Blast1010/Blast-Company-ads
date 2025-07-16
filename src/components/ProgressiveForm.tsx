@@ -2,8 +2,9 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
-import { Mail, ChevronRight, ChevronLeft, Check, Building, Target, DollarSign, Calendar, Phone } from "lucide-react";
+import { Mail, ChevronRight, ChevronLeft, Check, Building, Target, DollarSign, Calendar, Phone, Sparkles, Zap, Star } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+
 interface FormData {
   name: string;
   email: string;
@@ -29,60 +30,68 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
     timeline: "",
     phone: ""
   });
-  const {
-    toast
-  } = useToast();
+  const { toast } = useToast();
+  
   const steps = [{
     id: "name",
     title: "Vamos começar! Como você se chama?",
     placeholder: "Digite seu nome",
-    icon: <Mail className="h-6 w-6" />,
-    field: "name" as keyof FormData
+    icon: <Sparkles className="h-6 w-6" />,
+    field: "name" as keyof FormData,
+    gradient: "from-purple-500 to-pink-500"
   }, {
     id: "email",
     title: "Qual é o seu e-mail?",
     placeholder: "seu@email.com",
     icon: <Mail className="h-6 w-6" />,
     field: "email" as keyof FormData,
-    type: "email"
+    type: "email",
+    gradient: "from-blue-500 to-cyan-500"
   }, {
     id: "company",
     title: "Qual é o nome da sua empresa?",
     placeholder: "Nome da empresa",
     icon: <Building className="h-6 w-6" />,
-    field: "company" as keyof FormData
+    field: "company" as keyof FormData,
+    gradient: "from-green-500 to-emerald-500"
   }, {
     id: "objective",
     title: "Qual é o seu principal objetivo?",
     placeholder: "Ex: Aumentar vendas, gerar leads, melhorar conversões...",
     icon: <Target className="h-6 w-6" />,
-    field: "objective" as keyof FormData
+    field: "objective" as keyof FormData,
+    gradient: "from-orange-500 to-red-500"
   }, {
     id: "budget",
     title: "Qual é o seu orçamento mensal para marketing digital?",
     placeholder: "Ex: R$ 5.000 - R$ 10.000",
     icon: <DollarSign className="h-6 w-6" />,
-    field: "budget" as keyof FormData
+    field: "budget" as keyof FormData,
+    gradient: "from-yellow-500 to-orange-500"
   }, {
     id: "timeline",
     title: "Em quanto tempo espera ver os primeiros resultados?",
     placeholder: "Ex: 30 dias, 3 meses...",
     icon: <Calendar className="h-6 w-6" />,
-    field: "timeline" as keyof FormData
+    field: "timeline" as keyof FormData,
+    gradient: "from-indigo-500 to-purple-500"
   }, {
     id: "phone",
     title: "Por último, qual é o seu telefone?",
     placeholder: "(11) 99999-9999",
     icon: <Phone className="h-6 w-6" />,
     field: "phone" as keyof FormData,
-    type: "tel"
+    type: "tel",
+    gradient: "from-pink-500 to-rose-500"
   }];
+
   const handleInputChange = (value: string) => {
     setFormData(prev => ({
       ...prev,
       [steps[currentStep].field]: value
     }));
   };
+
   const handleNext = () => {
     const currentValue = formData[steps[currentStep].field];
     if (!currentValue.trim()) {
@@ -99,11 +108,13 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
       handleSubmit();
     }
   };
+
   const handlePrevious = () => {
     if (currentStep > 0) {
       setCurrentStep(currentStep - 1);
     }
   };
+
   const handleSubmit = () => {
     toast({
       title: "Formulário enviado com sucesso!",
@@ -121,87 +132,163 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
     });
     onComplete?.();
   };
+
   const handleKeyPress = (e: React.KeyboardEvent) => {
     if (e.key === "Enter") {
       handleNext();
     }
   };
+
   const currentStepData = steps[currentStep];
   const progress = (currentStep + 1) / steps.length * 100;
-  return <Card className="w-full max-w-md bg-gradient-to-br from-card/95 via-card/90 to-card/95 backdrop-blur-sm border-2 border-primary/30 shadow-glow hover:shadow-glow/80 hover:border-primary/50 transition-all duration-500 relative overflow-hidden group">
-      {/* Premium glow effect */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-      
-      {/* Animated border */}
-      <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-        <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-primary/20 via-transparent to-primary/20 animate-[spin_8s_linear_infinite]"></div>
-      </div>
-      {/* Progress Bar */}
-      <div className="h-2 bg-muted/30 rounded-t-lg overflow-hidden">
-        <div className="h-full bg-gradient-to-r from-primary to-primary/70 transition-all duration-500 ease-out" style={{
-        width: `${progress}%`
-      }} />
-      </div>
 
-      <div className="p-6 relative z-10">
-        {/* Premium badge */}
-        <div className="absolute -top-3 -right-3 w-6 h-6 bg-primary rounded-full flex items-center justify-center shadow-glow animate-pulse">
-          <div className="w-2 h-2 bg-primary-foreground rounded-full"></div>
-        </div>
+  return (
+    <div className="relative">
+      {/* Elementos flutuantes surreais ao redor do formulário */}
+      <div className="absolute -inset-20 pointer-events-none">
+        {/* Orbes flutuantes coloridos */}
+        <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-purple-500/30 to-pink-500/30 rounded-full blur-xl animate-float opacity-70"></div>
+        <div className="absolute top-10 right-0 w-24 h-24 bg-gradient-to-br from-blue-500/30 to-cyan-500/30 rounded-full blur-xl animate-float opacity-60" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-0 left-1/4 w-20 h-20 bg-gradient-to-br from-green-500/30 to-emerald-500/30 rounded-full blur-xl animate-float opacity-50" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute bottom-10 right-1/4 w-28 h-28 bg-gradient-to-br from-orange-500/30 to-red-500/30 rounded-full blur-xl animate-float opacity-65" style={{ animationDelay: '1s' }}></div>
         
-        {/* Header */}
-        <div className="flex items-center justify-center mb-6">
-          <div className="text-sm text-muted-foreground font-medium bg-muted/20 px-3 py-1 rounded-full border border-border/30">
-            {currentStep + 1} de {steps.length}
-          </div>
+        {/* Partículas pequenas */}
+        <div className="absolute top-1/3 left-1/2 w-3 h-3 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute top-2/3 right-1/3 w-2 h-2 bg-pink-400 rounded-full animate-bounce" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute bottom-1/3 left-1/3 w-4 h-4 bg-blue-400 rounded-full animate-pulse" style={{ animationDelay: '3s' }}></div>
+        
+        {/* Ondas de energia */}
+        <div className="absolute inset-0 animate-pulse">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 border border-primary/20 rounded-full animate-[spin_20s_linear_infinite]"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 border border-blue-500/20 rounded-full animate-[spin_15s_linear_infinite_reverse]"></div>
         </div>
+      </div>
 
-        {/* Question */}
-        <div className="space-y-6">
-          <div className="flex items-start space-x-3">
-            <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center text-primary-foreground flex-shrink-0 shadow-glow group-hover:scale-110 transition-transform duration-300">
-              {currentStepData.icon}
+      <Card className="w-full max-w-lg relative overflow-hidden bg-transparent backdrop-blur-xl border-0 shadow-none">
+        {/* Container principal com glassmorphism */}
+        <div className="relative bg-gradient-to-br from-white/10 via-white/5 to-white/10 backdrop-blur-2xl border border-white/20 rounded-3xl shadow-2xl overflow-hidden">
+          {/* Brilho animado nas bordas */}
+          <div className="absolute inset-0 rounded-3xl">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-1000 animate-pulse"></div>
+          </div>
+          
+          {/* Reflexos holográficos */}
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent via-blue-500/10 via-transparent to-pink-500/10 opacity-50 animate-pulse"></div>
+          
+          {/* Progress Bar Surreal */}
+          <div className="h-3 bg-black/20 rounded-t-3xl overflow-hidden relative">
+            <div 
+              className={`h-full bg-gradient-to-r ${currentStepData.gradient} transition-all duration-1000 ease-out relative`}
+              style={{ width: `${progress}%` }}
+            >
+              {/* Brilho na barra de progresso */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-pulse"></div>
             </div>
-            <div className="flex-1">
-              <h3 className="text-lg font-bold text-foreground leading-tight group-hover:text-primary transition-colors duration-300">
+            {/* Estrelas flutuantes na barra */}
+            <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+              <Star className="h-3 w-3 text-white animate-pulse" style={{ left: `${progress - 5}%`, position: 'absolute' }} />
+            </div>
+          </div>
+
+          <div className="p-8 relative">
+            {/* Ícone principal surreal */}
+            <div className="flex justify-center mb-8">
+              <div className="relative">
+                <div className={`w-20 h-20 bg-gradient-to-br ${currentStepData.gradient} rounded-full flex items-center justify-center text-white shadow-2xl transform hover:scale-110 transition-all duration-500 animate-float`}>
+                  {currentStepData.icon}
+                  {/* Anel de energia */}
+                  <div className="absolute inset-0 rounded-full border-2 border-white/30 animate-ping"></div>
+                  <div className="absolute -inset-2 rounded-full border border-white/20 animate-pulse"></div>
+                </div>
+                {/* Partículas ao redor do ícone */}
+                <div className="absolute -top-2 -right-2 w-4 h-4 bg-yellow-400 rounded-full animate-bounce"></div>
+                <div className="absolute -bottom-2 -left-2 w-3 h-3 bg-pink-400 rounded-full animate-pulse"></div>
+              </div>
+            </div>
+
+            {/* Contador de passos */}
+            <div className="flex items-center justify-center mb-6">
+              <div className="bg-black/20 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
+                <span className="text-white font-medium text-sm">
+                  {currentStep + 1} de {steps.length}
+                </span>
+              </div>
+            </div>
+
+            {/* Título com efeito surreal */}
+            <div className="text-center mb-8">
+              <h3 className="text-xl font-bold text-white leading-tight relative">
                 {currentStepData.title}
+                {/* Sublinhado animado */}
+                <div className={`absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r ${currentStepData.gradient} rounded-full animate-pulse`}></div>
               </h3>
             </div>
-          </div>
 
-          {/* Input */}
-          <div className="space-y-4">
-            <Input type={currentStepData.type || "text"} placeholder={currentStepData.placeholder} value={formData[currentStepData.field]} onChange={e => handleInputChange(e.target.value)} onKeyPress={handleKeyPress} className="text-base py-3 h-12 bg-background/50 border-2 border-border/30 focus:border-primary focus:ring-primary/20 hover:border-primary/50 transition-all duration-300" autoFocus />
+            {/* Input surreal */}
+            <div className="space-y-6">
+              <div className="relative">
+                <Input 
+                  type={currentStepData.type || "text"}
+                  placeholder={currentStepData.placeholder}
+                  value={formData[currentStepData.field]}
+                  onChange={(e) => handleInputChange(e.target.value)}
+                  onKeyPress={handleKeyPress}
+                  className="text-base py-4 h-14 bg-black/20 backdrop-blur-sm border-2 border-white/20 text-white placeholder:text-white/60 focus:border-white/50 focus:ring-white/20 hover:border-white/40 transition-all duration-500 rounded-2xl"
+                  autoFocus
+                />
+                {/* Brilho no input */}
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+              </div>
 
-            {/* Navigation */}
-            <div className="flex items-center justify-between pt-2">
-              <Button variant="ghost" onClick={handlePrevious} disabled={currentStep === 0} className="flex items-center space-x-2 text-muted-foreground hover:text-foreground disabled:opacity-50">
-                <ChevronLeft className="h-4 w-4" />
-                <span>Voltar</span>
-              </Button>
+              {/* Botões de navegação */}
+              <div className="flex items-center justify-between pt-4">
+                <Button
+                  variant="ghost"
+                  onClick={handlePrevious}
+                  disabled={currentStep === 0}
+                  className="flex items-center space-x-2 text-white/70 hover:text-white disabled:opacity-30 bg-black/20 backdrop-blur-sm rounded-full px-6 py-3 border border-white/20 hover:border-white/40 transition-all duration-300"
+                >
+                  <ChevronLeft className="h-4 w-4" />
+                  <span>Voltar</span>
+                </Button>
 
-              <Button onClick={handleNext} className="bg-gradient-primary hover:shadow-glow px-8 py-3 rounded-full flex items-center space-x-2 shadow-glow hover:scale-105 transition-all duration-300 text-primary-foreground font-semibold relative overflow-hidden group">
-                {/* Button glow effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <span className="relative z-10">
-                  {currentStep === steps.length - 1 ? "Enviar" : "Próximo"}
-                </span>
-                <span className="relative z-10">
-                  {currentStep === steps.length - 1 ? <Check className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
-                </span>
-              </Button>
+                <Button
+                  onClick={handleNext}
+                  className={`bg-gradient-to-r ${currentStepData.gradient} hover:shadow-2xl px-8 py-4 rounded-full flex items-center space-x-3 shadow-xl hover:scale-105 transition-all duration-500 text-white font-semibold relative overflow-hidden group`}
+                >
+                  {/* Efeito de brilho no botão */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/40 to-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div>
+                  
+                  {/* Ícone mágico */}
+                  <Zap className="h-5 w-5 animate-pulse relative z-10" />
+                  
+                  <span className="relative z-10">
+                    {currentStep === steps.length - 1 ? "Enviar Mágica" : "Próximo"}
+                  </span>
+                  
+                  <span className="relative z-10">
+                    {currentStep === steps.length - 1 ? 
+                      <Sparkles className="h-5 w-5 animate-spin" /> : 
+                      <ChevronRight className="h-5 w-5" />
+                    }
+                  </span>
+                </Button>
+              </div>
+            </div>
+
+            {/* Texto de ajuda surreal */}
+            <div className="mt-8 text-center">
+              <p className="text-xs text-white/60 flex items-center justify-center space-x-2">
+                <Sparkles className="h-3 w-3" />
+                <span>Pressione</span>
+                <kbd className="px-3 py-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-xs text-white font-mono">Enter</kbd>
+                <span>para continuar</span>
+                <Sparkles className="h-3 w-3" />
+              </p>
             </div>
           </div>
         </div>
-
-        {/* Helper Text */}
-        <div className="mt-6 text-center">
-          <p className="text-xs text-muted-foreground flex items-center justify-center space-x-2">
-            <span>Pressione</span>
-            <kbd className="px-2 py-1 bg-primary/10 border border-primary/20 rounded text-xs text-primary font-mono">Enter</kbd>
-            <span>para continuar</span>
-          </p>
-        </div>
-      </div>
-    </Card>;
+      </Card>
+    </div>
+  );
 }
