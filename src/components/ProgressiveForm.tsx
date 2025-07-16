@@ -171,7 +171,7 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
   };
   const currentStepData = steps[currentStep];
   const progress = (currentStep + 1) / steps.length * 100;
-  return <Card className="w-full max-w-md bg-gradient-to-br from-card/95 via-card/90 to-card/95 backdrop-blur-sm border-2 border-primary/30 shadow-glow hover:shadow-glow/80 hover:border-primary/50 transition-all duration-500 relative overflow-hidden group">
+  return <Card className="w-full max-w-md bg-gradient-to-br from-card/95 via-card/90 to-card/95 backdrop-blur-sm border-0 shadow-glow hover:shadow-glow/80 transition-all duration-500 relative overflow-hidden group">
       {/* Premium glow effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
       
