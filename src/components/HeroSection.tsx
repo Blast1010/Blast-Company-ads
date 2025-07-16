@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Target, TrendingUp } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
-import heroTeamImage from "@/assets/hero-team-success.jpg";
+import heroWorkspace from "@/assets/hero-workspace.jpg";
 export function HeroSection() {
   return <section className="relative min-h-screen flex flex-col justify-center px-4 py-20 bg-background overflow-hidden">
       {/* Cinematic Light Effects - Emerging from Below */}
@@ -81,8 +81,36 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Right Column - Logo B com Animação de Surgir */}
-          
+          {/* Right Column - Cinematic Image */}
+          <div className="relative">
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl group">
+              <img 
+                src={heroWorkspace} 
+                alt="Workspace profissional com dashboards de analytics"
+                className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              {/* Cinematic Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-accent/20"></div>
+              
+              {/* Floating Elements */}
+              <div className="absolute top-6 right-6 bg-primary/90 backdrop-blur-sm text-primary-foreground px-4 py-2 rounded-lg shadow-glow animate-pulse">
+                <span className="text-sm font-semibold">Live Analytics</span>
+              </div>
+              
+              <div className="absolute bottom-6 left-6 bg-card/90 backdrop-blur-sm border border-border/50 p-4 rounded-xl shadow-lg">
+                <div className="flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium">Performance em Tempo Real</span>
+                </div>
+              </div>
+              
+              {/* Brand Badge */}
+              <div className="absolute top-6 left-6 bg-gradient-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold shadow-glow">
+                Blast Company
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Bottom Features */}

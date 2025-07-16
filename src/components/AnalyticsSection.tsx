@@ -2,9 +2,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BarChart3, TrendingUp, Eye, Target, Mail } from "lucide-react";
 import { FormModal } from "@/components/FormModal";
-import dashboardImage from "@/assets/dashboard-analytics.jpg";
-import teamImage from "@/assets/team-analytics.jpg";
-import metricsImage from "@/assets/metrics-dashboard.jpg";
+import dashboardImage from "@/assets/dashboard-closeup.jpg";
+import teamImage from "@/assets/meeting-analytics.jpg";
+import metricsImage from "@/assets/workspace-overview.jpg";
 
 export function AnalyticsSection() {
   const features = [
@@ -59,16 +59,20 @@ export function AnalyticsSection() {
               <div className="relative h-80 md:h-96 overflow-hidden">
                 <img 
                   src={dashboardImage} 
-                  alt="Dashboard profissional com métricas de marketing digital"
-                  className="w-full h-full object-cover"
+                  alt="Dashboard profissional em ação com métricas reais"
+                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
                 />
                 {/* Cinematic Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-background/30"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/15 via-transparent to-accent/15"></div>
                 
-                {/* Floating Elements */}
-                <div className="absolute top-6 right-6 bg-primary/90 backdrop-blur-sm text-primary-foreground px-4 py-2 rounded-lg shadow-glow">
-                  <span className="text-sm font-semibold">ROI em Tempo Real</span>
+                {/* Floating Elements - More Dynamic */}
+                <div className="absolute top-6 right-6 bg-primary/90 backdrop-blur-sm text-primary-foreground px-4 py-2 rounded-lg shadow-glow animate-pulse">
+                  <span className="text-sm font-semibold">ROI: +284%</span>
+                </div>
+                
+                <div className="absolute top-6 left-6 bg-accent/90 backdrop-blur-sm text-accent-foreground px-3 py-1 rounded-full text-xs font-bold">
+                  Live Data
                 </div>
                 
                 <div className="absolute bottom-6 left-6 bg-card/90 backdrop-blur-sm border border-border/50 p-4 rounded-xl shadow-lg">
@@ -87,13 +91,18 @@ export function AnalyticsSection() {
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={teamImage} 
-                  alt="Equipe analisando dados de performance"
+                  alt="Reunião estratégica analisando performance"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-foreground">
-                  <h3 className="text-lg font-bold mb-1">Análise Colaborativa</h3>
-                  <p className="text-sm text-muted-foreground">Decisões baseadas em dados</p>
+                  <h3 className="text-lg font-bold mb-1">Estratégia Colaborativa</h3>
+                  <p className="text-sm text-muted-foreground">Análises em tempo real</p>
+                </div>
+                
+                {/* Performance Badge */}
+                <div className="absolute top-4 right-4 bg-green-500/90 text-white px-2 py-1 rounded text-xs font-bold">
+                  +150% Growth
                 </div>
               </div>
             </Card>
@@ -102,13 +111,18 @@ export function AnalyticsSection() {
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={metricsImage} 
-                  alt="Interface de métricas e conversões"
+                  alt="Workspace com múltiplos dashboards ativos"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-foreground">
-                  <h3 className="text-lg font-bold mb-1">Métricas Avançadas</h3>
-                  <p className="text-sm text-muted-foreground">Controle total de performance</p>
+                  <h3 className="text-lg font-bold mb-1">Multi-Dashboard</h3>
+                  <p className="text-sm text-muted-foreground">Controle total unificado</p>
+                </div>
+                
+                {/* Active Campaigns Badge */}
+                <div className="absolute top-4 right-4 bg-blue-500/90 text-white px-2 py-1 rounded text-xs font-bold animate-pulse">
+                  12 Campanhas Ativas
                 </div>
               </div>
             </Card>

@@ -2,9 +2,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Handshake, Users, Target, Lightbulb, Mail } from "lucide-react";
 import { FormModal } from "@/components/FormModal";
-import partnershipImage from "@/assets/partnership-image.jpg";
-import teamworkImage from "@/assets/teamwork-image.jpg";
-import strategyImage from "@/assets/strategy-image.jpg";
+import partnershipImage from "@/assets/business-presentation.jpg";
+import teamworkImage from "@/assets/team-collaboration.jpg";
+import strategyImage from "@/assets/workspace-overview.jpg";
 
 export function WhyTrustUsSection() {
   const reasons = [
