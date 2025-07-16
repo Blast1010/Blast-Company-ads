@@ -52,32 +52,49 @@ export function HeroSection() {
           {/* Text Content */}
           <div className="space-y-8">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-center">
-              <span className="text-primary text-lg md:text-xl font-medium tracking-wide uppercase">TRANSFORME SEU NEGÓCIO</span><br />
-              <span className="text-4xl md:text-5xl lg:text-6xl">VENDAS PREVISÍVEIS</span><br />
-              <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl">
-                TODOS OS MESES
+              <span className="text-primary text-lg md:text-xl font-medium tracking-wide uppercase">CANSADO DE VER</span><br />
+              <span className="text-4xl md:text-5xl lg:text-6xl">SEU DINHEIRO</span><br />
+              <span className="bg-gradient-to-r from-red-500 to-red-400 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-6xl">
+                DESAPARECER?
               </span><br />
               <span className="text-xl md:text-2xl lg:text-3xl text-muted-foreground font-semibold">
-                com tráfego inteligente
+                Chegou a hora de mudar isso
               </span>
             </h1>
             
-            <div className="space-y-6">
+            <div className="space-y-8">
               <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-full mx-auto"></div>
               
               <div className="space-y-6 text-center">
-                <p className="text-xl md:text-2xl text-foreground font-bold leading-relaxed">
-                  Pare de desperdiçar dinheiro em campanhas que não funcionam.
+                <p className="text-xl md:text-2xl text-red-400 font-bold leading-relaxed">
+                  Você investe na internet e não vê retorno?
                 </p>
                 
-                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                  Nossa metodologia exclusiva identifica seu cliente ideal, cria campanhas que convertem 
-                  e otimiza cada centavo investido para <span className="text-primary font-bold">maximizar seu ROI</span>.
+                <div className="space-y-4 max-w-3xl mx-auto">
+                  <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                    <span className="text-red-400 font-semibold">✗</span> Gasta em anúncios que não trazem clientes<br/>
+                    <span className="text-red-400 font-semibold">✗</span> Vê os concorrentes crescendo enquanto você fica parado<br/>
+                    <span className="text-red-400 font-semibold">✗</span> Não sabe se o dinheiro investido está dando resultado
+                  </p>
+                </div>
+                
+                <div className="w-24 h-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-full mx-auto my-8"></div>
+                
+                <p className="text-xl md:text-2xl text-primary font-bold leading-relaxed">
+                  Imagine ter clientes chegando todo dia
                 </p>
                 
-                <p className="text-base md:text-lg text-muted-foreground/90 leading-relaxed max-w-2xl mx-auto">
-                  <span className="text-foreground font-medium">Resultado garantido:</span> Se não aumentarmos suas vendas em 60 dias, 
-                  você não paga nada.
+                <div className="space-y-4 max-w-3xl mx-auto">
+                  <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                    <span className="text-primary font-semibold">✓</span> Seu telefone tocando com pessoas interessadas no seu produto<br/>
+                    <span className="text-primary font-semibold">✓</span> Vendas acontecendo mesmo quando você está dormindo<br/>
+                    <span className="text-primary font-semibold">✓</span> Seu negócio crescendo de forma consistente e previsível
+                  </p>
+                </div>
+                
+                <p className="text-base md:text-lg text-foreground font-medium leading-relaxed max-w-2xl mx-auto border-l-4 border-primary pl-4">
+                  <span className="text-primary font-bold">É exatamente isso que fazemos:</span> transformamos 
+                  empresários frustrados em donos de negócios prósperos e previsíveis.
                 </p>
               </div>
             </div>
@@ -98,9 +115,9 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-primary/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="flex-1">
-              <h3 className="text-lg font-semibold text-foreground mb-2">Estratégia Personalizada</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Solução Sob Medida</h3>
               <p className="text-muted-foreground font-medium leading-relaxed">
-                Cada campanha é única para seu negócio e público
+                Criamos a estratégia perfeita para o seu tipo de negócio
               </p>
             </div>
           </div>
@@ -113,9 +130,9 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-primary/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="flex-1">
-              <h3 className="text-lg font-semibold text-foreground mb-2">Otimização Contínua</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Resultados Crescentes</h3>
               <p className="text-muted-foreground font-medium leading-relaxed">
-                Monitoramento e ajustes para maximizar resultados
+                Seus clientes aumentam mês após mês, de forma consistente
               </p>
             </div>
           </div>
