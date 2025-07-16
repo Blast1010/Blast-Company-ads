@@ -7,7 +7,7 @@ export function ServicesSection() {
       title: "Google Ads",
       description: "Gere Demanda na Maior Ferramenta de Buscas e Vendas do Mundo",
       colors: {
-        bg: "bg-gradient-to-br from-blue-500 to-green-500",
+        bg: "bg-gradient-to-br from-blue-500 via-red-500 via-yellow-400 to-green-500",
         icon: "text-white",
         shadow: "shadow-blue-500/30"
       }
