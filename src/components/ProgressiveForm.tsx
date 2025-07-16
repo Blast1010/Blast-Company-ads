@@ -128,7 +128,14 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
   };
   const currentStepData = steps[currentStep];
   const progress = (currentStep + 1) / steps.length * 100;
-  return <Card className="w-full max-w-md bg-card/95 backdrop-blur-sm border border-border/50 shadow-2xl">
+  return <Card className="w-full max-w-md bg-gradient-to-br from-card/95 via-card/90 to-card/95 backdrop-blur-sm border-2 border-primary/30 shadow-glow hover:shadow-glow/80 hover:border-primary/50 transition-all duration-500 relative overflow-hidden group">
+      {/* Premium glow effect */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      
+      {/* Animated border */}
+      <div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-primary/20 via-transparent to-primary/20 animate-[spin_8s_linear_infinite]"></div>
+      </div>
       {/* Progress Bar */}
       <div className="h-2 bg-muted/30 rounded-t-lg overflow-hidden">
         <div className="h-full bg-gradient-to-r from-primary to-primary/70 transition-all duration-500 ease-out" style={{
@@ -136,10 +143,15 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
       }} />
       </div>
 
-      <div className="p-6">
+      <div className="p-6 relative z-10">
+        {/* Premium badge */}
+        <div className="absolute -top-3 -right-3 w-6 h-6 bg-primary rounded-full flex items-center justify-center shadow-glow animate-pulse">
+          <div className="w-2 h-2 bg-primary-foreground rounded-full"></div>
+        </div>
+        
         {/* Header */}
         <div className="flex items-center justify-center mb-6">
-          <div className="text-sm text-muted-foreground">
+          <div className="text-sm text-muted-foreground font-medium bg-muted/20 px-3 py-1 rounded-full border border-border/30">
             {currentStep + 1} de {steps.length}
           </div>
         </div>
@@ -147,11 +159,11 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
         {/* Question */}
         <div className="space-y-6">
           <div className="flex items-start space-x-3">
-            <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary flex-shrink-0">
+            <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center text-primary-foreground flex-shrink-0 shadow-glow group-hover:scale-110 transition-transform duration-300">
               {currentStepData.icon}
             </div>
             <div className="flex-1">
-              <h3 className="text-lg font-bold text-foreground leading-tight">
+              <h3 className="text-lg font-bold text-foreground leading-tight group-hover:text-primary transition-colors duration-300">
                 {currentStepData.title}
               </h3>
             </div>
@@ -159,7 +171,7 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
 
           {/* Input */}
           <div className="space-y-4">
-            <Input type={currentStepData.type || "text"} placeholder={currentStepData.placeholder} value={formData[currentStepData.field]} onChange={e => handleInputChange(e.target.value)} onKeyPress={handleKeyPress} className="text-base py-3 h-12 bg-background/50 border-border/50 focus:border-primary focus:ring-primary/20" autoFocus />
+            <Input type={currentStepData.type || "text"} placeholder={currentStepData.placeholder} value={formData[currentStepData.field]} onChange={e => handleInputChange(e.target.value)} onKeyPress={handleKeyPress} className="text-base py-3 h-12 bg-background/50 border-2 border-border/30 focus:border-primary focus:ring-primary/20 hover:border-primary/50 transition-all duration-300" autoFocus />
 
             {/* Navigation */}
             <div className="flex items-center justify-between pt-2">
@@ -168,20 +180,26 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
                 <span>Voltar</span>
               </Button>
 
-              <Button onClick={handleNext} className="bg-primary hover:bg-primary/90 px-6 py-2 rounded-full flex items-center space-x-2 shadow-glow hover:shadow-glow/60 transition-all duration-300 text-slate-950">
-                <span>
+              <Button onClick={handleNext} className="bg-gradient-primary hover:shadow-glow px-8 py-3 rounded-full flex items-center space-x-2 shadow-glow hover:scale-105 transition-all duration-300 text-primary-foreground font-semibold relative overflow-hidden group">
+                {/* Button glow effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <span className="relative z-10">
                   {currentStep === steps.length - 1 ? "Enviar" : "Próximo"}
                 </span>
-                {currentStep === steps.length - 1 ? <Check className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
+                <span className="relative z-10">
+                  {currentStep === steps.length - 1 ? <Check className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
+                </span>
               </Button>
             </div>
           </div>
         </div>
 
         {/* Helper Text */}
-        <div className="mt-4 text-center">
-          <p className="text-xs text-muted-foreground">
-            Pressione <kbd className="px-1 py-0.5 bg-muted/30 rounded text-xs">Enter</kbd> para continuar
+        <div className="mt-6 text-center">
+          <p className="text-xs text-muted-foreground flex items-center justify-center space-x-2">
+            <span>Pressione</span>
+            <kbd className="px-2 py-1 bg-primary/10 border border-primary/20 rounded text-xs text-primary font-mono">Enter</kbd>
+            <span>para continuar</span>
           </p>
         </div>
       </div>
