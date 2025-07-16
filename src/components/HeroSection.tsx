@@ -63,25 +63,6 @@ export function HeroSection() {
             </p>
           </div>
 
-          {/* Key Benefits Cards */}
-          <div className="grid md:grid-cols-3 gap-6 mt-16 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            <div className="group p-8 rounded-2xl bg-card/40 backdrop-blur-sm border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105">
-              <div className="text-4xl font-bold text-primary mb-2">+380%</div>
-              <div className="text-sm text-muted-foreground font-medium">Aumento médio em ROAS</div>
-              <div className="w-full h-1 bg-gradient-to-r from-primary/60 to-primary/20 rounded-full mt-4 group-hover:from-primary group-hover:to-primary/60 transition-all duration-300"></div>
-            </div>
-            <div className="group p-8 rounded-2xl bg-card/40 backdrop-blur-sm border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105">
-              <div className="text-4xl font-bold text-primary mb-2">-55%</div>
-              <div className="text-sm text-muted-foreground font-medium">Redução no CAC</div>
-              <div className="w-full h-1 bg-gradient-to-r from-primary/60 to-primary/20 rounded-full mt-4 group-hover:from-primary group-hover:to-primary/60 transition-all duration-300"></div>
-            </div>
-            <div className="group p-8 rounded-2xl bg-card/40 backdrop-blur-sm border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105">
-              <div className="text-4xl font-bold text-primary mb-2">R$ 3.2M</div>
-              <div className="text-sm text-muted-foreground font-medium">Retorno gerado</div>
-              <div className="w-full h-1 bg-gradient-to-r from-primary/60 to-primary/20 rounded-full mt-4 group-hover:from-primary group-hover:to-primary/60 transition-all duration-300"></div>
-            </div>
-          </div>
-
           {/* CTA Section */}
           <div className="pt-12 animate-fade-in" style={{ animationDelay: '0.8s' }}>
             <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-3xl p-8 border border-primary/20 backdrop-blur-sm">
@@ -112,36 +93,6 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Trust Indicators */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '1s' }}>
-          <div className="text-center group">
-            <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110 group-hover:from-primary/30 group-hover:to-primary/20">
-              <span className="text-primary font-bold text-lg">24h</span>
-            </div>
-            <p className="text-sm text-muted-foreground font-medium">Implementação rápida</p>
-          </div>
-          
-          <div className="text-center group">
-            <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110 group-hover:from-primary/30 group-hover:to-primary/20">
-              <span className="text-primary font-bold text-lg">100%</span>
-            </div>
-            <p className="text-sm text-muted-foreground font-medium">Transparência total</p>
-          </div>
-          
-          <div className="text-center group">
-            <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110 group-hover:from-primary/30 group-hover:to-primary/20">
-              <span className="text-primary font-bold text-sm">Data</span>
-            </div>
-            <p className="text-sm text-muted-foreground font-medium">Decisões baseadas em dados</p>
-          </div>
-          
-          <div className="text-center group">
-            <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110 group-hover:from-primary/30 group-hover:to-primary/20">
-              <span className="text-primary font-bold text-lg">24/7</span>
-            </div>
-            <p className="text-sm text-muted-foreground font-medium">Monitoramento contínuo</p>
-          </div>
-        </div>
       </div>
     </section>
   );
