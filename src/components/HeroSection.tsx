@@ -33,8 +33,8 @@ export function HeroSection() {
       
       <div className="container mx-auto max-w-5xl relative z-10">
         {/* Logo */}
-        <div className="text-center mb-20">
-          <h2 className="text-3xl font-bold tracking-tight">
+        <div className="text-center mb-16">
+          <h2 className="text-2xl md:text-2xl font-bold tracking-tight">
             Blast Company <span className="text-primary">ads</span>
           </h2>
         </div>
@@ -42,7 +42,7 @@ export function HeroSection() {
         {/* Main Content */}
         <div className="text-center space-y-16">
           <div className="space-y-12">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.2] tracking-tight">
               Temos como trabalho<br />
               <span className="text-muted-foreground/80">Aumentar as Vendas da</span><br />
               sua Empresa com{" "}
@@ -55,17 +55,17 @@ export function HeroSection() {
             <div className="space-y-8 max-w-4xl mx-auto">
               <div className="w-24 h-1 bg-gradient-to-r from-primary to-primary/50 mx-auto rounded-full"></div>
               
-              <p className="text-xl md:text-2xl text-muted-foreground font-light leading-relaxed">
+              <p className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
                 Somos uma agência parceira da sua empresa.
               </p>
               
-              <p className="text-lg md:text-xl text-muted-foreground/90 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-base md:text-lg text-muted-foreground/90 leading-relaxed max-w-3xl mx-auto">
                 Desenvolvemos estratégias <span className="text-foreground font-medium">Vencedoras</span> para<br />
                 Aumentar as vendas do seu negócio com o<br />
                 <span className="text-primary font-medium">mínimo investimento possível</span>.
               </p>
               
-              <p className="text-lg md:text-xl text-muted-foreground/90 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-base md:text-lg text-muted-foreground/90 leading-relaxed max-w-3xl mx-auto">
                 Entenda como crescer ainda mais a sua<br />
                 empresa por meio das maiores fontes de{" "}
                 <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent font-semibold">
@@ -80,7 +80,7 @@ export function HeroSection() {
             <Button 
               variant="default" 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-6 text-xl font-semibold rounded-full shadow-glow hover:shadow-glow/60 transition-all duration-300 hover:scale-105 group"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold rounded-full shadow-glow hover:shadow-glow/60 transition-all duration-300 hover:scale-105 group"
             >
               <Mail className="mr-3 h-6 w-6 group-hover:rotate-12 transition-transform duration-300" />
               Solicite um Orçamento
