@@ -76,8 +76,8 @@ export function HeroSection() {
 
         {/* Bottom Features */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20 max-w-4xl mx-auto">
-          <div className="flex items-center space-x-6 text-center group">
-            <div className="relative flex-shrink-0">
+          <div className="flex flex-col items-center text-center group">
+            <div className="relative flex-shrink-0 mb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border border-border/50 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-primary/20 transition-all duration-300">
                 <Target className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
               </div>
@@ -91,8 +91,8 @@ export function HeroSection() {
             </div>
           </div>
           
-          <div className="flex items-center space-x-6 text-center group">
-            <div className="relative flex-shrink-0">
+          <div className="flex flex-col items-center text-center group">
+            <div className="relative flex-shrink-0 mb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border border-border/50 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-primary/20 transition-all duration-300">
                 <TrendingUp className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
               </div>
