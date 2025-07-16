@@ -191,17 +191,17 @@ export function ProgressiveForm({ onComplete }: ProgressiveFormProps = {}) {
   };
 
   return (
-    <div className="w-full max-w-3xl mx-auto">
+    <div className="w-full max-w-2xl mx-auto">
       <Card className="bg-black border border-border/20 shadow-2xl overflow-hidden">
         {/* Typeform-style progress bar */}
-        <div className="h-2 bg-gray-800">
+        <div className="h-1.5 bg-gray-800">
           <div 
             className="h-full bg-primary transition-all duration-500 ease-out"
             style={{ width: `${((currentStep + 1) / steps.length) * 100}%` }}
           />
         </div>
 
-        <div className="p-8 md:p-12 min-h-[550px] flex flex-col justify-center">
+        <div className="p-6 md:p-8 min-h-[400px] flex flex-col justify-center">
           {/* Question number */}
           <div className="mb-6">
             <span className="text-sm text-gray-400 font-medium">
