@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Target, TrendingUp } from "lucide-react";
+import { Mail, Crown, Award } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
 export function HeroSection() {
   return <section className="relative min-h-screen flex flex-col justify-center px-4 py-20 overflow-hidden text-white">
@@ -79,7 +79,7 @@ export function HeroSection() {
           <div className="flex flex-col items-center text-center group">
             <div className="relative flex-shrink-0 mb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border border-border/50 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-primary/20 transition-all duration-300">
-                <Target className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
+                <Crown className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
               </div>
               <div className="absolute inset-0 bg-primary/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
@@ -94,7 +94,7 @@ export function HeroSection() {
           <div className="flex flex-col items-center text-center group">
             <div className="relative flex-shrink-0 mb-4">
               <div className="w-16 h-16 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border border-border/50 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-primary/20 transition-all duration-300">
-                <TrendingUp className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
+                <Award className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
               </div>
               <div className="absolute inset-0 bg-primary/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
