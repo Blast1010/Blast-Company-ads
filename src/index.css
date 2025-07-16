@@ -8,58 +8,58 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Base colors - Deep Black background with turquoise accents */
-    --background: 0 0% 2%;
-    --foreground: 180 20% 98%;
+    /* Base colors - Light and clean */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 15%;
 
-    --card: 0 0% 4%;
-    --card-foreground: 180 20% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 15%;
 
-    --popover: 0 0% 4%;
-    --popover-foreground: 180 20% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 15%;
 
-    /* Primary - Turquoise */
-    --primary: 180 100% 50%;
-    --primary-foreground: 0 0% 2%;
-    --primary-glow: 180 100% 60%;
+    /* Primary - Soft Turquoise */
+    --primary: 180 60% 45%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 180 70% 55%;
 
-    /* Secondary - Deep Turquoise */
-    --secondary: 180 85% 25%;
-    --secondary-foreground: 180 20% 98%;
+    /* Secondary - Light Turquoise */
+    --secondary: 180 30% 85%;
+    --secondary-foreground: 0 0% 15%;
 
-    /* Muted - Dark charcoal with turquoise hint */
-    --muted: 180 10% 8%;
-    --muted-foreground: 180 15% 65%;
+    /* Muted - Light gray */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
     /* Accent - Bright Turquoise */
-    --accent: 180 90% 65%;
-    --accent-foreground: 0 0% 2%;
+    --accent: 180 50% 60%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 180 20% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 180 15% 12%;
-    --input: 180 10% 8%;
-    --ring: 180 100% 50%;
+    --border: 0 0% 90%;
+    --input: 0 0% 98%;
+    --ring: 180 60% 45%;
 
-    /* Block-specific backgrounds - Turquoise themed */
-    --block-hero: 0 0% 1%;                    /* Ultra dark black */
-    --block-clients: 180 60% 12%;             /* Deep turquoise */
-    --block-trust: 0 0% 2%;                   /* Almost black */
-    --block-services: 180 45% 8%;             /* Dark turquoise */
-    --block-analytics: 0 0% 1%;               /* Ultra dark black */
-    --block-cta: 180 100% 15%;                /* Rich turquoise */
+    /* Block-specific backgrounds - Clean and light */
+    --block-hero: 0 0% 99%;
+    --block-clients: 180 20% 97%;
+    --block-trust: 0 0% 98%;
+    --block-services: 180 15% 96%;
+    --block-analytics: 0 0% 99%;
+    --block-cta: 180 30% 95%;
 
-    /* Design system extensions - Turquoise gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(180 100% 50%), hsl(180 85% 40%));
-    --gradient-secondary: linear-gradient(180deg, hsl(180 30% 6%), hsl(0 0% 2%));
-    --gradient-block: linear-gradient(135deg, hsl(180 50% 8%), hsl(180 30% 4%));
-    --gradient-clients: linear-gradient(135deg, hsl(180 60% 12%), hsl(180 50% 8%));
-    --gradient-cta: linear-gradient(135deg, hsl(180 100% 15%), hsl(180 80% 12%));
-    --shadow-glow: 0 0 40px hsl(180 100% 50% / 0.4);
-    --shadow-block: 0 20px 50px -10px hsl(0 0% 0% / 0.8);
-    --shadow-blue: 0 20px 50px -10px hsl(180 100% 15% / 0.6);
-    --shadow-subtle: 0 10px 30px -10px hsl(0 0% 0% / 0.5);
+    /* Design system extensions - Light gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(180 60% 45%), hsl(180 50% 55%));
+    --gradient-secondary: linear-gradient(180deg, hsl(180 10% 96%), hsl(0 0% 98%));
+    --gradient-block: linear-gradient(135deg, hsl(180 20% 96%), hsl(180 10% 98%));
+    --gradient-clients: linear-gradient(135deg, hsl(180 20% 97%), hsl(180 15% 98%));
+    --gradient-cta: linear-gradient(135deg, hsl(180 30% 95%), hsl(180 25% 97%));
+    --shadow-glow: 0 0 20px hsl(180 60% 45% / 0.15);
+    --shadow-block: 0 10px 25px -5px hsl(0 0% 0% / 0.1);
+    --shadow-blue: 0 10px 25px -5px hsl(180 60% 45% / 0.15);
+    --shadow-subtle: 0 5px 15px -3px hsl(0 0% 0% / 0.1);
     
     --radius: 0.75rem;
 

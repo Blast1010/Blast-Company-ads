@@ -2,55 +2,23 @@ import { Button } from "@/components/ui/button";
 import { Mail, Target, TrendingUp } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
 export function HeroSection() {
-  return <section className="relative min-h-screen flex flex-col justify-center px-4 py-20 bg-black overflow-hidden">
-      {/* Sophisticated Cinematic Lighting System */}
+  return <section className="relative min-h-screen flex flex-col justify-center px-4 py-20 bg-background overflow-hidden">
+      {/* Simplified Light Effects */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Main cinematic light emerging from bottom - Turquoise ambiance */}
-        <div className="absolute -bottom-40 left-1/2 transform -translate-x-1/2 w-[160%] h-[140vh] 
-                        bg-gradient-radial from-cyan-400/25 via-cyan-500/15 via-blue-400/10 via-cyan-300/8 to-transparent 
-                        rounded-full blur-3xl opacity-80 animate-[cinematic-breathe_12s_ease-in-out_infinite]"></div>
+        {/* Main ambient light - simplified */}
+        <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 w-[100%] h-[60vh] 
+                        bg-gradient-radial from-primary/15 via-primary/8 to-transparent 
+                        rounded-full blur-2xl opacity-60 animate-breathe"></div>
         
-        {/* Secondary atmospheric layer */}
-        <div className="absolute -bottom-24 left-1/2 transform -translate-x-1/2 w-[120%] h-[100vh] 
-                        bg-gradient-radial from-cyan-300/30 via-blue-400/18 via-cyan-400/12 to-transparent 
-                        rounded-full blur-2xl opacity-70 animate-[cinematic-breathe_10s_ease-in-out_infinite_2s]"></div>
+        {/* Secondary glow */}
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[120%] h-[40vh] 
+                        bg-gradient-to-t from-primary/10 via-primary/5 to-transparent 
+                        blur-xl opacity-40 animate-breathe"></div>
         
-        {/* Lateral atmospheric enhancers */}
-        <div className="absolute -bottom-10 -left-20 w-[70%] h-[90vh] 
-                        bg-gradient-radial from-cyan-400/20 via-blue-300/12 via-cyan-300/8 to-transparent 
-                        rounded-full blur-3xl opacity-50 animate-[cinematic-breathe_14s_ease-in-out_infinite_4s]"></div>
-        <div className="absolute -bottom-10 -right-20 w-[70%] h-[90vh] 
-                        bg-gradient-radial from-cyan-400/20 via-blue-300/12 via-cyan-300/8 to-transparent 
-                        rounded-full blur-3xl opacity-50 animate-[cinematic-breathe_14s_ease-in-out_infinite_6s]"></div>
-        
-        {/* Deep foundation glow */}
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[200%] h-[120vh] 
-                        bg-gradient-radial from-cyan-500/15 via-blue-400/8 via-cyan-300/5 to-transparent 
-                        rounded-full blur-3xl opacity-40 animate-[cinematic-breathe_16s_ease-in-out_infinite_1s]"></div>
-        
-        {/* Floating ambient lights - Premium touch */}
-        <div className="absolute top-1/3 left-1/4 w-80 h-80 
-                        bg-gradient-radial from-cyan-300/18 via-blue-400/10 to-transparent 
-                        rounded-full blur-3xl opacity-40 animate-[cinematic-float_20s_ease-in-out_infinite]"></div>
-        <div className="absolute top-1/2 right-1/4 w-96 h-96 
-                        bg-gradient-radial from-cyan-400/15 via-blue-300/8 to-transparent 
-                        rounded-full blur-3xl opacity-35 animate-[cinematic-float_25s_ease-in-out_infinite_5s]"></div>
-        <div className="absolute top-2/3 left-1/3 w-64 h-64 
-                        bg-gradient-radial from-cyan-300/12 via-blue-400/6 to-transparent 
-                        rounded-full blur-3xl opacity-30 animate-[cinematic-float_30s_ease-in-out_infinite_10s]"></div>
-        
-        {/* Top atmospheric rim */}
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-48 
-                        bg-gradient-to-b from-cyan-400/12 via-blue-300/8 via-cyan-300/4 to-transparent 
-                        blur-2xl opacity-35 animate-[cinematic-breathe_18s_ease-in-out_infinite_3s]"></div>
-        
-        {/* Premium highlight overlay with sophisticated gradient */}
-        <div className="absolute inset-0 
-                        bg-gradient-radial from-transparent via-cyan-400/5 via-blue-400/3 via-transparent to-transparent 
-                        opacity-50 animate-[cinematic-breathe_22s_ease-in-out_infinite]"></div>
-        
-        {/* Film grain texture overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/10 opacity-30"></div>
+        {/* Subtle top accent */}
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-32 
+                        bg-gradient-to-b from-primary/8 to-transparent 
+                        blur-xl opacity-25"></div>
       </div>
       
       <div className="container mx-auto max-w-5xl relative z-10">
