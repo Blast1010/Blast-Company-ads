@@ -2,63 +2,95 @@ import { MessageCircle, Mail, Instagram, Linkedin } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="py-12 px-4 border-t border-border/50">
-      <div className="container mx-auto max-w-6xl">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
-          {/* Brand */}
-          <div className="space-y-4">
-            <h3 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Blast Company Ads
-            </h3>
-            <p className="text-muted-foreground">
-              Transformando cliques em clientes com estratégias comprovadas de tráfego pago.
+    <footer className="py-16 px-4 bg-gradient-to-t from-muted/20 to-background border-t border-border/30">
+      <div className="container mx-auto max-w-7xl">
+        <div className="grid md:grid-cols-4 gap-12 mb-12">
+          {/* Brand with Logo */}
+          <div className="md:col-span-2 space-y-6">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center shadow-lg">
+                <img 
+                  src="/lovable-uploads/6ca7535d-a4ef-4d38-bf27-937f243e3d54.png" 
+                  alt="Blast Company Logo" 
+                  className="w-8 h-8 object-contain filter brightness-0 invert"
+                />
+              </div>
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                Blast Company Ads
+              </h3>
+            </div>
+            <p className="text-muted-foreground leading-relaxed max-w-md">
+              Especializados em tráfego pago e growth hacking para empresas que querem escalar suas vendas de forma consistente e sustentável.
             </p>
-          </div>
-          
-          {/* Contact */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Contato</h4>
-            <div className="space-y-2">
+            <div className="flex gap-4">
               <a 
                 href="#" 
-                className="flex items-center text-muted-foreground hover:text-primary transition-colors"
+                className="w-12 h-12 bg-card border border-border rounded-xl flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 group"
               >
-                <MessageCircle className="h-4 w-4 mr-2" />
-                WhatsApp
+                <Instagram className="h-5 w-5 group-hover:scale-110 transition-transform" />
               </a>
               <a 
-                href="mailto:contact@blastcompanyads.com" 
-                className="flex items-center text-muted-foreground hover:text-primary transition-colors"
+                href="#" 
+                className="w-12 h-12 bg-card border border-border rounded-xl flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 group"
               >
-                <Mail className="h-4 w-4 mr-2" />
-                contact@blastcompanyads.com
+                <Linkedin className="h-5 w-5 group-hover:scale-110 transition-transform" />
               </a>
             </div>
           </div>
           
-          {/* Social */}
+          {/* Services */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Siga-nos</h4>
-            <div className="flex gap-4">
+            <h4 className="text-lg font-semibold text-foreground">Serviços</h4>
+            <div className="space-y-3">
+              <div className="text-muted-foreground hover:text-primary transition-colors cursor-pointer">
+                Google Ads
+              </div>
+              <div className="text-muted-foreground hover:text-primary transition-colors cursor-pointer">
+                Meta Ads
+              </div>
+              <div className="text-muted-foreground hover:text-primary transition-colors cursor-pointer">
+                CRM & Automação
+              </div>
+              <div className="text-muted-foreground hover:text-primary transition-colors cursor-pointer">
+                Analytics
+              </div>
+            </div>
+          </div>
+          
+          {/* Contact */}
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold text-foreground">Contato</h4>
+            <div className="space-y-3">
               <a 
                 href="#" 
-                className="w-10 h-10 bg-muted rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                className="flex items-center text-muted-foreground hover:text-primary transition-colors group"
               >
-                <Instagram className="h-5 w-5" />
+                <MessageCircle className="h-4 w-4 mr-3 group-hover:scale-110 transition-transform" />
+                <span>WhatsApp</span>
               </a>
               <a 
-                href="#" 
-                className="w-10 h-10 bg-muted rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                href="mailto:contato@blastcompanyads.com" 
+                className="flex items-center text-muted-foreground hover:text-primary transition-colors group"
               >
-                <Linkedin className="h-5 w-5" />
+                <Mail className="h-4 w-4 mr-3 group-hover:scale-110 transition-transform" />
+                <span>contato@blastcompanyads.com</span>
               </a>
             </div>
           </div>
         </div>
         
-        {/* Copyright */}
-        <div className="pt-8 border-t border-border/50 text-center text-muted-foreground">
-          <p>&copy; 2025 Blast Company Ads – Todos os direitos reservados.</p>
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-border/30">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <div className="w-2 h-2 bg-primary rounded-full"></div>
+              <span>&copy; 2025 Blast Company Ads. Todos os direitos reservados.</span>
+            </div>
+            <div className="flex items-center gap-6 text-sm text-muted-foreground">
+              <span className="hover:text-primary transition-colors cursor-pointer">Política de Privacidade</span>
+              <span className="hover:text-primary transition-colors cursor-pointer">Termos de Uso</span>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
