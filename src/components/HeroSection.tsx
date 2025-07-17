@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { TrendingUp, Target, Zap, Shield } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
-
 export function HeroSection() {
-  return (
-    <section className="relative min-h-screen flex flex-col justify-center px-4 py-20 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
+  return <section className="relative min-h-screen flex flex-col justify-center px-4 py-20 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Main cinematic gradient */}
@@ -12,21 +10,27 @@ export function HeroSection() {
         
         {/* Animated light orbs */}
         <div className="absolute top-20 left-[10%] w-96 h-96 bg-gradient-radial from-primary/30 via-primary/10 to-transparent rounded-full blur-3xl animate-pulse opacity-70"></div>
-        <div className="absolute bottom-20 right-[15%] w-80 h-80 bg-gradient-radial from-primary/20 via-primary/5 to-transparent rounded-full blur-2xl animate-pulse opacity-50" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-20 right-[15%] w-80 h-80 bg-gradient-radial from-primary/20 via-primary/5 to-transparent rounded-full blur-2xl animate-pulse opacity-50" style={{
+        animationDelay: '2s'
+      }}></div>
         
         {/* Floating elements */}
-        <div className="absolute top-40 right-[20%] w-4 h-4 bg-primary/40 rounded-full animate-bounce opacity-60" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-60 left-[25%] w-3 h-3 bg-primary/30 rounded-full animate-bounce opacity-40" style={{ animationDelay: '3s' }}></div>
-        <div className="absolute top-80 left-[60%] w-2 h-2 bg-primary/50 rounded-full animate-bounce opacity-80" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute top-40 right-[20%] w-4 h-4 bg-primary/40 rounded-full animate-bounce opacity-60" style={{
+        animationDelay: '1s'
+      }}></div>
+        <div className="absolute bottom-60 left-[25%] w-3 h-3 bg-primary/30 rounded-full animate-bounce opacity-40" style={{
+        animationDelay: '3s'
+      }}></div>
+        <div className="absolute top-80 left-[60%] w-2 h-2 bg-primary/50 rounded-full animate-bounce opacity-80" style={{
+        animationDelay: '0.5s'
+      }}></div>
       </div>
       
       <div className="container mx-auto max-w-6xl relative z-10">
         {/* Logo & Brand */}
         <div className="text-center mb-12 animate-fade-in">
           <div className="inline-flex items-center gap-3 mb-6">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/70 rounded-xl flex items-center justify-center shadow-lg">
-              <TrendingUp className="w-6 h-6 text-white" />
-            </div>
+            
             <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
               Blast Company <span className="text-primary">ads</span>
             </h2>
@@ -36,7 +40,9 @@ export function HeroSection() {
         {/* Main Hero Content */}
         <div className="max-w-5xl mx-auto text-center space-y-8">
           {/* Main Headline */}
-          <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <div className="space-y-6 animate-fade-in" style={{
+          animationDelay: '0.2s'
+        }}>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
               <span className="text-foreground">
                 Temos como trabalho aumentar
@@ -54,7 +60,9 @@ export function HeroSection() {
           </div>
           
           {/* Description */}
-          <div className="max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <div className="max-w-4xl mx-auto animate-fade-in" style={{
+          animationDelay: '0.4s'
+        }}>
             <p className="text-lg md:text-2xl leading-relaxed text-muted-foreground font-medium">
               Somos uma agência <span className="text-primary font-semibold">parceira da sua empresa</span>, desenvolvemos estratégias vencedoras para aumentar as vendas do seu negócio com o mínimo de investimento possível.
             </p>
@@ -64,7 +72,9 @@ export function HeroSection() {
           </div>
 
           {/* CTA Section */}
-          <div className="pt-12 animate-fade-in" style={{ animationDelay: '0.8s' }}>
+          <div className="pt-12 animate-fade-in" style={{
+          animationDelay: '0.8s'
+        }}>
             <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-3xl p-8 border border-primary/20 backdrop-blur-sm">
               <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
                 Análise <span className="text-primary">Gratuita</span> da sua conta de anúncios
@@ -94,6 +104,5 @@ export function HeroSection() {
         </div>
 
       </div>
-    </section>
-  );
+    </section>;
 }
