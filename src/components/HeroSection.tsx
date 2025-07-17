@@ -129,78 +129,29 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* CTA Section - Enhanced Form */}
-          <div className="pt-12 animate-fade-in" style={{
+          {/* TypeForm Style Section */}
+          <div className="pt-16 animate-fade-in" style={{
           animationDelay: '0.8s'
         }}>
-            <div className="relative p-10 rounded-3xl bg-gradient-to-br from-primary/20 via-primary/10 to-primary/20 border-2 border-primary/30 backdrop-blur-lg shadow-2xl overflow-hidden">
-              {/* Cinematic Background Elements */}
-              <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/80 to-background/90"></div>
-              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></div>
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/15 rounded-full blur-2xl"></div>
-              
-              {/* Content */}
-              <div className="relative z-10 text-center space-y-8">
-                <div className="space-y-4">
-                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/20 rounded-full border border-primary/30 text-primary font-semibold text-sm mb-4">
-                    <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-                    OFERTA LIMITADA - APENAS HOJE
-                  </div>
-                  
-                  <h3 className="text-3xl md:text-4xl font-bold text-foreground leading-tight">
-                    Análise <span className="text-primary bg-primary/10 px-3 py-1 rounded-lg">Gratuita</span> e Completa
-                    <br />
-                    <span className="text-2xl md:text-3xl">da sua conta de anúncios</span>
-                  </h3>
-                  
-                  <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-lg">
-                    <div className="flex items-center gap-2 text-green-400 font-semibold">
-                      <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                      <span>Identificamos até 247% mais oportunidades</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-primary font-semibold">
-                      <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
-                      <span>Resultados em 24h</span>
-                    </div>
-                  </div>
+            <div className="max-w-2xl mx-auto">
+              <div className="text-center mb-8">
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/20 rounded-full border border-primary/30 text-primary font-semibold text-sm mb-6">
+                  <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                  ANÁLISE GRATUITA - APENAS HOJE
                 </div>
                 
-                <ProgressiveForm />
+                <h3 className="text-3xl md:text-4xl font-bold text-foreground leading-tight mb-4">
+                  Vamos analisar sua conta
+                  <br />
+                  <span className="text-primary">gratuitamente</span>
+                </h3>
                 
-                {/* Enhanced Trust Indicators */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-                  <div className="flex flex-col items-center gap-3 p-4 bg-background/50 rounded-xl border border-primary/20 backdrop-blur-sm">
-                    <Shield className="w-8 h-8 text-primary" />
-                    <div className="text-center">
-                      <div className="font-bold text-foreground">100% Seguro</div>
-                      <div className="text-sm text-muted-foreground">Dados protegidos</div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex flex-col items-center gap-3 p-4 bg-background/50 rounded-xl border border-primary/20 backdrop-blur-sm">
-                    <Zap className="w-8 h-8 text-primary" />
-                    <div className="text-center">
-                      <div className="font-bold text-foreground">Análise em 24h</div>
-                      <div className="text-sm text-muted-foreground">Relatório detalhado</div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex flex-col items-center gap-3 p-4 bg-background/50 rounded-xl border border-primary/20 backdrop-blur-sm">
-                    <Target className="w-8 h-8 text-primary" />
-                    <div className="text-center">
-                      <div className="font-bold text-foreground">ROI Garantido</div>
-                      <div className="text-sm text-muted-foreground">Ou seu dinheiro de volta</div>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Scarcity Element */}
-                <div className="flex items-center justify-center gap-2 text-orange-400 font-semibold text-sm">
-                  <div className="w-2 h-2 bg-orange-400 rounded-full animate-ping"></div>
-                  <span>⏰ Apenas 5 análises gratuitas restantes hoje</span>
-                  <div className="w-2 h-2 bg-orange-400 rounded-full animate-ping"></div>
-                </div>
+                <p className="text-lg text-muted-foreground">
+                  Responda algumas perguntas e receba um diagnóstico completo em 24h
+                </p>
               </div>
+              
+              <ProgressiveForm />
             </div>
           </div>
         </div>
