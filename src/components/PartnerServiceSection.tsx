@@ -5,20 +5,20 @@ import { FormModal } from "@/components/FormModal";
 export function PartnerServiceSection() {
   const services = [{
     icon: BarChart3,
-    title: "Transparência Operacional",
-    description: "Garantimos visibilidade completa das ações e investimentos, com relatórios detalhados e acesso às métricas em tempo real."
+    title: "Metodologia Exclusiva BLAST",
+    description: "Sistema proprietário de otimização contínua que aumenta performance das campanhas através de machine learning e análise preditiva."
   }, {
     icon: Users,
-    title: "Alinhamento Estratégico",
-    description: "Reuniões periódicas para análise de resultados, tomada de decisões colaborativas e planejamento de próximas etapas."
+    title: "Consultoria Estratégica Premium",
+    description: "Acesso direto aos nossos consultores sênior para revisões estratégicas mensais e planejamento de crescimento a longo prazo."
   }, {
     icon: Shield,
-    title: "Comunicação Direta",
-    description: "Canal prioritário com especialistas sênior, garantindo agilidade na resolução de questões e otimizações."
+    title: "Blindagem de Investimento",
+    description: "Protocolo de segurança financeira que protege 100% do seu investimento com garantia de performance mínima ou reembolso total."
   }, {
     icon: MessageSquare,
-    title: "Tecnologia Integrada",
-    description: "Plataforma proprietária de gestão com integração completa ao seu CRM, permitindo análises precisas e otimizações baseadas em dados reais."
+    title: "Hub de Inteligência Digital",
+    description: "Plataforma avançada com IA que conecta todos os canais de marketing, prevê tendências e automatiza otimizações em tempo real."
   }];
   return <section className="py-20 px-4 bg-gradient-to-b from-background to-muted/5 border-b border-primary/20">
       <div className="container mx-auto max-w-6xl">
@@ -30,7 +30,7 @@ export function PartnerServiceSection() {
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-            Atendimento de Parceiro
+            Ecossistema de Alto Desempenho
           </h2>
           <div className="w-24 h-0.5 bg-gradient-to-r from-primary to-primary/50 mx-auto rounded-full"></div>
         </div>
@@ -41,9 +41,9 @@ export function PartnerServiceSection() {
                 <div className="space-y-6 text-center">
                   {/* Icon */}
                   <div className="relative">
-                    <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                      <service.icon className="h-8 w-8 text-black" />
-                    </div>
+                     <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
+                       <service.icon className="h-8 w-8 text-black" />
+                     </div>
                   </div>
                   
                   {/* Content */}
@@ -69,14 +69,17 @@ export function PartnerServiceSection() {
             <MessageSquare className="h-6 w-6 text-primary" />
             <div className="text-center">
               <p className="text-primary font-semibold">
-                Excelência no Atendimento
+                Tecnologia de Ponta + Expertise Humana
               </p>
               <p className="text-muted-foreground text-sm">
-                Suporte especializado com foco em resultados
+                A combinação perfeita para resultados excepcionais
               </p>
             </div>
           </div>
           
+        </div>
+        
+        <div className="mt-12">
           <FormModal>
             <Button size="lg" className="bg-accent hover:bg-accent/90">
               Começar Agora

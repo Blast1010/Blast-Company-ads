@@ -145,13 +145,16 @@ export function AnalyticsSection() {
               </p>
             </div>
           </div>
-          
-          <FormModal>
-            <Button size="lg" className="bg-accent hover:bg-accent/90">
-              Começar Agora
-            </Button>
-          </FormModal>
         </div>
+      </div>
+      
+      {/* Moved CTA Button Below Section */}
+      <div className="text-center mt-8">
+        <FormModal>
+          <Button size="lg" className="bg-accent hover:bg-accent/90">
+            Começar Agora
+          </Button>
+        </FormModal>
       </div>
     </section>;
 }

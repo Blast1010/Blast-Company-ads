@@ -59,55 +59,146 @@ export function HeroSection() {
             </h1>
           </div>
 
-          {/* Pain Point Copy */}
-          <div className="max-w-4xl mx-auto animate-fade-in" style={{
+          {/* Pain Point + Urgency Copy */}
+          <div className="max-w-5xl mx-auto animate-fade-in" style={{
           animationDelay: '0.3s'
         }}>
-            <p className="text-xl md:text-2xl leading-relaxed text-red-400 font-semibold mb-6">
-              Cansou de queimar dinheiro em campanhas que não geram resultados? 
-              <br />
-              <span className="text-orange-400">Enquanto você lê isso, seus concorrentes estão vendendo mais.</span>
-            </p>
-          </div>
-          
-          {/* Description */}
-          <div className="max-w-4xl mx-auto animate-fade-in" style={{
-          animationDelay: '0.4s'
-        }}>
-            <p className="text-lg md:text-2xl leading-relaxed text-muted-foreground font-medium">
-              Somos uma agência <span className="text-primary font-semibold">parceira da sua empresa</span>, desenvolvemos estratégias vencedoras para aumentar as vendas do seu negócio com o mínimo de investimento possível.
-            </p>
-            <p className="text-base md:text-lg mt-4 text-muted-foreground/80">
-              Entenda como crescer ainda mais a sua empresa com <span className="text-primary font-semibold">tráfego de verdade</span>.
-            </p>
+            <div className="relative p-8 rounded-3xl bg-gradient-to-br from-red-500/10 via-orange-500/5 to-red-500/10 border border-red-500/20 backdrop-blur-sm mb-8">
+              {/* Warning Icon */}
+              <div className="absolute top-4 left-4 w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+              
+              <div className="text-center space-y-4">
+                <h3 className="text-2xl md:text-3xl font-bold text-red-400 leading-tight">
+                  ⚠️ ALERTA CRÍTICO
+                </h3>
+                <p className="text-xl md:text-2xl leading-relaxed text-red-300 font-semibold">
+                  Cansou de queimar dinheiro em campanhas que não geram resultados?
+                </p>
+                <p className="text-lg md:text-xl text-orange-300 font-medium">
+                  <span className="animate-pulse">🔥</span> Enquanto você lê isso, seus concorrentes estão vendendo mais <span className="animate-pulse">🔥</span>
+                </p>
+                
+                {/* Urgency Counter */}
+                <div className="flex items-center justify-center gap-2 text-sm text-red-200 mt-6">
+                  <div className="w-2 h-2 bg-red-500 rounded-full animate-ping"></div>
+                  <span>Cada segundo perdido = vendas perdidas para concorrência</span>
+                  <div className="w-2 h-2 bg-red-500 rounded-full animate-ping"></div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* CTA Section */}
+          {/* Transition + Solution */}
+          <div className="max-w-5xl mx-auto animate-fade-in" style={{
+          animationDelay: '0.4s'
+        }}>
+            <div className="relative p-8 rounded-3xl bg-gradient-to-br from-primary/15 via-primary/5 to-primary/15 border border-primary/30 backdrop-blur-sm">
+              {/* Success Icon */}
+              <div className="absolute top-4 left-4 w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+              
+              <div className="text-center space-y-6">
+                <h3 className="text-2xl md:text-3xl font-bold text-primary leading-tight">
+                  ✅ SOLUÇÃO COMPROVADA
+                </h3>
+                <p className="text-lg md:text-xl leading-relaxed text-foreground font-medium">
+                  Somos uma agência <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded">parceira estratégica</span> da sua empresa, 
+                  desenvolvemos <span className="text-primary font-semibold">estratégias vencedoras</span> para multiplicar as vendas 
+                  do seu negócio com o <span className="text-green-400 font-bold">mínimo de investimento</span> possível.
+                </p>
+                
+                <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-lg text-muted-foreground">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span>Resultados em 30 dias</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span>ROI garantido</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span>Transparência total</span>
+                  </div>
+                </div>
+                
+                <p className="text-base md:text-lg text-primary/80 font-medium">
+                  Descubra como crescer sua empresa com <span className="text-primary font-bold">tráfego de verdade</span> 
+                  e estratégias que <span className="text-green-400 font-semibold">realmente convertem</span>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Section - Enhanced Form */}
           <div className="pt-12 animate-fade-in" style={{
           animationDelay: '0.8s'
         }}>
-            <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-3xl p-8 border border-primary/20 backdrop-blur-sm">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
-                Análise <span className="text-primary">Gratuita</span> da sua conta de anúncios
-              </h3>
-              <p className="text-muted-foreground mb-8 text-lg">
-                Identificamos oportunidades de otimização em 24h
-              </p>
+            <div className="relative p-10 rounded-3xl bg-gradient-to-br from-primary/20 via-primary/10 to-primary/20 border-2 border-primary/30 backdrop-blur-lg shadow-2xl overflow-hidden">
+              {/* Cinematic Background Elements */}
+              <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/80 to-background/90"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/15 rounded-full blur-2xl"></div>
               
-              <ProgressiveForm />
-              
-              <div className="flex justify-center gap-8 mt-8 text-sm text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <Shield className="w-4 h-4 text-primary" />
-                  <span>100% Seguro</span>
+              {/* Content */}
+              <div className="relative z-10 text-center space-y-8">
+                <div className="space-y-4">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/20 rounded-full border border-primary/30 text-primary font-semibold text-sm mb-4">
+                    <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                    OFERTA LIMITADA - APENAS HOJE
+                  </div>
+                  
+                  <h3 className="text-3xl md:text-4xl font-bold text-foreground leading-tight">
+                    Análise <span className="text-primary bg-primary/10 px-3 py-1 rounded-lg">Gratuita</span> e Completa
+                    <br />
+                    <span className="text-2xl md:text-3xl">da sua conta de anúncios</span>
+                  </h3>
+                  
+                  <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-lg">
+                    <div className="flex items-center gap-2 text-green-400 font-semibold">
+                      <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                      <span>Identificamos até 247% mais oportunidades</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-primary font-semibold">
+                      <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
+                      <span>Resultados em 24h</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Zap className="w-4 h-4 text-primary" />
-                  <span>Análise em 24h</span>
+                
+                <ProgressiveForm />
+                
+                {/* Enhanced Trust Indicators */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                  <div className="flex flex-col items-center gap-3 p-4 bg-background/50 rounded-xl border border-primary/20 backdrop-blur-sm">
+                    <Shield className="w-8 h-8 text-primary" />
+                    <div className="text-center">
+                      <div className="font-bold text-foreground">100% Seguro</div>
+                      <div className="text-sm text-muted-foreground">Dados protegidos</div>
+                    </div>
+                  </div>
+                  
+                  <div className="flex flex-col items-center gap-3 p-4 bg-background/50 rounded-xl border border-primary/20 backdrop-blur-sm">
+                    <Zap className="w-8 h-8 text-primary" />
+                    <div className="text-center">
+                      <div className="font-bold text-foreground">Análise em 24h</div>
+                      <div className="text-sm text-muted-foreground">Relatório detalhado</div>
+                    </div>
+                  </div>
+                  
+                  <div className="flex flex-col items-center gap-3 p-4 bg-background/50 rounded-xl border border-primary/20 backdrop-blur-sm">
+                    <Target className="w-8 h-8 text-primary" />
+                    <div className="text-center">
+                      <div className="font-bold text-foreground">ROI Garantido</div>
+                      <div className="text-sm text-muted-foreground">Ou seu dinheiro de volta</div>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Target className="w-4 h-4 text-primary" />
-                  <span>Resultados Garantidos</span>
+                
+                {/* Scarcity Element */}
+                <div className="flex items-center justify-center gap-2 text-orange-400 font-semibold text-sm">
+                  <div className="w-2 h-2 bg-orange-400 rounded-full animate-ping"></div>
+                  <span>⏰ Apenas 5 análises gratuitas restantes hoje</span>
+                  <div className="w-2 h-2 bg-orange-400 rounded-full animate-ping"></div>
                 </div>
               </div>
             </div>
