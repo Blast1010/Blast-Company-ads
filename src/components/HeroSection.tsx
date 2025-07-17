@@ -58,6 +58,17 @@ export function HeroSection() {
               </span>
             </h1>
           </div>
+
+          {/* Pain Point Copy */}
+          <div className="max-w-4xl mx-auto animate-fade-in" style={{
+          animationDelay: '0.3s'
+        }}>
+            <p className="text-xl md:text-2xl leading-relaxed text-red-400 font-semibold mb-6">
+              Cansou de queimar dinheiro em campanhas que não geram resultados? 
+              <br />
+              <span className="text-orange-400">Enquanto você lê isso, seus concorrentes estão vendendo mais.</span>
+            </p>
+          </div>
           
           {/* Description */}
           <div className="max-w-4xl mx-auto animate-fade-in" style={{
