@@ -4,21 +4,21 @@ import { MessageSquare, Users, Shield, BarChart3, Mail } from "lucide-react";
 import { FormModal } from "@/components/FormModal";
 export function PartnerServiceSection() {
   const services = [{
-    icon: BarChart3,
-    title: "Tecnologia BLAST",
-    description: "IA avançada que otimiza campanhas automaticamente, reduzindo custos e aumentando conversões em tempo real."
-  }, {
     icon: Users,
-    title: "Especialistas Dedicados",
-    description: "Time exclusivo de estrategistas digitais com foco total no crescimento da sua empresa."
+    title: "Acompanhamento Contínuo",
+    description: "Fazer você vender é o nosso trabalho diário, mas sabemos o quão importante é para nossos parceiros acompanharem o que está sendo feito."
+  }, {
+    icon: BarChart3,
+    title: "Reuniões Estratégicas",
+    description: "Sempre faremos reuniões estratégicas, seja para extrair informações de inteligência, para tomar decisões juntos com você ou apenas para mostrar os resultados do nosso trabalho."
   }, {
     icon: Shield,
-    title: "Resultados Garantidos",
-    description: "ROI positivo em 60 dias ou devolvemos 100% do investimento. Sem riscos para sua empresa."
+    title: "Contato Direto",
+    description: "Não criamos burocracias para falar conosco, terá contato direto com nossos estrategistas para se sentir sempre seguro."
   }, {
-    icon: MessageSquare,
-    title: "Suporte Premium 24/7",
-    description: "Atendimento prioritário com consultores sênior disponíveis quando precisar."
+    icon: Mail,
+    title: "CRM Integrado",
+    description: "Diferente de outros gestores, nos contamos com CRM integrado na sua estrutura juntamente com Relatórios diários com rastreamento de conversas, fazendo assim identificarmos otimizações precisas e economizar o seu dinheiro."
   }];
   return <section className="py-20 px-4 bg-gradient-to-b from-background to-muted/5 border-b border-primary/20">
       <div className="container mx-auto max-w-6xl">
@@ -30,7 +30,7 @@ export function PartnerServiceSection() {
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-            Ecossistema de Alto Desempenho
+            Atendimento de Parceiro
           </h2>
           <div className="w-24 h-0.5 bg-gradient-to-r from-primary to-primary/50 mx-auto rounded-full"></div>
         </div>
