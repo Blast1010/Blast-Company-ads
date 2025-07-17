@@ -138,7 +138,7 @@ export function ServicesSection() {
               <div className="text-6xl text-primary/20 font-serif mb-4">"</div>
               
               {/* Main Statement */}
-              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-[1.3] text-foreground mb-6">
+              <h3 className="text-3xl md:text-4xl font-bold leading-[1.3] text-foreground mb-6">
                 De <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">negócios locais</span> a grandes 
                 <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent"> e-commerces</span>, de produtos físicos a 
                 <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent"> digitais</span>, de poucos concorrentes a 

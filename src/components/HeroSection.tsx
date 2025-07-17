@@ -33,7 +33,7 @@ export function HeroSection() {
         {/* Logo & Brand - Responsivo */}
         <div className="text-center mb-8 sm:mb-12 animate-fade-in">
           <div className="inline-flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">
               Blast Company <span className="text-primary">ads</span>
             </h2>
           </div>
@@ -45,7 +45,7 @@ export function HeroSection() {
           <div className="space-y-4 sm:space-y-6 animate-fade-in px-2" style={{
             animationDelay: '0.2s'
           }}>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] sm:leading-[1.05] tracking-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
               <span className="text-foreground block mb-2 sm:mb-0 sm:inline">
                 Temos como trabalho aumentar
               </span>
@@ -67,10 +67,10 @@ export function HeroSection() {
           }}>
             <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-muted/50 via-background to-muted/30 border border-border backdrop-blur-sm mb-6 sm:mb-8">
               <div className="text-center space-y-3 sm:space-y-4">
-                <p className="text-lg sm:text-xl md:text-2xl leading-relaxed text-muted-foreground font-medium">
+                <p className="text-xl md:text-2xl leading-relaxed text-muted-foreground font-medium">
                   Cansou de queimar dinheiro em campanhas que não geram resultados?
                 </p>
-                <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
+                <p className="text-lg md:text-xl text-muted-foreground">
                   Enquanto você lê isso, seus concorrentes estão vendendo mais
                 </p>
               </div>
@@ -83,16 +83,16 @@ export function HeroSection() {
           }}>
             <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-primary/10 via-primary/5 to-primary/10 border border-primary/20 backdrop-blur-sm">
               <div className="text-center space-y-4 sm:space-y-6">
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary leading-tight">
+                <h3 className="text-2xl md:text-3xl font-bold text-primary leading-tight">
                   Nossa Abordagem
                 </h3>
-                <p className="text-base sm:text-lg md:text-xl leading-relaxed text-foreground font-medium">
+                <p className="text-lg md:text-xl leading-relaxed text-foreground font-medium">
                   Somos uma agência <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded">parceira estratégica</span> da sua empresa, 
                   desenvolvemos estratégias focadas para aumentar as vendas 
                   do seu negócio com tráfego qualificado.
                 </p>
                 
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 text-sm sm:text-base lg:text-lg text-muted-foreground">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 text-base lg:text-lg text-muted-foreground">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
                     <span>Estratégia personalizada</span>
@@ -107,7 +107,7 @@ export function HeroSection() {
                   </div>
                 </div>
                 
-                <p className="text-sm sm:text-base md:text-lg text-primary/80 font-medium">
+                <p className="text-base md:text-lg text-primary/80 font-medium">
                   Vamos analisar sua situação atual e desenvolver uma estratégia 
                   específica para seu negócio.
                 </p>
@@ -126,13 +126,13 @@ export function HeroSection() {
                   ANÁLISE GRATUITA
                 </div>
                 
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground leading-tight mb-3 sm:mb-4">
+                <h3 className="text-3xl md:text-4xl font-bold text-foreground leading-tight mb-3 sm:mb-4">
                   Vamos analisar sua conta
                   <br />
                   <span className="text-primary">gratuitamente</span>
                 </h3>
                 
-                <p className="text-base sm:text-lg text-muted-foreground px-2">
+                <p className="text-lg text-muted-foreground px-2">
                   Responda algumas perguntas e receba um diagnóstico da sua situação atual
                 </p>
               </div>
