@@ -12,72 +12,147 @@ export function SolutionSection() {
       </div>
 
       <div className="container mx-auto max-w-6xl relative z-10">
-        {/* First Section */}
-        <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+        {/* First Section - Enhanced */}
+        <div className="text-center mb-24">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
             A Solução que oferecemos
           </h2>
           
-          <div className="max-w-4xl mx-auto">
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-center">
-              Nosso trabalho é vendas. Sem firulas ou textinhos bonitos de Marketing para tentar mostrar 
-              que somos uma agência diferente. Quando você se tornar nosso parceiro, vamos fazer de tudo 
-              pra você vender muito.
-            </p>
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-card/30 rounded-3xl border border-border/50 backdrop-blur-sm p-12">
+              <p className="text-xl md:text-2xl text-foreground leading-relaxed text-center font-medium mb-8">
+                Nosso trabalho é <span className="text-primary font-bold">vendas</span>. Sem firulas ou textinhos bonitos de Marketing para tentar mostrar que somos uma agência diferente. 
+              </p>
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-center">
+                Quando você se tornar nosso parceiro, vamos fazer de tudo pra você <span className="text-primary font-semibold">vender muito</span>.
+              </p>
+            </div>
           </div>
         </div>
 
-        {/* Second Section */}
-        <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-            Como vou fazer você vender em 24hrs
+        {/* Second Section - Enhanced */}
+        <div className="text-center mb-24">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">
+            Como vou fazer você <span className="text-primary">vender em 24hrs</span>
           </h2>
-        </div>
-
-        {/* Third Section */}
-        <div className="text-center">
-          <div className="max-w-4xl mx-auto p-8 bg-card/50 rounded-3xl border border-border/50 backdrop-blur-sm">
-            <div className="flex items-center justify-center mb-6">
-              <div className="w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center">
-                <X className="h-8 w-8 text-red-400" />
-              </div>
-            </div>
-            
-            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center text-red-400">
-              Não vamos, esse é o EXATO perfil de cliente que nós NÃO ACEITAMOS aqui
-            </h2>
-            
-            <div className="grid md:grid-cols-2 gap-6 text-left">
-              <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <X className="h-5 w-5 text-red-400 mt-0.5 flex-shrink-0" />
-                  <p className="text-muted-foreground">Empresas que querem resultados sem investir</p>
+          
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8 mt-12">
+              <div className="bg-card/20 rounded-2xl p-8 border border-border/30">
+                <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl font-bold text-primary">1</span>
                 </div>
-                <div className="flex items-start gap-3">
-                  <X className="h-5 w-5 text-red-400 mt-0.5 flex-shrink-0" />
-                  <p className="text-muted-foreground">Clientes que não confiam no nosso processo</p>
-                </div>
+                <h3 className="text-lg font-bold text-foreground mb-3">Análise Imediata</h3>
+                <p className="text-muted-foreground text-sm">Identificamos gargalos que impedem suas vendas</p>
               </div>
               
-              <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <X className="h-5 w-5 text-red-400 mt-0.5 flex-shrink-0" />
-                  <p className="text-muted-foreground">Quem procura soluções milagrosas instantâneas</p>
+              <div className="bg-card/20 rounded-2xl p-8 border border-border/30">
+                <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl font-bold text-primary">2</span>
                 </div>
-                <div className="flex items-start gap-3">
-                  <X className="h-5 w-5 text-red-400 mt-0.5 flex-shrink-0" />
-                  <p className="text-muted-foreground">Empresas que não querem trabalhar em parceria</p>
+                <h3 className="text-lg font-bold text-foreground mb-3">Implementação Rápida</h3>
+                <p className="text-muted-foreground text-sm">Estratégias em ação sem enrolação</p>
+              </div>
+              
+              <div className="bg-card/20 rounded-2xl p-8 border border-border/30">
+                <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl font-bold text-primary">3</span>
+                </div>
+                <h3 className="text-lg font-bold text-foreground mb-3">Resultados Concretos</h3>
+                <p className="text-muted-foreground text-sm">Mudanças visíveis nas primeiras 24h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Third Section - Enhanced and Segmented */}
+        <div className="space-y-16">
+          {/* Warning Header */}
+          <div className="text-center">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-red-500/20 rounded-full mb-6">
+              <X className="h-10 w-10 text-red-400" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-red-400">
+              ATENÇÃO: Perfil que NÃO aceitamos
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Esse é o EXATO perfil de cliente que nós <span className="text-red-400 font-semibold">NÃO TRABALHAMOS</span> aqui
+            </p>
+          </div>
+
+          {/* Client Profile Cards */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Card 1 */}
+            <div className="bg-red-500/5 border-2 border-red-500/20 rounded-2xl p-8">
+              <div className="space-y-4">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-8 h-8 bg-red-500/20 rounded-full flex items-center justify-center">
+                    <X className="h-4 w-4 text-red-400" />
+                  </div>
+                  <h3 className="text-xl font-bold text-red-400">Empresas "Espertas"</h3>
+                </div>
+                
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <X className="h-4 w-4 text-red-400 mt-1 flex-shrink-0" />
+                    <p className="text-sm text-muted-foreground">Querem resultados sem investir adequadamente</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <X className="h-4 w-4 text-red-400 mt-1 flex-shrink-0" />
+                    <p className="text-sm text-muted-foreground">Procuram soluções milagrosas instantâneas</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <X className="h-4 w-4 text-red-400 mt-1 flex-shrink-0" />
+                    <p className="text-sm text-muted-foreground">Acham que sabem mais que especialistas</p>
+                  </div>
                 </div>
               </div>
             </div>
-            
-            <div className="mt-8">
+
+            {/* Card 2 */}
+            <div className="bg-red-500/5 border-2 border-red-500/20 rounded-2xl p-8">
+              <div className="space-y-4">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-8 h-8 bg-red-500/20 rounded-full flex items-center justify-center">
+                    <X className="h-4 w-4 text-red-400" />
+                  </div>
+                  <h3 className="text-xl font-bold text-red-400">Empresas Desconfiadas</h3>
+                </div>
+                
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <X className="h-4 w-4 text-red-400 mt-1 flex-shrink-0" />
+                    <p className="text-sm text-muted-foreground">Não confiam no nosso processo testado</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <X className="h-4 w-4 text-red-400 mt-1 flex-shrink-0" />
+                    <p className="text-sm text-muted-foreground">Não querem trabalhar em parceria real</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <X className="h-4 w-4 text-red-400 mt-1 flex-shrink-0" />
+                    <p className="text-sm text-muted-foreground">Questionam cada decisão estratégica</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom CTA */}
+          <div className="text-center">
+            <div className="bg-card/30 rounded-3xl border border-border/50 backdrop-blur-sm p-8 max-w-3xl mx-auto">
+              <h3 className="text-2xl font-bold text-foreground mb-4">
+                Você <span className="text-primary">NÃO</span> se encaixa nesse perfil?
+              </h3>
+              <p className="text-muted-foreground mb-6">
+                Ótimo! Vamos conversar e descobrir como podemos ajudar você a vender mais.
+              </p>
+              
               <FormModal>
                 <Button 
                   size="lg" 
-                  className="text-black px-8 py-3 bg-primary hover:bg-primary/90 transition-colors"
+                  className="text-black px-10 py-4 bg-primary hover:bg-primary/90 transition-all duration-300 hover:scale-105 font-semibold text-lg"
                 >
-                  Vamos conversar e ver se você se encaixa
+                  Quero descobrir se sou o perfil ideal
                 </Button>
               </FormModal>
             </div>
