@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Crown, Award } from "lucide-react";
+import { FormModal } from "@/components/FormModal";
 
 export function GoogleMetaAdsSection() {
   return (
@@ -98,12 +99,14 @@ export function GoogleMetaAdsSection() {
                 empresários frustrados em donos de negócios prósperos e previsíveis.
               </p>
             </div>
-            <Button 
-              size="lg" 
-              className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/25 transition-all duration-300"
-            >
-              Solicitar Orçamento
-            </Button>
+            <FormModal>
+              <Button 
+                size="lg" 
+                className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/25 transition-all duration-300 text-black"
+              >
+                Solicitar Orçamento
+              </Button>
+            </FormModal>
           </div>
         </div>
 

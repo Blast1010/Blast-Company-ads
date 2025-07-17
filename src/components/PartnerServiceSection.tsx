@@ -55,44 +55,31 @@ export function PartnerServiceSection() {
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {services.map((service, index) => (
-            <div key={index} className="group cursor-pointer">
-              {/* Service Card */}
-              <div className="relative h-full">
-                {/* Background Card */}
-                <div className="absolute inset-0 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/50 rounded-3xl transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-2xl group-hover:shadow-primary/20"></div>
-                
-                {/* Content */}
-                <div className="relative p-8 h-full flex flex-col items-center text-center">
-                  {/* Icon Container */}
-                  <div className="relative mb-6">
-                    {/* Main Icon Circle */}
-                    <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                      <service.icon className="h-10 w-10 text-primary transition-all duration-500 group-hover:scale-125" />
+            <Card key={index} className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden">
+              <CardContent className="p-8 relative z-10">
+                <div className="text-center space-y-6">
+                  {/* Icon */}
+                  <div className="relative">
+                    <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
+                      <service.icon className="h-10 w-10 text-black" />
                     </div>
-                    
-                    {/* Glow Effect */}
-                    <div className="absolute inset-0 bg-white rounded-2xl blur-xl opacity-30 group-hover:opacity-60 transition-all duration-500 -z-10"></div>
-                    
-                    {/* Pulse Ring */}
-                    <div className="absolute -inset-1 bg-gradient-to-r from-white/20 to-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
                   </div>
                   
-                  {/* Text Content */}
-                  <div className="flex-1 flex flex-col justify-center">
-                    <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors duration-300">
+                  {/* Content */}
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300 text-center">
                       {service.title}
                     </h3>
-                    
-                    <p className="text-muted-foreground leading-relaxed group-hover:text-foreground/90 transition-colors duration-300">
+                    <p className="text-muted-foreground leading-relaxed font-medium text-center">
                       {service.description}
                     </p>
                   </div>
-                  
-                  {/* Bottom Accent */}
-                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                 </div>
-              </div>
-            </div>
+              </CardContent>
+              
+              {/* Bottom accent */}
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </Card>
           ))}
         </div>
 
