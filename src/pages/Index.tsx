@@ -1,5 +1,6 @@
 import { HeroSection } from "@/components/HeroSection";
 import { GoogleMetaAdsSection } from "@/components/GoogleMetaAdsSection";
+import { PlatformsCarousel } from "@/components/PlatformsCarousel";
 import { ServicesSection } from "@/components/ServicesSection";
 import { ClientsSection } from "@/components/ClientsSection";
 import { WhyTrustUsSection } from "@/components/WhyTrustUsSection";
@@ -62,6 +63,11 @@ const Index = () => {
       {/* Google/Meta Ads Section - Black */}
       <div className="bg-black relative z-10">
         <GoogleMetaAdsSection />
+      </div>
+      
+      {/* Platforms Carousel - Black */}
+      <div className="bg-black relative z-10">
+        <PlatformsCarousel />
       </div>
       
       {/* Services Section - Black */}
