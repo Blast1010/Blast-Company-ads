@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BarChart3, TrendingUp, Eye, Target, Zap, Shield, Database } from "lucide-react";
@@ -6,43 +5,33 @@ import { FormModal } from "@/components/FormModal";
 import dashboardScreens from "@/assets/dashboard-screens.jpg";
 import teamOffice from "@/assets/team-office.jpg";
 import metricsImage from "@/assets/workspace-overview.jpg";
-
 export function AnalyticsSection() {
-  const features = [
-    {
-      icon: BarChart3,
-      title: "Dashboard em Tempo Real",
-      description: "Monitore todas as métricas importantes com atualização automática e visualização intuitiva dos seus resultados."
-    },
-    {
-      icon: Eye,
-      title: "Transparência Total",
-      description: "Acesso completo a todos os dados, métricas e investimentos. Você vê exatamente onde cada real está sendo aplicado."
-    },
-    {
-      icon: Shield,
-      title: "Segurança de Dados",
-      description: "Proteção total das informações com criptografia avançada e compliance com LGPD para máxima segurança."
-    },
-    {
-      icon: Target,
-      title: "Otimização Precisa",
-      description: "Ajustes contínuos baseados em dados reais para maximizar conversões e reduzir custos de aquisição."
-    },
-    {
-      icon: Database,
-      title: "Análise Profunda",
-      description: "Processamento de grandes volumes de dados para insights estratégicos que realmente fazem diferença."
-    },
-    {
-      icon: Zap,
-      title: "Performance Otimizada",
-      description: "Sistema de alta velocidade que processa milhões de eventos por segundo sem perder nenhum dado importante."
-    }
-  ];
-
-  return (
-    <section className="py-24 px-4 relative overflow-hidden">
+  const features = [{
+    icon: BarChart3,
+    title: "Dashboard em Tempo Real",
+    description: "Monitore todas as métricas importantes com atualização automática e visualização intuitiva dos seus resultados."
+  }, {
+    icon: Eye,
+    title: "Transparência Total",
+    description: "Acesso completo a todos os dados, métricas e investimentos. Você vê exatamente onde cada real está sendo aplicado."
+  }, {
+    icon: Shield,
+    title: "Segurança de Dados",
+    description: "Proteção total das informações com criptografia avançada e compliance com LGPD para máxima segurança."
+  }, {
+    icon: Target,
+    title: "Otimização Precisa",
+    description: "Ajustes contínuos baseados em dados reais para maximizar conversões e reduzir custos de aquisição."
+  }, {
+    icon: Database,
+    title: "Análise Profunda",
+    description: "Processamento de grandes volumes de dados para insights estratégicos que realmente fazem diferença."
+  }, {
+    icon: Zap,
+    title: "Performance Otimizada",
+    description: "Sistema de alta velocidade que processa milhões de eventos por segundo sem perder nenhum dado importante."
+  }];
+  return <section className="py-24 px-4 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900/30 to-black"></div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.15)_0%,transparent_70%)]"></div>
@@ -79,11 +68,7 @@ export function AnalyticsSection() {
             
             <div className="relative p-8">
               <div className="relative h-96 md:h-[500px] overflow-hidden rounded-2xl">
-                <img 
-                  src={dashboardScreens} 
-                  alt="Plataforma avançada de analytics com inteligência artificial" 
-                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" 
-                />
+                <img src={dashboardScreens} alt="Plataforma avançada de analytics com inteligência artificial" className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" />
                 
                 {/* Advanced Overlay Effects */}
                 <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-transparent to-background/20"></div>
@@ -108,11 +93,15 @@ export function AnalyticsSection() {
                       <span className="text-sm font-semibold text-foreground">15 Campanhas Otimizadas</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <div className="w-4 h-4 bg-blue-400 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                      <div className="w-4 h-4 bg-blue-400 rounded-full animate-pulse" style={{
+                      animationDelay: '0.5s'
+                    }}></div>
                       <span className="text-sm font-semibold text-foreground">2.3M Eventos Processados</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <div className="w-4 h-4 bg-purple-400 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+                      <div className="w-4 h-4 bg-purple-400 rounded-full animate-pulse" style={{
+                      animationDelay: '1s'
+                    }}></div>
                       <span className="text-sm font-semibold text-foreground">98.7% Uptime</span>
                     </div>
                   </div>
@@ -133,11 +122,7 @@ export function AnalyticsSection() {
                 
                 <div className="relative p-6">
                   <div className="relative h-64 overflow-hidden rounded-xl">
-                    <img 
-                      src={teamOffice} 
-                      alt="Equipe especializada em data science e machine learning" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                    />
+                    <img src={teamOffice} alt="Equipe especializada em data science e machine learning" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                     <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
                     <div className="absolute bottom-4 left-4 text-foreground">
                       <h3 className="text-lg font-bold mb-1">Análise Avançada</h3>
@@ -157,11 +142,7 @@ export function AnalyticsSection() {
                 
                 <div className="relative p-6">
                   <div className="relative h-64 overflow-hidden rounded-xl">
-                    <img 
-                      src={metricsImage} 
-                      alt="Sistema unificado de monitoramento em tempo real" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                    />
+                    <img src={metricsImage} alt="Sistema unificado de monitoramento em tempo real" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                     <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
                     <div className="absolute bottom-4 left-4 text-foreground">
                       <h3 className="text-lg font-bold mb-1">Monitoramento 24/7</h3>
@@ -187,8 +168,7 @@ export function AnalyticsSection() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <div key={index} className="group cursor-pointer">
+            {features.map((feature, index) => <div key={index} className="group cursor-pointer">
                 <div className="relative h-full">
                   <div className="absolute inset-0 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/50 rounded-2xl transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-xl group-hover:shadow-primary/20"></div>
                   
@@ -212,8 +192,7 @@ export function AnalyticsSection() {
                     <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                   </div>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
 
@@ -238,9 +217,7 @@ export function AnalyticsSection() {
                     </p>
                     
                     <FormModal>
-                      <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl px-8 py-4 text-lg font-bold border border-primary/20">
-                        Conhecer a Plataforma
-                      </Button>
+                      
                     </FormModal>
                   </div>
                 </div>
@@ -249,6 +226,5 @@ export function AnalyticsSection() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
