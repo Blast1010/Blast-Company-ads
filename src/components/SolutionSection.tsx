@@ -1,6 +1,5 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, X, Target, TrendingUp } from "lucide-react";
+import { X } from "lucide-react";
 import { FormModal } from "@/components/FormModal";
 
 export function SolutionSection() {
@@ -30,80 +29,9 @@ export function SolutionSection() {
 
         {/* Second Section */}
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
             Como vou fazer você vender em 24hrs
           </h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden">
-              <CardContent className="p-8 relative z-10">
-                <div className="text-center space-y-6">
-                  <div className="relative">
-                    <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                      <Target className="h-10 w-10 text-black" />
-                    </div>
-                  </div>
-                  
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300 text-center">
-                      Análise Imediata
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed font-medium text-center">
-                      Identificamos rapidamente os gargalos que impedem suas vendas de crescer
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-              
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </Card>
-
-            <Card className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden">
-              <CardContent className="p-8 relative z-10">
-                <div className="text-center space-y-6">
-                  <div className="relative">
-                    <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                      <TrendingUp className="h-10 w-10 text-black" />
-                    </div>
-                  </div>
-                  
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300 text-center">
-                      Implementação Rápida
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed font-medium text-center">
-                      Colocamos estratégias em ação imediatamente, sem enrolação ou burocracia
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-              
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </Card>
-
-            <Card className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden md:col-span-2 lg:col-span-1">
-              <CardContent className="p-8 relative z-10">
-                <div className="text-center space-y-6">
-                  <div className="relative">
-                    <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                      <CheckCircle className="h-10 w-10 text-black" />
-                    </div>
-                  </div>
-                  
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300 text-center">
-                      Resultados Imediatos
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed font-medium text-center">
-                      Você verá mudanças concretas nas suas vendas já nas primeiras 24 horas
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-              
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </Card>
-          </div>
         </div>
 
         {/* Third Section */}
