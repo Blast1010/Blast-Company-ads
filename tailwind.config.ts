@@ -370,8 +370,7 @@ export default {
 				'cinematic-float': 'cinematic-float 10s ease-in-out infinite',
 				'ambient-emerge': 'ambient-emerge 3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards',
 				'ambient-pulse': 'ambient-pulse 6s ease-in-out infinite',
-				'materialize': 'materialize 1.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards',
-				'scroll': 'scroll 20s linear infinite'
+				'materialize': 'materialize 1.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards'
 			}
 		}
 	},
