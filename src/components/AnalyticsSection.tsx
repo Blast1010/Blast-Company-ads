@@ -1,7 +1,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { BarChart3, TrendingUp, Eye, Target, Zap, Shield, Brain, Database } from "lucide-react";
+import { BarChart3, TrendingUp, Eye, Target, Zap, Shield, Database } from "lucide-react";
 import { FormModal } from "@/components/FormModal";
 import dashboardScreens from "@/assets/dashboard-screens.jpg";
 import teamOffice from "@/assets/team-office.jpg";
@@ -12,32 +12,32 @@ export function AnalyticsSection() {
     {
       icon: BarChart3,
       title: "Dashboard em Tempo Real",
-      description: "Monitore todas as métricas importantes com atualização automática e visualização intuitiva."
+      description: "Monitore todas as métricas importantes com atualização automática e visualização intuitiva dos seus resultados."
     },
     {
-      icon: Brain,
-      title: "Inteligência Artificial",
-      description: "Algoritmos avançados que identificam padrões e oportunidades de otimização automaticamente."
+      icon: Eye,
+      title: "Transparência Total",
+      description: "Acesso completo a todos os dados, métricas e investimentos. Você vê exatamente onde cada real está sendo aplicado."
     },
     {
       icon: Shield,
       title: "Segurança de Dados",
-      description: "Proteção total das informações com criptografia de ponta e compliance com LGPD."
+      description: "Proteção total das informações com criptografia avançada e compliance com LGPD para máxima segurança."
     },
     {
       icon: Target,
       title: "Otimização Precisa",
-      description: "Ajustes automáticos baseados em machine learning para maximizar conversões."
+      description: "Ajustes contínuos baseados em dados reais para maximizar conversões e reduzir custos de aquisição."
     },
     {
       icon: Database,
-      title: "Big Data Analytics",
-      description: "Processamento de grandes volumes de dados para insights estratégicos profundos."
+      title: "Análise Profunda",
+      description: "Processamento de grandes volumes de dados para insights estratégicos que realmente fazem diferença."
     },
     {
       icon: Zap,
       title: "Performance Otimizada",
-      description: "Sistema de alta velocidade que processa milhões de eventos por segundo."
+      description: "Sistema de alta velocidade que processa milhões de eventos por segundo sem perder nenhum dado importante."
     }
   ];
 
@@ -66,8 +66,8 @@ export function AnalyticsSection() {
           <div className="w-24 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto rounded-full mb-8"></div>
           
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Nossa plataforma proprietária combina <span className="text-primary font-semibold">inteligência artificial</span>, 
-            análise de big data e automação avançada para entregar resultados superiores com total transparência.
+            Nossa plataforma proprietária combina <span className="text-primary font-semibold">análise avançada</span>, 
+            automação inteligente e monitoramento em tempo real para entregar resultados superiores com total transparência.
           </p>
         </div>
 
@@ -98,7 +98,7 @@ export function AnalyticsSection() {
                 </div>
                 
                 <div className="absolute top-8 left-8 bg-card/90 backdrop-blur-sm border border-primary/30 px-4 py-2 rounded-xl text-xs font-bold text-primary">
-                  IA ATIVA
+                  ANÁLISE ATIVA
                 </div>
                 
                 <div className="absolute bottom-8 left-8 bg-card/95 backdrop-blur-sm border border-border/50 p-6 rounded-2xl shadow-xl max-w-md">
@@ -140,11 +140,11 @@ export function AnalyticsSection() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
                     <div className="absolute bottom-4 left-4 text-foreground">
-                      <h3 className="text-lg font-bold mb-1">Data Science Avançada</h3>
-                      <p className="text-sm text-muted-foreground">Algoritmos proprietários</p>
+                      <h3 className="text-lg font-bold mb-1">Análise Avançada</h3>
+                      <p className="text-sm text-muted-foreground">Métricas proprietárias</p>
                     </div>
                     <div className="absolute top-4 right-4 bg-primary/90 text-primary-foreground px-3 py-1 rounded-lg text-xs font-bold">
-                      Machine Learning
+                      Data Science
                     </div>
                   </div>
                 </div>
@@ -234,7 +234,7 @@ export function AnalyticsSection() {
                       Plataforma Proprietária de Alto Desempenho
                     </h3>
                     <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mb-8">
-                      Acesse dados em tempo real, relatórios automatizados e insights de IA que transformam informação em resultados concretos
+                      Acesse dados em tempo real, relatórios automatizados e insights avançados que transformam informação em resultados concretos
                     </p>
                     
                     <FormModal>
