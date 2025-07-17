@@ -24,106 +24,112 @@ export function PartnerServiceSection() {
   }];
 
   return (
-    <section className="relative py-12 md:py-16 bg-gradient-to-b from-background via-background/95 to-muted/5 border-b border-primary/10 overflow-hidden">
-      {/* Simplified Background Effects */}
-      <div className="absolute inset-0">
-        <div className="absolute top-10 right-10 w-48 h-48 bg-gradient-radial from-primary/8 to-transparent rounded-full blur-2xl"></div>
-        <div className="absolute bottom-10 left-10 w-40 h-40 bg-gradient-radial from-accent/6 to-transparent rounded-full blur-2xl"></div>
-      </div>
+    <section className="py-20 px-4 relative overflow-hidden">
+      {/* Background Effects */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900/50 to-black"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.1)_0%,transparent_70%)]"></div>
+      
+      {/* Floating Orbs */}
+      <div className="absolute top-20 left-10 w-32 h-32 bg-primary/20 rounded-full blur-xl animate-float opacity-60"></div>
+      <div className="absolute bottom-20 right-10 w-24 h-24 bg-primary/15 rounded-full blur-lg animate-breathe opacity-40"></div>
 
-      <div className="container mx-auto max-w-6xl px-4 relative z-10">
-        {/* Compact Header */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-full border border-primary/20 mb-6 backdrop-blur-sm">
-            <div className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></div>
-            <span className="text-primary font-bold text-xs tracking-wide uppercase">Direto com o gestor</span>
-            <div className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></div>
+      <div className="container mx-auto max-w-6xl relative z-10">
+        {/* Header */}
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center space-x-2 px-6 py-3 bg-primary/10 rounded-full border border-primary/20 mb-8">
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+            <span className="text-primary font-semibold text-sm uppercase tracking-wider">Direto com o gestor</span>
           </div>
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-            <span className="bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
-              Atendimento de Parceiro
-            </span>
+          
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent">
+            Atendimento de Parceiro
           </h2>
           
-          <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto rounded-full mb-4"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto rounded-full mb-6"></div>
           
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-medium">
             Experiência exclusiva e personalizada para nossos parceiros estratégicos
           </p>
         </div>
 
-        {/* Compact Service Grid */}
-        <div className="grid md:grid-cols-2 gap-6 mb-12">
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {services.map((service, index) => (
-            <div key={index} className="group relative">
-              <div className="relative transform-gpu transition-all duration-500 hover:scale-105 hover:-translate-y-2">
-                {/* Card Shadow */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-4"></div>
+            <div key={index} className="group cursor-pointer">
+              {/* Service Card */}
+              <div className="relative h-full">
+                {/* Background Card */}
+                <div className="absolute inset-0 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/50 rounded-3xl transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-2xl group-hover:shadow-primary/20"></div>
                 
-                {/* Main Card */}
-                <div className="relative bg-gradient-to-br from-card/95 via-card to-card/90 border border-primary/20 hover:border-primary/40 transition-all duration-500 rounded-2xl overflow-hidden backdrop-blur-lg shadow-lg">
-                  {/* Top accent */}
-                  <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary via-accent to-primary"></div>
-                  
-                  <div className="relative p-6 z-10">
-                    <div className="flex flex-col items-center text-center space-y-4">
-                      {/* Icon */}
-                      <div className="relative">
-                        <div className="w-16 h-16 bg-gradient-to-br from-primary via-primary/95 to-primary/80 rounded-xl flex items-center justify-center shadow-lg border border-primary/30 transform group-hover:scale-110 transition-transform duration-300">
-                          <div className="absolute inset-1 bg-gradient-to-br from-white/20 to-transparent rounded-lg"></div>
-                          <service.icon className="h-8 w-8 text-black relative z-10" />
-                        </div>
-                      </div>
-                      
-                      {/* Content */}
-                      <div className="space-y-3">
-                        <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
-                          {service.title}
-                        </h3>
-                        <p className="text-muted-foreground leading-relaxed font-medium text-sm">
-                          {service.description}
-                        </p>
-                      </div>
+                {/* Content */}
+                <div className="relative p-8 h-full flex flex-col items-center text-center">
+                  {/* Icon Container */}
+                  <div className="relative mb-6">
+                    {/* Main Icon Circle */}
+                    <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                      <service.icon className="h-10 w-10 text-primary transition-all duration-500 group-hover:scale-125" />
                     </div>
+                    
+                    {/* Glow Effect */}
+                    <div className="absolute inset-0 bg-white rounded-2xl blur-xl opacity-30 group-hover:opacity-60 transition-all duration-500 -z-10"></div>
+                    
+                    {/* Pulse Ring */}
+                    <div className="absolute -inset-1 bg-gradient-to-r from-white/20 to-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
                   </div>
+                  
+                  {/* Text Content */}
+                  <div className="flex-1 flex flex-col justify-center">
+                    <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                    
+                    <p className="text-muted-foreground leading-relaxed group-hover:text-foreground/90 transition-colors duration-300">
+                      {service.description}
+                    </p>
+                  </div>
+                  
+                  {/* Bottom Accent */}
+                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Compact CTA Section */}
-        <div className="text-center">
-          <div className="relative group max-w-3xl mx-auto">
-            <div className="relative bg-gradient-to-br from-card/90 via-card to-card/95 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-300 p-8 backdrop-blur-xl overflow-hidden shadow-lg">
-              <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
-              
-              <div className="flex flex-col lg:flex-row items-center justify-center gap-6">
+        {/* Bottom CTA Section */}
+        <div className="relative">
+          {/* Background Glow */}
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent rounded-3xl blur-xl"></div>
+          
+          <div className="relative bg-gradient-to-br from-card/60 to-card/20 backdrop-blur-sm border border-primary/20 rounded-3xl p-12">
+            {/* Decorative Elements */}
+            <div className="absolute top-6 left-6 w-12 h-12 border-2 border-primary/30 rounded-lg transform rotate-12"></div>
+            <div className="absolute bottom-6 right-6 w-8 h-8 bg-primary/20 rounded-full"></div>
+            
+            <div className="text-center max-w-4xl mx-auto">
+              <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
                 {/* Icon */}
-                <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center shadow-lg border border-primary/40 transform group-hover:scale-110 transition-transform duration-300">
+                <div className="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center shadow-lg border border-primary/40 transform group-hover:scale-110 transition-transform duration-300">
                   <div className="absolute inset-1 bg-gradient-to-br from-white/20 to-transparent rounded-lg"></div>
-                  <MessageSquare className="h-8 w-8 text-black relative z-10" />
+                  <MessageSquare className="h-10 w-10 text-black relative z-10" />
                 </div>
                 
                 <div className="text-center lg:text-left">
-                  <h3 className="text-2xl font-bold text-primary mb-2">
+                  <h3 className="text-3xl font-bold text-primary mb-4">
                     Relacionamento Premium
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed max-w-xl">
+                  <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mb-6">
                     Acesso direto aos nossos estrategistas sênior e acompanhamento personalizado do seu projeto
                   </p>
+                  
+                  <FormModal>
+                    <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl px-8 py-3 text-base font-bold border border-primary/20">
+                      Falar com Especialista
+                    </Button>
+                  </FormModal>
                 </div>
               </div>
             </div>
-          </div>
-          
-          <div className="mt-8">
-            <FormModal>
-              <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl px-8 py-3 text-base font-bold border border-primary/20">
-                Falar com Especialista
-              </Button>
-            </FormModal>
           </div>
         </div>
       </div>
