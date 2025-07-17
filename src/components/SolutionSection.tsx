@@ -48,25 +48,51 @@ export function SolutionSection() {
             </h2>
             
             <div className="grid md:grid-cols-2 gap-6 text-left">
-              <div className="space-y-3">
+              <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <X className="h-5 w-5 text-red-400 mt-0.5 flex-shrink-0" />
-                  <p className="text-muted-foreground">Empresas que querem resultados sem investir</p>
+                  <div>
+                    <p className="text-muted-foreground font-medium">Empresas que querem resultados sem investir</p>
+                    <p className="text-sm text-muted-foreground/80 mt-1">Acreditam que marketing digital é gratuito e que podem obter ROI sem budget adequado para mídia paga</p>
+                  </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <X className="h-5 w-5 text-red-400 mt-0.5 flex-shrink-0" />
-                  <p className="text-muted-foreground">Clientes que não confiam no nosso processo</p>
+                  <div>
+                    <p className="text-muted-foreground font-medium">Clientes que não confiam no nosso processo</p>
+                    <p className="text-sm text-muted-foreground/80 mt-1">Questionam cada estratégia, querem controlar tudo e não dão autonomia para executarmos o trabalho</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <X className="h-5 w-5 text-red-400 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-muted-foreground font-medium">Negócios sem produto/serviço validado</p>
+                    <p className="text-sm text-muted-foreground/80 mt-1">Empresas que ainda não provaram que o mercado quer o que oferecem ou não têm processo de vendas estruturado</p>
+                  </div>
                 </div>
               </div>
               
-              <div className="space-y-3">
+              <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <X className="h-5 w-5 text-red-400 mt-0.5 flex-shrink-0" />
-                  <p className="text-muted-foreground">Quem procura soluções milagrosas instantâneas</p>
+                  <div>
+                    <p className="text-muted-foreground font-medium">Quem procura soluções milagrosas instantâneas</p>
+                    <p className="text-sm text-muted-foreground/80 mt-1">Esperam resultados em 48h sem entender que marketing digital é um processo contínuo de otimização</p>
+                  </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <X className="h-5 w-5 text-red-400 mt-0.5 flex-shrink-0" />
-                  <p className="text-muted-foreground">Empresas que não querem trabalhar em parceria</p>
+                  <div>
+                    <p className="text-muted-foreground font-medium">Empresas que não querem trabalhar em parceria</p>
+                    <p className="text-sm text-muted-foreground/80 mt-1">Veem a agência como fornecedor, não como parceiro estratégico para crescimento do negócio</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <X className="h-5 w-5 text-red-400 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-muted-foreground font-medium">Clientes que mudam de estratégia constantemente</p>
+                    <p className="text-sm text-muted-foreground/80 mt-1">Não têm paciência para aguardar resultados e ficam trocando de abordagem a cada semana</p>
+                  </div>
                 </div>
               </div>
             </div>
