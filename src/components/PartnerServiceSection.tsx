@@ -53,33 +53,33 @@ export function PartnerServiceSection() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {services.map((service, index) => (
-            <Card key={index} className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden rounded-lg">
-              <CardContent className="p-8 relative z-10">
-                <div className="text-center space-y-6">
+            <div key={index} className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden rounded-xl">
+              <div className="p-6 relative z-10">
+                <div className="text-center space-y-4">
                   {/* Icon */}
                   <div className="relative">
-                    <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                      <service.icon className="h-10 w-10 text-black" />
+                    <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
+                      <service.icon className="h-8 w-8 text-black" />
                     </div>
                   </div>
                   
                   {/* Content */}
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300 text-center">
+                  <div className="space-y-3">
+                    <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors duration-300 text-center">
                       {service.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed font-medium text-center">
+                    <p className="text-sm text-muted-foreground leading-relaxed font-medium text-center">
                       {service.description}
                     </p>
                   </div>
                 </div>
-              </CardContent>
+              </div>
               
               {/* Bottom accent */}
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </Card>
+            </div>
           ))}
         </div>
 
@@ -94,23 +94,22 @@ export function PartnerServiceSection() {
             <div className="absolute bottom-6 right-6 w-8 h-8 bg-primary/20 rounded-full"></div>
             
             <div className="text-center max-w-4xl mx-auto">
-              <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
+              <div className="flex flex-col items-center justify-center gap-6">
                 {/* Icon */}
-                <div className="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center shadow-lg border border-primary/40 transform group-hover:scale-110 transition-transform duration-300">
-                  <div className="absolute inset-1 bg-gradient-to-br from-white/20 to-transparent rounded-lg"></div>
-                  <MessageSquare className="h-10 w-10 text-black relative z-10" />
+                <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center shadow-md">
+                  <MessageSquare className="h-8 w-8 text-black" />
                 </div>
                 
-                <div className="text-center lg:text-left">
-                  <h3 className="text-3xl font-bold text-primary mb-4">
+                <div className="text-center">
+                  <h3 className="text-2xl font-semibold text-foreground mb-3">
                     Relacionamento Premium
                   </h3>
-                  <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mb-6">
+                  <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mb-6">
                     Acesso direto aos nossos estrategistas sênior e acompanhamento personalizado do seu projeto
                   </p>
                   
                   <FormModal>
-                    <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl px-8 py-3 text-base font-bold border border-primary/20">
+                    <Button size="lg" className="bg-primary hover:bg-primary/90 transition-all duration-300 px-8 py-3 text-base font-semibold">
                       Falar com Especialista
                     </Button>
                   </FormModal>
