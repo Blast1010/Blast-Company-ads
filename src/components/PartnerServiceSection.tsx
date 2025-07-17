@@ -20,116 +20,132 @@ export function PartnerServiceSection() {
     title: "CRM Integrado",
     description: "Diferente de outros gestores, nos contamos com CRM integrado na sua estrutura juntamente com Relatórios diários com rastreamento de conversas, fazendo assim identificarmos otimizações precisas e economizar o seu dinheiro."
   }];
-  return <section className="py-20 px-4 bg-gradient-to-b from-background to-muted/5 border-b border-primary/20">
-      <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
-          {/* Badge */}
-          <div className="inline-flex items-center space-x-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/20 mb-6">
-            
-            <span className="text-primary font-semibold text-sm">Direto com o gestor</span>
+  return (
+    <section className="relative py-24 bg-gradient-to-b from-background via-background/95 to-muted/5 border-b border-primary/10 overflow-hidden">
+      {/* Professional Background Effects */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-5"></div>
+        <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-radial from-primary/8 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-20 w-80 h-80 bg-gradient-radial from-accent/6 to-transparent rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="container mx-auto max-w-7xl px-4 relative z-10">
+        {/* Professional Header */}
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-full border border-primary/20 mb-8 backdrop-blur-sm">
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+            <span className="text-primary font-bold text-sm tracking-wide uppercase">Direto com o gestor</span>
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-            Atendimento de Parceiro
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center">
+            <span className="bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
+              Atendimento de Parceiro
+            </span>
           </h2>
-          <div className="w-24 h-0.5 bg-gradient-to-r from-primary to-primary/50 mx-auto rounded-full"></div>
+          
+          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto rounded-full"></div>
+          
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mt-6 font-medium leading-relaxed">
+            Experiência exclusiva e personalizada para nossos parceiros estratégicos
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        {/* Enhanced Service Grid */}
+        <div className="grid lg:grid-cols-2 gap-10 mb-20">
           {services.map((service, index) => (
             <div key={index} className="group relative">
-              {/* 3D Card Container */}
-              <div className="relative transform-gpu transition-all duration-500 hover:scale-105 hover:-translate-y-2 perspective-1000">
-                {/* 3D Shadow */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/40 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-6"></div>
+              {/* Professional Card Container */}
+              <div className="relative transform-gpu transition-all duration-700 hover:scale-105 hover:-translate-y-3">
+                {/* Elegant Shadow */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/15 to-accent/15 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700 transform translate-y-4 group-hover:translate-y-8"></div>
                 
-                {/* Main Card */}
-                <Card className="relative bg-gradient-to-br from-card via-card to-card/95 border border-primary/20 hover:border-primary/40 transition-all duration-500 overflow-hidden backdrop-blur-sm">
-                  {/* 3D Glow Effect */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                {/* Main Professional Card */}
+                <div className="relative bg-gradient-to-br from-card/95 via-card to-card/90 border-2 border-primary/20 hover:border-primary/40 transition-all duration-700 rounded-3xl overflow-hidden backdrop-blur-lg shadow-2xl">
+                  {/* Subtle glow effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/3 via-transparent to-accent/3 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                   
-                  {/* Floating orbs */}
-                  <div className="absolute top-4 right-4 w-3 h-3 bg-primary/40 rounded-full blur-sm animate-pulse opacity-60"></div>
-                  <div className="absolute bottom-6 left-6 w-2 h-2 bg-primary/30 rounded-full blur-sm animate-pulse opacity-40" style={{animationDelay: '1s'}}></div>
+                  {/* Premium accent line */}
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-primary"></div>
                   
-                  <CardContent className="relative p-8 z-10">
-                    <div className="space-y-6 text-center">
-                      {/* 3D Icon Container */}
-                      <div className="relative mb-6">
-                        <div className="relative transform-gpu transition-all duration-500 group-hover:scale-110 group-hover:rotate-3">
-                          {/* Icon Shadow */}
-                          <div className="absolute inset-0 bg-primary/30 rounded-2xl blur-lg translate-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="relative p-10 z-10">
+                    <div className="flex flex-col items-center text-center space-y-8">
+                      {/* Professional Icon */}
+                      <div className="relative">
+                        <div className="relative transform-gpu transition-all duration-500 group-hover:scale-110 group-hover:rotate-2">
+                          {/* Icon shadow */}
+                          <div className="absolute inset-0 bg-primary/20 rounded-2xl blur-xl translate-y-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                           
-                          {/* Icon Background with 3D effect */}
-                          <div className="relative w-20 h-20 bg-gradient-to-br from-primary via-primary to-primary/80 rounded-2xl flex items-center justify-center mx-auto shadow-lg border border-primary/30">
-                            {/* Inner glow */}
-                            <div className="absolute inset-1 bg-gradient-to-br from-white/20 to-transparent rounded-xl"></div>
+                          {/* Icon container with professional styling */}
+                          <div className="relative w-24 h-24 bg-gradient-to-br from-primary via-primary/95 to-primary/80 rounded-2xl flex items-center justify-center shadow-xl border-2 border-primary/30">
+                            {/* Inner highlight */}
+                            <div className="absolute inset-2 bg-gradient-to-br from-white/25 to-transparent rounded-xl"></div>
                             
-                            <service.icon className="h-10 w-10 text-black relative z-10" />
+                            <service.icon className="h-12 w-12 text-black relative z-10" />
                           </div>
                         </div>
                       </div>
                       
-                      {/* Content */}
-                      <div className="space-y-4">
-                        <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+                      {/* Professional Content */}
+                      <div className="space-y-5">
+                        <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors duration-500">
                           {service.title}
                         </h3>
-                        <p className="text-muted-foreground leading-relaxed font-medium text-base">
+                        <p className="text-muted-foreground leading-relaxed font-medium text-lg max-w-sm">
                           {service.description}
                         </p>
                       </div>
                     </div>
-                  </CardContent>
+                  </div>
                   
-                  {/* 3D Bottom accent with depth */}
-                  <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-primary/60 via-primary to-primary/60 opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-x-95 rounded-b-2xl"></div>
-                </Card>
+                  {/* Bottom accent */}
+                  <div className="absolute bottom-0 left-0 right-0 h-3 bg-gradient-to-r from-primary/40 via-accent/40 to-primary/40 opacity-0 group-hover:opacity-100 transition-all duration-700 transform scale-x-0 group-hover:scale-x-100 rounded-b-3xl"></div>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Enhanced Bottom highlight */}
-        <div className="text-center mt-20">
-          <div className="relative group max-w-2xl mx-auto">
-            {/* 3D Background with depth */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-primary/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-2"></div>
+        {/* Professional CTA Section */}
+        <div className="text-center">
+          <div className="relative group max-w-4xl mx-auto">
+            {/* Professional background */}
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/5 to-primary/10 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 transform translate-y-2"></div>
             
-            <div className="relative bg-gradient-to-br from-card via-card to-card/90 rounded-3xl border border-primary/30 p-8 backdrop-blur-sm overflow-hidden">
-              {/* Floating elements */}
-              <div className="absolute top-4 right-6 w-2 h-2 bg-primary/50 rounded-full animate-pulse"></div>
-              <div className="absolute bottom-6 left-8 w-3 h-3 bg-primary/30 rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
+            <div className="relative bg-gradient-to-br from-card/90 via-card to-card/95 rounded-3xl border-2 border-primary/30 hover:border-primary/50 transition-all duration-500 p-12 backdrop-blur-xl overflow-hidden shadow-2xl">
+              {/* Accent line */}
+              <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
               
-              <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-                {/* 3D Icon */}
+              <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
+                {/* Professional Icon */}
                 <div className="relative">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center shadow-lg border border-primary/30 transform group-hover:scale-110 transition-transform duration-300">
-                    <div className="absolute inset-1 bg-gradient-to-br from-white/20 to-transparent rounded-xl"></div>
-                    <MessageSquare className="h-8 w-8 text-black relative z-10" />
+                  <div className="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center shadow-xl border-2 border-primary/40 transform group-hover:scale-110 transition-transform duration-500">
+                    <div className="absolute inset-2 bg-gradient-to-br from-white/20 to-transparent rounded-xl"></div>
+                    <MessageSquare className="h-10 w-10 text-black relative z-10" />
                   </div>
                 </div>
                 
-                <div className="text-center md:text-left">
-                  <p className="text-xl font-bold text-primary mb-2">
-                    Inteligência Artificial + Estratégia Humana
-                  </p>
-                  <p className="text-muted-foreground">
-                    A fórmula perfeita para resultados exponenciais
+                <div className="text-center lg:text-left">
+                  <h3 className="text-3xl font-bold text-primary mb-3">
+                    Relacionamento Premium
+                  </h3>
+                  <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl">
+                    Acesso direto aos nossos estrategistas sênior e acompanhamento personalizado do seu projeto
                   </p>
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="mt-12">
+          <div className="mt-16">
             <FormModal>
-              <Button size="lg" className="bg-accent hover:bg-accent/90 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                Começar Agora
+              <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 transform hover:scale-105 transition-all duration-500 shadow-2xl hover:shadow-3xl px-12 py-4 text-lg font-bold border-2 border-primary/20">
+                Falar com Especialista
               </Button>
             </FormModal>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 }
