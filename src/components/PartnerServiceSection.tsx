@@ -55,7 +55,7 @@ export function PartnerServiceSection() {
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {services.map((service, index) => (
-            <Card key={index} className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden">
+            <Card key={index} className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden rounded-lg">
               <CardContent className="p-8 relative z-10">
                 <div className="text-center space-y-6">
                   {/* Icon */}
