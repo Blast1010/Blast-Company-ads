@@ -59,71 +59,55 @@ export function HeroSection() {
             </h1>
           </div>
 
-          {/* Pain Point + Urgency Copy */}
+          {/* Problem Description */}
           <div className="max-w-5xl mx-auto animate-fade-in" style={{
           animationDelay: '0.3s'
         }}>
-            <div className="relative p-8 rounded-3xl bg-gradient-to-br from-red-500/10 via-orange-500/5 to-red-500/10 border border-red-500/20 backdrop-blur-sm mb-8">
-              {/* Warning Icon */}
-              <div className="absolute top-4 left-4 w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-              
+            <div className="relative p-8 rounded-3xl bg-gradient-to-br from-muted/50 via-background to-muted/30 border border-border backdrop-blur-sm mb-8">
               <div className="text-center space-y-4">
-                <h3 className="text-2xl md:text-3xl font-bold text-red-400 leading-tight">
-                  ⚠️ ALERTA CRÍTICO
-                </h3>
-                <p className="text-xl md:text-2xl leading-relaxed text-red-300 font-semibold">
+                <p className="text-xl md:text-2xl leading-relaxed text-muted-foreground font-medium">
                   Cansou de queimar dinheiro em campanhas que não geram resultados?
                 </p>
-                <p className="text-lg md:text-xl text-orange-300 font-medium">
-                  <span className="animate-pulse">🔥</span> Enquanto você lê isso, seus concorrentes estão vendendo mais <span className="animate-pulse">🔥</span>
+                <p className="text-lg md:text-xl text-muted-foreground">
+                  Enquanto você lê isso, seus concorrentes estão vendendo mais
                 </p>
-                
-                {/* Urgency Counter */}
-                <div className="flex items-center justify-center gap-2 text-sm text-red-200 mt-6">
-                  <div className="w-2 h-2 bg-red-500 rounded-full animate-ping"></div>
-                  <span>Cada segundo perdido = vendas perdidas para concorrência</span>
-                  <div className="w-2 h-2 bg-red-500 rounded-full animate-ping"></div>
-                </div>
               </div>
             </div>
           </div>
 
-          {/* Transition + Solution */}
+          {/* Solution Description */}
           <div className="max-w-5xl mx-auto animate-fade-in" style={{
           animationDelay: '0.4s'
         }}>
-            <div className="relative p-8 rounded-3xl bg-gradient-to-br from-primary/15 via-primary/5 to-primary/15 border border-primary/30 backdrop-blur-sm">
-              {/* Success Icon */}
-              <div className="absolute top-4 left-4 w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-              
+            <div className="relative p-8 rounded-3xl bg-gradient-to-br from-primary/10 via-primary/5 to-primary/10 border border-primary/20 backdrop-blur-sm">
               <div className="text-center space-y-6">
                 <h3 className="text-2xl md:text-3xl font-bold text-primary leading-tight">
-                  ✅ SOLUÇÃO COMPROVADA
+                  Nossa Abordagem
                 </h3>
                 <p className="text-lg md:text-xl leading-relaxed text-foreground font-medium">
                   Somos uma agência <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded">parceira estratégica</span> da sua empresa, 
-                  desenvolvemos <span className="text-primary font-semibold">estratégias vencedoras</span> para multiplicar as vendas 
-                  do seu negócio com o <span className="text-green-400 font-bold">mínimo de investimento</span> possível.
+                  desenvolvemos estratégias focadas para aumentar as vendas 
+                  do seu negócio com tráfego qualificado.
                 </p>
                 
                 <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-lg text-muted-foreground">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span>Resultados em 30 dias</span>
+                    <span>Estratégia personalizada</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span>ROI garantido</span>
+                    <span>Acompanhamento detalhado</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span>Transparência total</span>
+                    <span>Relatórios transparentes</span>
                   </div>
                 </div>
                 
                 <p className="text-base md:text-lg text-primary/80 font-medium">
-                  Descubra como crescer sua empresa com <span className="text-primary font-bold">tráfego de verdade</span> 
-                  e estratégias que <span className="text-green-400 font-semibold">realmente convertem</span>.
+                  Vamos analisar sua situação atual e desenvolver uma estratégia 
+                  específica para seu negócio.
                 </p>
               </div>
             </div>
@@ -136,8 +120,8 @@ export function HeroSection() {
             <div className="max-w-2xl mx-auto">
               <div className="text-center mb-8">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/20 rounded-full border border-primary/30 text-primary font-semibold text-sm mb-6">
-                  <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-                  ANÁLISE GRATUITA - APENAS HOJE
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  ANÁLISE GRATUITA
                 </div>
                 
                 <h3 className="text-3xl md:text-4xl font-bold text-foreground leading-tight mb-4">
@@ -147,7 +131,7 @@ export function HeroSection() {
                 </h3>
                 
                 <p className="text-lg text-muted-foreground">
-                  Responda algumas perguntas e receba um diagnóstico completo em 24h
+                  Responda algumas perguntas e receba um diagnóstico da sua situação atual
                 </p>
               </div>
               
