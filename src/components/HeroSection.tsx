@@ -60,7 +60,7 @@ export function HeroSection() {
         }}>
             <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-muted/50 via-background to-muted/30 border border-border backdrop-blur-sm mb-6 sm:mb-8">
               <div className="text-center space-y-3 sm:space-y-4">
-                <p className="text-xl md:text-2xl leading-relaxed font-medium text-left text-red-500">
+                <p className="text-xl md:text-2xl leading-relaxed font-medium text-red-500 text-center">
                   Cansou de queimar dinheiro em campanhas que não geram resultados?
                 </p>
                 <p className="text-lg md:text-xl text-muted-foreground text-center">
