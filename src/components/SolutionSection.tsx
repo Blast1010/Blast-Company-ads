@@ -14,15 +14,21 @@ export function SolutionSection() {
       <div className="container mx-auto max-w-6xl relative z-10">
         {/* First Section */}
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-            A Solução que oferecemos
+          <div className="inline-flex items-center space-x-2 px-6 py-3 bg-primary/10 rounded-full border border-primary/20 mb-8">
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+            <span className="text-primary font-semibold text-sm uppercase tracking-wider">Nossa Proposta</span>
+          </div>
+          
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent">
+            A Solução Definitiva para Seu Crescimento
           </h2>
           
+          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto rounded-full mb-8"></div>
+          
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-center">
-              Nosso trabalho é vendas. Sem firulas ou textinhos bonitos de Marketing para tentar mostrar 
-              que somos uma agência diferente. Quando você se tornar nosso parceiro, vamos fazer de tudo 
-              pra você vender muito.
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed text-center font-medium">
+              Transformamos empresas em máquinas de vendas através de estratégias digitais precisas e execução impecável. 
+              Nosso foco é simples: <span className="text-primary font-semibold">fazer você vender mais</span>.
             </p>
           </div>
         </div>
@@ -36,15 +42,9 @@ export function SolutionSection() {
 
         {/* Third Section */}
         <div className="text-center">
-          <div className="max-w-4xl mx-auto p-8 bg-card/50 rounded-3xl border border-border/50 backdrop-blur-sm">
-            <div className="flex items-center justify-center mb-6">
-              <div className="w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center">
-                <X className="h-8 w-8 text-red-400" />
-              </div>
-            </div>
-            
-            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center text-red-400">
-              Não vamos, esse é o EXATO perfil de cliente que nós NÃO ACEITAMOS aqui
+          <div className="max-w-4xl mx-auto p-8 md:p-12 bg-gradient-to-br from-card/60 to-card/20 backdrop-blur-sm border border-red-500/30 rounded-3xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-red-400">
+              Esse é o EXATO perfil de cliente que nós NÃO ACEITAMOS
             </h2>
             
             <div className="grid md:grid-cols-2 gap-6 text-left">

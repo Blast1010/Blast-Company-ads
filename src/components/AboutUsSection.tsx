@@ -1,6 +1,59 @@
-import { Building2, Lightbulb, Target } from "lucide-react";
+import { useState } from "react";
+import { Building2, Lightbulb, Target, ChevronLeft, ChevronRight, Users, Award, Rocket } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+const carouselItems = [
+  {
+    icon: Target,
+    title: "Estratégia Personalizada",
+    description: "Desenvolvemos estratégias únicas para cada cliente, analisando profundamente seu mercado, concorrência e objetivos específicos.",
+    highlight: "Cada negócio é único"
+  },
+  {
+    icon: Rocket,
+    title: "Execução Ágil",
+    description: "Implementamos campanhas de alta performance com velocidade e precisão, otimizando continuamente para máximo retorno.",
+    highlight: "Resultados rápidos"
+  },
+  {
+    icon: Users,
+    title: "Time Especializado",
+    description: "Nossa equipe é formada por especialistas certificados em Google Ads, Meta Ads e análise de dados avançada.",
+    highlight: "Expertise comprovada"
+  },
+  {
+    icon: Award,
+    title: "Metodologia Própria",
+    description: "Utilizamos nossa metodologia proprietária de otimização contínua baseada em dados e testes constantes.",
+    highlight: "Processo exclusivo"
+  },
+  {
+    icon: Building2,
+    title: "Parceria Estratégica",
+    description: "Trabalhamos como extensão do seu time, com transparência total e foco no crescimento sustentável do seu negócio.",
+    highlight: "Relacionamento duradouro"
+  },
+  {
+    icon: Lightbulb,
+    title: "Inovação Constante",
+    description: "Estamos sempre à frente das tendências do mercado digital, implementando as melhores práticas e tecnologias.",
+    highlight: "Sempre evoluindo"
+  }
+];
 
 export function AboutUsSection() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const itemsPerView = 3;
+  const maxIndex = Math.max(0, carouselItems.length - itemsPerView);
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
+  };
+
   return (
     <section className="py-20 px-4 relative overflow-hidden">
       {/* Background Effects */}
@@ -20,59 +73,86 @@ export function AboutUsSection() {
           </div>
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent">
-            Quem Somos
+            O que fazemos?
           </h2>
           
           <div className="w-24 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto rounded-full mb-6"></div>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-medium leading-relaxed">
-            Nascemos da necessidade de transformar a forma como empresas crescem online. 
-            Nossa jornada começou com uma visão simples: democratizar o acesso a estratégias 
-            de marketing digital de alta performance.
+            Somos especialistas em transformar visitantes em clientes através de estratégias digitais 
+            personalizadas e execução impecável.
           </p>
         </div>
 
-        {/* Story Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-          {/* Mission */}
-          <div className="text-center group">
-            <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-              <Target className="h-10 w-10 text-black" />
+        {/* Carousel */}
+        <div className="relative">
+          {/* Navigation Buttons */}
+          <div className="flex justify-between items-center mb-8">
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={prevSlide}
+              className="h-12 w-12 rounded-full border-primary/30 bg-card/50 backdrop-blur-sm hover:bg-primary/20 transition-all duration-300"
+            >
+              <ChevronLeft className="h-6 w-6" />
+            </Button>
+            
+            <div className="flex space-x-2">
+              {Array.from({ length: maxIndex + 1 }).map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentIndex(index)}
+                  className={`h-2 w-8 rounded-full transition-all duration-300 ${
+                    index === currentIndex ? 'bg-primary' : 'bg-primary/30'
+                  }`}
+                />
+              ))}
             </div>
-            <h3 className="text-2xl font-bold text-foreground mb-4">Nossa Missão</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Capacitar empresas a alcançar seu potencial máximo através de estratégias 
-              digitais personalizadas e resultados mensuráveis.
-            </p>
+
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={nextSlide}
+              className="h-12 w-12 rounded-full border-primary/30 bg-card/50 backdrop-blur-sm hover:bg-primary/20 transition-all duration-300"
+            >
+              <ChevronRight className="h-6 w-6" />
+            </Button>
           </div>
 
-          {/* Vision */}
-          <div className="text-center group">
-            <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-              <Lightbulb className="h-10 w-10 text-black" />
+          {/* Carousel Items */}
+          <div className="overflow-hidden">
+            <div 
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)` }}
+            >
+              {carouselItems.map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={index}
+                    className="w-1/3 flex-shrink-0 px-4"
+                  >
+                    <div className="h-full bg-gradient-to-br from-card/60 to-card/20 backdrop-blur-sm border border-primary/20 rounded-3xl p-8 group hover:border-primary/40 transition-all duration-300">
+                      <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <Icon className="h-8 w-8 text-black" />
+                      </div>
+                      
+                      <div className="inline-block px-3 py-1 bg-primary/10 rounded-full border border-primary/20 mb-4">
+                        <span className="text-primary text-sm font-semibold">{item.highlight}</span>
+                      </div>
+                      
+                      <h3 className="text-2xl font-bold text-foreground mb-4">{item.title}</h3>
+                      <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
-            <h3 className="text-2xl font-bold text-foreground mb-4">Nossa Visão</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Ser reconhecida como a agência que redefine padrões de excelência 
-              em gestão de tráfego e performance digital.
-            </p>
-          </div>
-
-          {/* Values */}
-          <div className="text-center group">
-            <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-              <Building2 className="h-10 w-10 text-black" />
-            </div>
-            <h3 className="text-2xl font-bold text-foreground mb-4">Nossos Valores</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Transparência total, compromisso com resultados e relacionamentos 
-              duradouros baseados em confiança mútua.
-            </p>
           </div>
         </div>
 
-        {/* Story Text */}
-        <div className="max-w-4xl mx-auto text-center">
+        {/* Bottom Story */}
+        <div className="mt-20 max-w-4xl mx-auto text-center">
           <div className="bg-gradient-to-br from-card/60 to-card/20 backdrop-blur-sm border border-primary/20 rounded-3xl p-8 md:p-12">
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
               Fundada por especialistas apaixonados por marketing digital, nossa agência surgiu 

@@ -217,7 +217,12 @@ export function AnalyticsSection() {
                     </p>
                     
                     <FormModal>
-                      
+                      <Button 
+                        size="lg" 
+                        className="bg-primary hover:bg-primary/90 text-black px-8 py-3 transition-colors"
+                      >
+                        Acessar Plataforma
+                      </Button>
                     </FormModal>
                   </div>
                 </div>
