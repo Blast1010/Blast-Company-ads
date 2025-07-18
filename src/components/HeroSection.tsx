@@ -43,9 +43,7 @@ export function HeroSection() {
           animationDelay: '0.2s'
         }}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-left">
-              <span className="text-foreground block mb-2 sm:mb-0 sm:inline">
-                Temos como trabalho aumentar
-              </span>
+              <span className="text-foreground block mb-2 sm:mb-0 sm:inline">Nosso trabalho é aumentar</span>
               <br className="hidden sm:block" />
               <span className="text-foreground block mb-2 sm:mb-0 sm:inline">
                 as vendas da empresa com
