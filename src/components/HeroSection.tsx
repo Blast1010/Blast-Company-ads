@@ -30,7 +30,7 @@ export function HeroSection() {
         {/* Logo & Brand - Responsivo */}
         <div className="text-center mb-8 sm:mb-12 animate-fade-in">
           <div className="inline-flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl tracking-tight font-extralight">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl tracking-tight font-extralight text-left">
               Blast Company <span className="text-primary">ads</span>
             </h2>
           </div>
@@ -42,7 +42,7 @@ export function HeroSection() {
           <div className="space-y-4 sm:space-y-6 animate-fade-in px-2" style={{
           animationDelay: '0.2s'
         }}>
-            <h1 className="text-4xl lg:text-6xl leading-[1.1] tracking-tight text-center md:text-5xl font-bold">
+            <h1 className="text-4xl lg:text-6xl leading-[1.1] tracking-tight md:text-5xl font-bold text-center">
               <span className="text-foreground block mb-2 sm:mb-0 sm:inline text-center">Nosso trabalho é impulsionar o crescimento e  aumentar</span>
               <br className="hidden sm:block" />
               <span className="text-foreground block mb-2 sm:mb-0 sm:inline">as vendas da sua empresa  com</span>
