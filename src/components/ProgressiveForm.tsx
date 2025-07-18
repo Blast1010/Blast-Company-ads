@@ -163,62 +163,7 @@ export function ProgressiveForm({
         }} />
         </div>
 
-        <div className="p-6 md:p-8 min-h-[350px] flex flex-col justify-center mx-0 px-0 py-0 my-0">
-          {/* Question number */}
-          <div className="mb-6">
-            <span className="text-sm text-gray-400 font-medium">
-              {currentStep + 1} → {steps.length}
-            </span>
-          </div>
-
-          {/* Main content */}
-          <div className="space-y-8 flex-1 flex flex-col justify-center">
-            {/* Icon */}
-            <div className="text-primary">
-              {steps[currentStep].icon}
-            </div>
-
-            {/* Question */}
-            <div className="space-y-3">
-              <h3 className="text-2xl md:text-3xl font-bold text-white leading-tight">
-                {steps[currentStep].title}
-              </h3>
-              {steps[currentStep].subtitle && <p className="text-lg text-gray-300">
-                  {steps[currentStep].subtitle}
-                </p>}
-            </div>
-
-            {/* Input */}
-            <div className="space-y-4">
-              {steps[currentStep].type === "select" ? <select value={formData[steps[currentStep].field]} onChange={e => handleInputChange(steps[currentStep].field, e.target.value)} onKeyDown={handleKeyPress} className="w-full p-4 text-lg border-0 border-b-2 border-gray-600 focus:border-primary focus:outline-none bg-transparent transition-colors text-white" autoFocus>
-                  <option value="" className="bg-black text-gray-400">{steps[currentStep].placeholder}</option>
-                  {steps[currentStep].options?.map(option => <option key={option} value={option} className="bg-black text-white">
-                      {option}
-                    </option>)}
-                </select> : <Input type={steps[currentStep].type || "text"} placeholder={steps[currentStep].placeholder} value={formData[steps[currentStep].field]} onChange={e => handleInputChange(steps[currentStep].field, e.target.value)} onKeyDown={handleKeyPress} className="w-full p-4 text-lg border-0 border-b-2 border-gray-600 focus:border-primary focus:outline-none bg-transparent transition-colors rounded-none text-white placeholder:text-gray-400" autoFocus />}
-
-              {/* Instructions */}
-              <p className="text-sm text-gray-400">
-                Pressione <kbd className="px-2 py-1 bg-gray-800 rounded text-xs text-gray-300">Enter ↵</kbd> para continuar
-              </p>
-            </div>
-          </div>
-
-          {/* Bottom navigation */}
-          <div className="flex justify-between items-center mt-8">
-            <Button type="button" variant="ghost" onClick={handlePrevious} disabled={currentStep === 0} className="flex items-center space-x-2 text-gray-400 hover:text-white">
-              <ChevronLeft className="h-4 w-4" />
-              <span>Voltar</span>
-            </Button>
-
-            <Button type="button" onClick={handleNext} disabled={!isCurrentStepValid()} className="flex items-center space-x-2 px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg">
-              <span>
-                {currentStep === steps.length - 1 ? "Enviar" : "OK"}
-              </span>
-              {currentStep === steps.length - 1 ? <Check className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
-            </Button>
-          </div>
-        </div>
+        
       </Card>
     </div>;
 }
