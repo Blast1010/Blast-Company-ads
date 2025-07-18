@@ -30,7 +30,7 @@ export function HeroSection() {
         {/* Logo & Brand - Responsivo */}
         <div className="text-center mb-8 sm:mb-12 animate-fade-in">
           <div className="inline-flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl tracking-tight font-extralight">
               Blast Company <span className="text-primary">ads</span>
             </h2>
           </div>
@@ -42,10 +42,10 @@ export function HeroSection() {
           <div className="space-y-4 sm:space-y-6 animate-fade-in px-2" style={{
           animationDelay: '0.2s'
         }}>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl leading-[1.1] tracking-tight text-left font-bold">
+            <h1 className="text-4xl lg:text-6xl leading-[1.1] tracking-tight text-center md:text-5xl font-bold">
               <span className="text-foreground block mb-2 sm:mb-0 sm:inline text-center">Nosso trabalho é aumentar</span>
               <br className="hidden sm:block" />
-              <span className="text-foreground block mb-2 sm:mb-0 sm:inline">as vendas da sua empresa investindo o mínimo investimento possível com</span>
+              <span className="text-foreground block mb-2 sm:mb-0 sm:inline">as vendas da sua empresa  com</span>
               <br className="hidden sm:block" />
               <span className="bg-gradient-to-r from-primary via-primary/90 to-primary/70 bg-clip-text text-transparent relative block sm:inline">
                 Tráfego de verdade
@@ -60,10 +60,10 @@ export function HeroSection() {
         }}>
             <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-muted/50 via-background to-muted/30 border border-border backdrop-blur-sm mb-6 sm:mb-8">
               <div className="text-center space-y-3 sm:space-y-4">
-                <p className="text-xl md:text-2xl leading-relaxed text-muted-foreground font-medium">
+                <p className="text-xl md:text-2xl leading-relaxed font-medium text-left text-red-500">
                   Cansou de queimar dinheiro em campanhas que não geram resultados?
                 </p>
-                <p className="text-lg md:text-xl text-muted-foreground">
+                <p className="text-lg md:text-xl text-muted-foreground text-center">
                   Enquanto você lê isso, seus concorrentes estão vendendo mais
                 </p>
               </div>
@@ -79,7 +79,7 @@ export function HeroSection() {
                 <h3 className="text-2xl md:text-3xl font-bold text-primary leading-tight">
                   Nossa Abordagem
                 </h3>
-                <p className="text-lg md:text-xl leading-relaxed text-foreground font-medium">
+                <p className="text-lg md:text-xl leading-relaxed text-foreground font-medium text-left">
                   Somos uma agência <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded">parceira estratégica</span> da sua empresa, 
                   desenvolvemos estratégias focadas para aumentar as vendas 
                   do seu negócio com tráfego qualificado.
@@ -100,7 +100,7 @@ export function HeroSection() {
                   </div>
                 </div>
                 
-                <p className="text-base md:text-lg text-primary/80 font-medium">
+                <p className="text-base md:text-lg text-primary/80 font-medium text-left">
                   Vamos analisar sua situação atual e desenvolver uma estratégia 
                   específica para seu negócio.
                 </p>
