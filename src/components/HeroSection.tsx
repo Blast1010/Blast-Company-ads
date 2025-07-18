@@ -1,11 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 import { TrendingUp, Target, Zap, Shield } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
-
 export function HeroSection() {
-  return (
-    <section className="relative min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-16 sm:py-20 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
+  return <section className="relative min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-16 sm:py-20 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
       {/* Enhanced Background Effects - Responsivos */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Main cinematic gradient */}
@@ -14,19 +11,19 @@ export function HeroSection() {
         {/* Animated light orbs - Responsivos */}
         <div className="absolute top-10 sm:top-20 left-[5%] sm:left-[10%] w-48 sm:w-96 h-48 sm:h-96 bg-gradient-radial from-primary/30 via-primary/10 to-transparent rounded-full blur-2xl sm:blur-3xl animate-pulse opacity-70"></div>
         <div className="absolute bottom-10 sm:bottom-20 right-[10%] sm:right-[15%] w-40 sm:w-80 h-40 sm:h-80 bg-gradient-radial from-primary/20 via-primary/5 to-transparent rounded-full blur-xl sm:blur-2xl animate-pulse opacity-50" style={{
-          animationDelay: '2s'
-        }}></div>
+        animationDelay: '2s'
+      }}></div>
         
         {/* Floating elements - Ajustados para mobile */}
         <div className="absolute top-20 sm:top-40 right-[15%] sm:right-[20%] w-2 sm:w-4 h-2 sm:h-4 bg-primary/40 rounded-full animate-bounce opacity-60" style={{
-          animationDelay: '1s'
-        }}></div>
+        animationDelay: '1s'
+      }}></div>
         <div className="absolute bottom-40 sm:bottom-60 left-[20%] sm:left-[25%] w-1.5 sm:w-3 h-1.5 sm:h-3 bg-primary/30 rounded-full animate-bounce opacity-40" style={{
-          animationDelay: '3s'
-        }}></div>
+        animationDelay: '3s'
+      }}></div>
         <div className="absolute top-60 sm:top-80 left-[50%] sm:left-[60%] w-1 sm:w-2 h-1 sm:h-2 bg-primary/50 rounded-full animate-bounce opacity-80" style={{
-          animationDelay: '0.5s'
-        }}></div>
+        animationDelay: '0.5s'
+      }}></div>
       </div>
       
       <div className="container mx-auto max-w-7xl relative z-10 w-full">
@@ -43,8 +40,8 @@ export function HeroSection() {
         <div className="max-w-6xl mx-auto text-center space-y-6 sm:space-y-8">
           {/* Main Headline - Responsivo */}
           <div className="space-y-4 sm:space-y-6 animate-fade-in px-2" style={{
-            animationDelay: '0.2s'
-          }}>
+          animationDelay: '0.2s'
+        }}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
               <span className="text-foreground block mb-2 sm:mb-0 sm:inline">
                 Temos como trabalho aumentar
@@ -63,8 +60,8 @@ export function HeroSection() {
 
           {/* Problem Description - Responsivo */}
           <div className="max-w-5xl mx-auto animate-fade-in px-2" style={{
-            animationDelay: '0.3s'
-          }}>
+          animationDelay: '0.3s'
+        }}>
             <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-muted/50 via-background to-muted/30 border border-border backdrop-blur-sm mb-6 sm:mb-8">
               <div className="text-center space-y-3 sm:space-y-4">
                 <p className="text-xl md:text-2xl leading-relaxed text-muted-foreground font-medium">
@@ -79,8 +76,8 @@ export function HeroSection() {
 
           {/* Solution Description - Responsivo */}
           <div className="max-w-5xl mx-auto animate-fade-in px-2" style={{
-            animationDelay: '0.4s'
-          }}>
+          animationDelay: '0.4s'
+        }}>
             <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-primary/10 via-primary/5 to-primary/10 border border-primary/20 backdrop-blur-sm">
               <div className="text-center space-y-4 sm:space-y-6">
                 <h3 className="text-2xl md:text-3xl font-bold text-primary leading-tight">
@@ -117,31 +114,15 @@ export function HeroSection() {
 
           {/* TypeForm Style Section - Responsivo */}
           <div className="pt-12 sm:pt-16 animate-fade-in px-2" style={{
-            animationDelay: '0.8s'
-          }}>
+          animationDelay: '0.8s'
+        }}>
             <div className="max-w-2xl mx-auto">
-              <div className="text-center mb-6 sm:mb-8">
-                <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 bg-primary/20 rounded-full border border-primary/30 text-primary font-semibold text-xs sm:text-sm mb-4 sm:mb-6">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  ANÁLISE GRATUITA
-                </div>
-                
-                <h3 className="text-3xl md:text-4xl font-bold text-foreground leading-tight mb-3 sm:mb-4">
-                  Vamos analisar sua conta
-                  <br />
-                  <span className="text-primary">gratuitamente</span>
-                </h3>
-                
-                <p className="text-lg text-muted-foreground px-2">
-                  Responda algumas perguntas e receba um diagnóstico da sua situação atual
-                </p>
-              </div>
+              
               
               <ProgressiveForm />
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
