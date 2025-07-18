@@ -42,7 +42,7 @@ export function HeroSection() {
           <div className="space-y-4 sm:space-y-6 animate-fade-in px-2" style={{
           animationDelay: '0.2s'
         }}>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-left">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-center">
               <span className="text-foreground block mb-2 sm:mb-0 sm:inline text-center">Nosso trabalho é aumentar</span>
               <br className="hidden sm:block" />
               <span className="text-foreground block mb-2 sm:mb-0 sm:inline">
