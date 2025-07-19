@@ -79,8 +79,7 @@ Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estra
                 
                 <p className="text-lg md:text-xl leading-relaxed text-foreground font-medium text-left">
                   Somos uma agência <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded">parceira estratégica</span> da sua empresa, 
-                  desenvolvemos estratégias focadas para aumentar as vendas 
-                  do seu negócio com tráfego qualificado.
+                  criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso!
                 </p>
                 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 text-base lg:text-lg text-muted-foreground">
