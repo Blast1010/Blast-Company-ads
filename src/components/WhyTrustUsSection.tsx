@@ -81,10 +81,7 @@ export function WhyTrustUsSection() {
           </div>
           
           <FormModal>
-            <Button size="lg" className="text-black">
-              <Mail className="mr-2 h-5 w-5" />
-              Solicitar Orçamento
-            </Button>
+            
           </FormModal>
         </div>
       </div>
