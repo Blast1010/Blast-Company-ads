@@ -43,7 +43,7 @@ export function HeroSection() {
           animationDelay: '0.2s'
         }}>
             <h1 className="text-4xl leading-[1.1] tracking-tight md:text-5xl font-bold lg:text-5xl text-left">
-              <span className="text-foreground block mb-2 sm:mb-0 sm:inline text-center">Nosso trabalho é   aumentar</span>
+              <span className="text-foreground block mb-2 sm:mb-0 sm:inline text-left">Nosso trabalho é   aumentar</span>
               <br className="hidden sm:block" />
               <span className="text-foreground block mb-2 sm:mb-0 sm:inline">as vendas da sua empresa  com</span>
               <br className="hidden sm:block" />
