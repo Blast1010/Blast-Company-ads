@@ -77,7 +77,7 @@ Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estra
             <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-primary/10 via-primary/5 to-primary/10 border border-primary/20 backdrop-blur-sm">
               <div className="text-center space-y-4 sm:space-y-6">
                 
-                <p className="text-lg md:text-xl leading-relaxed text-foreground font-medium text-center">
+                <p className="text-lg md:text-xl leading-relaxed text-foreground font-medium text-left">
                   Somos uma agência <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded">parceira estratégica</span> da sua empresa, 
                   criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso!
                 </p>
