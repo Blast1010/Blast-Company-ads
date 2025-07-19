@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 import { FormModal } from "@/components/FormModal";
-
 export function SolutionSection() {
-  return (
-    <section className="py-20 px-4 text-white bg-gradient-to-br from-background via-background/95 to-primary/10 relative overflow-hidden">
+  return <section className="py-20 px-4 text-white bg-gradient-to-br from-background via-background/95 to-primary/10 relative overflow-hidden">
       {/* Subtle Background Effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-[300px] h-[300px] bg-gradient-radial from-primary/12 via-primary/6 to-transparent rounded-full blur-3xl opacity-30"></div>
@@ -43,9 +41,7 @@ export function SolutionSection() {
         {/* Third Section */}
         <div className="text-center">
           <div className="max-w-4xl mx-auto p-8 md:p-12 bg-gradient-to-br from-card/60 to-card/20 backdrop-blur-sm border border-red-500/30 rounded-3xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-red-400">
-              Esse é o EXATO perfil de cliente que nós NÃO ACEITAMOS
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-red-400">NÃO VAMOS ,Esse é o EXATO perfil de cliente que nós NÃO ACEITAMOS</h2>
             
             <div className="grid md:grid-cols-2 gap-6 text-left">
               <div className="space-y-4">
@@ -99,10 +95,7 @@ export function SolutionSection() {
             
             <div className="mt-8">
               <FormModal>
-                <Button 
-                  size="lg" 
-                  className="text-black px-8 py-3 bg-primary hover:bg-primary/90 transition-colors"
-                >
+                <Button size="lg" className="text-black px-8 py-3 bg-primary hover:bg-primary/90 transition-colors">
                   Vamos conversar e ver se você se encaixa
                 </Button>
               </FormModal>
@@ -110,6 +103,5 @@ export function SolutionSection() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
