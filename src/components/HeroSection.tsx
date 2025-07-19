@@ -37,18 +37,17 @@ export function HeroSection() {
         </div>
 
         {/* Main Hero Content - Completamente responsivo */}
-        <div className="max-w-6xl mx-auto text-center space-y-6 sm:space-y-8 rounded-md">
+        <div className="max-w-6xl mx-auto text-center space-y-6 sm:space-y-8">
           {/* Main Headline - Responsivo */}
           <div className="space-y-4 sm:space-y-6 animate-fade-in px-2" style={{
           animationDelay: '0.2s'
         }}>
-            <h1 className="text-4xl leading-[1.1] tracking-tight md:text-5xl font-bold lg:text-5xl text-left mx-px">
-              <span className="text-foreground block mb-2 sm:mb-0 sm:inline text-center">Nosso trabalho é  Aumentar
-as Vendas da sua Empresa com</span>
+            <h1 className="text-4xl leading-[1.1] tracking-tight md:text-5xl font-bold lg:text-4xl text-center">
+              <span className="text-foreground block mb-2 sm:mb-0 sm:inline text-center">Nosso trabalho é impulsionar o crescimento e  aumentar</span>
               <br className="hidden sm:block" />
-              
+              <span className="text-foreground block mb-2 sm:mb-0 sm:inline">as vendas da sua empresa  com</span>
               <br className="hidden sm:block" />
-              <span className="bg-gradient-to-r from-primary via-primary/90 to-primary/70 bg-clip-text text-transparent relative block sm:inline text-center">
+              <span className="bg-gradient-to-r from-primary via-primary/90 to-primary/70 bg-clip-text text-transparent relative block sm:inline">
                 Tráfego de verdade
                 <div className="absolute -bottom-1 sm:-bottom-2 left-1/2 transform -translate-x-1/2 w-20 sm:w-32 h-0.5 sm:h-1 bg-gradient-to-r from-primary/60 to-primary/30 rounded-full"></div>
               </span>
@@ -64,7 +63,7 @@ as Vendas da sua Empresa com</span>
                 <p className="text-xl md:text-2xl leading-relaxed font-medium text-red-500 text-center">
                   Cansou de queimar dinheiro em campanhas que não geram resultados?
                 </p>
-                <p className="text-lg md:text-xl text-muted-foreground text-left">Enquanto você lê isso, seus concorrentes estão vendendo mais — e pagando menos por isso.
+                <p className="text-lg md:text-xl text-muted-foreground text-center">Enquanto você lê isso, seus concorrentes estão vendendo mais — e pagando menos por isso.
 
 Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estratégia.</p>
               </div>
@@ -83,7 +82,20 @@ Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estra
                   criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso!
                 </p>
                 
-                
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 text-base lg:text-lg text-muted-foreground">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                    <span className="text-left">Estratégia personalizada</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                    <span className="text-left">Acompanhamento detalhado</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                    <span className="text-left">Relatórios transparentes</span>
+                  </div>
+                </div>
                 
                 <p className="text-base md:text-lg text-primary/80 font-medium text-left">
                   Vamos analisar sua situação atual e desenvolver uma estratégia 
