@@ -63,7 +63,7 @@ export function HeroSection() {
                 <p className="text-xl md:text-2xl leading-relaxed font-medium text-red-500 text-center">
                   Cansou de queimar dinheiro em campanhas que não geram resultados?
                 </p>
-                <p className="text-lg md:text-xl text-muted-foreground text-center">Enquanto você lê isso, seus concorrentes estão vendendo mais — e pagando menos por isso.
+                <p className="text-lg md:text-xl text-muted-foreground text-left">Enquanto você lê isso, seus concorrentes estão vendendo mais — e pagando menos por isso.
 
 Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estratégia.</p>
               </div>
