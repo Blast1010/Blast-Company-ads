@@ -2,54 +2,46 @@ import { Infinity, FolderOpen, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FormModal } from "@/components/FormModal";
 import googleLogo from "@/assets/logos/google-logo.svg";
-
 export function ServicesSection() {
-  const services = [
-    {
-      icon: null,
-      isGoogleLogo: true,
-      title: "Google Ads",
-      description: "Gere Demanda na Maior Ferramenta de Buscas e Vendas do Mundo",
-      colors: {
-        bg: "bg-white",
-        icon: "text-white",
-        shadow: "shadow-lg"
-      }
-    },
-    {
-      icon: Infinity,
-      title: "Meta Ads", 
-      description: "Atraia a Atenção dos seus Clientes no Facebook e Instagram para Vender Mais",
-      colors: {
-        bg: "bg-white",
-        icon: "text-blue-500",
-        shadow: "shadow-lg"
-      }
-    },
-    {
-      icon: FolderOpen,
-      title: "CRM de Vendas",
-      description: "Implementação de CRM, Funil de Vendas e Processos Inteligentes",
-      colors: {
-        bg: "bg-white",
-        icon: "text-blue-600",
-        shadow: "shadow-lg"
-      }
-    },
-    {
-      icon: BarChart3,
-      title: "Dashboards",
-      description: "Acompanhe os Resultados do seu Investimento pelo Painel de Controle",
-      colors: {
-        bg: "bg-white",
-        icon: "text-blue-600",
-        shadow: "shadow-lg"
-      }
+  const services = [{
+    icon: null,
+    isGoogleLogo: true,
+    title: "Google Ads",
+    description: "Gere Demanda na Maior Ferramenta de Buscas e Vendas do Mundo",
+    colors: {
+      bg: "bg-white",
+      icon: "text-white",
+      shadow: "shadow-lg"
     }
-  ];
-
-  return (
-    <section className="py-20 px-4 relative overflow-hidden">
+  }, {
+    icon: Infinity,
+    title: "Meta Ads",
+    description: "Atraia a Atenção dos seus Clientes no Facebook e Instagram para Vender Mais",
+    colors: {
+      bg: "bg-white",
+      icon: "text-blue-500",
+      shadow: "shadow-lg"
+    }
+  }, {
+    icon: FolderOpen,
+    title: "CRM de Vendas",
+    description: "Implementação de CRM, Funil de Vendas e Processos Inteligentes",
+    colors: {
+      bg: "bg-white",
+      icon: "text-blue-600",
+      shadow: "shadow-lg"
+    }
+  }, {
+    icon: BarChart3,
+    title: "Dashboards",
+    description: "Acompanhe os Resultados do seu Investimento pelo Painel de Controle",
+    colors: {
+      bg: "bg-white",
+      icon: "text-blue-600",
+      shadow: "shadow-lg"
+    }
+  }];
+  return <section className="py-20 px-4 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900/50 to-black"></div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.1)_0%,transparent_70%)]"></div>
@@ -75,28 +67,19 @@ export function ServicesSection() {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
-          {services.map((service, index) => (
-            <div key={index} className="group cursor-pointer">
+          {services.map((service, index) => <div key={index} className="group cursor-pointer">
               {/* Service Card */}
               <div className="relative h-full">
                 {/* Background Card */}
                 <div className="absolute inset-0 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/50 rounded-3xl transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-2xl group-hover:shadow-primary/20"></div>
                 
                 {/* Content */}
-                <div className="relative p-8 h-full flex flex-col items-center text-center">
+                <div className="relative p-8 h-full flex flex-col items-center text-center bg-white">
                   {/* Icon Container */}
                   <div className="relative mb-6">
                     {/* Main Icon Circle */}
                     <div className={`w-20 h-20 ${service.colors.bg} rounded-2xl flex items-center justify-center ${service.colors.shadow} shadow-xl group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
-                      {service.isGoogleLogo ? (
-                        <img 
-                          src="/lovable-uploads/7314178c-83bf-47a5-be36-4f25a4df31d9.png" 
-                          alt="Google" 
-                          className="h-12 w-12 object-contain transition-all duration-500 group-hover:scale-125" 
-                        />
-                      ) : (
-                        <service.icon className={`h-10 w-10 ${service.colors.icon} transition-all duration-500 group-hover:scale-125`} />
-                      )}
+                      {service.isGoogleLogo ? <img src="/lovable-uploads/7314178c-83bf-47a5-be36-4f25a4df31d9.png" alt="Google" className="h-12 w-12 object-contain transition-all duration-500 group-hover:scale-125" /> : <service.icon className={`h-10 w-10 ${service.colors.icon} transition-all duration-500 group-hover:scale-125`} />}
                     </div>
                     
                     {/* Glow Effect */}
@@ -108,11 +91,11 @@ export function ServicesSection() {
                   
                   {/* Text Content */}
                   <div className="flex-1 flex flex-col justify-center">
-                    <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors duration-300">
+                    <h3 className="text-xl font-bold mb-4 transition-colors duration-300 text-black">
                       {service.title}
                     </h3>
                     
-                    <p className="text-muted-foreground leading-relaxed group-hover:text-foreground/90 transition-colors duration-300">
+                    <p className="leading-relaxed transition-colors duration-300 text-base font-normal text-black">
                       {service.description}
                     </p>
                   </div>
@@ -121,8 +104,7 @@ export function ServicesSection() {
                   <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                 </div>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Bottom Statement Section */}
@@ -157,10 +139,7 @@ export function ServicesSection() {
               
               {/* CTA Button */}
               <FormModal>
-                <Button 
-                  size="lg" 
-                  className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/25 transition-all duration-300 text-black"
-                >
+                <Button size="lg" className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/25 transition-all duration-300 text-black">
                   Solicitar Orçamento
                 </Button>
               </FormModal>
@@ -168,6 +147,5 @@ export function ServicesSection() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
