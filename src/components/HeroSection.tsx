@@ -85,15 +85,15 @@ Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estra
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 text-base lg:text-lg text-muted-foreground">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
-                    <span>Estratégia personalizada</span>
+                    <span className="text-left">Estratégia personalizada</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
-                    <span>Acompanhamento detalhado</span>
+                    <span className="text-left">Acompanhamento detalhado</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
-                    <span>Relatórios transparentes</span>
+                    <span className="text-left">Relatórios transparentes</span>
                   </div>
                 </div>
                 
@@ -106,7 +106,15 @@ Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estra
           </div>
 
           {/* TypeForm Style Section - Responsivo */}
-          
+          <div className="pt-12 sm:pt-16 animate-fade-in px-2" style={{
+          animationDelay: '0.8s'
+        }}>
+            <div className="max-w-2xl mx-auto">
+              
+              
+              <ProgressiveForm />
+            </div>
+          </div>
         </div>
       </div>
     </section>;
