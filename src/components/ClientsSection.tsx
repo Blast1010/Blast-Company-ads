@@ -99,7 +99,7 @@ export function ClientsSection() {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent rounded-2xl blur-xl"></div>
               <div className="relative bg-card/20 backdrop-blur-sm border border-primary/20 rounded-2xl p-8">
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                  <span className="text-primary font-semibold">Desenvolvemos parcerias estratégicas</span> 
+                  <span className="text-primary font-semibold">Desenvolvemos parcerias estratégicas </span> 
                   através do entendimento profundo dos objetivos de negócio, garantindo 
                   soluções personalizadas e resultados sustentáveis.
                 </p>
@@ -125,29 +125,17 @@ export function ClientsSection() {
             
             <div className="flex animate-[scroll_45s_linear_infinite] space-x-8">
               {/* First set */}
-              {companyLogos.map((company, index) => 
-                <div key={`first-${index}`} className="flex-shrink-0 group">
+              {companyLogos.map((company, index) => <div key={`first-${index}`} className="flex-shrink-0 group">
                   <div className="w-40 h-24 bg-gradient-to-br from-card to-card/60 backdrop-blur-sm border border-border/50 rounded-2xl flex items-center justify-center shadow-lg group-hover:border-primary/50 group-hover:shadow-xl group-hover:shadow-primary/20 transition-all duration-500 group-hover:scale-110 group-hover:-translate-y-2">
-                    <img 
-                      src={company.logo} 
-                      alt={`${company.name} logo`} 
-                      className="max-w-28 max-h-14 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110" 
-                    />
+                    <img src={company.logo} alt={`${company.name} logo`} className="max-w-28 max-h-14 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110" />
                   </div>
-                </div>
-              )}
+                </div>)}
               {/* Duplicate set for seamless loop */}
-              {companyLogos.map((company, index) => 
-                <div key={`second-${index}`} className="flex-shrink-0 group">
+              {companyLogos.map((company, index) => <div key={`second-${index}`} className="flex-shrink-0 group">
                   <div className="w-40 h-24 bg-gradient-to-br from-card to-card/60 backdrop-blur-sm border border-border/50 rounded-2xl flex items-center justify-center shadow-lg group-hover:border-primary/50 group-hover:shadow-xl group-hover:shadow-primary/20 transition-all duration-500 group-hover:scale-110 group-hover:-translate-y-2">
-                    <img 
-                      src={company.logo} 
-                      alt={`${company.name} logo`} 
-                      className="max-w-28 max-h-14 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110" 
-                    />
+                    <img src={company.logo} alt={`${company.name} logo`} className="max-w-28 max-h-14 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110" />
                   </div>
-                </div>
-              )}
+                </div>)}
             </div>
           </div>
         </div>
@@ -179,10 +167,7 @@ export function ClientsSection() {
               
               <div className="flex justify-center">
                 <FormModal>
-                  <Button 
-                    size="lg" 
-                    className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-black font-semibold px-12 py-4 rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 group relative overflow-hidden"
-                  >
+                  <Button size="lg" className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-black font-semibold px-12 py-4 rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 group relative overflow-hidden">
                     <span className="relative z-10 flex items-center">
                       Solicitar Orçamento
                       <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
