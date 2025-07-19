@@ -42,8 +42,8 @@ export function HeroSection() {
           <div className="space-y-4 sm:space-y-6 animate-fade-in px-2" style={{
           animationDelay: '0.2s'
         }}>
-            <h1 className="text-4xl leading-[1.1] tracking-tight md:text-5xl font-bold text-center lg:text-3xl">
-              <span className="text-foreground block mb-2 sm:mb-0 sm:inline text-center">Nosso trabalho é impulsionar o crescimento e  aumentar</span>
+            <h1 className="text-4xl leading-[1.1] tracking-tight md:text-5xl font-bold text-center lg:text-5xl">
+              <span className="text-foreground block mb-2 sm:mb-0 sm:inline text-center">Nosso trabalho é   aumentar</span>
               <br className="hidden sm:block" />
               <span className="text-foreground block mb-2 sm:mb-0 sm:inline">as vendas da sua empresa  com</span>
               <br className="hidden sm:block" />
