@@ -45,7 +45,7 @@ export function HeroSection() {
             <h1 className="text-4xl leading-[1.1] tracking-tight md:text-5xl font-bold text-center lg:text-5xl">
               <span className="text-foreground block mb-2 sm:mb-0 sm:inline text-center">Nosso trabalho é Aumentar</span>
               <br className="hidden sm:block" />
-              <span className="text-foreground block mb-2 sm:mb-0 sm:inline">as Vendas da sua Empresa  com</span>
+              <span className="text-foreground block mb-2 sm:mb-0 sm:inline">as Vendas da sua Empresa com</span>
               <br className="hidden sm:block" />
               <span className="bg-gradient-to-r from-primary via-primary/90 to-primary/70 bg-clip-text text-transparent relative block sm:inline">
                 Tráfego de verdade
