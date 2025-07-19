@@ -45,11 +45,37 @@ export function PartnerServiceSection() {
             Atendimento de Parceiro
           </h2>
           
-          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto rounded-full mb-6"></div>
-          
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-medium">
-            Experiência exclusiva e personalizada para nossos parceiros estratégicos
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-medium mb-8">
+            Somos uma agência <span className="text-primary font-semibold">parceira estratégica</span> da sua empresa, desenvolvemos estratégias focadas para aumentar as vendas do seu negócio com tráfego qualificado.
           </p>
+          
+          <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground mb-8">
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-primary rounded-full"></div>
+              <span>Estratégia personalizada</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-primary rounded-full"></div>
+              <span>Acompanhamento detalhado</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-primary rounded-full"></div>
+              <span>Relatórios transparentes</span>
+            </div>
+          </div>
+          
+          <p className="text-lg text-primary font-medium mb-8">
+            Vamos analisar sua situação atual e desenvolver uma estratégia específica para seu negócio.
+          </p>
+          
+          <FormModal>
+            <Button 
+              size="lg" 
+              className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/25 transition-all duration-300 text-black"
+            >
+              Solicitar Orçamento
+            </Button>
+          </FormModal>
         </div>
 
         {/* Services Grid */}
@@ -93,17 +119,6 @@ export function PartnerServiceSection() {
             <div className="absolute top-6 left-6 w-12 h-12 border-2 border-primary/30 rounded-lg transform rotate-12"></div>
             <div className="absolute bottom-6 right-6 w-8 h-8 bg-primary/20 rounded-full"></div>
             
-            {/* CTA Button */}
-            <div className="text-center mt-8">
-              <FormModal>
-                <Button 
-                  size="lg" 
-                  className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/25 transition-all duration-300 text-black"
-                >
-                  Solicitar Orçamento
-                </Button>
-              </FormModal>
-            </div>
             <div className="text-center max-w-4xl mx-auto">
               <div className="flex flex-col items-center justify-center gap-6">
                 {/* Icon */}
@@ -120,7 +135,7 @@ export function PartnerServiceSection() {
                   </p>
                   
                   <FormModal>
-                    <Button size="lg" className="bg-primary hover:bg-primary/90 transition-all duration-300 px-8 py-3 text-base font-semibold">
+                    <Button size="lg" className="bg-primary hover:bg-primary/90 transition-all duration-300 px-8 py-3 text-base font-semibold text-black">
                       Falar com Especialista
                     </Button>
                   </FormModal>
