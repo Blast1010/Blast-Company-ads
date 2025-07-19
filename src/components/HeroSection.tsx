@@ -82,20 +82,7 @@ Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estra
                   criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso!
                 </p>
                 
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 text-base lg:text-lg text-muted-foreground">
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
-                    <span className="text-left">Estratégia personalizada</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
-                    <span className="text-left">Acompanhamento detalhado</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
-                    <span className="text-left">Relatórios transparentes</span>
-                  </div>
-                </div>
+                
                 
                 <p className="text-base md:text-lg text-primary/80 font-medium text-left">
                   Vamos analisar sua situação atual e desenvolver uma estratégia 
