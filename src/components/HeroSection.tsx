@@ -42,7 +42,7 @@ export function HeroSection() {
           <div className="space-y-4 sm:space-y-6 animate-fade-in px-2" style={{
           animationDelay: '0.2s'
         }}>
-            <h1 className="text-4xl leading-[1.1] tracking-tight md:text-5xl font-bold lg:text-4xl text-center">
+            <h1 className="text-4xl lg:text-6xl leading-[1.1] tracking-tight md:text-5xl font-bold text-center">
               <span className="text-foreground block mb-2 sm:mb-0 sm:inline text-center">Nosso trabalho é impulsionar o crescimento e  aumentar</span>
               <br className="hidden sm:block" />
               <span className="text-foreground block mb-2 sm:mb-0 sm:inline">as vendas da sua empresa  com</span>
@@ -64,8 +64,7 @@ export function HeroSection() {
                   Cansou de queimar dinheiro em campanhas que não geram resultados?
                 </p>
                 <p className="text-lg md:text-xl text-muted-foreground text-center">Enquanto você lê isso, seus concorrentes estão vendendo mais — e pagando menos por isso.
-
-Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estratégia.</p>
+ Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estratégia.</p>
               </div>
             </div>
           </div>
@@ -77,25 +76,12 @@ Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estra
             <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-primary/10 via-primary/5 to-primary/10 border border-primary/20 backdrop-blur-sm">
               <div className="text-center space-y-4 sm:space-y-6">
                 
-                <p className="text-lg md:text-xl leading-relaxed text-foreground font-medium text-left">
+                <p className="text-lg md:text-xl leading-relaxed text-foreground font-medium text-center">
                   Somos uma agência <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded">parceira estratégica</span> da sua empresa, 
                   criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso!
                 </p>
                 
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 text-base lg:text-lg text-muted-foreground">
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
-                    <span className="text-left">Estratégia personalizada</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
-                    <span className="text-left">Acompanhamento detalhado</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
-                    <span className="text-left">Relatórios transparentes</span>
-                  </div>
-                </div>
+                
                 
                 <p className="text-base md:text-lg text-primary/80 font-medium text-left">
                   Vamos analisar sua situação atual e desenvolver uma estratégia 
