@@ -37,7 +37,7 @@ export function HeroSection() {
         </div>
 
         {/* Main Hero Content - Completamente responsivo */}
-        <div className="max-w-6xl mx-auto text-center space-y-6 sm:space-y-8">
+        <div className="max-w-6xl mx-auto text-center space-y-6 sm:space-y-8 rounded-md">
           {/* Main Headline - Responsivo */}
           <div className="space-y-4 sm:space-y-6 animate-fade-in px-2" style={{
           animationDelay: '0.2s'
