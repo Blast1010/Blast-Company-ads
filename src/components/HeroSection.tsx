@@ -106,15 +106,7 @@ Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estra
           </div>
 
           {/* TypeForm Style Section - Responsivo */}
-          <div className="pt-12 sm:pt-16 animate-fade-in px-2" style={{
-          animationDelay: '0.8s'
-        }}>
-            <div className="max-w-2xl mx-auto">
-              
-              
-              <ProgressiveForm />
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>;
