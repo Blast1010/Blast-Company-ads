@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Crown, Award } from "lucide-react";
 import { FormModal } from "@/components/FormModal";
-
 export function GoogleMetaAdsSection() {
-  return (
-    <section className="py-20 px-4 text-white overflow-hidden relative">
+  return <section className="py-20 px-4 text-white overflow-hidden relative">
       <div className="container mx-auto max-w-5xl">
         {/* Conteúdo em balões lado a lado */}
         <div className="max-w-6xl mx-auto">
@@ -100,12 +98,7 @@ export function GoogleMetaAdsSection() {
               </p>
             </div>
             <FormModal>
-              <Button 
-                size="lg" 
-                className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/25 transition-all duration-300 text-black"
-              >
-                Solicitar Orçamento
-              </Button>
+              
             </FormModal>
           </div>
         </div>
@@ -151,15 +144,11 @@ export function GoogleMetaAdsSection() {
             </p>
           </div>
           <FormModal>
-            <Button 
-              size="xl" 
-              className="px-12 py-6 text-xl font-bold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300 text-black"
-            >
+            <Button size="xl" className="px-12 py-6 text-xl font-bold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300 text-black">
               Solicitar Orçamento Agora
             </Button>
           </FormModal>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
