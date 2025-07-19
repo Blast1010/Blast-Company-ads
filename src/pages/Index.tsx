@@ -88,13 +88,6 @@ const Index = () => {
         <SolutionSection />
       </div>
       
-      <div className="bg-black relative z-10">
-        <AboutUsSection />
-      </div>
-      
-      <div className="bg-black relative z-10">
-        <CTASection />
-      </div>
       
       <div className="bg-black relative z-10">
         <Footer />
