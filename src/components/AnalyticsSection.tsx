@@ -119,7 +119,23 @@ export function AnalyticsSection() {
             <div className="group cursor-pointer">
               <div className="relative h-full">
                 <div className="absolute inset-0 bg-gradient-to-br from-card/60 to-card/30 backdrop-blur-sm border border-border/50 rounded-2xl transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-lg group-hover:shadow-primary/10"></div>
-                
+        
+        {/* CTA Section */}
+        <div className="text-center mt-16">
+          <div className="max-w-2xl mx-auto mb-8">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              Acompanhe de perto cada investimento e veja seus resultados crescerem
+            </p>
+          </div>
+          <FormModal>
+            <Button 
+              size="lg" 
+              className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/25 transition-all duration-300 text-black"
+            >
+              Solicitar Orçamento
+            </Button>
+          </FormModal>
+        </div>
                 <div className="relative p-6">
                   <div className="relative h-64 overflow-hidden rounded-xl">
                     <img src={teamOffice} alt="Equipe especializada em data science e machine learning" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />

@@ -93,6 +93,17 @@ export function PartnerServiceSection() {
             <div className="absolute top-6 left-6 w-12 h-12 border-2 border-primary/30 rounded-lg transform rotate-12"></div>
             <div className="absolute bottom-6 right-6 w-8 h-8 bg-primary/20 rounded-full"></div>
             
+            {/* CTA Button */}
+            <div className="text-center mt-8">
+              <FormModal>
+                <Button 
+                  size="lg" 
+                  className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/25 transition-all duration-300 text-black"
+                >
+                  Solicitar Orçamento
+                </Button>
+              </FormModal>
+            </div>
             <div className="text-center max-w-4xl mx-auto">
               <div className="flex flex-col items-center justify-center gap-6">
                 {/* Icon */}
