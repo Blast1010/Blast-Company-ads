@@ -30,21 +30,20 @@ export function HeroSection() {
             {/* Main Headline */}
             <div className="space-y-6 animate-fade-in">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-                <span className="text-white block">Seu perpétuo vendendo</span>
-                <span className="text-white block">mais com</span>
-                <span className="bg-gradient-to-r from-primary via-primary/90 to-primary/70 bg-clip-text text-transparent block">
-                  tráfego pago focado
+                <span className="text-white block">Transforme sua empresa</span>
+                <span className="text-white block">num</span>
+                <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-500 bg-clip-text text-transparent block">
+                  ímã de clientes
                 </span>
-                <span className="text-white block">em resultados!</span>
+                <span className="text-white block">com tráfego pago!</span>
               </h1>
             </div>
 
             {/* Subtitle */}
             <div className="animate-fade-in" style={{animationDelay: '0.2s'}}>
               <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-xl">
-                Escale seu faturamento com quem é especialista na área e já 
-                gerou mais de 20 milhões de reais de faturamento para seus 
-                clientes.
+                Pare de perder dinheiro e tempo com agências que não entregam resultados. 
+                Conquiste seus clientes ideais todos os dias com estratégias comprovadas!
               </p>
             </div>
 
@@ -53,9 +52,9 @@ export function HeroSection() {
               <FormModal>
                 <Button 
                   size="xl" 
-                  className="px-12 py-6 text-lg font-bold bg-green-500 hover:bg-green-600 text-white rounded-full shadow-xl hover:shadow-green-500/30 hover:scale-105 transition-all duration-300"
+                  className="px-12 py-6 text-lg font-bold bg-cyan-500 hover:bg-cyan-600 text-white rounded-full shadow-xl hover:shadow-cyan-500/30 hover:scale-105 transition-all duration-300"
                 >
-                  Fazer minha aplicação
+                  Quero mais clientes agora!
                 </Button>
               </FormModal>
             </div>
