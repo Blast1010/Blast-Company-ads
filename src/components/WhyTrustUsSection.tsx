@@ -81,10 +81,7 @@ export function WhyTrustUsSection() {
           </div>
           
           <FormModal>
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-black px-8 py-3">
-              <Mail className="mr-2 h-5 w-5" />
-              Falar com Especialista
-            </Button>
+            
           </FormModal>
         </div>
       </div>
