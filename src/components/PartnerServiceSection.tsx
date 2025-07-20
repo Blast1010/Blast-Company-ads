@@ -23,90 +23,12 @@ export function PartnerServiceSection() {
   return <section className="py-20 px-4 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900/50 to-black"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.1)_0%,transparent_70%)]"></div>
+      
       
       {/* Floating Orbs */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-primary/20 rounded-full blur-xl animate-float opacity-60"></div>
       <div className="absolute bottom-20 right-10 w-24 h-24 bg-primary/15 rounded-full blur-lg animate-breathe opacity-40"></div>
 
-      <div className="container mx-auto max-w-6xl relative z-10">
-        {/* Header */}
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center space-x-2 px-6 py-3 bg-primary/10 rounded-full border border-primary/20 mb-8">
-            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-            <span className="text-primary font-semibold text-sm uppercase tracking-wider">Direto com o gestor</span>
-          </div>
-          
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent">
-            Atendimento de Parceiro
-          </h2>
-          
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-medium mb-8">
-            Somos uma agência <span className="text-primary font-semibold">parceira estratégica</span> da sua empresa, desenvolvemos estratégias focadas para aumentar as vendas do seu negócio com tráfego qualificado.
-          </p>
-          
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground mb-8">
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-primary rounded-full"></div>
-              <span>Estratégia personalizada</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-primary rounded-full"></div>
-              <span>Acompanhamento detalhado</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-primary rounded-full"></div>
-              <span>Relatórios transparentes</span>
-            </div>
-          </div>
-          
-          <p className="text-lg text-primary font-medium mb-8">
-            Vamos analisar sua situação atual e desenvolver uma estratégia específica para seu negócio.
-          </p>
-          
-          <FormModal>
-            <Button size="lg" className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/25 transition-all duration-300 text-black">
-              Solicitar Orçamento
-            </Button>
-          </FormModal>
-        </div>
-
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
-          {services.map((service, index) => <div key={index} className="relative bg-card border border-border hover:border-primary/50 transition-all duration-300 group overflow-hidden rounded-xl">
-              <div className="p-6 relative z-10">
-                <div className="text-center space-y-4">
-                  {/* Icon */}
-                  <div className="relative">
-                    <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                      <service.icon className="h-8 w-8 text-black" />
-                    </div>
-                  </div>
-                  
-                  {/* Content */}
-                  <div className="space-y-3">
-                    <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors duration-300 text-center">
-                      {service.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed font-medium text-center">
-                      {service.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Bottom accent */}
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </div>)}
-        </div>
-
-        {/* Bottom CTA Section */}
-        <div className="relative">
-          {/* Background Glow */}
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent rounded-3xl blur-xl"></div>
-          
-          
-        </div>
-      </div>
+      
     </section>;
 }

@@ -146,18 +146,7 @@ export function ClientsSection() {
             <div className="absolute top-6 right-6 w-8 h-8 bg-primary/30 rounded-lg transform -rotate-12"></div>
             
             <div className="text-center space-y-8 relative z-10">
-              <div className="space-y-4">
-                <h3 className="text-2xl md:text-3xl font-bold">
-                  Pronto para acelerar seu{" "}
-                  <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                    crescimento digital
-                  </span>?
-                </h3>
-                
-                <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                  Junte-se às empresas que já transformaram seus resultados com nossa metodologia comprovada
-                </p>
-              </div>
+              
               
               <div className="flex justify-center">
                 <FormModal>

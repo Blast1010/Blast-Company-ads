@@ -11,25 +11,7 @@ export function SolutionSection() {
 
       <div className="container mx-auto max-w-6xl relative z-10">
         {/* First Section */}
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center space-x-2 px-6 py-3 bg-primary/10 rounded-full border border-primary/20 mb-8">
-            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-            <span className="text-primary font-semibold text-sm uppercase tracking-wider">Nossa Proposta</span>
-          </div>
-          
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent">
-            A Solução Definitiva para Seu Crescimento
-          </h2>
-          
-          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto rounded-full mb-8"></div>
-          
-          <div className="max-w-4xl mx-auto">
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed text-center font-medium">
-              Transformamos empresas em máquinas de vendas através de estratégias digitais precisas e execução impecável. 
-              Nosso foco é simples: <span className="text-primary font-semibold">fazer você vender mais</span>.
-            </p>
-          </div>
-        </div>
+        
 
         {/* Second Section */}
         <div className="text-center mb-20">
