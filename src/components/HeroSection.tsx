@@ -2,11 +2,10 @@ import { Button } from "@/components/ui/button";
 import { TrendingUp, Target, Zap, Shield } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
 export function HeroSection() {
-  return <section className="relative min-h-screen bg-gray-900 text-white overflow-hidden">
+  return <section className="relative min-h-screen bg-gradient-to-br from-background via-background to-primary/5 text-foreground overflow-hidden">
       {/* Enhanced Background Effects - Responsivos */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Main cinematic gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-primary/20 opacity-60"></div>
         
         {/* Animated light orbs - Responsivos */}
@@ -34,31 +33,31 @@ export function HeroSection() {
             {/* Main Headline */}
             <div className="space-y-6">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
-                <span className="text-white block">Nosso trabalho é Aumentar</span>
-                <span className="text-white block">as Vendas da sua Empresa com</span>
-                <span className="text-red-500 block">Tráfego de verdade</span>
+                <span className="text-foreground block">Nosso trabalho é Aumentar</span>
+                <span className="text-foreground block">as Vendas da sua Empresa com</span>
+                <span className="bg-gradient-to-r from-primary via-primary/90 to-primary/70 bg-clip-text text-transparent block">Tráfego de verdade</span>
               </h1>
             </div>
 
             {/* CTA Button */}
             <div className="pt-4">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-4 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 py-4 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                 QUERO UMA ANÁLISE GRATUITA
               </Button>
             </div>
 
             {/* Description */}
             <div className="space-y-4 pt-6">
-              <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl">
+              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl">
                 <span className="text-red-500 font-semibold">Cansou de queimar dinheiro em campanhas que não geram resultados?</span>
               </p>
               
-              <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl">
+              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl">
                 Enquanto você lê isso, seus concorrentes estão vendendo mais — e pagando menos por isso. 
                 Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estratégia.
               </p>
               
-              <p className="text-base sm:text-lg text-gray-400 max-w-3xl">
+              <p className="text-base sm:text-lg text-muted-foreground/80 max-w-3xl">
                 Somos uma agência parceira estratégica da sua empresa, 
                 criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso!
               </p>
@@ -67,12 +66,12 @@ export function HeroSection() {
             {/* Stats */}
             <div className="flex flex-wrap gap-8 pt-6">
               <div className="flex items-center space-x-2">
-                <span className="text-3xl font-bold text-red-500">+500</span>
-                <span className="text-sm text-gray-400">Empresas<br />atendidas</span>
+                <span className="text-3xl font-bold text-primary">+500</span>
+                <span className="text-sm text-muted-foreground">Empresas<br />atendidas</span>
               </div>
               <div className="flex items-center space-x-2">
-                <span className="text-3xl font-bold text-red-500">+R$ 50M</span>
-                <span className="text-sm text-gray-400">Em vendas<br />geradas</span>
+                <span className="text-3xl font-bold text-primary">+R$ 50M</span>
+                <span className="text-sm text-muted-foreground">Em vendas<br />geradas</span>
               </div>
             </div>
           </div>
