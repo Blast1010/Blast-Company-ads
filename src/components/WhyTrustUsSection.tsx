@@ -81,9 +81,7 @@ export function WhyTrustUsSection() {
           </div>
           
           <FormModal>
-            <Button size="lg" className="px-8 py-4 text-lg font-bold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/20 transition-all duration-300 text-black">
-              Conhecer Nossa Metodologia
-            </Button>
+            
           </FormModal>
         </div>
       </div>
