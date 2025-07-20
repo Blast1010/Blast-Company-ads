@@ -64,27 +64,14 @@ export function HeroSection() {
             </div>
 
             {/* Stats */}
-            <div className="flex flex-wrap gap-8 pt-6">
-              <div className="flex items-center space-x-2">
-                <span className="text-3xl font-bold text-primary">+500</span>
-                <span className="text-sm text-muted-foreground">Empresas<br />atendidas</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <span className="text-3xl font-bold text-primary">+R$ 50M</span>
-                <span className="text-sm text-muted-foreground">Em vendas<br />geradas</span>
-              </div>
-            </div>
+            
           </div>
 
           {/* Imagem - 4 colunas */}
           <div className="lg:col-span-4 flex justify-center lg:justify-end">
             <div className="relative">
               <div className="w-80 h-96 lg:w-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-                <img 
-                  src="/src/assets/team-analytics.jpg" 
-                  alt="Profissional analisando estratégias digitais" 
-                  className="w-full h-full object-cover"
-                />
+                <img src="/src/assets/team-analytics.jpg" alt="Profissional analisando estratégias digitais" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent"></div>
               </div>
             </div>
