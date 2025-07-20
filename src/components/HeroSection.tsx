@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { TrendingUp, Target, Zap, Shield } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
+import { FormModal } from "@/components/FormModal";
 export function HeroSection() {
   return <section className="relative min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-16 sm:py-20 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
       {/* Enhanced Background Effects - Responsivos */}
@@ -32,65 +33,47 @@ export function HeroSection() {
 
         {/* Main Hero Content - Completamente responsivo */}
         <div className="max-w-6xl mx-auto text-center space-y-6 sm:space-y-8">
-          {/* Main Headline - Responsivo */}
-          <div className="space-y-4 sm:space-y-6 animate-fade-in px-2" style={{
-          animationDelay: '0.2s'
-        }}>
-            <h1 className="text-4xl leading-[1.1] tracking-tight md:text-5xl font-bold text-center lg:text-5xl">
-              <span className="text-foreground block mb-2 sm:mb-0 sm:inline text-center">Nosso trabalho é Aumentar</span>
-              <br className="hidden sm:block" />
-              <span className="text-foreground block mb-2 sm:mb-0 sm:inline">as Vendas da sua Empresa com</span>
-              <br className="hidden sm:block" />
-              <span className="bg-gradient-to-r from-primary via-primary/90 to-primary/70 bg-clip-text text-transparent relative block sm:inline">
-                Tráfego de verdade
-                <div className="absolute -bottom-1 sm:-bottom-2 left-1/2 transform -translate-x-1/2 w-20 sm:w-32 h-0.5 sm:h-1 bg-gradient-to-r from-primary/60 to-primary/30 rounded-full"></div>
-              </span>
+          {/* Main Headline - Similar to V4 Company */}
+          <div className="space-y-6 animate-fade-in px-2" style={{ animationDelay: '0.2s' }}>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-center text-white">
+              Tenha Um Time Feito{" "}
+              <span className="text-primary">sob medida</span> Para 
+              Atender Seu Negócio
             </h1>
           </div>
 
-          {/* Problem Description - Responsivo */}
-          <div className="max-w-5xl mx-auto animate-fade-in px-2" style={{
-          animationDelay: '0.3s'
-        }}>
-            <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-muted/50 via-background to-muted/30 border border-border backdrop-blur-sm mb-6 sm:mb-8">
-              <div className="text-center space-y-3 sm:space-y-4">
-                <p className="text-xl md:text-2xl leading-relaxed font-medium text-red-500 text-center">Cansou de queimar dinheiro em campanhas que não geram resultados?</p>
-                <p className="text-lg md:text-xl text-muted-foreground text-center">Enquanto você lê isso, seus concorrentes estão vendendo mais — e pagando menos por isso. 
- Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estratégia.</p>
-              </div>
-            </div>
+          {/* Call to Action Button */}
+          <div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <FormModal>
+              <Button className="bg-primary hover:bg-primary/90 text-black font-bold px-8 py-4 text-lg rounded uppercase tracking-wide">
+                QUERO MAIS INFORMAÇÕES
+              </Button>
+            </FormModal>
           </div>
 
-          {/* Solution Description - Responsivo */}
-          <div className="max-w-5xl mx-auto animate-fade-in px-2" style={{
-          animationDelay: '0.4s'
-        }}>
-            <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-primary/10 via-primary/5 to-primary/10 border border-primary/20 backdrop-blur-sm">
-              <div className="text-center space-y-4 sm:space-y-6">
-                
-                <p className="text-lg md:text-xl leading-relaxed text-foreground font-medium text-center">
-                  Somos uma agência <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded">parceira estratégica</span> da sua empresa, 
-                  criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso!
-                </p>
-                
-                
-                
-                <p className="text-base md:text-lg text-primary/80 font-medium text-left">
-                  Vamos analisar sua situação atual e desenvolver uma estratégia 
-                  específica para seu negócio.
-                </p>
+          {/* Social Proof */}
+          <div className="animate-fade-in flex items-center justify-center space-x-4 text-white" style={{ animationDelay: '0.4s' }}>
+            <div className="flex items-center space-x-2">
+              <div className="flex space-x-1">
+                {[1,2,3].map((i) => (
+                  <div key={i} className="w-8 h-8 bg-gray-600 rounded"></div>
+                ))}
               </div>
+              <span className="text-primary font-bold">+ de 20.000</span>
+              <span className="text-gray-300">empresas</span>
             </div>
+            <span className="text-gray-400">já tomaram essa decisão</span>
           </div>
 
-          {/* TypeForm Style Section - Responsivo */}
-          <div className="pt-12 sm:pt-16 animate-fade-in px-2" style={{
-          animationDelay: '0.8s'
-        }}>
-            <div className="max-w-2xl mx-auto">
-              
-              
-              <ProgressiveForm />
+          {/* Stats */}
+          <div className="grid grid-cols-2 gap-8 max-w-md mx-auto text-center animate-fade-in" style={{ animationDelay: '0.5s' }}>
+            <div>
+              <div className="text-3xl font-bold text-primary">+16 Bi</div>
+              <div className="text-gray-400 text-sm">Receita gerada para nossos clientes</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-primary">+12</div>
+              <div className="text-gray-400 text-sm">Anos de mercado</div>
             </div>
           </div>
         </div>

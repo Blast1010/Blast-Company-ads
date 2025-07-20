@@ -81,7 +81,9 @@ export function WhyTrustUsSection() {
           </div>
           
           <FormModal>
-            
+            <Button variant="cta" size="lg" className="mt-6">
+              Começar Agora
+            </Button>
           </FormModal>
         </div>
       </div>
