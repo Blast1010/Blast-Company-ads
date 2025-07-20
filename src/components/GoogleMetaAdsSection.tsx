@@ -131,7 +131,9 @@ export function GoogleMetaAdsSection() {
               </p>
             </div>
             <FormModal>
-              
+              <Button size="lg" className="px-8 py-4 text-lg font-bold">
+                Descobrir Como Funciona
+              </Button>
             </FormModal>
           </div>
         </div>
