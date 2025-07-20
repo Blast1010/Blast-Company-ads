@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Crown, Award } from "lucide-react";
 import { FormModal } from "@/components/FormModal";
-
 export function GoogleMetaAdsSection() {
-  return (
-    <section className="py-20 px-4 text-white overflow-hidden relative">
+  return <section className="py-20 px-4 text-white overflow-hidden relative">
       <div className="container mx-auto max-w-5xl">
         {/* Top Features */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20 max-w-4xl mx-auto">
@@ -133,9 +131,7 @@ export function GoogleMetaAdsSection() {
               </p>
             </div>
             <FormModal>
-              <Button size="xl" className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/20 hover:scale-105 transition-all duration-300 text-black">
-                Quero uma Estratégia Personalizada
-              </Button>
+              
             </FormModal>
           </div>
         </div>
@@ -143,9 +139,7 @@ export function GoogleMetaAdsSection() {
         {/* Final CTA Button */}
         <div className="text-center mt-16">
           <div className="max-w-3xl mx-auto mb-8">
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed font-medium">
-              Pronto para transformar seu negócio em uma <span className="text-primary font-semibold">máquina de vendas?</span>
-            </p>
+            
           </div>
           <FormModal>
             <Button size="xl" className="px-12 py-6 text-xl font-bold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300 text-black">
@@ -154,6 +148,5 @@ export function GoogleMetaAdsSection() {
           </FormModal>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
