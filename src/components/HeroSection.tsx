@@ -48,41 +48,47 @@ export function HeroSection() {
             </h1>
           </div>
 
-          {/* Problem Description - Responsivo */}
-          <div className="max-w-5xl mx-auto animate-fade-in px-2" style={{
+          {/* Main Content com Imagem - Layout lado a lado */}
+          <div className="max-w-6xl mx-auto animate-fade-in px-2" style={{
           animationDelay: '0.3s'
         }}>
-            <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-muted/50 via-background to-muted/30 border border-border backdrop-blur-sm mb-6 sm:mb-8">
-              <div className="text-center space-y-3 sm:space-y-4">
-                <p className="text-xl md:text-2xl leading-relaxed font-medium text-red-500 text-center">Cansou de queimar dinheiro em campanhas que não geram resultados?</p>
-                <p className="text-lg md:text-xl text-muted-foreground text-center">Enquanto você lê isso, seus concorrentes estão vendendo mais — e pagando menos por isso. 
- Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estratégia.</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Solution Description com Imagem - Responsivo */}
-          <div className="max-w-6xl mx-auto animate-fade-in px-2" style={{
-          animationDelay: '0.4s'
-        }}>
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-              {/* Texto */}
-              <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-primary/10 via-primary/5 to-primary/10 border border-primary/20 backdrop-blur-sm">
-                <div className="space-y-4 sm:space-y-6">
-                  <p className="text-lg md:text-xl leading-relaxed text-foreground font-medium">
-                    Somos uma agência <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded">parceira estratégica</span> da sua empresa, 
-                    criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso!
-                  </p>
+              {/* Texto Principal */}
+              <div className="space-y-6 sm:space-y-8">
+                {/* Problem Description */}
+                <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-muted/50 via-background to-muted/30 border border-border backdrop-blur-sm">
+                  <div className="space-y-3 sm:space-y-4">
+                    <p className="text-xl md:text-2xl leading-relaxed font-medium text-red-500">Cansou de queimar dinheiro em campanhas que não geram resultados?</p>
+                    <p className="text-lg md:text-xl text-muted-foreground">Enquanto você lê isso, seus concorrentes estão vendendo mais — e pagando menos por isso. 
+ Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estratégia.</p>
+                  </div>
                   
-                  <p className="text-base md:text-lg text-primary/80 font-medium">
-                    Vamos analisar sua situação atual e desenvolver uma estratégia 
-                    específica para seu negócio.
-                  </p>
+                  {/* CTA Button */}
+                  <div className="mt-6">
+                    <Button size="lg" className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                      Quero Uma Análise Gratuita
+                    </Button>
+                  </div>
+                </div>
+
+                {/* Solution Description */}
+                <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-primary/10 via-primary/5 to-primary/10 border border-primary/20 backdrop-blur-sm">
+                  <div className="space-y-4 sm:space-y-6">
+                    <p className="text-lg md:text-xl leading-relaxed text-foreground font-medium">
+                      Somos uma agência <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded">parceira estratégica</span> da sua empresa, 
+                      criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso!
+                    </p>
+                    
+                    <p className="text-base md:text-lg text-primary/80 font-medium">
+                      Vamos analisar sua situação atual e desenvolver uma estratégia 
+                      específica para seu negócio.
+                    </p>
+                  </div>
                 </div>
               </div>
 
               {/* Imagem */}
-              <div className="relative group">
+              <div className="relative group lg:order-last order-first">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/30 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
                 <div className="relative rounded-2xl overflow-hidden border border-primary/20 shadow-2xl">
                   <img 
