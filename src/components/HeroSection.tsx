@@ -1,98 +1,87 @@
 import { Button } from "@/components/ui/button";
 import { TrendingUp, Target, Zap, Shield } from "lucide-react";
-import { FormModal } from "@/components/FormModal";
-
+import { ProgressiveForm } from "@/components/ProgressiveForm";
 export function HeroSection() {
-  return (
-    <section className="relative min-h-screen px-4 sm:px-6 lg:px-8 py-16 sm:py-20 overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
-      {/* Enhanced Background Effects */}
+  return <section className="relative min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-16 sm:py-20 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
+      {/* Enhanced Background Effects - Responsivos */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Main dark gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-blue-900/80 to-slate-800/90"></div>
+        {/* Main cinematic gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-primary/20 opacity-60"></div>
         
-        {/* Animated particles */}
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400/60 rounded-full animate-ping"></div>
-        <div className="absolute top-1/3 right-1/3 w-1.5 h-1.5 bg-cyan-400/50 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
-        <div className="absolute bottom-1/4 left-1/5 w-3 h-3 bg-blue-500/40 rounded-full animate-bounce" style={{animationDelay: '2s'}}></div>
-        <div className="absolute top-1/2 right-1/4 w-1 h-1 bg-cyan-300/60 rounded-full animate-ping" style={{animationDelay: '0.5s'}}></div>
-        <div className="absolute bottom-1/3 right-1/5 w-2 h-2 bg-blue-400/50 rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
+        {/* Animated light orbs - Responsivos */}
+        <div className="absolute top-10 sm:top-20 left-[5%] sm:left-[10%] w-48 sm:w-96 h-48 sm:h-96 bg-gradient-radial from-primary/30 via-primary/10 to-transparent rounded-full blur-2xl sm:blur-3xl animate-pulse opacity-70"></div>
+        <div className="absolute bottom-10 sm:bottom-20 right-[10%] sm:right-[15%] w-40 sm:w-80 h-40 sm:h-80 bg-gradient-radial from-primary/20 via-primary/5 to-transparent rounded-full blur-xl sm:blur-2xl animate-pulse opacity-50" style={{
+        animationDelay: '2s'
+      }}></div>
         
-        {/* Ambient light */}
-        <div className="absolute top-10 left-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500/15 rounded-full blur-2xl"></div>
+        {/* Floating elements - Ajustados para mobile */}
+        <div className="absolute top-20 sm:top-40 right-[15%] sm:right-[20%] w-2 sm:w-4 h-2 sm:h-4 bg-primary/40 rounded-full animate-bounce opacity-60" style={{
+        animationDelay: '1s'
+      }}></div>
+        <div className="absolute bottom-40 sm:bottom-60 left-[20%] sm:left-[25%] w-1.5 sm:w-3 h-1.5 sm:h-3 bg-primary/30 rounded-full animate-bounce opacity-40" style={{
+        animationDelay: '3s'
+      }}></div>
+        <div className="absolute top-60 sm:top-80 left-[50%] sm:left-[60%] w-1 sm:w-2 h-1 sm:h-2 bg-primary/50 rounded-full animate-bounce opacity-80" style={{
+        animationDelay: '0.5s'
+      }}></div>
       </div>
       
-      <div className="container mx-auto max-w-7xl relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+      <div className="container mx-auto max-w-7xl relative z-10 w-full">
+        {/* Logo & Brand - Responsivo */}
+        
+
+        {/* Main Hero Content - Completamente responsivo */}
+        <div className="max-w-6xl mx-auto text-center space-y-6 sm:space-y-8">
+          {/* Main Headline - Responsivo */}
+          <div className="space-y-4 sm:space-y-6 animate-fade-in px-2" style={{
+          animationDelay: '0.2s'
+        }}>
+            <h1 className="text-4xl leading-[1.1] tracking-tight md:text-5xl font-bold text-center lg:text-5xl">
+              <span className="text-foreground block mb-2 sm:mb-0 sm:inline text-center">Nosso trabalho é Aumentar</span>
+              <br className="hidden sm:block" />
+              <span className="text-foreground block mb-2 sm:mb-0 sm:inline">as Vendas da sua Empresa com</span>
+              <br className="hidden sm:block" />
+              <span className="bg-gradient-to-r from-primary via-primary/90 to-primary/70 bg-clip-text text-transparent relative block sm:inline">
+                Tráfego de verdade
+                <div className="absolute -bottom-1 sm:-bottom-2 left-1/2 transform -translate-x-1/2 w-20 sm:w-32 h-0.5 sm:h-1 bg-gradient-to-r from-primary/60 to-primary/30 rounded-full"></div>
+              </span>
+            </h1>
+          </div>
+
+          {/* Problem Description - Responsivo */}
+          <div className="max-w-5xl mx-auto animate-fade-in px-2" style={{
+          animationDelay: '0.3s'
+        }}>
+            <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-primary/10 via-primary/5 to-primary/10 border border-primary/20 backdrop-blur-sm mb-6 sm:mb-8">
+              <div className="text-center space-y-4 sm:space-y-6">
+                <p className="text-lg md:text-xl leading-relaxed text-foreground font-medium text-center">
+                  Somos uma agência <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded">parceira estratégica</span> da sua empresa, 
+                  criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso!
+                </p>
+                <p className="text-base md:text-lg text-primary/80 font-medium text-left">
+                  Vamos analisar sua situação atual e desenvolver uma estratégia 
+                  específica para seu negócio.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Problem Description - Responsivo */}
+          <div className="max-w-5xl mx-auto animate-fade-in px-2" style={{
+          animationDelay: '0.4s'
+        }}>
+            <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-muted/50 via-background to-muted/30 border border-border backdrop-blur-sm">
+              <div className="text-center space-y-3 sm:space-y-4">
+                <p className="text-xl md:text-2xl leading-relaxed font-medium text-red-500 text-center">Cansou de queimar dinheiro em campanhas que não geram resultados?</p>
+                <p className="text-lg md:text-xl text-muted-foreground text-center">Enquanto você lê isso, seus concorrentes estão vendendo mais — e pagando menos por isso. 
+ Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estratégia.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* TypeForm Style Section - Responsivo */}
           
-          {/* Left Content */}
-          <div className="space-y-8 text-white">
-            {/* Main Headline */}
-            <div className="space-y-6 animate-fade-in">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-                <span className="text-white block">Transforme sua empresa</span>
-                <span className="text-white block">num</span>
-                <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-500 bg-clip-text text-transparent block">
-                  ímã de clientes
-                </span>
-                <span className="text-white block">com tráfego pago!</span>
-              </h1>
-            </div>
-
-            {/* Subtitle */}
-            <div className="animate-fade-in" style={{animationDelay: '0.2s'}}>
-              <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-xl">
-                Pare de perder dinheiro e tempo com agências que não entregam resultados. 
-                Conquiste seus clientes ideais todos os dias com estratégias comprovadas!
-              </p>
-            </div>
-
-            {/* CTA Button */}
-            <div className="animate-fade-in" style={{animationDelay: '0.3s'}}>
-              <FormModal>
-                <Button 
-                  size="xl" 
-                  className="px-12 py-6 text-lg font-bold bg-cyan-500 hover:bg-cyan-600 text-white rounded-full shadow-xl hover:shadow-cyan-500/30 hover:scale-105 transition-all duration-300"
-                >
-                  Quero mais clientes agora!
-                </Button>
-              </FormModal>
-            </div>
-          </div>
-
-          {/* Right Content - Images & Notification */}
-          <div className="relative hidden lg:flex justify-end items-center">
-            {/* Main persons - placeholder for now */}
-            <div className="relative">
-              <div className="w-80 h-96 bg-gradient-to-br from-blue-600/20 to-slate-600/20 rounded-2xl backdrop-blur-sm border border-white/10 flex items-center justify-center">
-                <div className="text-center text-white/60">
-                  <TrendingUp className="w-16 h-16 mx-auto mb-4" />
-                  <p className="text-sm">Área para imagens dos profissionais</p>
-                </div>
-              </div>
-              
-              {/* Success notification */}
-              <div className="absolute -right-4 top-1/2 transform -translate-y-1/2 animate-fade-in" style={{animationDelay: '0.5s'}}>
-                <div className="bg-white rounded-xl p-4 shadow-2xl border border-gray-200 min-w-[250px]">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                      <Target className="w-5 h-5 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <div className="flex items-center justify-between mb-1">
-                        <span className="text-sm font-semibold text-gray-800">HOTMART POCKET</span>
-                        <span className="text-xs text-gray-500">01:20</span>
-                      </div>
-                      <div className="text-sm text-gray-600">Venda realizada</div>
-                      <div className="text-sm font-bold text-gray-800">Sua comissão: R$100,00</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
