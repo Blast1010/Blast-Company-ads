@@ -97,13 +97,7 @@ export function ClientsSection() {
             {/* Enhanced Description */}
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent rounded-2xl blur-xl"></div>
-              <div className="relative bg-card/20 backdrop-blur-sm border border-primary/20 rounded-2xl p-8">
-                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                  <span className="text-primary font-semibold">Desenvolvemos parcerias estratégicas </span> 
-                  através do entendimento profundo dos objetivos de negócio, garantindo 
-                  soluções personalizadas e resultados sustentáveis.
-                </p>
-              </div>
+              
             </div>
           </div>
         </div>
