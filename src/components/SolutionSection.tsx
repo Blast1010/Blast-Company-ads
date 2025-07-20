@@ -100,9 +100,7 @@ export function SolutionSection() {
                 </Button>
               </FormModal>
               <FormModal>
-                <Button size="lg" variant="outline" className="px-8 py-3 border-primary text-primary hover:bg-primary hover:text-black transition-colors">
-                  Vamos conversar e ver se você se encaixa
-                </Button>
+                
               </FormModal>
             </div>
           </div>
