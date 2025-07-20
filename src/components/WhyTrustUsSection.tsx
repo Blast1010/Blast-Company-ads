@@ -81,7 +81,9 @@ export function WhyTrustUsSection() {
           </div>
           
           <FormModal>
-            
+            <Button variant="cta" size="lg">
+              Solicitar Consultoria
+            </Button>
           </FormModal>
         </div>
       </div>

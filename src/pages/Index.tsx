@@ -1,3 +1,4 @@
+import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { GoogleMetaAdsSection } from "@/components/GoogleMetaAdsSection";
 import { ServicesSection } from "@/components/ServicesSection";
@@ -55,6 +56,9 @@ const Index = () => {
                         style={{ animationDelay: '4s', animationDuration: '3s' }}></div>
       </div>
 
+      {/* Header */}
+      <Header />
+      
       {/* Todas as seções com responsividade melhorada */}
       <div className="bg-black relative z-10">
         <HeroSection />
