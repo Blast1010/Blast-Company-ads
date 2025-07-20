@@ -61,24 +61,37 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Solution Description - Responsivo */}
-          <div className="max-w-5xl mx-auto animate-fade-in px-2" style={{
+          {/* Solution Description com Imagem - Responsivo */}
+          <div className="max-w-6xl mx-auto animate-fade-in px-2" style={{
           animationDelay: '0.4s'
         }}>
-            <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-primary/10 via-primary/5 to-primary/10 border border-primary/20 backdrop-blur-sm">
-              <div className="text-center space-y-4 sm:space-y-6">
-                
-                <p className="text-lg md:text-xl leading-relaxed text-foreground font-medium text-center">
-                  Somos uma agência <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded">parceira estratégica</span> da sua empresa, 
-                  criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso!
-                </p>
-                
-                
-                
-                <p className="text-base md:text-lg text-primary/80 font-medium text-left">
-                  Vamos analisar sua situação atual e desenvolver uma estratégia 
-                  específica para seu negócio.
-                </p>
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              {/* Texto */}
+              <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-primary/10 via-primary/5 to-primary/10 border border-primary/20 backdrop-blur-sm">
+                <div className="space-y-4 sm:space-y-6">
+                  <p className="text-lg md:text-xl leading-relaxed text-foreground font-medium">
+                    Somos uma agência <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded">parceira estratégica</span> da sua empresa, 
+                    criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso!
+                  </p>
+                  
+                  <p className="text-base md:text-lg text-primary/80 font-medium">
+                    Vamos analisar sua situação atual e desenvolver uma estratégia 
+                    específica para seu negócio.
+                  </p>
+                </div>
+              </div>
+
+              {/* Imagem */}
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/30 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                <div className="relative rounded-2xl overflow-hidden border border-primary/20 shadow-2xl">
+                  <img 
+                    src="/src/assets/team-analytics.jpg" 
+                    alt="Equipe analisando estratégias digitais" 
+                    className="w-full h-80 lg:h-96 object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent"></div>
+                </div>
               </div>
             </div>
           </div>
