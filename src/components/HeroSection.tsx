@@ -13,21 +13,25 @@ export function HeroSection() {
             {/* Main Headline */}
             <div className="space-y-6">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
-                <span className="text-white block">Cansou de queimar dinheiro em campanhas que</span>
-                <span className="text-red-500 block">não geram resultados?</span>
-                <span className="text-white block">Para Atender Seu Negócio</span>
+                <span className="text-white block">Nosso trabalho é Aumentar</span>
+                <span className="text-white block">as Vendas da sua Empresa com</span>
+                <span className="text-red-500 block">Tráfego de verdade</span>
               </h1>
             </div>
 
             {/* CTA Button */}
             <div className="pt-4">
               <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-4 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                QUERO MAIS INFORMAÇÕES
+                QUERO UMA ANÁLISE GRATUITA
               </Button>
             </div>
 
             {/* Description */}
             <div className="space-y-4 pt-6">
+              <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl">
+                <span className="text-red-500 font-semibold">Cansou de queimar dinheiro em campanhas que não geram resultados?</span>
+              </p>
+              
               <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl">
                 Enquanto você lê isso, seus concorrentes estão vendendo mais — e pagando menos por isso. 
                 Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estratégia.
