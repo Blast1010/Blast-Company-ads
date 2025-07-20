@@ -93,11 +93,14 @@ export function SolutionSection() {
               </div>
             </div>
             
-            <div className="mt-8 flex justify-center">
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <FormModal>
                 <Button size="lg" className="text-black px-8 py-3 bg-primary hover:bg-primary/90 transition-colors">
                   Solicitar Orçamento
                 </Button>
+              </FormModal>
+              <FormModal>
+                
               </FormModal>
             </div>
           </div>
