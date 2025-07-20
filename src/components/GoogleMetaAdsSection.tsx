@@ -98,7 +98,9 @@ export function GoogleMetaAdsSection() {
               </p>
             </div>
             <FormModal>
-              
+              <Button size="xl" className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/20 hover:scale-105 transition-all duration-300 text-black">
+                Quero uma Estratégia Personalizada
+              </Button>
             </FormModal>
           </div>
         </div>
