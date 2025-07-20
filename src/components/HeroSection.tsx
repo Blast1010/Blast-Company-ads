@@ -3,8 +3,29 @@ import { TrendingUp, Target, Zap, Shield } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
 export function HeroSection() {
   return <section className="relative min-h-screen bg-gray-900 text-white overflow-hidden">
-      {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black"></div>
+      {/* Enhanced Background Effects - Responsivos */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Main cinematic gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-primary/20 opacity-60"></div>
+        
+        {/* Animated light orbs - Responsivos */}
+        <div className="absolute top-10 sm:top-20 left-[5%] sm:left-[10%] w-48 sm:w-96 h-48 sm:h-96 bg-gradient-radial from-primary/30 via-primary/10 to-transparent rounded-full blur-2xl sm:blur-3xl animate-pulse opacity-70"></div>
+        <div className="absolute bottom-10 sm:bottom-20 right-[10%] sm:right-[15%] w-40 sm:w-80 h-40 sm:h-80 bg-gradient-radial from-primary/20 via-primary/5 to-transparent rounded-full blur-xl sm:blur-2xl animate-pulse opacity-50" style={{
+        animationDelay: '2s'
+      }}></div>
+        
+        {/* Floating elements - Ajustados para mobile */}
+        <div className="absolute top-20 sm:top-40 right-[15%] sm:right-[20%] w-2 sm:w-4 h-2 sm:h-4 bg-primary/40 rounded-full animate-bounce opacity-60" style={{
+        animationDelay: '1s'
+      }}></div>
+        <div className="absolute bottom-40 sm:bottom-60 left-[20%] sm:left-[25%] w-1.5 sm:w-3 h-1.5 sm:h-3 bg-primary/30 rounded-full animate-bounce opacity-40" style={{
+        animationDelay: '3s'
+      }}></div>
+        <div className="absolute top-60 sm:top-80 left-[50%] sm:left-[60%] w-1 sm:w-2 h-1 sm:h-2 bg-primary/50 rounded-full animate-bounce opacity-80" style={{
+        animationDelay: '0.5s'
+      }}></div>
+      </div>
       
       <div className="container mx-auto max-w-7xl relative z-10 px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <div className="grid lg:grid-cols-12 gap-8 items-center min-h-[80vh]">
