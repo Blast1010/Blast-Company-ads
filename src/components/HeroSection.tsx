@@ -28,13 +28,7 @@ export function HeroSection() {
       
       <div className="container mx-auto max-w-7xl relative z-10 w-full">
         {/* Logo & Brand - Responsivo */}
-        <div className="text-center mb-8 sm:mb-12 animate-fade-in">
-          <div className="inline-flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl tracking-tight font-extralight text-left">
-              Blast Company <span className="text-primary">ads</span>
-            </h2>
-          </div>
-        </div>
+        
 
         {/* Main Hero Content - Completamente responsivo */}
         <div className="max-w-6xl mx-auto text-center space-y-6 sm:space-y-8">
