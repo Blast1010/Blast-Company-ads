@@ -1,93 +1,112 @@
 import { Button } from "@/components/ui/button";
 import { TrendingUp, Target, Zap, Shield } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
-import { FormModal } from "@/components/FormModal";
-
 export function HeroSection() {
-  return (
-    <section className="relative min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-16 sm:py-20 overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
-      {/* Enhanced Background Effects - V4 Style */}
+  return <section className="relative min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-16 sm:py-20 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
+      {/* Enhanced Background Effects - Responsivos */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Dark gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-gray-900/90 to-black/80"></div>
+        {/* Main cinematic gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-primary/20 opacity-60"></div>
         
-        {/* Subtle animated lights */}
-        <div className="absolute top-20 left-1/4 w-96 h-96 bg-gradient-radial from-primary/20 via-primary/5 to-transparent rounded-full blur-3xl animate-pulse opacity-40"></div>
-        <div className="absolute bottom-20 right-1/4 w-80 h-80 bg-gradient-radial from-primary/15 via-transparent to-transparent rounded-full blur-2xl animate-pulse opacity-30" style={{animationDelay: '2s'}}></div>
+        {/* Animated light orbs - Responsivos */}
+        <div className="absolute top-10 sm:top-20 left-[5%] sm:left-[10%] w-48 sm:w-96 h-48 sm:h-96 bg-gradient-radial from-primary/30 via-primary/10 to-transparent rounded-full blur-2xl sm:blur-3xl animate-pulse opacity-70"></div>
+        <div className="absolute bottom-10 sm:bottom-20 right-[10%] sm:right-[15%] w-40 sm:w-80 h-40 sm:h-80 bg-gradient-radial from-primary/20 via-primary/5 to-transparent rounded-full blur-xl sm:blur-2xl animate-pulse opacity-50" style={{
+        animationDelay: '2s'
+      }}></div>
+        
+        {/* Floating elements - Ajustados para mobile */}
+        <div className="absolute top-20 sm:top-40 right-[15%] sm:right-[20%] w-2 sm:w-4 h-2 sm:h-4 bg-primary/40 rounded-full animate-bounce opacity-60" style={{
+        animationDelay: '1s'
+      }}></div>
+        <div className="absolute bottom-40 sm:bottom-60 left-[20%] sm:left-[25%] w-1.5 sm:w-3 h-1.5 sm:h-3 bg-primary/30 rounded-full animate-bounce opacity-40" style={{
+        animationDelay: '3s'
+      }}></div>
+        <div className="absolute top-60 sm:top-80 left-[50%] sm:left-[60%] w-1 sm:w-2 h-1 sm:h-2 bg-primary/50 rounded-full animate-bounce opacity-80" style={{
+        animationDelay: '0.5s'
+      }}></div>
       </div>
       
-      <div className="container mx-auto max-w-4xl relative z-10 text-center">
-        {/* Main Hero Content - V4 Style Layout */}
-        <div className="space-y-8 animate-fade-in">
-          
-          {/* Main Headline - V4 Style */}
-          <div className="space-y-6">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              <span className="text-white block mb-2">Nosso trabalho é</span>
-              <span className="text-white block mb-2">Aumentar as Vendas</span>
-              <span className="text-white block mb-2">da sua Empresa com</span>
-              <span className="bg-gradient-to-r from-primary via-primary/90 to-primary/70 bg-clip-text text-transparent block">
+      <div className="container mx-auto max-w-7xl relative z-10 w-full">
+        {/* Logo & Brand - Responsivo */}
+        
+
+        {/* Main Hero Content - Completamente responsivo */}
+        <div className="max-w-6xl mx-auto text-center space-y-6 sm:space-y-8">
+          {/* Main Headline - Responsivo */}
+          <div className="space-y-4 sm:space-y-6 animate-fade-in px-2" style={{
+          animationDelay: '0.2s'
+        }}>
+            <h1 className="text-4xl leading-[1.1] tracking-tight md:text-5xl font-bold text-center lg:text-5xl">
+              <span className="text-foreground block mb-2 sm:mb-0 sm:inline text-center">Nosso trabalho é Aumentar</span>
+              <br className="hidden sm:block" />
+              <span className="text-foreground block mb-2 sm:mb-0 sm:inline">as Vendas da sua Empresa com</span>
+              <br className="hidden sm:block" />
+              <span className="bg-gradient-to-r from-primary via-primary/90 to-primary/70 bg-clip-text text-transparent relative block sm:inline">
                 Tráfego de verdade
+                <div className="absolute -bottom-1 sm:-bottom-2 left-1/2 transform -translate-x-1/2 w-20 sm:w-32 h-0.5 sm:h-1 bg-gradient-to-r from-primary/60 to-primary/30 rounded-full"></div>
               </span>
             </h1>
           </div>
 
-          {/* Problem Statement - Destacado */}
-          <div className="max-w-3xl mx-auto">
-            <p className="text-xl md:text-2xl text-red-400 font-semibold leading-relaxed mb-4">
-              Cansou de queimar dinheiro em campanhas que não geram resultados?
-            </p>
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              Enquanto você lê isso, seus concorrentes estão vendendo mais — e pagando menos por isso. 
-              Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estratégia.
-            </p>
+          {/* Problem Description - Responsivo */}
+          <div className="max-w-5xl mx-auto animate-fade-in px-2" style={{
+          animationDelay: '0.3s'
+        }}>
+            <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-muted/50 via-background to-muted/30 border border-border backdrop-blur-sm mb-6 sm:mb-8">
+              <div className="text-center space-y-3 sm:space-y-4">
+                <p className="text-xl md:text-2xl leading-relaxed font-medium text-red-500 text-center">Cansou de queimar dinheiro em campanhas que não geram resultados?</p>
+                <p className="text-lg md:text-xl text-muted-foreground text-center">Enquanto você lê isso, seus concorrentes estão vendendo mais — e pagando menos por isso. 
+ Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estratégia.</p>
+              </div>
+            </div>
           </div>
 
-          {/* Solution Statement */}
-          <div className="max-w-3xl mx-auto py-8">
-            <p className="text-lg md:text-xl text-white leading-relaxed font-medium">
-              Somos uma agência <span className="text-primary font-bold bg-primary/20 px-3 py-1 rounded-lg">parceira estratégica</span> da sua empresa, 
-              criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso!
-            </p>
+          {/* Solution Description com Imagem - Responsivo */}
+          <div className="max-w-6xl mx-auto animate-fade-in px-2" style={{
+          animationDelay: '0.4s'
+        }}>
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              {/* Texto */}
+              <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-primary/10 via-primary/5 to-primary/10 border border-primary/20 backdrop-blur-sm">
+                <div className="space-y-4 sm:space-y-6">
+                  <p className="text-lg md:text-xl leading-relaxed text-foreground font-medium">
+                    Somos uma agência <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded">parceira estratégica</span> da sua empresa, 
+                    criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso!
+                  </p>
+                  
+                  <p className="text-base md:text-lg text-primary/80 font-medium">
+                    Vamos analisar sua situação atual e desenvolver uma estratégia 
+                    específica para seu negócio.
+                  </p>
+                </div>
+              </div>
+
+              {/* Imagem */}
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/30 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                <div className="relative rounded-2xl overflow-hidden border border-primary/20 shadow-2xl">
+                  <img 
+                    src="/src/assets/team-analytics.jpg" 
+                    alt="Equipe analisando estratégias digitais" 
+                    className="w-full h-80 lg:h-96 object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent"></div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* Main CTA Button - V4 Style */}
-          <div className="pt-8">
-            <FormModal>
-              <Button 
-                size="lg" 
-                className="px-12 py-6 text-xl font-bold bg-primary hover:bg-primary/90 text-black shadow-2xl hover:shadow-primary/30 transform hover:scale-105 transition-all duration-300 rounded-lg"
-              >
-                QUERO MAIS INFORMAÇÕES
-              </Button>
-            </FormModal>
-          </div>
-
-          {/* Bottom description */}
-          <div className="pt-8 max-w-2xl mx-auto">
-            <p className="text-gray-400 font-medium">
-              Vamos analisar sua situação atual e desenvolver uma estratégia específica para seu negócio.
-            </p>
-          </div>
-
-        </div>
-
-        {/* Image Section - Mantendo a imagem existente mas com novo layout */}
-        <div className="mt-16 max-w-2xl mx-auto">
-          <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/30 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
-            <div className="relative rounded-2xl overflow-hidden border border-primary/20 shadow-2xl">
-              <img 
-                src="/src/assets/team-analytics.jpg" 
-                alt="Equipe analisando estratégias digitais" 
-                className="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+          {/* TypeForm Style Section - Responsivo */}
+          <div className="pt-12 sm:pt-16 animate-fade-in px-2" style={{
+          animationDelay: '0.8s'
+        }}>
+            <div className="max-w-2xl mx-auto">
+              
+              
+              <ProgressiveForm />
             </div>
           </div>
         </div>
-
       </div>
-    </section>
-  );
+    </section>;
 }
