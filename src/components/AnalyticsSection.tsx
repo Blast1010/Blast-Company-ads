@@ -128,10 +128,7 @@ export function AnalyticsSection() {
             </p>
           </div>
           <FormModal>
-            <Button 
-              size="lg" 
-              className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/25 transition-all duration-300 text-black"
-            >
+            <Button size="lg" className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/25 transition-all duration-300 text-black">
               Solicitar Orçamento
             </Button>
           </FormModal>
@@ -217,33 +214,7 @@ export function AnalyticsSection() {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent rounded-3xl blur-xl"></div>
             
-            <div className="relative bg-gradient-to-br from-card/60 to-card/20 backdrop-blur-sm border border-primary/20 rounded-3xl p-12">
-              <div className="max-w-4xl mx-auto">
-                <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
-                  <div className="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center shadow-lg border border-primary/40">
-                    <BarChart3 className="h-10 w-10 text-white" />
-                  </div>
-                  
-                  <div className="text-center lg:text-left">
-                    <h3 className="text-3xl font-bold text-primary mb-4">
-                      Plataforma Proprietária de Alto Desempenho
-                    </h3>
-                    <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mb-8">
-                      Acesse dados em tempo real, relatórios automatizados e insights avançados que transformam informação em resultados concretos
-                    </p>
-                    
-                    <FormModal>
-                      <Button 
-                        size="lg" 
-                        className="bg-primary hover:bg-primary/90 text-black px-8 py-3 transition-colors"
-                      >
-                        Acessar Plataforma
-                      </Button>
-                    </FormModal>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
