@@ -24,7 +24,10 @@ export function Header() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center">
-              
+              <div className="text-2xl font-bold">
+                <span className="text-white">INPULSO</span>
+                <span className="text-cyan-400">ADS</span>
+              </div>
             </div>
 
             {/* Desktop Navigation */}
