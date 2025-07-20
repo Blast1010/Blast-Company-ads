@@ -53,10 +53,7 @@ export function ServicesSection() {
       <div className="container mx-auto max-w-6xl relative z-10">
         {/* Header Section */}
         <div className="text-center mb-20">
-          <div className="inline-flex items-center space-x-2 px-6 py-3 bg-primary/10 rounded-full border border-primary/20 mb-8">
-            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-            <span className="text-primary font-semibold text-sm uppercase tracking-wider">Soluções Completas</span>
-          </div>
+          
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent">
             Nossos Serviços
