@@ -22,90 +22,48 @@ export function HeroSection() {
       <div className="container mx-auto max-w-7xl relative z-10">
         {/* Professional Hero Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[80vh]">
-          {/* Content Section - Professional Typography */}
-          <div className="lg:col-span-7 space-y-10">
-            {/* Main Headline */}
+          {/* Content Section - Original Copy with Professional Layout */}
+          <div className="lg:col-span-7 space-y-8">
+            {/* Main Headline - Original Text */}
             <div className="space-y-6">
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium">
-                ✓ Agência Certificada Google & Meta
-              </div>
-              
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-foreground">
-                Aumentamos as Vendas da sua Empresa com
-                <span className="block mt-2 bg-gradient-to-r from-primary via-primary/90 to-primary/70 bg-clip-text text-transparent">
-                  Tráfego Pago Profissional
-                </span>
+                Nosso trabalho é Aumentar<br />
+                as Vendas da sua Empresa<br />
+                com <span className="bg-gradient-to-r from-primary via-primary/90 to-primary/70 bg-clip-text text-transparent">Tráfego de verdade</span>
               </h1>
-              
-              <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                Parceria estratégica focada em resultados reais. Cuidamos do seu investimento como se fosse nosso, com transparência total e estratégias vencedoras.
-              </p>
             </div>
 
-            {/* Value Propositions - Professional Cards */}
-            <div className="space-y-4">
-              <div className="flex items-start space-x-4 p-6 rounded-xl bg-gradient-to-r from-background to-muted/30 border border-border/50">
-                <div className="flex-shrink-0 w-8 h-8 bg-green-500/10 rounded-lg flex items-center justify-center">
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">ROI Garantido</h3>
-                  <p className="text-sm text-muted-foreground">Campanhas otimizadas para maximizar retorno sobre investimento</p>
-                </div>
+            {/* Original Balloons - Professional Format */}
+            <div className="space-y-6">
+              {/* Primeiro balão - Original text */}
+              <div className="relative p-6 lg:p-8 rounded-2xl bg-gradient-to-br from-primary/10 via-primary/5 to-primary/10 border border-primary/20 backdrop-blur-sm">
+                <p className="text-lg leading-relaxed text-foreground font-medium">
+                  Somos uma agência <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded">parceira estratégica</span> da sua empresa, criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso.
+                </p>
               </div>
               
-              <div className="flex items-start space-x-4 p-6 rounded-xl bg-gradient-to-r from-background to-muted/30 border border-border/50">
-                <div className="flex-shrink-0 w-8 h-8 bg-blue-500/10 rounded-lg flex items-center justify-center">
-                  <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Transparência Total</h3>
-                  <p className="text-sm text-muted-foreground">Dashboard em tempo real com todas as métricas e investimentos</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-4 p-6 rounded-xl bg-gradient-to-r from-background to-muted/30 border border-border/50">
-                <div className="flex-shrink-0 w-8 h-8 bg-purple-500/10 rounded-lg flex items-center justify-center">
-                  <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Suporte Estratégico</h3>
-                  <p className="text-sm text-muted-foreground">Acompanhamento contínuo com reuniões estratégicas regulares</p>
+              {/* Segundo balão - Original text */}
+              <div className="relative p-6 lg:p-8 rounded-2xl bg-gradient-to-br from-muted/50 via-background to-muted/30 border border-border backdrop-blur-sm">
+                <div className="space-y-4">
+                  <p className="text-lg font-semibold text-red-500">
+                    Cansou de queimar dinheiro em campanhas que não geram resultados?
+                  </p>
+                  <p className="text-base leading-relaxed text-muted-foreground">
+                    Enquanto você lê isso, seus concorrentes estão vendendo mais — e pagando menos por isso. 
+                    Eles entenderam que tráfego pago não é sobre gastar, e sim investir com inteligência e foco em performance.
+                  </p>
                 </div>
               </div>
             </div>
 
-            {/* Professional CTA Section */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            {/* Original CTA - Professional Format */}
+            <div className="pt-4">
               <Button 
                 size="lg" 
-                className="px-8 py-4 text-base font-semibold bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300"
+                className="px-12 py-4 text-lg font-semibold bg-cyan-500 hover:bg-cyan-600 text-black shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-full"
               >
-                Solicitar Análise Gratuita
+                Solicitar Orçamento
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="px-8 py-4 text-base font-medium border-border hover:bg-muted/50 transition-all duration-300"
-              >
-                Ver Cases de Sucesso
-              </Button>
-            </div>
-
-            {/* Trust Indicators */}
-            <div className="flex items-center space-x-6 pt-6 border-t border-border/50">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-foreground">500+</div>
-                <div className="text-sm text-muted-foreground">Empresas Atendidas</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-foreground">R$ 50M+</div>
-                <div className="text-sm text-muted-foreground">Investimento Gerenciado</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-foreground">350%</div>
-                <div className="text-sm text-muted-foreground">ROI Médio</div>
-              </div>
             </div>
           </div>
 
@@ -116,7 +74,7 @@ export function HeroSection() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border/20">
                 <img 
                   src={saasDashboard} 
-                  alt="Dashboard Profissional de Análise de Vendas" 
+                  alt="Dashboard SaaS com notificações de vendas" 
                   className="w-full h-auto object-cover"
                 />
                 
