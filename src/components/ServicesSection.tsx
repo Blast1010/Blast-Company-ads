@@ -67,48 +67,38 @@ export function ServicesSection() {
           {services.map((service, index) => <div key={index} className="group cursor-pointer">
               {/* Service Card */}
               <div className="relative h-full">
-                {/* Background Shadow & Glow */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-gray-50/50 rounded-3xl shadow-2xl shadow-black/5 border border-gray-100/50 transition-all duration-700 group-hover:shadow-3xl group-hover:shadow-primary/10 group-hover:scale-[1.02] group-hover:-translate-y-2"></div>
+                {/* Background Card */}
+                <div className="absolute inset-0 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/50 rounded-3xl transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-2xl group-hover:shadow-primary/20"></div>
                 
-                {/* Content Container */}
-                <div className="relative p-8 h-full flex flex-col items-center text-center bg-white rounded-3xl overflow-hidden">
-                  {/* Decorative Top Gradient */}
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                  
+                {/* Content */}
+                <div className="relative p-8 h-full flex flex-col items-center text-center bg-white">
                   {/* Icon Container */}
-                  <div className="relative mb-8 mt-2">
-                    {/* Icon Background Circle */}
-                    <div className="w-24 h-24 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent rounded-3xl flex items-center justify-center shadow-lg border border-primary/10 group-hover:border-primary/20 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
-                      {service.isGoogleLogo ? 
-                        <img src="/lovable-uploads/7314178c-83bf-47a5-be36-4f25a4df31d9.png" alt="Google" className="h-14 w-14 object-contain transition-all duration-500 group-hover:scale-110" /> : 
-                        <service.icon className="h-12 w-12 text-primary transition-all duration-500 group-hover:scale-110" />
-                      }
+                  <div className="relative mb-6">
+                    {/* Main Icon Circle */}
+                    <div className={`w-20 h-20 ${service.colors.bg} rounded-2xl flex items-center justify-center ${service.colors.shadow} shadow-xl group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
+                      {service.isGoogleLogo ? <img src="/lovable-uploads/7314178c-83bf-47a5-be36-4f25a4df31d9.png" alt="Google" className="h-12 w-12 object-contain transition-all duration-500 group-hover:scale-125" /> : <service.icon className={`h-10 w-10 ${service.colors.icon} transition-all duration-500 group-hover:scale-125`} />}
                     </div>
                     
-                    {/* Floating Glow Effect */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-transparent rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700 -z-10 scale-150"></div>
+                    {/* Glow Effect */}
+                    <div className={`absolute inset-0 ${service.colors.bg} rounded-2xl blur-xl opacity-30 group-hover:opacity-60 transition-all duration-500 -z-10`}></div>
                     
-                    {/* Pulse Ring Animation */}
-                    <div className="absolute inset-0 border-2 border-primary/20 rounded-3xl opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-1000 animate-pulse"></div>
+                    {/* Pulse Ring */}
+                    <div className={`absolute -inset-1 bg-gradient-to-r from-${service.colors.bg}/20 to-${service.colors.bg}/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10`}></div>
                   </div>
                   
                   {/* Text Content */}
-                  <div className="flex-1 flex flex-col justify-center space-y-4">
-                    <h3 className="text-xl font-bold transition-all duration-300 text-gray-900 group-hover:text-primary">
+                  <div className="flex-1 flex flex-col justify-center">
+                    <h3 className="text-xl font-bold mb-4 transition-colors duration-300 text-black">
                       {service.title}
                     </h3>
                     
-                    <p className="leading-relaxed transition-colors duration-300 text-gray-600 group-hover:text-gray-800 text-sm font-medium">
+                    <p className="leading-relaxed transition-colors duration-300 text-base font-normal text-black">
                       {service.description}
                     </p>
                   </div>
                   
-                  {/* Bottom Decorative Elements */}
-                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-12 h-0.5 bg-gradient-to-r from-transparent via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                  
-                  {/* Corner Decorations */}
-                  <div className="absolute top-4 right-4 w-2 h-2 bg-primary/20 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
-                  <div className="absolute bottom-4 left-4 w-1 h-1 bg-primary/30 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100"></div>
+                  {/* Bottom Accent */}
+                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                 </div>
               </div>
             </div>)}

@@ -1,12 +1,20 @@
 import { MessageCircle, Mail, Instagram, Linkedin } from "lucide-react";
+
 export function Footer() {
-  return <footer className="py-16 px-4 bg-gradient-to-t from-muted/20 to-background border-t border-border/30">
+  return (
+    <footer className="py-16 px-4 bg-gradient-to-t from-muted/20 to-background border-t border-border/30">
       <div className="container mx-auto max-w-7xl">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand with Logo */}
           <div className="md:col-span-2 space-y-6">
             <div className="flex items-center gap-4">
-              
+              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center shadow-lg">
+                <img 
+                  src="/lovable-uploads/6ca7535d-a4ef-4d38-bf27-937f243e3d54.png" 
+                  alt="Blast Company Logo" 
+                  className="w-8 h-8 object-contain filter brightness-0 invert"
+                />
+              </div>
               <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 Blast Company Ads
               </h3>
@@ -15,10 +23,16 @@ export function Footer() {
               Especializados em tráfego pago e growth hacking para empresas que querem escalar suas vendas de forma consistente e sustentável.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-12 h-12 bg-card border border-border rounded-xl flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 group">
+              <a 
+                href="#" 
+                className="w-12 h-12 bg-card border border-border rounded-xl flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 group"
+              >
                 <Instagram className="h-5 w-5 group-hover:scale-110 transition-transform" />
               </a>
-              <a href="#" className="w-12 h-12 bg-card border border-border rounded-xl flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 group">
+              <a 
+                href="#" 
+                className="w-12 h-12 bg-card border border-border rounded-xl flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 group"
+              >
                 <Linkedin className="h-5 w-5 group-hover:scale-110 transition-transform" />
               </a>
             </div>
@@ -47,11 +61,17 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-foreground">Contato</h4>
             <div className="space-y-3">
-              <a href="#" className="flex items-center text-muted-foreground hover:text-primary transition-colors group">
+              <a 
+                href="#" 
+                className="flex items-center text-muted-foreground hover:text-primary transition-colors group"
+              >
                 <MessageCircle className="h-4 w-4 mr-3 group-hover:scale-110 transition-transform" />
                 <span>WhatsApp</span>
               </a>
-              <a href="mailto:contato@blastcompanyads.com" className="flex items-center text-muted-foreground hover:text-primary transition-colors group">
+              <a 
+                href="mailto:contato@blastcompanyads.com" 
+                className="flex items-center text-muted-foreground hover:text-primary transition-colors group"
+              >
                 <Mail className="h-4 w-4 mr-3 group-hover:scale-110 transition-transform" />
                 <span>contato@blastcompanyads.com</span>
               </a>
@@ -73,5 +93,6 @@ export function Footer() {
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 }

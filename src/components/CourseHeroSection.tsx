@@ -1,64 +1,84 @@
-import { Users, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import realDashboardSales from "@/assets/real-dashboard-sales.jpg";
+import { Play, CheckCircle, Users, Award } from "lucide-react";
+
 export function CourseHeroSection() {
-  return <section className="min-h-screen bg-background text-foreground flex flex-col justify-center px-4 sm:px-6 lg:px-8 xl:px-0 py-12 sm:py-16 lg:py-20 relative overflow-hidden">
+  return (
+    <section className="min-h-screen bg-black text-white flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-20 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-[10%] w-80 h-80 bg-gradient-radial from-primary/20 via-primary/10 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-[15%] w-64 h-64 bg-gradient-radial from-primary/15 via-primary/5 to-transparent rounded-full blur-2xl"></div>
+        <div className="absolute top-20 left-[10%] w-80 h-80 bg-gradient-radial from-cyan-500/20 via-cyan-500/10 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-[15%] w-64 h-64 bg-gradient-radial from-cyan-500/15 via-cyan-500/5 to-transparent rounded-full blur-2xl"></div>
       </div>
       
-      <div className="container mx-auto max-w-7xl relative z-10 space-y-16 sm:space-y-20 lg:space-y-24">
+      <div className="container mx-auto max-w-4xl relative z-10 text-center">
         {/* Header */}
-        <div className="text-center">
-          <h2 className="text-lg sm:text-xl lg:text-2xl font-bold">
-            Blast Company <span className="text-primary">ads</span>
+        <div className="mb-8">
+          <h2 className="text-cyan-400 text-xl font-bold mb-4">Aladdin</h2>
+        </div>
+        
+        {/* Main Headline */}
+        <div className="mb-12">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            Aprenda a fazer<br />
+            tráfego <span className="text-cyan-400">de verdade</span>
+          </h1>
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+            Entenda de uma vez por todas a criar os<br />
+            funis da sua Loja!
+          </p>
+        </div>
+        
+        {/* Video Preview */}
+        <div className="mb-12">
+          <div className="bg-gray-800 rounded-lg p-4 max-w-md mx-auto mb-6">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center space-x-3">
+                <Play className="h-6 w-6 text-cyan-400" />
+                <span className="text-sm">Clique e veja como será!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* CTA Button */}
+        <div className="mb-16">
+          <Button size="lg" className="bg-cyan-400 hover:bg-cyan-500 text-black px-12 py-6 text-xl font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+            QUERO PARTICIPAR
+          </Button>
+        </div>
+        
+        {/* Features Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+          <div className="flex flex-col items-center p-6 bg-gray-900/50 rounded-lg border border-gray-800">
+            <div className="bg-cyan-400/20 p-4 rounded-full mb-4">
+              <Award className="h-8 w-8 text-cyan-400" />
+            </div>
+            <h3 className="text-lg font-semibold mb-2">Metodologia Testada</h3>
+            <p className="text-gray-400 text-sm text-center">de Aquisição</p>
+          </div>
+          
+          <div className="flex flex-col items-center p-6 bg-gray-900/50 rounded-lg border border-gray-800">
+            <div className="bg-cyan-400/20 p-4 rounded-full mb-4">
+              <Users className="h-8 w-8 text-cyan-400" />
+            </div>
+            <h3 className="text-lg font-semibold mb-2">Time Unificado</h3>
+            <p className="text-gray-400 text-sm text-center">Dedicado</p>
+          </div>
+        </div>
+        
+        {/* Bottom Section */}
+        <div className="mt-20">
+          <h2 className="text-3xl font-bold mb-6">
+            Ferramentas que<br />
+            você irá <span className="text-cyan-400">aprender</span>
           </h2>
+          <p className="text-gray-300 max-w-2xl mx-auto">
+            Aprenda o principio da tráfego pago e a <br />
+            construir funis de vendas usando as melhores <br />
+            técnicas e ferramentas do mercado.
+          </p>
         </div>
-        
-        {/* Main Content - Text and Image */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-center">
-          {/* Text Content */}
-          <div className="text-center lg:text-left space-y-6 sm:space-y-8 order-2 lg:order-1">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
-              Nosso trabalho é Aumentar{" "}
-              <span className="block sm:inline">as Vendas da sua Empresa</span>{" "}
-              <span className="block sm:inline">
-                com Tráfego <span className="text-primary">de verdade</span>
-              </span>
-            </h1>
-            <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-muted-foreground leading-relaxed max-w-lg mx-auto lg:mx-0">
-              Somos uma agência parceira estratégica da sua empresa, criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso.
-            </p>
-            
-            {/* CTA Button */}
-            <div className="pt-2">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-black px-6 sm:px-8 lg:px-12 py-3 sm:py-4 lg:py-6 text-sm sm:text-base lg:text-lg xl:text-xl font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto">
-                SOLICITAR ORÇAMENTO
-              </Button>
-            </div>
-          </div>
-          
-          {/* Image Content */}
-          <div className="relative order-1 lg:order-2">
-            <div className="relative rounded-xl lg:rounded-2xl overflow-hidden shadow-2xl">
-              <img src={realDashboardSales} alt="Dashboard SaaS Analytics" className="w-full h-auto object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-transparent"></div>
-            </div>
-            {/* Floating elements */}
-            <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-16 h-16 sm:w-24 sm:h-24 bg-primary/20 rounded-full blur-xl"></div>
-            <div className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-20 h-20 sm:w-32 sm:h-32 bg-primary/10 rounded-full blur-2xl"></div>
-          </div>
-        </div>
-        
-        {/* Problem Balloon */}
-        <div className="max-w-4xl mx-auto">
-          
-        </div>
-
-        {/* Solution Balloon */}
-        
       </div>
-    </section>;
+    </section>
+  );
 }
