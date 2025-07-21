@@ -11,6 +11,7 @@ import { SolutionSection } from "@/components/SolutionSection";
 import { SolutionsSection } from "@/components/SolutionsSection";
 import { AboutUsSection } from "@/components/AboutUsSection";
 import { CTASection } from "@/components/CTASection";
+import { FinalCTASection } from "@/components/FinalCTASection";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -100,6 +101,10 @@ const Index = () => {
       
       <div className="bg-black relative z-10">
         <SolutionsSection />
+      </div>
+
+      <div className="bg-black relative z-10">
+        <FinalCTASection />
       </div>
 
       <div className="bg-black relative z-10">

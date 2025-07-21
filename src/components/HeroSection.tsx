@@ -24,6 +24,13 @@ export function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[80vh]">
           {/* Content Section - Original Copy with Professional Layout */}
           <div className="lg:col-span-7 space-y-8">
+            {/* Company Name */}
+            <div className="mb-6">
+              <h2 className="text-2xl font-bold text-foreground">
+                Blast Company <span className="text-primary">ads</span>
+              </h2>
+            </div>
+            
             {/* Main Headline - Original Text */}
             <div className="space-y-6">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-foreground">
@@ -60,7 +67,7 @@ export function HeroSection() {
             <div className="pt-4">
               <Button 
                 size="lg" 
-                className="px-12 py-4 text-lg font-semibold bg-cyan-500 hover:bg-cyan-600 text-black shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-full"
+                className="px-12 py-4 text-lg font-semibold bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-full"
               >
                 Solicitar Orçamento
               </Button>
