@@ -1,6 +1,6 @@
 import { Users, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import saasDashboardHero from "@/assets/saas-dashboard-hero.jpg";
+import realDashboardSales from "@/assets/real-dashboard-sales.jpg";
 
 export function CourseHeroSection() {
   return (
@@ -40,7 +40,7 @@ export function CourseHeroSection() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src={saasDashboardHero} 
+                src={realDashboardSales} 
                 alt="Dashboard SaaS Analytics" 
                 className="w-full h-auto object-cover"
               />
