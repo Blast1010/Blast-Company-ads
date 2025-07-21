@@ -64,44 +64,60 @@ export function ServicesSection() {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
-          {services.map((service, index) => <div key={index} className="group cursor-pointer">
+          {services.map((service, index) => (
+            <div key={index} className="group cursor-pointer h-full">
               {/* Service Card */}
-              <div className="relative h-full">
-                {/* Background Card */}
-                <div className="absolute inset-0 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/50 rounded-3xl transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-2xl group-hover:shadow-primary/20"></div>
+              <div className="relative h-full transform transition-all duration-700 hover:scale-105">
+                {/* Elegant Background with Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white via-white/95 to-white/90 rounded-3xl shadow-2xl shadow-black/10 border border-gray-100/50 group-hover:shadow-3xl group-hover:shadow-primary/10 transition-all duration-700"></div>
+                
+                {/* Hover Glow Effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
                 
                 {/* Content */}
-                <div className="relative p-8 h-full flex flex-col items-center text-center bg-white">
-                  {/* Icon Container */}
-                  <div className="relative mb-6">
-                    {/* Main Icon Circle */}
-                    <div className={`w-20 h-20 ${service.colors.bg} rounded-2xl flex items-center justify-center ${service.colors.shadow} shadow-xl group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
-                      {service.isGoogleLogo ? <img src="/lovable-uploads/7314178c-83bf-47a5-be36-4f25a4df31d9.png" alt="Google" className="h-12 w-12 object-contain transition-all duration-500 group-hover:scale-125" /> : <service.icon className={`h-10 w-10 ${service.colors.icon} transition-all duration-500 group-hover:scale-125`} />}
+                <div className="relative p-10 h-full flex flex-col items-center text-center">
+                  {/* Icon Container with Enhanced Design */}
+                  <div className="relative mb-8">
+                    {/* Icon Background with Gradient */}
+                    <div className="w-24 h-24 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent rounded-3xl flex items-center justify-center shadow-lg shadow-primary/10 group-hover:shadow-xl group-hover:shadow-primary/20 group-hover:scale-110 transition-all duration-700">
+                      {service.isGoogleLogo ? (
+                        <img 
+                          src="/lovable-uploads/7314178c-83bf-47a5-be36-4f25a4df31d9.png" 
+                          alt="Google" 
+                          className="h-14 w-14 object-contain transition-all duration-700 group-hover:scale-110" 
+                        />
+                      ) : (
+                        <service.icon className="h-12 w-12 text-primary transition-all duration-700 group-hover:scale-110 group-hover:text-primary/80" />
+                      )}
                     </div>
                     
-                    {/* Glow Effect */}
-                    <div className={`absolute inset-0 ${service.colors.bg} rounded-2xl blur-xl opacity-30 group-hover:opacity-60 transition-all duration-500 -z-10`}></div>
+                    {/* Soft Glow Ring */}
+                    <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 rounded-full opacity-0 group-hover:opacity-50 blur-lg transition-all duration-700"></div>
                     
-                    {/* Pulse Ring */}
-                    <div className={`absolute -inset-1 bg-gradient-to-r from-${service.colors.bg}/20 to-${service.colors.bg}/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10`}></div>
+                    {/* Floating Sparkle Effect */}
+                    <div className="absolute -top-1 -right-1 w-4 h-4 bg-primary/30 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700 delay-200"></div>
                   </div>
                   
-                  {/* Text Content */}
-                  <div className="flex-1 flex flex-col justify-center">
-                    <h3 className="text-xl font-bold mb-4 transition-colors duration-300 text-black">
+                  {/* Text Content with Better Typography */}
+                  <div className="flex-1 flex flex-col justify-center space-y-4">
+                    <h3 className="text-2xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-500">
                       {service.title}
                     </h3>
                     
-                    <p className="leading-relaxed transition-colors duration-300 text-base font-normal text-black">
+                    <p className="text-gray-600 leading-relaxed text-lg group-hover:text-gray-700 transition-colors duration-500">
                       {service.description}
                     </p>
                   </div>
                   
-                  {/* Bottom Accent */}
-                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                  {/* Elegant Bottom Accent */}
+                  <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700 rounded-full"></div>
+                  
+                  {/* Corner Decorative Elements */}
+                  <div className="absolute top-6 right-6 w-2 h-2 bg-primary/20 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700 delay-300"></div>
                 </div>
               </div>
-            </div>)}
+            </div>
+          ))}
         </div>
 
         {/* Bottom Statement Section */}
