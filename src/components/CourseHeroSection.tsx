@@ -86,8 +86,13 @@ export function CourseHeroSection() {
                 <span className="text-primary">Nossa solução: Estratégias comprovadas que geram ROI real!</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Utilizamos metodologias testadas e otimizações constantes para transformar seu investimento em tráfego pago 
-                em vendas consistentes. Cada real investido é monitorado e otimizado para máximo retorno.
+                Chega de adivinhar o que funciona.<br />
+                Com a estratégia certa, seus anúncios param de ser um gasto e viram uma máquina de gerar vendas.
+                <br /><br />
+                Imagine ter campanhas que realmente performam — com inteligência, precisão e foco em resultados reais.
+                <br /><br />
+                O seu concorrente já está colhendo os frutos. Agora é a sua vez.<br />
+                Venda mais, pague menos e conquiste o lugar que sua marca merece.
               </p>
             </div>
           </div>
