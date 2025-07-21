@@ -1,19 +1,19 @@
-import { Users, Award } from "lucide-react";
-import { ProgressiveFormTypeform } from "@/components/ProgressiveFormTypeform";
+import { Button } from "@/components/ui/button";
+import { Play, CheckCircle, Users, Award } from "lucide-react";
 
 export function CourseHeroSection() {
   return (
-    <section className="min-h-screen bg-background text-foreground flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-20 relative overflow-hidden">
+    <section className="min-h-screen bg-black text-white flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-20 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-[10%] w-80 h-80 bg-gradient-radial from-primary/20 via-primary/10 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-[15%] w-64 h-64 bg-gradient-radial from-primary/15 via-primary/5 to-transparent rounded-full blur-2xl"></div>
+        <div className="absolute top-20 left-[10%] w-80 h-80 bg-gradient-radial from-cyan-500/20 via-cyan-500/10 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-[15%] w-64 h-64 bg-gradient-radial from-cyan-500/15 via-cyan-500/5 to-transparent rounded-full blur-2xl"></div>
       </div>
       
       <div className="container mx-auto max-w-4xl relative z-10 text-center">
         {/* Header */}
         <div className="mb-8">
-          <h2 className="text-xl font-bold mb-4">Blast Company <span className="text-primary">ads</span></h2>
+          <h2 className="text-cyan-400 text-xl font-bold mb-4">Aladdin</h2>
         </div>
         
         {/* Main Headline */}
@@ -21,55 +21,62 @@ export function CourseHeroSection() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
             Nosso trabalho é Aumentar<br />
             as Vendas da sua Empresa<br />
-            com Tráfego <span className="text-primary">de verdade</span>
+            com Tráfego <span className="text-cyan-400">de verdade</span>
           </h1>
-          <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-xs sm:max-w-lg lg:max-w-2xl mx-auto leading-relaxed px-4 sm:px-0">
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Somos uma agência parceira estratégica da sua empresa, criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso.
           </p>
         </div>
         
-        {/* Progressive Form */}
+        {/* Video Preview */}
+        <div className="mb-12">
+          <div className="bg-gray-800 rounded-lg p-4 max-w-md mx-auto mb-6">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center space-x-3">
+                <Play className="h-6 w-6 text-cyan-400" />
+                <span className="text-sm">Clique e veja como será!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* CTA Button */}
         <div className="mb-16">
-          <ProgressiveFormTypeform />
+          <Button size="lg" className="bg-cyan-400 hover:bg-cyan-500 text-black px-12 py-6 text-xl font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+            QUERO PARTICIPAR
+          </Button>
         </div>
         
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-          <div className="flex flex-col items-center p-6 bg-card/50 rounded-lg border border-border">
-            <div className="bg-primary/20 p-4 rounded-full mb-4">
-              <Award className="h-8 w-8 text-primary" />
+          <div className="flex flex-col items-center p-6 bg-gray-900/50 rounded-lg border border-gray-800">
+            <div className="bg-cyan-400/20 p-4 rounded-full mb-4">
+              <Award className="h-8 w-8 text-cyan-400" />
             </div>
-            <h3 className="text-lg font-semibold mb-2">Solução Sob Medida</h3>
-            <p className="text-muted-foreground text-sm text-center">Criamos a estratégia perfeita para o seu tipo de negócio</p>
+            <h3 className="text-lg font-semibold mb-2">Metodologia Testada</h3>
+            <p className="text-gray-400 text-sm text-center">de Aquisição</p>
           </div>
           
-          <div className="flex flex-col items-center p-6 bg-card/50 rounded-lg border border-border">
-            <div className="bg-primary/20 p-4 rounded-full mb-4">
-              <Users className="h-8 w-8 text-primary" />
+          <div className="flex flex-col items-center p-6 bg-gray-900/50 rounded-lg border border-gray-800">
+            <div className="bg-cyan-400/20 p-4 rounded-full mb-4">
+              <Users className="h-8 w-8 text-cyan-400" />
             </div>
-            <h3 className="text-lg font-semibold mb-2">Resultados Crescentes</h3>
-            <p className="text-muted-foreground text-sm text-center">Seus clientes aumentam mês após mês, de forma consistente</p>
+            <h3 className="text-lg font-semibold mb-2">Time Unificado</h3>
+            <p className="text-gray-400 text-sm text-center">Dedicado</p>
           </div>
         </div>
         
-        {/* Message Balloon */}
+        {/* Bottom Section */}
         <div className="mt-20">
-          <div className="bg-card border border-border rounded-2xl p-8 max-w-3xl mx-auto shadow-lg relative">
-            {/* Balloon pointer */}
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <div className="w-8 h-8 bg-card border-l border-t border-border rotate-45"></div>
-            </div>
-            
-            <div className="text-center">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                <span className="text-red-500">Cansou de queimar dinheiro em campanhas que não geram resultados?</span>
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Enquanto você lê isso, seus concorrentes estão vendendo mais — e pagando menos por isso. 
-                Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estratégia.
-              </p>
-            </div>
-          </div>
+          <h2 className="text-3xl font-bold mb-6">
+            Ferramentas que<br />
+            você irá <span className="text-cyan-400">aprender</span>
+          </h2>
+          <p className="text-gray-300 max-w-2xl mx-auto">
+            Aprenda o principio da tráfego pago e a <br />
+            construir funis de vendas usando as melhores <br />
+            técnicas e ferramentas do mercado.
+          </p>
         </div>
       </div>
     </section>

@@ -5,7 +5,37 @@ export function GoogleMetaAdsSection() {
   return <section className="py-20 px-4 text-white overflow-hidden relative">
       <div className="container mx-auto max-w-5xl">
         {/* Top Features */}
-        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20 max-w-4xl mx-auto">
+          <div className="flex flex-col items-center text-center group">
+            <div className="relative flex-shrink-0 mb-4">
+              <div className="w-16 h-16 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border border-border/50 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-primary/20 transition-all duration-300">
+                <Crown className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
+              </div>
+              <div className="absolute inset-0 bg-primary/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-lg font-semibold text-foreground mb-2">Solução Sob Medida</h3>
+              <p className="text-muted-foreground font-medium leading-relaxed">
+                Criamos a estratégia perfeita para o seu tipo de negócio
+              </p>
+            </div>
+          </div>
+          
+          <div className="flex flex-col items-center text-center group">
+            <div className="relative flex-shrink-0 mb-4">
+              <div className="w-16 h-16 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border border-border/50 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-primary/20 transition-all duration-300">
+                <Award className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" />
+              </div>
+              <div className="absolute inset-0 bg-primary/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-lg font-semibold text-foreground mb-2">Resultados Crescentes</h3>
+              <p className="text-muted-foreground font-medium leading-relaxed">
+                Seus clientes aumentam mês após mês, de forma consistente
+              </p>
+            </div>
+          </div>
+        </div>
 
         {/* Conteúdo em balões lado a lado */}
         <div className="max-w-6xl mx-auto">
