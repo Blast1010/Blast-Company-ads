@@ -1,5 +1,5 @@
 import { Users, Award } from "lucide-react";
-import { ProgressiveFormTypeform } from "@/components/ProgressiveFormTypeform";
+import { Button } from "@/components/ui/button";
 
 export function CourseHeroSection() {
   return (
@@ -28,9 +28,11 @@ export function CourseHeroSection() {
           </p>
         </div>
         
-        {/* Progressive Form */}
+        {/* CTA Button */}
         <div className="mb-16">
-          <ProgressiveFormTypeform />
+          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-12 py-6 text-xl font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+            SOLICITAR ORÇAMENTO
+          </Button>
         </div>
         
         {/* Features Grid */}
