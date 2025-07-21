@@ -83,15 +83,12 @@ export function CourseHeroSection() {
             
             <div className="text-center">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                <span className="text-primary">Nossa solução: Estratégias comprovadas que geram ROI real!</span>
+                <span className="text-primary">Chega de adivinhar o que funciona.</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Chega de adivinhar o que funciona.<br />
-                Com a estratégia certa, seus anúncios param de ser um gasto e viram uma máquina de gerar vendas.
-                <br /><br />
-                Imagine ter campanhas que realmente performam — com inteligência, precisão e foco em resultados reais.
-                <br /><br />
-                O seu concorrente já está colhendo os frutos. Agora é a sua vez.<br />
+                Com a estratégia certa, seus anúncios param de ser um gasto e viram uma máquina de gerar vendas. 
+                Imagine ter campanhas que realmente performam — com inteligência, precisão e foco em resultados reais. 
+                O seu concorrente já está colhendo os frutos. Agora é a sua vez. 
                 Venda mais, pague menos e conquiste o lugar que sua marca merece.
               </p>
             </div>
