@@ -1,10 +1,8 @@
 import { Users, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import realDashboardSales from "@/assets/real-dashboard-sales.jpg";
-
 export function CourseHeroSection() {
-  return (
-    <section className="min-h-screen bg-background text-foreground flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-20 relative overflow-hidden">
+  return <section className="min-h-screen bg-background text-foreground flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-20 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-[10%] w-80 h-80 bg-gradient-radial from-primary/20 via-primary/10 to-transparent rounded-full blur-3xl"></div>
@@ -39,11 +37,7 @@ export function CourseHeroSection() {
           {/* Image Content */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={realDashboardSales} 
-                alt="Dashboard SaaS Analytics" 
-                className="w-full h-auto object-cover"
-              />
+              <img src={realDashboardSales} alt="Dashboard SaaS Analytics" className="w-full h-auto object-cover" />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-transparent"></div>
             </div>
             {/* Floating elements */}
@@ -62,13 +56,7 @@ export function CourseHeroSection() {
             <p className="text-muted-foreground text-sm text-center">Criamos a estratégia perfeita para o seu tipo de negócio</p>
           </div>
           
-          <div className="flex flex-col items-center p-6 bg-card/50 rounded-lg border border-border">
-            <div className="bg-primary/20 p-4 rounded-full mb-4">
-              <Users className="h-8 w-8 text-primary" />
-            </div>
-            <h3 className="text-lg font-semibold mb-2">Resultados Crescentes</h3>
-            <p className="text-muted-foreground text-sm text-center">Seus clientes aumentam mês após mês, de forma consistente</p>
-          </div>
+          
         </div>
         
         {/* Message Balloon */}
@@ -91,6 +79,5 @@ export function CourseHeroSection() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
