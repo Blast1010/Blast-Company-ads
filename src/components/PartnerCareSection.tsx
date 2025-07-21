@@ -5,87 +5,94 @@ export const PartnerCareSection = () => {
     {
       icon: Users,
       title: "Acompanhamento Transparente",
-      description: "Fazer você vender é o nosso trabalho diário, mas sabemos o quão importante é para nossos parceiros acompanharem o que está sendo feito."
+      description: "Fazer você vender é o nosso trabalho diário, mas sabemos o quão importante é para nossos parceiros acompanharem o que está sendo feito.",
+      gradient: "from-blue-500/20 to-purple-500/20"
     },
     {
       icon: MessageCircle,
       title: "Reuniões Estratégicas",
-      description: "Sempre faremos reuniões estratégicas, seja para extrair informações de inteligência, para tomar decisões juntos com você ou apenas para mostrar os resultados do nosso trabalho."
+      description: "Sempre faremos reuniões estratégicas, seja para extrair informações de inteligência, para tomar decisões juntos com você ou apenas para mostrar os resultados do nosso trabalho.",
+      gradient: "from-primary/20 to-blue-500/20"
     },
     {
       icon: Shield,
       title: "Contato Direto",
-      description: "Não criamos burocracias para falar conosco, terá contato direto com nossos estrategistas para se sentir sempre seguro"
+      description: "Não criamos burocracias para falar conosco, terá contato direto com nossos estrategistas para se sentir sempre seguro",
+      gradient: "from-green-500/20 to-primary/20"
     },
     {
       icon: BarChart3,
       title: "CRM Integrado",
-      description: "Diferente de outros gestores, nos contamos com CRM integrado na sua estrutura juntamente com Relatórios diários com rastreamento de conversas, fazendo assim identificarmos otimizações precisas e economizar o seu dinheiro."
+      description: "Diferente de outros gestores, nos contamos com CRM integrado na sua estrutura juntamente com Relatórios diários com rastreamento de conversas, fazendo assim identificarmos otimizações precisas e economizar o seu dinheiro.",
+      gradient: "from-purple-500/20 to-pink-500/20"
     }
   ];
 
   return (
-    <section className="py-20 px-4 relative overflow-hidden">
+    <section className="py-24 px-4 sm:px-6 lg:px-8 relative">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900/50 to-black"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.1)_0%,transparent_70%)]"></div>
-      
-      {/* Floating Orbs */}
-      <div className="absolute top-20 left-10 w-32 h-32 bg-primary/20 rounded-full blur-xl animate-float opacity-60"></div>
-      <div className="absolute bottom-20 right-10 w-24 h-24 bg-primary/15 rounded-full blur-lg animate-breathe opacity-40"></div>
-      
-      <div className="container mx-auto max-w-6xl relative z-10">
-        {/* Header Section */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 -left-40 w-80 h-80 bg-gradient-to-r from-primary/10 to-blue-500/10 rounded-full blur-3xl opacity-50 animate-float"></div>
+        <div className="absolute top-3/4 -right-40 w-96 h-96 bg-gradient-to-l from-purple-500/10 to-primary/10 rounded-full blur-3xl opacity-40 animate-breathe"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-primary/5 to-transparent rounded-full blur-3xl opacity-30"></div>
+      </div>
+
+      <div className="container mx-auto max-w-7xl relative z-10">
+        {/* Header */}
         <div className="text-center mb-20">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-white to-gray-200 text-black rounded-2xl mb-8 font-bold text-2xl shadow-lg">
+            B
+          </div>
           <p className="text-primary text-lg mb-4 font-medium tracking-wide">Direto com o gestor</p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent">
-            Atendimento de Parceiro
+          <h2 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+            Atendimento de
+            <span className="block bg-gradient-to-r from-primary via-blue-400 to-purple-400 bg-clip-text text-transparent">
+              Parceiro
+            </span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary to-blue-500 mx-auto rounded-full"></div>
         </div>
 
         {/* Benefits Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-20">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {benefits.map((benefit, index) => {
             const IconComponent = benefit.icon;
             return (
-              <div key={index} className="group cursor-pointer">
-                {/* Service Card */}
-                <div className="relative h-full">
-                  {/* Background Card */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/50 rounded-3xl transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-2xl group-hover:shadow-primary/20"></div>
-                  
-                  {/* Content */}
-                  <div className="relative p-8 h-full flex flex-col items-center text-center bg-white">
-                    {/* Icon Container */}
-                    <div className="relative mb-6">
-                      {/* Main Icon Circle */}
-                      <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                        <IconComponent className="h-10 w-10 text-primary transition-all duration-500 group-hover:scale-125" />
-                      </div>
-                      
-                      {/* Glow Effect */}
-                      <div className="absolute inset-0 bg-primary/20 rounded-2xl blur-xl opacity-30 group-hover:opacity-60 transition-all duration-500 -z-10"></div>
-                    </div>
-                    
-                    {/* Text Content */}
-                    <div className="flex-1 flex flex-col justify-center">
-                      <h3 className="text-xl font-bold mb-4 transition-colors duration-300 text-black">
-                        {benefit.title}
-                      </h3>
-                      
-                      <p className="leading-relaxed transition-colors duration-300 text-base font-normal text-black">
-                        {benefit.description}
-                      </p>
-                    </div>
-                    
-                    {/* Bottom Accent */}
-                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                  </div>
+              <div
+                key={index}
+                className={`group relative p-8 rounded-3xl bg-gradient-to-br ${benefit.gradient} backdrop-blur-sm border border-white/10 hover:border-primary/30 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20`}
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                {/* Floating orb effect */}
+                <div className="absolute top-4 right-4 w-12 h-12 bg-gradient-to-br from-primary/20 to-blue-500/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                {/* Icon */}
+                <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary/20 to-blue-500/20 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <IconComponent className="w-8 h-8 text-primary group-hover:text-white transition-colors duration-300" />
                 </div>
+
+                {/* Content */}
+                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors duration-300">
+                  {benefit.title}
+                </h3>
+                <p className="text-gray-300 leading-relaxed group-hover:text-white transition-colors duration-300">
+                  {benefit.description}
+                </p>
+
+                {/* Hover effect gradient */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-blue-500/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
               </div>
             );
           })}
+        </div>
+
+        {/* Bottom decoration */}
+        <div className="text-center mt-20">
+          <div className="flex items-center justify-center space-x-2">
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+            <div className="w-8 h-0.5 bg-gradient-to-r from-primary to-blue-500 rounded-full"></div>
+            <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+          </div>
         </div>
       </div>
     </section>
