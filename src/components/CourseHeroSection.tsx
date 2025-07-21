@@ -19,8 +19,9 @@ export function CourseHeroSection() {
         {/* Main Headline */}
         <div className="mb-12">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            Aprenda a fazer<br />
-            tráfego <span className="text-cyan-400">de verdade</span>
+            Nosso trabalho é Aumentar<br />
+            as Vendas da sua Empresa<br />
+            com Tráfego <span className="text-cyan-400">de verdade</span>
           </h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Entenda de uma vez por todas a criar os<br />
