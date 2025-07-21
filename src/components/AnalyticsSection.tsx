@@ -31,43 +31,5 @@ export function AnalyticsSection() {
     title: "Performance Otimizada",
     description: "Sistema de alta velocidade que processa milhões de eventos por segundo sem perder nenhum dado importante."
   }];
-  return <section className="py-24 px-4 relative overflow-hidden">
-      {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900/30 to-black"></div>
-      
-      
-      {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-40 h-40 bg-primary/10 rounded-full blur-2xl animate-float opacity-50"></div>
-      <div className="absolute bottom-20 right-10 w-32 h-32 bg-primary/8 rounded-full blur-xl animate-breathe opacity-40"></div>
-
-      <div className="container mx-auto max-w-7xl relative z-10">
-        {/* Header Section */}
-        
-
-        {/* Main Visual Section */}
-        <div className="mb-20">
-          {/* Primary Dashboard Card */}
-          <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/50 rounded-3xl transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-2xl group-hover:shadow-primary/20"></div>
-            
-            
-          </div>
-
-          {/* Secondary Images Grid */}
-          
-        </div>
-
-        {/* Features Grid */}
-        
-
-        {/* Bottom CTA Section */}
-        <div className="text-center">
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent rounded-3xl blur-xl"></div>
-            
-            
-          </div>
-        </div>
-      </div>
-    </section>;
+  return;
 }
