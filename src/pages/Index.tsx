@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header";
-import { HeroSection } from "@/components/HeroSection";
+import { CourseHeroSection } from "@/components/CourseHeroSection";
 import { GoogleMetaAdsSection } from "@/components/GoogleMetaAdsSection";
 import { ServicesSection } from "@/components/ServicesSection";
 import { ClientsSection } from "@/components/ClientsSection";
@@ -64,7 +64,7 @@ const Index = () => {
       
       {/* Todas as seções com responsividade melhorada */}
       <div className="bg-black relative z-10">
-        <HeroSection />
+        <CourseHeroSection />
       </div>
       
       <div className="bg-black relative z-10">
