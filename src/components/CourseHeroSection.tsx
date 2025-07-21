@@ -63,7 +63,7 @@ export function CourseHeroSection() {
             
             <div className="text-center">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                <span className="text-red-500">CANSADO DE VER SEU DINHEIRO DESAPARECER?</span>
+                <span className="text-red-500">Cansou de queimar dinheiro em campanhas que não geram resultados?</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Enquanto você lê isso, seus concorrentes estão vendendo mais — e pagando menos por isso. 
@@ -83,7 +83,7 @@ export function CourseHeroSection() {
             
             <div className="text-center">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                <span className="text-primary">IMAGINE TER CLIENTES TODO DIA</span>
+                <span className="text-primary">Chega de adivinhar o que funciona.</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Com a estratégia certa, seus anúncios param de ser um gasto e viram uma máquina de gerar vendas. 
