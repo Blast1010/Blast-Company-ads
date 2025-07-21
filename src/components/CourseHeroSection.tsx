@@ -61,8 +61,8 @@ export function CourseHeroSection() {
             <div className="bg-primary/20 p-4 rounded-full mb-4">
               <Users className="h-8 w-8 text-primary" />
             </div>
-            <h3 className="text-lg font-semibold mb-2">Time Unificado</h3>
-            <p className="text-muted-foreground text-sm text-center">Dedicado</p>
+            <h3 className="text-lg font-semibold mb-2">Resultados Crescentes</h3>
+            <p className="text-muted-foreground text-sm text-center">Seus clientes aumentam mês após mês, de forma consistente</p>
           </div>
         </div>
         
