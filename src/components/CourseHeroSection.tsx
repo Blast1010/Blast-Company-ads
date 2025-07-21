@@ -23,7 +23,7 @@ export function CourseHeroSection() {
             as Vendas da sua Empresa<br />
             com Tráfego <span className="text-primary">de verdade</span>
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-xs sm:max-w-lg lg:max-w-2xl mx-auto leading-relaxed px-4 sm:px-0">
             Somos uma agência parceira estratégica da sua empresa, criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso.
           </p>
         </div>
