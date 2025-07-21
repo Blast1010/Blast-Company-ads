@@ -58,22 +58,7 @@ export function CourseHeroSection() {
         </div>
 
         {/* Solution Balloon */}
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-primary/10 backdrop-blur-sm border border-primary/20 rounded-2xl p-6 sm:p-8 lg:p-10 text-center relative">
-            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-primary/10 border-l border-t border-primary/20 rotate-45"></div>
-            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6 text-primary">
-              IMAGINE TER CLIENTES TODO DIA
-            </h3>
-            <div className="space-y-3 sm:space-y-4">
-              <h4 className="text-lg sm:text-xl lg:text-2xl font-bold">
-                Chega de adivinhar o que funciona.
-              </h4>
-              <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
-                Com a estratégia certa, seus anúncios param de ser um gasto e viram uma máquina de gerar vendas. Imagine ter campanhas que realmente performam — com inteligência, precisão e foco em resultados reais. O seu concorrente já está colhendo os frutos. Agora é a sua vez. Venda mais, pague menos e conquiste o lugar que sua marca merece.
-              </p>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>;
 }
