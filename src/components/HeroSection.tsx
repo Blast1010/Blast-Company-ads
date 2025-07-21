@@ -32,7 +32,7 @@ export function HeroSection() {
             
             {/* Main Headline - Original Text */}
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-foreground text-center">
+              <h1 className="text-4xl sm:text-5xl leading-[1.1] tracking-tight text-foreground font-bold text-left lg:text-5xl">
                 Nosso trabalho é Aumentar<br />
                 as Vendas da sua Empresa<br />
                 com <span className="bg-gradient-to-r from-primary via-primary/90 to-primary/70 bg-clip-text text-transparent">Tráfego de verdade</span>
@@ -42,7 +42,7 @@ export function HeroSection() {
             {/* Original Balloons - Professional Format */}
             <div className="space-y-6">
               {/* Primeiro balão - Original text */}
-              <div className="relative p-6 lg:p-8 rounded-2xl bg-gradient-to-br from-primary/10 via-primary/5 to-primary/10 border border-primary/20 backdrop-blur-sm">
+              <div className="relative p-6 lg:p-8 bg-gradient-to-br from-primary/10 via-primary/5 to-primary/10 border border-primary/20 backdrop-blur-sm rounded-xl">
                 <p className="text-lg leading-relaxed text-foreground font-medium">
                   Somos uma agência <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded">parceira estratégica</span> da sua empresa, criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso.
                 </p>
@@ -64,7 +64,7 @@ export function HeroSection() {
 
             {/* Original CTA - Professional Format */}
             <div className="pt-4">
-              <Button size="lg" className="px-12 py-4 text-lg font-semibold bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-full">
+              <Button size="lg" className="px-12 py-4 text-lg font-semibold bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-full text-black">
                 Solicitar Orçamento
               </Button>
             </div>
