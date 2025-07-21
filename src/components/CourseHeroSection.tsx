@@ -48,13 +48,7 @@ export function CourseHeroSection() {
         
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-          <div className="flex flex-col items-center p-6 bg-card/50 rounded-lg border border-border">
-            <div className="bg-primary/20 p-4 rounded-full mb-4">
-              <Award className="h-8 w-8 text-primary" />
-            </div>
-            <h3 className="text-lg font-semibold mb-2">Solução Sob Medida</h3>
-            <p className="text-muted-foreground text-sm text-center">Criamos a estratégia perfeita para o seu tipo de negócio</p>
-          </div>
+          
           
           
         </div>
