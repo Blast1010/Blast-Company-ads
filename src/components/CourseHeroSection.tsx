@@ -9,9 +9,9 @@ export function CourseHeroSection() {
         <div className="absolute bottom-20 right-[15%] w-64 h-64 bg-gradient-radial from-primary/15 via-primary/5 to-transparent rounded-full blur-2xl"></div>
       </div>
       
-      <div className="container mx-auto max-w-7xl relative z-10 space-y-16 sm:space-y-20 lg:space-y-24">
+      <div className="container mx-auto max-w-7xl relative z-10 space-y-8 sm:space-y-12 lg:space-y-24">
         {/* Header */}
-        <div className="text-center">
+        <div className="text-center pt-4 lg:pt-0">
           <h2 className="text-lg sm:text-xl lg:text-2xl font-bold">
             Blast Company <span className="text-primary">ads</span>
           </h2>
@@ -53,7 +53,7 @@ export function CourseHeroSection() {
         </div>
         
         {/* Problem Balloon */}
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto mt-8 sm:mt-12 lg:mt-16">
           
         </div>
 
