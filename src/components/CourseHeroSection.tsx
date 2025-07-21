@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Play, CheckCircle, Users, Award } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Lock, BarChart3 } from "lucide-react";
 
 export function CourseHeroSection() {
   return (
@@ -10,73 +11,60 @@ export function CourseHeroSection() {
         <div className="absolute bottom-20 right-[15%] w-64 h-64 bg-gradient-radial from-cyan-500/15 via-cyan-500/5 to-transparent rounded-full blur-2xl"></div>
       </div>
       
-      <div className="container mx-auto max-w-4xl relative z-10 text-center">
+      <div className="container mx-auto max-w-md relative z-10 text-center">
         {/* Header */}
-        <div className="mb-8">
-          <h2 className="text-cyan-400 text-xl font-bold mb-4">Aladdin</h2>
+        <div className="mb-12">
+          <h2 className="text-cyan-400 text-2xl font-bold">Aladdin</h2>
         </div>
         
-        {/* Main Headline */}
+        {/* Main Content */}
         <div className="mb-12">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-6">
             Aprenda a fazer<br />
             tráfego <span className="text-cyan-400">de verdade</span>
           </h1>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Entenda de uma vez por todas a criar os<br />
-            funis da sua Loja!
+          <p className="text-gray-300 mb-8">
+            Entenda de uma vez por todas e usar os<br />
+            Dados ao seu Favor
           </p>
         </div>
         
-        {/* Video Preview */}
-        <div className="mb-12">
-          <div className="bg-gray-800 rounded-lg p-4 max-w-md mx-auto mb-6">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-3">
-                <Play className="h-6 w-6 text-cyan-400" />
-                <span className="text-sm">Clique e veja como será!</span>
-              </div>
-            </div>
+        {/* Email Form */}
+        <div className="mb-8 space-y-4">
+          <div className="relative">
+            <Input 
+              type="email" 
+              placeholder="Digite o seu melhor email" 
+              className="bg-gray-800 border-gray-700 text-white placeholder-gray-400 h-12 text-center"
+            />
           </div>
-        </div>
-        
-        {/* CTA Button */}
-        <div className="mb-16">
-          <Button size="lg" className="bg-cyan-400 hover:bg-cyan-500 text-black px-12 py-6 text-xl font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+          
+          <Button className="w-full bg-cyan-400 hover:bg-cyan-500 text-black py-3 text-lg font-bold rounded-lg">
             QUERO PARTICIPAR
           </Button>
         </div>
         
-        {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-          <div className="flex flex-col items-center p-6 bg-gray-900/50 rounded-lg border border-gray-800">
-            <div className="bg-cyan-400/20 p-4 rounded-full mb-4">
-              <Award className="h-8 w-8 text-cyan-400" />
+        {/* Features */}
+        <div className="grid grid-cols-2 gap-6 max-w-xs mx-auto">
+          <div className="flex flex-col items-center">
+            <div className="bg-gray-800 p-3 rounded-full mb-3">
+              <Lock className="h-6 w-6 text-cyan-400" />
             </div>
-            <h3 className="text-lg font-semibold mb-2">Metodologia Testada</h3>
-            <p className="text-gray-400 text-sm text-center">de Aquisição</p>
+            <p className="text-xs text-gray-300 text-center leading-tight">
+              Metodologia Testada<br />
+              de Aplicação
+            </p>
           </div>
           
-          <div className="flex flex-col items-center p-6 bg-gray-900/50 rounded-lg border border-gray-800">
-            <div className="bg-cyan-400/20 p-4 rounded-full mb-4">
-              <Users className="h-8 w-8 text-cyan-400" />
+          <div className="flex flex-col items-center">
+            <div className="bg-gray-800 p-3 rounded-full mb-3">
+              <BarChart3 className="h-6 w-6 text-cyan-400" />
             </div>
-            <h3 className="text-lg font-semibold mb-2">Time Unificado</h3>
-            <p className="text-gray-400 text-sm text-center">Dedicado</p>
+            <p className="text-xs text-gray-300 text-center leading-tight">
+              Tome Melhores<br />
+              Decisões
+            </p>
           </div>
-        </div>
-        
-        {/* Bottom Section */}
-        <div className="mt-20">
-          <h2 className="text-3xl font-bold mb-6">
-            Ferramentas que<br />
-            você irá <span className="text-cyan-400">aprender</span>
-          </h2>
-          <p className="text-gray-300 max-w-2xl mx-auto">
-            Aprenda o principio da tráfego pago e a <br />
-            construir funis de vendas usando as melhores <br />
-            técnicas e ferramentas do mercado.
-          </p>
         </div>
       </div>
     </section>
