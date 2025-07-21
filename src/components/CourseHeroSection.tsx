@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Play, CheckCircle, Users, Award } from "lucide-react";
+
 export function CourseHeroSection() {
-  return <section className="min-h-screen bg-black text-white flex flex-col justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden my-0 py-0">
+  return (
+    <section className="min-h-screen bg-black text-white flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-20 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-[10%] w-80 h-80 bg-gradient-radial from-cyan-500/20 via-cyan-500/10 to-transparent rounded-full blur-3xl"></div>
@@ -11,18 +13,18 @@ export function CourseHeroSection() {
       <div className="container mx-auto max-w-4xl relative z-10 text-center">
         {/* Header */}
         <div className="mb-8">
-          
+          <h2 className="text-cyan-400 text-xl font-bold mb-4">Aladdin</h2>
         </div>
         
         {/* Main Headline */}
         <div className="mb-12">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            Aprenda a fazer<br />
-            tráfego <span className="text-cyan-400">de verdade</span>
+            Nosso trabalho é Aumentar<br />
+            as Vendas da sua Empresa<br />
+            com Tráfego <span className="text-cyan-400">de verdade</span>
           </h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Entenda de uma vez por todas a criar os<br />
-            funis da sua Loja!
+            Somos uma agência parceira estratégica da sua empresa, criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso.
           </p>
         </div>
         
@@ -46,10 +48,37 @@ export function CourseHeroSection() {
         </div>
         
         {/* Features Grid */}
-        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+          <div className="flex flex-col items-center p-6 bg-gray-900/50 rounded-lg border border-gray-800">
+            <div className="bg-cyan-400/20 p-4 rounded-full mb-4">
+              <Award className="h-8 w-8 text-cyan-400" />
+            </div>
+            <h3 className="text-lg font-semibold mb-2">Metodologia Testada</h3>
+            <p className="text-gray-400 text-sm text-center">de Aquisição</p>
+          </div>
+          
+          <div className="flex flex-col items-center p-6 bg-gray-900/50 rounded-lg border border-gray-800">
+            <div className="bg-cyan-400/20 p-4 rounded-full mb-4">
+              <Users className="h-8 w-8 text-cyan-400" />
+            </div>
+            <h3 className="text-lg font-semibold mb-2">Time Unificado</h3>
+            <p className="text-gray-400 text-sm text-center">Dedicado</p>
+          </div>
+        </div>
         
         {/* Bottom Section */}
-        
+        <div className="mt-20">
+          <h2 className="text-3xl font-bold mb-6">
+            Ferramentas que<br />
+            você irá <span className="text-cyan-400">aprender</span>
+          </h2>
+          <p className="text-gray-300 max-w-2xl mx-auto">
+            Aprenda o principio da tráfego pago e a <br />
+            construir funis de vendas usando as melhores <br />
+            técnicas e ferramentas do mercado.
+          </p>
+        </div>
       </div>
-    </section>;
+    </section>
+  );
 }
