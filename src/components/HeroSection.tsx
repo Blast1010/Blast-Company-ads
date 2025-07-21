@@ -43,22 +43,29 @@ export function HeroSection() {
             </h1>
           </div>
 
-          {/* Descrição - Espaçamento adequado como na Ayres */}
-          <div className="max-w-3xl mx-auto animate-fade-in space-y-6" style={{
+          {/* Descrição em Balões - Espaçamento adequado como na Ayres */}
+          <div className="max-w-5xl mx-auto animate-fade-in space-y-6" style={{
           animationDelay: '0.3s'
         }}>
-            <p className="text-lg sm:text-xl leading-relaxed text-foreground font-medium">
-              Somos uma agência parceira estratégica da sua empresa, criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso.
-            </p>
+            {/* Primeiro balão */}
+            <div className="relative p-6 lg:p-8 rounded-2xl bg-gradient-to-br from-primary/10 via-primary/5 to-primary/10 border border-primary/20 backdrop-blur-sm">
+              <p className="text-lg leading-relaxed text-foreground font-medium text-center">
+                Somos uma agência <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded">parceira estratégica</span> da sua empresa, criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso.
+              </p>
+            </div>
             
-            <p className="text-lg sm:text-xl leading-relaxed text-foreground font-medium">
-              Cansou de queimar dinheiro em campanhas que não geram resultados?
-            </p>
-            
-            <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
-              Enquanto você lê isso, seus concorrentes estão vendendo mais — e pagando menos por isso. 
-              Eles entenderam que tráfego pago não é sobre gastar, e sim investir com inteligência e foco em performance.
-            </p>
+            {/* Segundo balão */}
+            <div className="relative p-6 lg:p-8 rounded-2xl bg-gradient-to-br from-muted/50 via-background to-muted/30 border border-border backdrop-blur-sm">
+              <div className="space-y-4 text-center">
+                <p className="text-lg font-semibold text-red-500">
+                  Cansou de queimar dinheiro em campanhas que não geram resultados?
+                </p>
+                <p className="text-base leading-relaxed text-muted-foreground">
+                  Enquanto você lê isso, seus concorrentes estão vendendo mais — e pagando menos por isso. 
+                  Eles entenderam que tráfego pago não é sobre gastar, e sim investir com inteligência e foco em performance.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Botão CTA - Azul turquesa com letras pretas, centralizado */}
