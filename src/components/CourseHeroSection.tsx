@@ -21,22 +21,14 @@ export function CourseHeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
           {/* Text Content */}
           <div className="text-center lg:text-left">
-            {/* Content Balloon */}
-            <div className="bg-card border border-border rounded-2xl p-8 shadow-lg relative mb-8">
-              {/* Balloon pointer */}
-              <div className="absolute -bottom-4 left-8 lg:left-12">
-                <div className="w-8 h-8 bg-card border-b border-r border-border rotate-45"></div>
-              </div>
-              
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Nosso trabalho é Aumentar<br />
-                as Vendas da sua Empresa<br />
-                com Tráfego <span className="text-primary">de verdade</span>
-              </h1>
-              <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed">
-                Somos uma agência parceira estratégica da sua empresa, criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso.
-              </p>
-            </div>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+              Nosso trabalho é Aumentar<br />
+              as Vendas da sua Empresa<br />
+              com Tráfego <span className="text-primary">de verdade</span>
+            </h1>
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed mb-8">
+              Somos uma agência parceira estratégica da sua empresa, criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso.
+            </p>
             
             {/* CTA Button */}
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-black px-12 py-6 text-xl font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
