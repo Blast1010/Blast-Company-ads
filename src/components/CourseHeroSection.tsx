@@ -53,8 +53,8 @@ export function CourseHeroSection() {
             <div className="bg-cyan-400/20 p-4 rounded-full mb-4">
               <Award className="h-8 w-8 text-cyan-400" />
             </div>
-            <h3 className="text-lg font-semibold mb-2">Metodologia Testada</h3>
-            <p className="text-gray-400 text-sm text-center">de Aquisição</p>
+            <h3 className="text-lg font-semibold mb-2">Solução Sob Medida</h3>
+            <p className="text-gray-400 text-sm text-center">Criamos a estratégia perfeita para o seu tipo de negócio</p>
           </div>
           
           <div className="flex flex-col items-center p-6 bg-gray-900/50 rounded-lg border border-gray-800">
