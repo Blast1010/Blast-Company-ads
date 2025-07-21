@@ -1,5 +1,6 @@
 import { Users, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import saasDashboardHero from "@/assets/saas-dashboard-hero.jpg";
 
 export function CourseHeroSection() {
   return (
@@ -10,29 +11,45 @@ export function CourseHeroSection() {
         <div className="absolute bottom-20 right-[15%] w-64 h-64 bg-gradient-radial from-primary/15 via-primary/5 to-transparent rounded-full blur-2xl"></div>
       </div>
       
-      <div className="container mx-auto max-w-4xl relative z-10 text-center">
+      <div className="container mx-auto max-w-7xl relative z-10">
         {/* Header */}
-        <div className="mb-8">
+        <div className="mb-8 text-center">
           <h2 className="text-xl font-bold mb-4">Blast Company <span className="text-primary">ads</span></h2>
         </div>
         
-        {/* Main Headline */}
-        <div className="mb-12">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            Nosso trabalho é Aumentar<br />
-            as Vendas da sua Empresa<br />
-            com Tráfego <span className="text-primary">de verdade</span>
-          </h1>
-          <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-xs sm:max-w-lg lg:max-w-2xl mx-auto leading-relaxed px-4 sm:px-0">
-            Somos uma agência parceira estratégica da sua empresa, criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso.
-          </p>
-        </div>
-        
-        {/* CTA Button */}
-        <div className="mb-16">
-          <Button size="lg" className="bg-black hover:bg-black/90 text-white px-12 py-6 text-xl font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-            SOLICITAR ORÇAMENTO
-          </Button>
+        {/* Main Content - Text and Image */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+          {/* Text Content */}
+          <div className="text-center lg:text-left">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+              Nosso trabalho é Aumentar<br />
+              as Vendas da sua Empresa<br />
+              com Tráfego <span className="text-primary">de verdade</span>
+            </h1>
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed mb-8">
+              Somos uma agência parceira estratégica da sua empresa, criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso.
+            </p>
+            
+            {/* CTA Button */}
+            <Button size="lg" className="bg-black hover:bg-black/90 text-white px-12 py-6 text-xl font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              SOLICITAR ORÇAMENTO
+            </Button>
+          </div>
+          
+          {/* Image Content */}
+          <div className="relative">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src={saasDashboardHero} 
+                alt="Dashboard SaaS Analytics" 
+                className="w-full h-auto object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-transparent"></div>
+            </div>
+            {/* Floating elements */}
+            <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-xl"></div>
+            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
+          </div>
         </div>
         
         {/* Features Grid */}
