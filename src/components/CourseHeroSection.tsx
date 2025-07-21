@@ -2,7 +2,7 @@ import { Users, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import realDashboardSales from "@/assets/real-dashboard-sales.jpg";
 export function CourseHeroSection() {
-  return <section className="min-h-screen bg-background text-foreground flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-20 relative overflow-hidden">
+  return <section className="min-h-screen bg-background text-foreground flex flex-col justify-center px-4 sm:px-6 relative overflow-hidden lg:px-0 py-0">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-[10%] w-80 h-80 bg-gradient-radial from-primary/20 via-primary/10 to-transparent rounded-full blur-3xl"></div>
