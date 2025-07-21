@@ -55,22 +55,7 @@ export function CourseHeroSection() {
         
         {/* Message Balloon - Problem */}
         <div className="mt-20">
-          <div className="bg-card border border-border rounded-2xl p-8 max-w-3xl mx-auto shadow-lg relative">
-            {/* Balloon pointer */}
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <div className="w-8 h-8 bg-card border-l border-t border-border rotate-45"></div>
-            </div>
-            
-            <div className="text-center">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                <span className="text-red-500">Cansou de queimar dinheiro em campanhas que não geram resultados?</span>
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Enquanto você lê isso, seus concorrentes estão vendendo mais — e pagando menos por isso. 
-                Eles entenderam que tráfego pago não é sobre gastar, e sim investir com estratégia.
-              </p>
-            </div>
-          </div>
+          
         </div>
 
         {/* Solution Balloon */}
