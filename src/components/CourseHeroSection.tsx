@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { Play, CheckCircle, Users, Award } from "lucide-react";
+import { Users, Award } from "lucide-react";
+import { ProgressiveFormTypeform } from "@/components/ProgressiveFormTypeform";
 
 export function CourseHeroSection() {
   return (
@@ -28,23 +28,9 @@ export function CourseHeroSection() {
           </p>
         </div>
         
-        {/* Video Preview */}
-        <div className="mb-12">
-          <div className="bg-card rounded-lg p-4 max-w-md mx-auto mb-6 border border-border">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-3">
-                <Play className="h-6 w-6 text-primary" />
-                <span className="text-sm">Clique e veja como será!</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        {/* CTA Button */}
+        {/* Progressive Form */}
         <div className="mb-16">
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-12 py-6 text-xl font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-            QUERO PARTICIPAR
-          </Button>
+          <ProgressiveFormTypeform />
         </div>
         
         {/* Features Grid */}
