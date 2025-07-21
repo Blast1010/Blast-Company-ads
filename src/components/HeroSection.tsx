@@ -3,8 +3,7 @@ import { TrendingUp, Target, Zap, Shield } from "lucide-react";
 import { ProgressiveForm } from "@/components/ProgressiveForm";
 import saasDashboard from "@/assets/saas-sales-dashboard.jpg";
 export function HeroSection() {
-  return (
-    <section className="relative min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-20 overflow-hidden bg-gradient-to-br from-background via-background to-muted/20">
+  return <section className="relative min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-20 overflow-hidden bg-gradient-to-br from-background via-background to-muted/20">
       {/* Professional Background Effects */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Subtle gradient overlay */}
@@ -33,7 +32,7 @@ export function HeroSection() {
             
             {/* Main Headline - Original Text */}
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-foreground">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-foreground text-center">
                 Nosso trabalho é Aumentar<br />
                 as Vendas da sua Empresa<br />
                 com <span className="bg-gradient-to-r from-primary via-primary/90 to-primary/70 bg-clip-text text-transparent">Tráfego de verdade</span>
@@ -65,10 +64,7 @@ export function HeroSection() {
 
             {/* Original CTA - Professional Format */}
             <div className="pt-4">
-              <Button 
-                size="lg" 
-                className="px-12 py-4 text-lg font-semibold bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-full"
-              >
+              <Button size="lg" className="px-12 py-4 text-lg font-semibold bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-full">
                 Solicitar Orçamento
               </Button>
             </div>
@@ -79,11 +75,7 @@ export function HeroSection() {
             <div className="relative">
               {/* Main Dashboard Image */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border/20">
-                <img 
-                  src={saasDashboard} 
-                  alt="Dashboard SaaS com notificações de vendas" 
-                  className="w-full h-auto object-cover"
-                />
+                <img src={saasDashboard} alt="Dashboard SaaS com notificações de vendas" className="w-full h-auto object-cover" />
                 
                 {/* Professional overlay */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-primary/5 pointer-events-none"></div>
@@ -109,6 +101,5 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
