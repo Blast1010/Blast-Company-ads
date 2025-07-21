@@ -24,8 +24,7 @@ export function CourseHeroSection() {
             com Tráfego <span className="text-cyan-400">de verdade</span>
           </h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Entenda de uma vez por todas a criar os<br />
-            funis da sua Loja!
+            Somos uma agência parceira estratégica da sua empresa, criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso.
           </p>
         </div>
         
