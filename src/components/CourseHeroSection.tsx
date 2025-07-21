@@ -13,7 +13,7 @@ export function CourseHeroSection() {
       <div className="container mx-auto max-w-4xl relative z-10 text-center">
         {/* Header */}
         <div className="mb-8">
-          <h2 className="text-primary text-xl font-bold mb-4">Aladdin</h2>
+          <h2 className="text-xl font-bold mb-4">Blast Company <span className="text-primary">ads</span></h2>
         </div>
         
         {/* Main Headline */}
