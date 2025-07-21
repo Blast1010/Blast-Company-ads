@@ -139,16 +139,7 @@ export function GoogleMetaAdsSection() {
         </div>
 
         {/* Final CTA Button */}
-        <div className="text-center mt-16">
-          <div className="max-w-3xl mx-auto mb-8">
-            
-          </div>
-          <FormModal>
-            <Button size="xl" className="px-12 py-6 text-xl font-bold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300 text-black">
-              Solicitar Orçamento Agora
-            </Button>
-          </FormModal>
-        </div>
+        
       </div>
     </section>;
 }
