@@ -22,7 +22,7 @@ export function HeroSection() {
         {/* Professional Hero Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[80vh]">
           {/* Content Section - Original Copy with Professional Layout */}
-          <div className="lg:col-span-7 space-y-8">
+          <div className="lg:col-span-6 space-y-8">
             {/* Company Name */}
             <div className="mb-6">
               <h2 className="text-2xl font-bold text-foreground">
@@ -71,7 +71,7 @@ export function HeroSection() {
           </div>
 
           {/* Image Section - Professional Presentation */}
-          <div className="lg:col-span-5 relative">
+          <div className="lg:col-span-6 relative">
             <div className="relative">
               {/* Main Dashboard Image */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border/20">
