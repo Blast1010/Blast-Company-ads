@@ -1,17 +1,19 @@
 import { Users, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import realDashboardSales from "@/assets/real-dashboard-sales.jpg";
+
 export function CourseHeroSection() {
-  return <section className="min-h-screen bg-background text-foreground flex flex-col justify-center px-4 sm:px-6 lg:px-8 xl:px-0 py-12 sm:py-16 lg:py-20 relative overflow-hidden">
+  return (
+    <section className="min-h-screen bg-background text-foreground flex flex-col justify-center px-4 sm:px-6 lg:px-8 xl:px-0 py-12 sm:py-16 lg:py-20 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-[10%] w-80 h-80 bg-gradient-radial from-primary/20 via-primary/10 to-transparent rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-[15%] w-64 h-64 bg-gradient-radial from-primary/15 via-primary/5 to-transparent rounded-full blur-2xl"></div>
       </div>
       
-      <div className="container mx-auto max-w-7xl relative z-10 space-y-8 sm:space-y-12 lg:space-y-24">
+      <div className="container mx-auto max-w-7xl relative z-10 space-y-16 sm:space-y-20 lg:space-y-24">
         {/* Header */}
-        <div className="text-center pt-4 lg:pt-0">
+        <div className="text-center">
           <h2 className="text-lg sm:text-xl lg:text-2xl font-bold">
             Blast Company <span className="text-primary">ads</span>
           </h2>
@@ -20,7 +22,7 @@ export function CourseHeroSection() {
         {/* Main Content - Text and Image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-center">
           {/* Text Content */}
-          <div className="text-center lg:text-left space-y-6 sm:space-y-8 order-1">
+          <div className="text-center lg:text-left space-y-6 sm:space-y-8 order-2 lg:order-1">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
               Nosso trabalho é Aumentar{" "}
               <span className="block sm:inline">as Vendas da sua Empresa</span>{" "}
@@ -41,9 +43,13 @@ export function CourseHeroSection() {
           </div>
           
           {/* Image Content */}
-          <div className="relative order-2">
+          <div className="relative order-1 lg:order-2">
             <div className="relative rounded-xl lg:rounded-2xl overflow-hidden shadow-2xl">
-              <img src={realDashboardSales} alt="Dashboard SaaS Analytics" className="w-full h-auto object-cover" />
+              <img 
+                src={realDashboardSales} 
+                alt="Dashboard SaaS Analytics" 
+                className="w-full h-auto object-cover" 
+              />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-transparent"></div>
             </div>
             {/* Floating elements */}
@@ -53,14 +59,36 @@ export function CourseHeroSection() {
         </div>
         
         {/* Problem Balloon */}
-        <div className="max-w-4xl mx-auto mt-8 sm:mt-12 lg:mt-16">
-          
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-6 sm:p-8 lg:p-10 text-center relative">
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-card/50 border-l border-t border-border/50 rotate-45"></div>
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6 text-destructive">
+              CANSADO DE VER SEU DINHEIRO DESAPARECER?
+            </h3>
+            <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
+              Você investe em anúncios, mas não vê o retorno. Seus concorrentes estão vendendo mais enquanto você queima orçamento em campanhas que não convertem. É frustrante ver o dinheiro sumindo sem resultados concretos.
+            </p>
+          </div>
         </div>
 
         {/* Solution Balloon */}
         <div className="max-w-4xl mx-auto">
-          
+          <div className="bg-primary/10 backdrop-blur-sm border border-primary/20 rounded-2xl p-6 sm:p-8 lg:p-10 text-center relative">
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-primary/10 border-l border-t border-primary/20 rotate-45"></div>
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6 text-primary">
+              IMAGINE TER CLIENTES TODO DIA
+            </h3>
+            <div className="space-y-3 sm:space-y-4">
+              <h4 className="text-lg sm:text-xl lg:text-2xl font-bold">
+                Chega de adivinhar o que funciona.
+              </h4>
+              <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
+                Com a estratégia certa, seus anúncios param de ser um gasto e viram uma máquina de gerar vendas. Imagine ter campanhas que realmente performam — com inteligência, precisão e foco em resultados reais. O seu concorrente já está colhendo os frutos. Agora é a sua vez. Venda mais, pague menos e conquiste o lugar que sua marca merece.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 }
