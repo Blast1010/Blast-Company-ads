@@ -1,7 +1,9 @@
 import { Users, Award } from "lucide-react";
 import { ProgressiveFormTypeform } from "@/components/ProgressiveFormTypeform";
+
 export function CourseHeroSection() {
-  return <section className="min-h-screen bg-background text-foreground flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-20 relative overflow-hidden">
+  return (
+    <section className="min-h-screen bg-background text-foreground flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-20 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-[10%] w-80 h-80 bg-gradient-radial from-primary/20 via-primary/10 to-transparent rounded-full blur-3xl"></div>
@@ -16,12 +18,12 @@ export function CourseHeroSection() {
         
         {/* Main Headline */}
         <div className="mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-6 text-left lg:text-6xl">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
             Nosso trabalho é Aumentar<br />
             as Vendas da sua Empresa<br />
             com Tráfego <span className="text-primary">de verdade</span>
           </h1>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-xs sm:max-w-lg lg:max-w-2xl mx-auto leading-relaxed px-4 sm:px-0 lg:text-xl text-center">
+          <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-xs sm:max-w-lg lg:max-w-2xl mx-auto leading-relaxed px-4 sm:px-0">
             Somos uma agência parceira estratégica da sua empresa, criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso.
           </p>
         </div>
@@ -63,5 +65,6 @@ export function CourseHeroSection() {
           </p>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 }
