@@ -31,7 +31,7 @@ export function CourseHeroSection() {
             </p>
             
             {/* CTA Button */}
-            <Button size="lg" className="bg-black hover:bg-black/90 text-white px-12 py-6 text-xl font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-black px-12 py-6 text-xl font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
               SOLICITAR ORÇAMENTO
             </Button>
           </div>
