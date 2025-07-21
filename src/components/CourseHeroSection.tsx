@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { Play, CheckCircle, Users, Award } from "lucide-react";
+import { Users, Award } from "lucide-react";
+import { ProgressiveFormTypeform } from "@/components/ProgressiveFormTypeform";
 
 export function CourseHeroSection() {
   return (
@@ -13,7 +13,7 @@ export function CourseHeroSection() {
       <div className="container mx-auto max-w-4xl relative z-10 text-center">
         {/* Header */}
         <div className="mb-8">
-          <h2 className="text-primary text-xl font-bold mb-4">Aladdin</h2>
+          <h2 className="text-xl font-bold mb-4">Blast Company <span className="text-primary">ads</span></h2>
         </div>
         
         {/* Main Headline */}
@@ -23,28 +23,14 @@ export function CourseHeroSection() {
             as Vendas da sua Empresa<br />
             com Tráfego <span className="text-primary">de verdade</span>
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-xs sm:max-w-lg lg:max-w-2xl mx-auto leading-relaxed px-4 sm:px-0">
             Somos uma agência parceira estratégica da sua empresa, criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso.
           </p>
         </div>
         
-        {/* Video Preview */}
-        <div className="mb-12">
-          <div className="bg-card rounded-lg p-4 max-w-md mx-auto mb-6 border border-border">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-3">
-                <Play className="h-6 w-6 text-primary" />
-                <span className="text-sm">Clique e veja como será!</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        {/* CTA Button */}
+        {/* Progressive Form */}
         <div className="mb-16">
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-12 py-6 text-xl font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-            QUERO PARTICIPAR
-          </Button>
+          <ProgressiveFormTypeform />
         </div>
         
         {/* Features Grid */}
