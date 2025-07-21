@@ -32,7 +32,7 @@ export function HeroSection() {
             
             {/* Main Headline - Original Text */}
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl leading-[1.1] tracking-tight text-foreground font-bold text-left lg:text-5xl">
+              <h1 className="text-4xl sm:text-5xl leading-[1.1] tracking-tight text-foreground font-bold lg:text-6xl text-center">
                 Nosso trabalho é Aumentar<br />
                 as Vendas da sua Empresa<br />
                 com <span className="bg-gradient-to-r from-primary via-primary/90 to-primary/70 bg-clip-text text-transparent">Tráfego de verdade</span>
