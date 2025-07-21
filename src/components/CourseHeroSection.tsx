@@ -20,7 +20,7 @@ export function CourseHeroSection() {
         {/* Main Content - Text and Image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-center">
           {/* Text Content */}
-          <div className="text-center lg:text-left space-y-6 sm:space-y-8 order-2 lg:order-1">
+          <div className="text-center lg:text-left space-y-6 sm:space-y-8 order-1">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
               Nosso trabalho é Aumentar{" "}
               <span className="block sm:inline">as Vendas da sua Empresa</span>{" "}
@@ -41,7 +41,7 @@ export function CourseHeroSection() {
           </div>
           
           {/* Image Content */}
-          <div className="relative order-1 lg:order-2">
+          <div className="relative order-2">
             <div className="relative rounded-xl lg:rounded-2xl overflow-hidden shadow-2xl">
               <img src={realDashboardSales} alt="Dashboard SaaS Analytics" className="w-full h-auto object-cover" />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-transparent"></div>
