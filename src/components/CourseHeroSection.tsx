@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Play, CheckCircle, Users, Award } from "lucide-react";
-
 export function CourseHeroSection() {
-  return (
-    <section className="min-h-screen bg-black text-white flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-20 relative overflow-hidden">
+  return <section className="min-h-screen bg-black text-white flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-20 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-[10%] w-80 h-80 bg-gradient-radial from-cyan-500/20 via-cyan-500/10 to-transparent rounded-full blur-3xl"></div>
@@ -67,18 +65,7 @@ export function CourseHeroSection() {
         </div>
         
         {/* Bottom Section */}
-        <div className="mt-20">
-          <h2 className="text-3xl font-bold mb-6">
-            Ferramentas que<br />
-            você irá <span className="text-cyan-400">aprender</span>
-          </h2>
-          <p className="text-gray-300 max-w-2xl mx-auto">
-            Aprenda o principio da tráfego pago e a <br />
-            construir funis de vendas usando as melhores <br />
-            técnicas e ferramentas do mercado.
-          </p>
-        </div>
+        
       </div>
-    </section>
-  );
+    </section>;
 }
