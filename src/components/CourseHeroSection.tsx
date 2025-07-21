@@ -1,10 +1,8 @@
 import { Users, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import realDashboardSales from "@/assets/real-dashboard-sales.jpg";
-
 export function CourseHeroSection() {
-  return (
-    <section className="min-h-screen bg-background text-foreground flex flex-col justify-center px-4 sm:px-6 lg:px-8 xl:px-0 py-12 sm:py-16 lg:py-20 relative overflow-hidden">
+  return <section className="min-h-screen bg-background text-foreground flex flex-col justify-center px-4 sm:px-6 lg:px-8 xl:px-0 py-12 sm:py-16 lg:py-20 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-[10%] w-80 h-80 bg-gradient-radial from-primary/20 via-primary/10 to-transparent rounded-full blur-3xl"></div>
@@ -45,11 +43,7 @@ export function CourseHeroSection() {
           {/* Image Content */}
           <div className="relative order-1 lg:order-2">
             <div className="relative rounded-xl lg:rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={realDashboardSales} 
-                alt="Dashboard SaaS Analytics" 
-                className="w-full h-auto object-cover" 
-              />
+              <img src={realDashboardSales} alt="Dashboard SaaS Analytics" className="w-full h-auto object-cover" />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-transparent"></div>
             </div>
             {/* Floating elements */}
@@ -60,15 +54,7 @@ export function CourseHeroSection() {
         
         {/* Problem Balloon */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-6 sm:p-8 lg:p-10 text-center relative">
-            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-card/50 border-l border-t border-border/50 rotate-45"></div>
-            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6 text-destructive">
-              CANSADO DE VER SEU DINHEIRO DESAPARECER?
-            </h3>
-            <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
-              Você investe em anúncios, mas não vê o retorno. Seus concorrentes estão vendendo mais enquanto você queima orçamento em campanhas que não convertem. É frustrante ver o dinheiro sumindo sem resultados concretos.
-            </p>
-          </div>
+          
         </div>
 
         {/* Solution Balloon */}
@@ -89,6 +75,5 @@ export function CourseHeroSection() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
