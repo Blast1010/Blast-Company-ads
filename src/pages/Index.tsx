@@ -8,6 +8,7 @@ import { PartnerServiceSection } from "@/components/PartnerServiceSection";
 import { PartnerCareSection } from "@/components/PartnerCareSection";
 import { AnalyticsSection } from "@/components/AnalyticsSection";
 import { SolutionSection } from "@/components/SolutionSection";
+import { IdealClientSection } from "@/components/IdealClientSection";
 import { SolutionsSection } from "@/components/SolutionsSection";
 import { AboutUsSection } from "@/components/AboutUsSection";
 import { CTASection } from "@/components/CTASection";
@@ -98,7 +99,9 @@ const Index = () => {
         <SolutionSection />
       </div>
       
-      
+      <div className="bg-black relative z-10">
+        <IdealClientSection />
+      </div>
       
       <div className="bg-black relative z-10">
         <AnalyticsSection />
