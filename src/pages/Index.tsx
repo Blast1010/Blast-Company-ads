@@ -9,7 +9,6 @@ import { PartnerCareSection } from "@/components/PartnerCareSection";
 import { AnalyticsSection } from "@/components/AnalyticsSection";
 import { SolutionSection } from "@/components/SolutionSection";
 import { IdealClientSection } from "@/components/IdealClientSection";
-import { NotIdealClientSection } from "@/components/NotIdealClientSection";
 import { SolutionsSection } from "@/components/SolutionsSection";
 import { AboutUsSection } from "@/components/AboutUsSection";
 import { CTASection } from "@/components/CTASection";
@@ -89,15 +88,11 @@ const Index = () => {
       </div>
       
       <div className="bg-black relative z-10">
-        <AnalyticsSection />
+        <PartnerCareSection />
       </div>
       
       <div className="bg-black relative z-10">
         <ServicesSection />
-      </div>
-      
-      <div className="bg-black relative z-10">
-        <PartnerCareSection />
       </div>
       
       <div className="bg-black relative z-10">
@@ -109,7 +104,7 @@ const Index = () => {
       </div>
       
       <div className="bg-black relative z-10">
-        <NotIdealClientSection />
+        <AnalyticsSection />
       </div>
       
       <div className="bg-black relative z-10">
