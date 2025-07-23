@@ -15,7 +15,7 @@ export function IdealClientSection() {
         <div className="text-center">
           <div className="max-w-4xl mx-auto p-8 md:p-12 bg-gradient-to-br from-card/60 to-card/20 backdrop-blur-sm border border-green-500/30 rounded-3xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-green-400">
-              VAMOS SIM! Este é o perfil IDEAL que nós QUEREMOS como parceiro
+              Este é o perfil IDEAL que nós QUEREMOS como parceiro
             </h2>
             
             <div className="grid md:grid-cols-2 gap-6 text-left">
