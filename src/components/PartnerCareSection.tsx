@@ -40,17 +40,21 @@ export const PartnerCareSection = () => {
       <div className="container mx-auto max-w-7xl relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-white to-gray-200 text-black rounded-2xl mb-8 font-bold text-2xl shadow-lg">
-            B
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-white to-gray-200 rounded-2xl mb-8 shadow-lg overflow-hidden">
+            <img 
+              src="/lovable-uploads/b49237f5-d804-4b27-a4c6-ca054312ba8f.png" 
+              alt="Logo B" 
+              className="w-10 h-10 object-contain"
+            />
           </div>
           <p className="text-primary text-lg mb-4 font-medium tracking-wide">Direto com o gestor</p>
-          <h2 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
-            Atendimento de
-            <span className="block bg-gradient-to-r from-primary via-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Parceiro
-            </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6">
+            Atendimento de{" "}
+            <span className="text-primary">Parceiro</span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-blue-500 mx-auto rounded-full"></div>
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Trabalhamos como parceiros estratégicos, oferecendo suporte direto e transparente para o crescimento do seu negócio.
+          </p>
         </div>
 
         {/* Benefits Grid */}
