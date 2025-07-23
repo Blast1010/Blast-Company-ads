@@ -1,4 +1,5 @@
 import { Users, MessageCircle, Shield, BarChart3 } from "lucide-react";
+import logoBCinematic from "@/assets/logo-b-cinematic.png";
 
 export const PartnerCareSection = () => {
   const benefits = [
@@ -40,11 +41,11 @@ export const PartnerCareSection = () => {
       <div className="container mx-auto max-w-7xl relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-white to-gray-200 rounded-2xl mb-8 shadow-lg overflow-hidden">
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary/20 to-primary/5 backdrop-blur-sm border border-primary/20 rounded-2xl mb-8 shadow-lg shadow-primary/10 overflow-hidden">
             <img 
-              src="/lovable-uploads/b49237f5-d804-4b27-a4c6-ca054312ba8f.png" 
-              alt="Logo B" 
-              className="w-10 h-10 object-contain"
+              src={logoBCinematic} 
+              alt="Logo B Cinematográfica" 
+              className="w-12 h-12 object-contain filter brightness-110"
             />
           </div>
           <p className="text-primary text-lg mb-4 font-medium tracking-wide">Direto com o gestor</p>
