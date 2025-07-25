@@ -77,7 +77,7 @@ const Index = () => {
       </div>
       
       <div className="bg-black relative z-10">
-        <PartnerCareSection />
+        <ClientsSection />
       </div>
       
       <div className="bg-black relative z-10">
@@ -85,7 +85,7 @@ const Index = () => {
       </div>
       
       <div className="bg-black relative z-10">
-        <ClientsSection />
+        <PartnerCareSection />
       </div>
       
       <div className="bg-black relative z-10">
