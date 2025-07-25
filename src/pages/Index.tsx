@@ -77,6 +77,10 @@ const Index = () => {
       </div>
       
       <div className="bg-black relative z-10">
+        <PartnerCareSection />
+      </div>
+      
+      <div className="bg-black relative z-10">
         <GoogleMetaAdsSection />
       </div>
       
@@ -86,10 +90,6 @@ const Index = () => {
       
       <div className="bg-black relative z-10">
         <WhyTrustUsSection />
-      </div>
-      
-      <div className="bg-black relative z-10">
-        <PartnerCareSection />
       </div>
       
       <div className="bg-black relative z-10">
