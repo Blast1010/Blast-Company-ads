@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Crown, Award } from "lucide-react";
-import { FormModal } from "@/components/FormModal";
 export function GoogleMetaAdsSection() {
   return <section className="py-20 px-4 text-white overflow-hidden relative">
       <div className="container mx-auto max-w-5xl">
@@ -100,11 +99,13 @@ export function GoogleMetaAdsSection() {
                 empresários frustrados em donos de negócios prósperos e previsíveis.
               </p>
             </div>
-            <FormModal>
-              <Button size="xl" className="px-12 py-6 text-xl font-bold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300 text-black">
-                Solicitar Orçamento Agora
-              </Button>
-            </FormModal>
+            <Button 
+              size="xl" 
+              className="px-12 py-6 text-xl font-bold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300 text-black"
+              onClick={() => window.open('https://typebot.co/my-typebot-e19rlye', '_blank')}
+            >
+              Solicitar Orçamento Agora
+            </Button>
           </div>
         </div>
 

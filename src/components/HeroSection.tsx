@@ -64,7 +64,11 @@ export function HeroSection() {
 
             {/* Original CTA - Professional Format */}
             <div className="pt-4">
-              <Button size="lg" className="px-12 py-4 bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-full text-black text-center text-xl font-bold">
+              <Button 
+                size="lg" 
+                className="px-12 py-4 bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-full text-black text-center text-xl font-bold"
+                onClick={() => window.open('https://typebot.co/my-typebot-e19rlye', '_blank')}
+              >
                 Solicitar Orçamento
               </Button>
             </div>
