@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Crown, Award } from "lucide-react";
-import { FormModal } from "@/components/FormModal";
 export function GoogleMetaAdsSection() {
   return <section className="py-20 px-4 text-white overflow-hidden relative">
       <div className="container mx-auto max-w-5xl">
@@ -94,17 +93,36 @@ export function GoogleMetaAdsSection() {
 
           {/* Call to Action */}
           <div className="mt-12 text-center">
-            <div className="max-w-2xl mx-auto mb-8">
-              <p className="text-lg md:text-xl text-foreground font-medium leading-relaxed border-l-4 border-primary pl-6">
-                <span className="text-primary font-bold">É exatamente isso que fazemos:</span> transformamos 
-                empresários frustrados em donos de negócios prósperos e previsíveis.
+            {/* INTERESSE/DESEJO - Mostra a transformação */}
+            <div className="max-w-3xl mx-auto mb-8 space-y-6">
+              <p className="text-xl md:text-2xl text-primary font-bold text-center">
+                A SOLUÇÃO ESTÁ AQUI! 👇
               </p>
+              <div className="bg-card/40 border border-primary/30 rounded-xl p-6">
+                <p className="text-lg md:text-xl text-foreground font-medium leading-relaxed text-center">
+                  <span className="text-primary font-bold">Transformamos empresários frustrados 
+                  em donos de negócios prósperos</span> através de estratégias de tráfego pago 
+                  que realmente funcionam. Seu investimento será tratado como se fosse nosso.
+                </p>
+              </div>
+              <div className="text-center">
+                <p className="text-lg text-muted-foreground">
+                  ⏰ <span className="text-red-400 font-semibold">Cada dia que você espera, é dinheiro que seus concorrentes estão ganhando</span>
+                </p>
+              </div>
             </div>
-            <FormModal>
-              <Button size="xl" className="px-12 py-6 text-xl font-bold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300 text-black">
-                Solicitar Orçamento Agora
-              </Button>
-            </FormModal>
+            
+            {/* AÇÃO - CTA com urgência */}
+            <Button 
+              size="xl" 
+              className="px-12 py-6 text-xl font-bold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300 text-black"
+              onClick={() => window.open('https://typebot.co/my-typebot-e19rlye', '_blank')}
+            >
+              QUERO SAIR DO VERMELHO AGORA
+            </Button>
+            <p className="text-sm text-muted-foreground mt-3">
+              🚀 Análise gratuita do seu negócio • Sem compromisso
+            </p>
           </div>
         </div>
 

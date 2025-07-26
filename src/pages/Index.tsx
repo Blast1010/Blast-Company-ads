@@ -89,11 +89,11 @@ const Index = () => {
       </div>
       
       <div className="bg-black relative z-10">
-        <AnalyticsSection />
+        <PartnerCareSection />
       </div>
       
       <div className="bg-black relative z-10">
-        <PartnerCareSection />
+        <AnalyticsSection />
       </div>
       
       <div className="bg-black relative z-10">
