@@ -1,5 +1,6 @@
 import { Infinity, FolderOpen, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { FormModal } from "@/components/FormModal";
 import googleLogo from "@/assets/logos/google-logo.svg";
 export function ServicesSection() {
   const services = [{
@@ -144,13 +145,11 @@ export function ServicesSection() {
               <div className="w-32 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto rounded-full mb-8"></div>
               
               {/* CTA Button */}
-              <Button 
-                size="lg" 
-                className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/25 transition-all duration-300 text-black"
-                onClick={() => window.open('https://typebot.co/my-typebot-e19rlye', '_blank')}
-              >
-                Solicitar Orçamento
-              </Button>
+              <FormModal>
+                <Button size="lg" className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/25 transition-all duration-300 text-black">
+                  Solicitar Orçamento
+                </Button>
+              </FormModal>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Handshake, ArrowRight } from "lucide-react";
+import { FormModal } from "@/components/FormModal";
 import googleLogo from "@/assets/logos/google-logo.svg";
 import microsoftLogo from "@/assets/logos/microsoft-logo.svg";
 import amazonLogo from "@/assets/logos/amazon-logo.png";
@@ -148,19 +149,17 @@ export function ClientsSection() {
               
               
               <div className="flex justify-center">
-                <Button 
-                  size="lg" 
-                  className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-black font-semibold px-12 py-4 rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 group relative overflow-hidden"
-                  onClick={() => window.open('https://typebot.co/my-typebot-e19rlye', '_blank')}
-                >
-                  <span className="relative z-10 flex items-center">
-                    Solicitar Orçamento
-                    <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </span>
+                <FormModal>
+                  <Button size="lg" className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-black font-semibold px-12 py-4 rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 group relative overflow-hidden">
+                    <span className="relative z-10 flex items-center">
+                      Solicitar Orçamento
+                      <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                    </span>
                     
-                  {/* Shine Effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                </Button>
+                    {/* Shine Effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                  </Button>
+                </FormModal>
               </div>
             </div>
           </div>

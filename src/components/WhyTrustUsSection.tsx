@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Handshake, Users, Target, Lightbulb, Mail } from "lucide-react";
+import { FormModal } from "@/components/FormModal";
 import businessMeeting from "@/assets/business-meeting.jpg";
 import teamworkImage from "@/assets/team-collaboration.jpg";
 import strategyImage from "@/assets/workspace-overview.jpg";
@@ -79,14 +80,12 @@ export function WhyTrustUsSection() {
             </span>
           </div>
           
-          <Button 
-            size="lg" 
-            className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/20 hover:scale-105 transition-all duration-300 text-black"
-            onClick={() => window.open('https://typebot.co/my-typebot-e19rlye', '_blank')}
-          >
-            <Mail className="h-5 w-5 mr-2" />
-            Solicitar Consultoria Gratuita
-          </Button>
+          <FormModal>
+            <Button size="lg" className="px-8 py-4 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg hover:shadow-primary/20 hover:scale-105 transition-all duration-300 text-black">
+              <Mail className="h-5 w-5 mr-2" />
+              Solicitar Consultoria Gratuita
+            </Button>
+          </FormModal>
         </div>
       </div>
     </section>;

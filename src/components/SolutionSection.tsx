@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
+import { FormModal } from "@/components/FormModal";
 export function SolutionSection() {
   return <section className="py-20 px-4 text-white bg-gradient-to-br from-background via-background/95 to-primary/10 relative overflow-hidden">
       {/* Subtle Background Effects */}
@@ -75,13 +76,11 @@ export function SolutionSection() {
             </div>
             
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                className="text-black px-8 py-3 bg-primary hover:bg-primary/90 transition-colors"
-                onClick={() => window.open('https://typebot.co/my-typebot-e19rlye', '_blank')}
-              >
-                Solicitar Orçamento
-              </Button>
+              <FormModal>
+                <Button size="lg" className="text-black px-8 py-3 bg-primary hover:bg-primary/90 transition-colors">
+                  Solicitar Orçamento
+                </Button>
+              </FormModal>
             </div>
           </div>
         </div>
