@@ -19,23 +19,39 @@ export function CourseHeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
           {/* Text Content */}
           <div className="text-center lg:text-left">
+            {/* ATENÇÃO - Headline que chama atenção */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Nosso trabalho é Aumentar<br />
-              as Vendas da sua Empresa<br />
-              com Tráfego <span className="text-primary">de verdade</span>
+              <span className="text-red-400">PARE DE QUEIMAR DINHEIRO!</span><br />
+              Transforme seus Anúncios em<br />
+              uma <span className="text-primary">Máquina de Vendas</span>
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed mb-8">
-              Somos uma agência parceira estratégica da sua empresa, criando estratégias vencedoras e cuidando do seu investimento como se o dinheiro fosse nosso.
+            
+            {/* INTERESSE - Desperta interesse mostrando a solução */}
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed mb-6">
+              Descubra como empresários inteligentes estão <span className="text-primary font-semibold">triplicando suas vendas</span> 
+              enquanto seus concorrentes desperdiçam fortunas em anúncios que não funcionam.
             </p>
             
-            {/* CTA Button */}
+            {/* DESEJO - Cria desejo mostrando o que oferecemos */}
+            <div className="bg-card/30 border border-primary/20 rounded-lg p-4 mb-8">
+              <p className="text-lg text-foreground font-medium">
+                Somos a agência que cuida do seu dinheiro como se fosse nosso, 
+                criando estratégias que <span className="text-primary">garantem resultados reais</span> 
+                e crescimento previsível para sua empresa.
+              </p>
+            </div>
+            
+            {/* AÇÃO - Call to action claro e urgente */}
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-black px-12 py-6 text-xl font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
               onClick={() => window.open('https://typebot.co/my-typebot-e19rlye', '_blank')}
             >
-              SOLICITAR ORÇAMENTO
+              QUERO RESULTADOS AGORA
             </Button>
+            <p className="text-sm text-muted-foreground mt-2">
+              ⚡ Resposta em até 2 horas - Vagas limitadas
+            </p>
           </div>
           
           {/* Image Content */}
