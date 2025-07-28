@@ -1,6 +1,33 @@
 import { Users, Trophy, Target, Zap } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export const AboutUsSection = () => {
+  const [showIntro, setShowIntro] = useState(true);
+  const [showContent, setShowContent] = useState(false);
+
+  useEffect(() => {
+    // Hide intro after 6 seconds
+    const introTimer = setTimeout(() => {
+      setShowIntro(false);
+    }, 6000);
+
+    // Show content after 6.2 seconds
+    const contentTimer = setTimeout(() => {
+      setShowContent(true);
+    }, 6200);
+
+    // Hide phrases and show regular content after 12 seconds
+    const finalTimer = setTimeout(() => {
+      setShowContent(false);
+    }, 12000);
+
+    return () => {
+      clearTimeout(introTimer);
+      clearTimeout(contentTimer);
+      clearTimeout(finalTimer);
+    };
+  }, []);
+
   const stats = [
     { number: "500+", label: "Campanhas Criadas", icon: Target },
     { number: "98%", label: "Taxa de Satisfação", icon: Trophy },
@@ -8,15 +35,68 @@ export const AboutUsSection = () => {
     { number: "3x", label: "Aumento Médio em ROI", icon: Zap },
   ];
 
+  const phrases = [
+    "Acreditamos em performance de verdade.",
+    "Trabalhamos com dados. Estratégia. Clareza.",
+    "Escalamos empresas com tráfego pago.",
+    "Essa é a mentalidade Blast Company Ads."
+  ];
+
   return (
     <section className="py-20 lg:py-32 bg-background relative overflow-hidden">
+      {/* Animated Intro - similar to Ayres Marketing */}
+      {showIntro && (
+        <div className="fixed inset-0 bg-black z-50 flex flex-col items-center justify-center animate-fade-out" 
+             style={{ 
+               animation: 'fadeOut 6s forwards',
+               animationFillMode: 'forwards'
+             }}>
+          <div className="opacity-0 animate-fade-in" 
+               style={{ 
+                 animation: 'logoFadeIn 1.5s ease-in forwards'
+               }}>
+            <img 
+              src="/lovable-uploads/b313ace2-ef2c-47ca-8199-4992e690d55d.png" 
+              alt="Logo Blast" 
+              className="w-24 h-24 lg:w-32 lg:h-32 object-contain"
+            />
+          </div>
+          <h1 className="text-2xl lg:text-3xl font-bold text-primary mt-5 opacity-0"
+              style={{
+                animation: 'textFadeIn 1.5s ease-in forwards',
+                animationDelay: '1.8s'
+              }}>
+            Blast Company Ads
+          </h1>
+        </div>
+      )}
+
+      {/* Content that appears after intro */}
+      {showContent && (
+        <div className="fixed inset-0 bg-black z-40 flex flex-col items-center justify-center text-center px-8">
+          {phrases.map((phrase, index) => (
+            <div 
+              key={index}
+              className="text-xl lg:text-3xl font-light mb-6 text-white opacity-0"
+              style={{
+                animation: 'phrasesFadeIn 1s forwards',
+                animationDelay: `${index + 0.5}s`
+              }}
+            >
+              {phrase}
+            </div>
+          ))}
+        </div>
+      )}
+
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-radial from-primary/10 via-primary/5 to-transparent rounded-full blur-3xl opacity-60"></div>
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-radial from-primary/15 via-primary/8 to-transparent rounded-full blur-2xl opacity-40"></div>
       </div>
 
-      <div className="container mx-auto max-w-7xl relative z-10">
+      {/* Regular content (hidden during animation) */}
+      <div className={`container mx-auto max-w-7xl relative z-10 transition-opacity duration-1000 ${showIntro || showContent ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
         {/* Main Logo + Name Section */}
         <div className="text-center mb-20">
           <div className="flex items-center justify-center mb-8">
@@ -79,6 +159,7 @@ export const AboutUsSection = () => {
           </p>
         </div>
       </div>
+
     </section>
   );
 };
