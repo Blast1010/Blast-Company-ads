@@ -1,5 +1,5 @@
 import { Users, MessageCircle, Shield, BarChart3 } from "lucide-react";
-import logoBCinematic from "@/assets/logo-b-cinematic.png";
+import googleLogo from "@/assets/logos/google-logo.svg";
 
 export const PartnerCareSection = () => {
   const benefits = [
@@ -43,12 +43,21 @@ export const PartnerCareSection = () => {
         <div className="text-center mb-20">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary/20 to-primary/5 backdrop-blur-sm border border-primary/20 rounded-2xl mb-8 shadow-lg shadow-primary/10 overflow-hidden">
             <img 
-              src={logoBCinematic} 
-              alt="Logo B Cinematográfica" 
+              src={googleLogo} 
+              alt="Google Logo" 
               className="w-12 h-12 object-contain filter brightness-110"
             />
           </div>
-          <p className="text-primary text-lg mb-4 font-medium tracking-wide">Direto com o gestor</p>
+          <div className="inline-flex items-center justify-center mb-4">
+            <div className="relative bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full px-6 py-3 shadow-lg shadow-primary/20">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-blue-500/30 rounded-full blur-sm"></div>
+              <p className="relative text-primary text-lg font-medium tracking-wide flex items-center gap-2">
+                <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                Direto com o gestor
+                <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+              </p>
+            </div>
+          </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6">
             Atendimento de{" "}
             <span className="text-primary">Parceiro</span>
