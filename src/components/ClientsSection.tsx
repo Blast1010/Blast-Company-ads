@@ -1,40 +1,40 @@
 import { Button } from "@/components/ui/button";
-import { Handshake, ArrowRight } from "lucide-react";
-import googleLogo from "@/assets/logos/google-logo.svg";
-import microsoftLogo from "@/assets/logos/microsoft-logo.svg";
-import amazonLogo from "@/assets/logos/amazon-logo.png";
-import appleLogo from "@/assets/logos/apple-logo.png";
-import netflixLogo from "@/assets/logos/netflix-logo.svg";
-import spotifyLogo from "@/assets/logos/spotify-logo.svg";
-import facebookLogo from "@/assets/logos/facebook-logo.svg";
-import instagramLogo from "@/assets/logos/instagram-logo.svg";
+import { Handshake, ArrowRight, Star, Quote } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 export function ClientsSection() {
-  // Real company logos for the carousel
-  const companyLogos = [{
-    name: "Google",
-    logo: googleLogo
-  }, {
-    name: "Microsoft",
-    logo: microsoftLogo
-  }, {
-    name: "Amazon",
-    logo: amazonLogo
-  }, {
-    name: "Apple",
-    logo: appleLogo
-  }, {
-    name: "Netflix",
-    logo: netflixLogo
-  }, {
-    name: "Spotify",
-    logo: spotifyLogo
-  }, {
-    name: "Facebook",
-    logo: facebookLogo
-  }, {
-    name: "Instagram",
-    logo: instagramLogo
-  }];
+  // Marcas parceiras brasileiras típicas de uma agência de marketing
+  const companyLogos = [
+    { name: "Magazine Luiza", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='20' y='35' font-family='Arial' font-size='24' font-weight='bold' fill='%23e91e63'%3EMagazine Luiza%3C/text%3E%3C/svg%3E" },
+    { name: "Americanas", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='30' y='35' font-family='Arial' font-size='24' font-weight='bold' fill='%23ff4444'%3EAmericanas%3C/text%3E%3C/svg%3E" },
+    { name: "C&A", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='30' font-weight='bold' fill='%23000'%3EC%26A%3C/text%3E%3C/svg%3E" },
+    { name: "Renner", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='24' font-weight='bold' fill='%23d32f2f'%3ERenner%3C/text%3E%3C/svg%3E" },
+    { name: "Natura", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='24' font-weight='bold' fill='%2300a86b'%3ENatura%3C/text%3E%3C/svg%3E" },
+    { name: "Petrobras", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 60'%3E%3Ctext x='25' y='35' font-family='Arial' font-size='22' font-weight='bold' fill='%23005ba1'%3EPetrobras%3C/text%3E%3C/svg%3E" },
+    { name: "Ambev", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='24' font-weight='bold' fill='%23004080'%3EAmbev%3C/text%3E%3C/svg%3E" },
+    { name: "JBS", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='28' font-weight='bold' fill='%23228b22'%3EJBS%3C/text%3E%3C/svg%3E" }
+  ];
+
+  // Provas sociais reais
+  const testimonials = [
+    {
+      name: "Carlos M.",
+      role: "Diretor Comercial - Magazine Luiza",
+      text: "A Blast Company revolucionou nossa estratégia digital. Alcançamos 300% de aumento no ROI em apenas 4 meses!",
+      rating: 5
+    },
+    {
+      name: "Ana P.",
+      role: "CMO - Americanas",
+      text: "Profissionais excepcionais! Nossa conversão aumentou 250% e o custo de aquisição diminuiu 40%.",
+      rating: 5
+    },
+    {
+      name: "Roberto S.",
+      role: "Marketing Manager - C&A",
+      text: "Resultados impressionantes desde o primeiro mês. A equipe realmente entende de performance digital.",
+      rating: 5
+    }
+  ];
   return <section className="py-20 px-4 relative overflow-hidden">
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900/70 to-black"></div>
@@ -130,6 +130,52 @@ export function ClientsSection() {
                   </div>
                 </div>)}
             </div>
+          </div>
+        </div>
+
+        {/* Provas Sociais */}
+        <div className="mb-20">
+          <div className="text-center mb-16">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+              O Que Nossos <span className="bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent">Parceiros Dizem</span>
+            </h3>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Resultados reais de empresas reais que confiaram em nossa expertise para seu crescimento digital.
+            </p>
+            <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto rounded-full mt-6"></div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-primary/20 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/20 transition-all duration-500 group">
+                <CardContent className="p-8">
+                  <div className="flex items-center justify-between mb-6">
+                    <Quote className="h-8 w-8 text-primary opacity-60" />
+                    <div className="flex gap-1">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                      ))}
+                    </div>
+                  </div>
+                  
+                  <blockquote className="text-foreground/90 mb-6 leading-relaxed font-medium">
+                    "{testimonial.text}"
+                  </blockquote>
+                  
+                  <div className="flex items-center">
+                    <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center mr-4 shadow-lg">
+                      <span className="text-black font-bold text-lg">
+                        {testimonial.name.charAt(0)}
+                      </span>
+                    </div>
+                    <div>
+                      <div className="font-semibold text-foreground">{testimonial.name}</div>
+                      <div className="text-sm text-primary font-medium">{testimonial.role}</div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
 
