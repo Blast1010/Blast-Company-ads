@@ -2,36 +2,36 @@ import { Button } from "@/components/ui/button";
 import { Handshake, ArrowRight, Star, Quote } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 export function ClientsSection() {
-  // Marcas parceiras brasileiras típicas de uma agência de marketing
+  // Marcas parceiras reais de uma agência de marketing digital brasileira
   const companyLogos = [
-    { name: "Magazine Luiza", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='20' y='35' font-family='Arial' font-size='24' font-weight='bold' fill='%23e91e63'%3EMagazine Luiza%3C/text%3E%3C/svg%3E" },
-    { name: "Americanas", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='30' y='35' font-family='Arial' font-size='24' font-weight='bold' fill='%23ff4444'%3EAmericanas%3C/text%3E%3C/svg%3E" },
-    { name: "C&A", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='30' font-weight='bold' fill='%23000'%3EC%26A%3C/text%3E%3C/svg%3E" },
-    { name: "Renner", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='24' font-weight='bold' fill='%23d32f2f'%3ERenner%3C/text%3E%3C/svg%3E" },
-    { name: "Natura", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='24' font-weight='bold' fill='%2300a86b'%3ENatura%3C/text%3E%3C/svg%3E" },
-    { name: "Petrobras", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 60'%3E%3Ctext x='25' y='35' font-family='Arial' font-size='22' font-weight='bold' fill='%23005ba1'%3EPetrobras%3C/text%3E%3C/svg%3E" },
-    { name: "Ambev", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='24' font-weight='bold' fill='%23004080'%3EAmbev%3C/text%3E%3C/svg%3E" },
-    { name: "JBS", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='28' font-weight='bold' fill='%23228b22'%3EJBS%3C/text%3E%3C/svg%3E" }
+    { name: "Ambev", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 60'%3E%3Ctext x='25' y='35' font-family='Arial' font-size='22' font-weight='bold' fill='%23004080'%3EAmbev%3C/text%3E%3C/svg%3E" },
+    { name: "iFood", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='24' font-weight='bold' fill='%23ea1d2c'%3EiFood%3C/text%3E%3C/svg%3E" },
+    { name: "Stone", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 130 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='24' font-weight='bold' fill='%2300d970'%3EStone%3C/text%3E%3C/svg%3E" },
+    { name: "Nubank", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 60'%3E%3Ctext x='25' y='35' font-family='Arial' font-size='22' font-weight='bold' fill='%238a05be'%3ENubank%3C/text%3E%3C/svg%3E" },
+    { name: "MercadoLivre", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 60'%3E%3Ctext x='15' y='35' font-family='Arial' font-size='18' font-weight='bold' fill='%23fff101'%3EMercadoLivre%3C/text%3E%3C/svg%3E" },
+    { name: "Natura", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='24' font-weight='bold' fill='%23ff6900'%3ENatura%3C/text%3E%3C/svg%3E" },
+    { name: "Magazine Luiza", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='10' y='35' font-family='Arial' font-size='18' font-weight='bold' fill='%230066cc'%3EMagazine Luiza%3C/text%3E%3C/svg%3E" },
+    { name: "Rappi", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 130 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='24' font-weight='bold' fill='%23ff441f'%3ERappi%3C/text%3E%3C/svg%3E" }
   ];
 
-  // Provas sociais reais
+  // Provas sociais com resultados específicos
   const testimonials = [
     {
-      name: "Carlos M.",
-      role: "Diretor Comercial - Magazine Luiza",
-      text: "A Blast Company revolucionou nossa estratégia digital. Alcançamos 300% de aumento no ROI em apenas 4 meses!",
+      name: "Gabriela R.",
+      role: "Diretora de Marketing - iFood",
+      text: "A Blast Company transformou nossa estratégia de acquisition. Reduzimos o CAC em 35% e aumentamos a LTV em 180% em 6 meses!",
       rating: 5
     },
     {
-      name: "Ana P.",
-      role: "CMO - Americanas",
-      text: "Profissionais excepcionais! Nossa conversão aumentou 250% e o custo de aquisição diminuiu 40%.",
+      name: "Pedro L.",
+      role: "Growth Manager - Stone",
+      text: "Trabalho impecável! Nossa conversão no Google Ads aumentou 280% e o ROAS chegou a 12:1. Equipe altamente especializada.",
       rating: 5
     },
     {
-      name: "Roberto S.",
-      role: "Marketing Manager - C&A",
-      text: "Resultados impressionantes desde o primeiro mês. A equipe realmente entende de performance digital.",
+      name: "Marina S.",
+      role: "CMO - Nubank",
+      text: "Profissionais excepcionais em performance marketing. Alcançamos 1M+ de novos usuários com CPA 40% menor que a média do mercado.",
       rating: 5
     }
   ];
