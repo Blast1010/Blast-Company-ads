@@ -101,11 +101,7 @@ export function ClientsSection() {
             </h2>
 
             {/* Decorative Line */}
-            <div className="flex items-center justify-center space-x-4">
-              <div className="w-16 h-1 bg-gradient-to-r from-transparent via-primary to-primary/50 rounded-full"></div>
-              <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
-              <div className="w-16 h-1 bg-gradient-to-l from-transparent via-primary to-primary/50 rounded-full"></div>
-            </div>
+            
 
             {/* Enhanced Description */}
             <div className="relative">
