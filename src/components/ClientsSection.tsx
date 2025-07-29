@@ -120,14 +120,14 @@ export function ClientsSection() {
             <div className="flex animate-[scroll_45s_linear_infinite] space-x-8">
               {/* First set */}
               {companyLogos.map((company, index) => <div key={`first-${index}`} className="flex-shrink-0 group">
-                  <div className="w-40 h-24 bg-gradient-to-br from-card to-card/60 backdrop-blur-sm border border-border/50 rounded-2xl flex items-center justify-center shadow-lg group-hover:border-primary/50 group-hover:shadow-xl group-hover:shadow-primary/20 transition-all duration-500 group-hover:scale-110 group-hover:-translate-y-2">
-                    <img src={company.logo} alt={`${company.name} logo`} className="max-w-28 max-h-14 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110" />
+                  <div className="w-40 h-24 bg-white backdrop-blur-sm border border-gray-200 rounded-2xl flex items-center justify-center shadow-lg group-hover:border-primary/50 group-hover:shadow-xl group-hover:shadow-primary/20 transition-all duration-500 group-hover:scale-110 group-hover:-translate-y-2">
+                    <img src={company.logo} alt={`${company.name} logo`} className="max-w-28 max-h-14 object-contain transition-all duration-500 group-hover:scale-110" />
                   </div>
                 </div>)}
               {/* Duplicate set for seamless loop */}
               {companyLogos.map((company, index) => <div key={`second-${index}`} className="flex-shrink-0 group">
-                  <div className="w-40 h-24 bg-gradient-to-br from-card to-card/60 backdrop-blur-sm border border-border/50 rounded-2xl flex items-center justify-center shadow-lg group-hover:border-primary/50 group-hover:shadow-xl group-hover:shadow-primary/20 transition-all duration-500 group-hover:scale-110 group-hover:-translate-y-2">
-                    <img src={company.logo} alt={`${company.name} logo`} className="max-w-28 max-h-14 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110" />
+                  <div className="w-40 h-24 bg-white backdrop-blur-sm border border-gray-200 rounded-2xl flex items-center justify-center shadow-lg group-hover:border-primary/50 group-hover:shadow-xl group-hover:shadow-primary/20 transition-all duration-500 group-hover:scale-110 group-hover:-translate-y-2">
+                    <img src={company.logo} alt={`${company.name} logo`} className="max-w-28 max-h-14 object-contain transition-all duration-500 group-hover:scale-110" />
                   </div>
                 </div>)}
             </div>
