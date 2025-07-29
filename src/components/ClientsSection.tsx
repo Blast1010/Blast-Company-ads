@@ -3,39 +3,52 @@ import { Handshake, ArrowRight, Star, Quote } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 export function ClientsSection() {
   // Marcas parceiras da imagem fornecida
-  const companyLogos = [
-    { name: "Vitalonga", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 60'%3E%3Ctext x='20' y='35' font-family='Arial' font-size='18' font-weight='bold' fill='%23006633'%3EVITALONGA%3C/text%3E%3C/svg%3E" },
-    { name: "J Martins", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 60'%3E%3Ccircle cx='60' cy='30' r='25' fill='none' stroke='%23333' stroke-width='2'/%3E%3Ctext x='55' y='38' font-family='serif' font-size='24' font-weight='bold' fill='%23333'%3EJ%3C/text%3E%3C/svg%3E" },
-    { name: "Magaix", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 60'%3E%3Ctext x='25' y='35' font-family='Arial' font-size='22' font-weight='300' fill='%23333'%3EMAGAIX%3C/text%3E%3C/svg%3E" },
-    { name: "LabVW", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 130 60'%3E%3Cpath d='M20 25 L30 35 L45 20' fill='none' stroke='%23006633' stroke-width='3'/%3E%3Ctext x='55' y='35' font-family='Arial' font-size='16' font-weight='bold' fill='%23006633'%3ELabVW%3C/text%3E%3C/svg%3E" },
-    { name: "Contti.s", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 60'%3E%3Ctext x='25' y='30' font-family='Arial' font-size='18' font-weight='bold' fill='%23333'%3ECONTTI.s%3C/text%3E%3Ctext x='25' y='45' font-family='Arial' font-size='10' fill='%23666'%3EFITNESSWEAR%3C/text%3E%3C/svg%3E" },
-    { name: "Modelo", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 60'%3E%3Cpath d='M20 30 Q25 20 30 30 Q25 40 20 30' fill='%23006633'/%3E%3Ctext x='40' y='30' font-family='Arial' font-size='14' font-weight='bold' fill='%23006633'%3EMODELO%3C/text%3E%3Ctext x='40' y='42' font-family='Arial' font-size='10' fill='%23006633'%3EODONTOLOGIA%3C/text%3E%3C/svg%3E" },
-    { name: "Evero", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 130 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='22' font-weight='300' fill='%23333'%3EEVERO%3C/text%3E%3C/svg%3E" },
-    { name: "Triplo X", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 60'%3E%3Ctext x='20' y='30' font-family='Arial' font-size='20' font-weight='bold' fill='%23333'%3ETriplo X%3C/text%3E%3Ctext x='20' y='45' font-family='Arial' font-size='10' fill='%23666'%3EBIG SHOP%3C/text%3E%3C/svg%3E" },
-    { name: "Brickart", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 60'%3E%3Crect x='20' y='20' width='15' height='15' fill='%23333'/%3E%3Crect x='25' y='25' width='5' height='5' fill='white'/%3E%3Ctext x='45' y='35' font-family='Arial' font-size='16' font-weight='bold' fill='%23333'%3EBRICKART%3C/text%3E%3C/svg%3E" }
-  ];
+  const companyLogos = [{
+    name: "Vitalonga",
+    logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 60'%3E%3Ctext x='20' y='35' font-family='Arial' font-size='18' font-weight='bold' fill='%23006633'%3EVITALONGA%3C/text%3E%3C/svg%3E"
+  }, {
+    name: "J Martins",
+    logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 60'%3E%3Ccircle cx='60' cy='30' r='25' fill='none' stroke='%23333' stroke-width='2'/%3E%3Ctext x='55' y='38' font-family='serif' font-size='24' font-weight='bold' fill='%23333'%3EJ%3C/text%3E%3C/svg%3E"
+  }, {
+    name: "Magaix",
+    logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 60'%3E%3Ctext x='25' y='35' font-family='Arial' font-size='22' font-weight='300' fill='%23333'%3EMAGAIX%3C/text%3E%3C/svg%3E"
+  }, {
+    name: "LabVW",
+    logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 130 60'%3E%3Cpath d='M20 25 L30 35 L45 20' fill='none' stroke='%23006633' stroke-width='3'/%3E%3Ctext x='55' y='35' font-family='Arial' font-size='16' font-weight='bold' fill='%23006633'%3ELabVW%3C/text%3E%3C/svg%3E"
+  }, {
+    name: "Contti.s",
+    logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 60'%3E%3Ctext x='25' y='30' font-family='Arial' font-size='18' font-weight='bold' fill='%23333'%3ECONTTI.s%3C/text%3E%3Ctext x='25' y='45' font-family='Arial' font-size='10' fill='%23666'%3EFITNESSWEAR%3C/text%3E%3C/svg%3E"
+  }, {
+    name: "Modelo",
+    logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 60'%3E%3Cpath d='M20 30 Q25 20 30 30 Q25 40 20 30' fill='%23006633'/%3E%3Ctext x='40' y='30' font-family='Arial' font-size='14' font-weight='bold' fill='%23006633'%3EMODELO%3C/text%3E%3Ctext x='40' y='42' font-family='Arial' font-size='10' fill='%23006633'%3EODONTOLOGIA%3C/text%3E%3C/svg%3E"
+  }, {
+    name: "Evero",
+    logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 130 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='22' font-weight='300' fill='%23333'%3EEVERO%3C/text%3E%3C/svg%3E"
+  }, {
+    name: "Triplo X",
+    logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 60'%3E%3Ctext x='20' y='30' font-family='Arial' font-size='20' font-weight='bold' fill='%23333'%3ETriplo X%3C/text%3E%3Ctext x='20' y='45' font-family='Arial' font-size='10' fill='%23666'%3EBIG SHOP%3C/text%3E%3C/svg%3E"
+  }, {
+    name: "Brickart",
+    logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 60'%3E%3Crect x='20' y='20' width='15' height='15' fill='%23333'/%3E%3Crect x='25' y='25' width='5' height='5' fill='white'/%3E%3Ctext x='45' y='35' font-family='Arial' font-size='16' font-weight='bold' fill='%23333'%3EBRICKART%3C/text%3E%3C/svg%3E"
+  }];
 
   // Provas sociais com resultados específicos
-  const testimonials = [
-    {
-      name: "Gabriela R.",
-      role: "Diretora de Marketing - iFood",
-      text: "A Blast Company transformou nossa estratégia de acquisition. Reduzimos o CAC em 35% e aumentamos a LTV em 180% em 6 meses!",
-      rating: 5
-    },
-    {
-      name: "Pedro L.",
-      role: "Growth Manager - Stone",
-      text: "Trabalho impecável! Nossa conversão no Google Ads aumentou 280% e o ROAS chegou a 12:1. Equipe altamente especializada.",
-      rating: 5
-    },
-    {
-      name: "Marina S.",
-      role: "CMO - Nubank",
-      text: "Profissionais excepcionais em performance marketing. Alcançamos 1M+ de novos usuários com CPA 40% menor que a média do mercado.",
-      rating: 5
-    }
-  ];
+  const testimonials = [{
+    name: "Gabriela R.",
+    role: "Diretora de Marketing - iFood",
+    text: "A Blast Company transformou nossa estratégia de acquisition. Reduzimos o CAC em 35% e aumentamos a LTV em 180% em 6 meses!",
+    rating: 5
+  }, {
+    name: "Pedro L.",
+    role: "Growth Manager - Stone",
+    text: "Trabalho impecável! Nossa conversão no Google Ads aumentou 280% e o ROAS chegou a 12:1. Equipe altamente especializada.",
+    rating: 5
+  }, {
+    name: "Marina S.",
+    role: "CMO - Nubank",
+    text: "Profissionais excepcionais em performance marketing. Alcançamos 1M+ de novos usuários com CPA 40% menor que a média do mercado.",
+    rating: 5
+  }];
   return <section className="py-20 px-4 relative overflow-hidden">
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900/70 to-black"></div>
@@ -136,26 +149,15 @@ export function ClientsSection() {
 
         {/* Provas Sociais */}
         <div className="mb-20">
-          <div className="text-center mb-16">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              O Que Nossos <span className="bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent">Parceiros Dizem</span>
-            </h3>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Resultados reais de empresas reais que confiaram em nossa expertise para seu crescimento digital.
-            </p>
-            <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto rounded-full mt-6"></div>
-          </div>
+          
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-primary/20 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/20 transition-all duration-500 group">
+            {testimonials.map((testimonial, index) => <Card key={index} className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-primary/20 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/20 transition-all duration-500 group">
                 <CardContent className="p-8">
                   <div className="flex items-center justify-between mb-6">
                     <Quote className="h-8 w-8 text-primary opacity-60" />
                     <div className="flex gap-1">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="h-4 w-4 fill-primary text-primary" />
-                      ))}
+                      {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="h-4 w-4 fill-primary text-primary" />)}
                     </div>
                   </div>
                   
@@ -175,8 +177,7 @@ export function ClientsSection() {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
@@ -195,11 +196,7 @@ export function ClientsSection() {
               
               
               <div className="flex justify-center">
-                <Button 
-                  size="lg" 
-                  className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-black font-semibold px-12 py-4 rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 group relative overflow-hidden"
-                  onClick={() => window.open('https://typebot.co/my-typebot-e19rlye', '_blank')}
-                >
+                <Button size="lg" className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-black font-semibold px-12 py-4 rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 group relative overflow-hidden" onClick={() => window.open('https://typebot.co/my-typebot-e19rlye', '_blank')}>
                   <span className="relative z-10 flex items-center">
                     Solicitar Orçamento
                     <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
