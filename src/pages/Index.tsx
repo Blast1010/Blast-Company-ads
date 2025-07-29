@@ -117,10 +117,6 @@ const Index = () => {
       </div>
 
       <div className="bg-black relative z-10">
-        <AboutUsSection />
-      </div>
-
-      <div className="bg-black relative z-10">
         <FinalCTASection />
       </div>
 
