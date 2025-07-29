@@ -2,16 +2,17 @@ import { Button } from "@/components/ui/button";
 import { Handshake, ArrowRight, Star, Quote } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 export function ClientsSection() {
-  // Marcas parceiras reais de uma agência de marketing digital brasileira
+  // Marcas parceiras da imagem fornecida
   const companyLogos = [
-    { name: "Ambev", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 60'%3E%3Ctext x='25' y='35' font-family='Arial' font-size='22' font-weight='bold' fill='%23004080'%3EAmbev%3C/text%3E%3C/svg%3E" },
-    { name: "iFood", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='24' font-weight='bold' fill='%23ea1d2c'%3EiFood%3C/text%3E%3C/svg%3E" },
-    { name: "Stone", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 130 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='24' font-weight='bold' fill='%2300d970'%3EStone%3C/text%3E%3C/svg%3E" },
-    { name: "Nubank", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 60'%3E%3Ctext x='25' y='35' font-family='Arial' font-size='22' font-weight='bold' fill='%238a05be'%3ENubank%3C/text%3E%3C/svg%3E" },
-    { name: "MercadoLivre", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 60'%3E%3Ctext x='15' y='35' font-family='Arial' font-size='18' font-weight='bold' fill='%23fff101'%3EMercadoLivre%3C/text%3E%3C/svg%3E" },
-    { name: "Natura", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='24' font-weight='bold' fill='%23ff6900'%3ENatura%3C/text%3E%3C/svg%3E" },
-    { name: "Magazine Luiza", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='10' y='35' font-family='Arial' font-size='18' font-weight='bold' fill='%230066cc'%3EMagazine Luiza%3C/text%3E%3C/svg%3E" },
-    { name: "Rappi", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 130 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='24' font-weight='bold' fill='%23ff441f'%3ERappi%3C/text%3E%3C/svg%3E" }
+    { name: "Vitalonga", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 60'%3E%3Ctext x='20' y='35' font-family='Arial' font-size='18' font-weight='bold' fill='%23006633'%3EVITALONGA%3C/text%3E%3C/svg%3E" },
+    { name: "J Martins", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 60'%3E%3Ccircle cx='60' cy='30' r='25' fill='none' stroke='%23333' stroke-width='2'/%3E%3Ctext x='55' y='38' font-family='serif' font-size='24' font-weight='bold' fill='%23333'%3EJ%3C/text%3E%3C/svg%3E" },
+    { name: "Magaix", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 60'%3E%3Ctext x='25' y='35' font-family='Arial' font-size='22' font-weight='300' fill='%23333'%3EMAGAIX%3C/text%3E%3C/svg%3E" },
+    { name: "LabVW", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 130 60'%3E%3Cpath d='M20 25 L30 35 L45 20' fill='none' stroke='%23006633' stroke-width='3'/%3E%3Ctext x='55' y='35' font-family='Arial' font-size='16' font-weight='bold' fill='%23006633'%3ELabVW%3C/text%3E%3C/svg%3E" },
+    { name: "Contti.s", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 60'%3E%3Ctext x='25' y='30' font-family='Arial' font-size='18' font-weight='bold' fill='%23333'%3ECONTTI.s%3C/text%3E%3Ctext x='25' y='45' font-family='Arial' font-size='10' fill='%23666'%3EFITNESSWEAR%3C/text%3E%3C/svg%3E" },
+    { name: "Modelo", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 60'%3E%3Cpath d='M20 30 Q25 20 30 30 Q25 40 20 30' fill='%23006633'/%3E%3Ctext x='40' y='30' font-family='Arial' font-size='14' font-weight='bold' fill='%23006633'%3EMODELO%3C/text%3E%3Ctext x='40' y='42' font-family='Arial' font-size='10' fill='%23006633'%3EODONTOLOGIA%3C/text%3E%3C/svg%3E" },
+    { name: "Evero", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 130 60'%3E%3Ctext x='35' y='35' font-family='Arial' font-size='22' font-weight='300' fill='%23333'%3EEVERO%3C/text%3E%3C/svg%3E" },
+    { name: "Triplo X", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 60'%3E%3Ctext x='20' y='30' font-family='Arial' font-size='20' font-weight='bold' fill='%23333'%3ETriplo X%3C/text%3E%3Ctext x='20' y='45' font-family='Arial' font-size='10' fill='%23666'%3EBIG SHOP%3C/text%3E%3C/svg%3E" },
+    { name: "Brickart", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 60'%3E%3Crect x='20' y='20' width='15' height='15' fill='%23333'/%3E%3Crect x='25' y='25' width='5' height='5' fill='white'/%3E%3Ctext x='45' y='35' font-family='Arial' font-size='16' font-weight='bold' fill='%23333'%3EBRICKART%3C/text%3E%3C/svg%3E" }
   ];
 
   // Provas sociais com resultados específicos
