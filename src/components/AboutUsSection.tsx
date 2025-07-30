@@ -183,7 +183,7 @@ export function AboutUsSection() {
                         />
                       </div>
                       
-                      <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                         <Icon className="h-8 w-8 text-black" />
                       </div>
                       
