@@ -148,9 +148,7 @@ export function ClientsSection() {
           
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {testimonials.map((testimonial, index) => <Card key={index} className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-primary/20 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/20 transition-all duration-500 group">
-                
-              </Card>)}
+            {testimonials.map((testimonial, index) => {})}
           </div>
         </div>
 
