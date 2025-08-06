@@ -1,8 +1,6 @@
 import { Settings } from "lucide-react";
-
 export const SolutionsSection = () => {
-  return (
-    <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+  return <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Icon and Title */}
         <div className="flex flex-col items-center mb-16">
@@ -37,7 +35,7 @@ export const SolutionsSection = () => {
                 Quando você se tornar nosso parceiro, vamos fazer de tudo pra você{" "}
                 <span className="text-primary font-bold">vender muito</span>. Mas abaixo 
                 explicamos o{" "}
-                <span className="text-primary font-bold text-2xl sm:text-3xl">COMO</span>.
+                .
               </p>
             </div>
 
@@ -48,6 +46,5 @@ export const SolutionsSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
