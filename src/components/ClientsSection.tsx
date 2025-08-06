@@ -149,30 +149,7 @@ export function ClientsSection() {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {testimonials.map((testimonial, index) => <Card key={index} className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-primary/20 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/20 transition-all duration-500 group">
-                <CardContent className="p-8">
-                  <div className="flex items-center justify-between mb-6">
-                    <Quote className="h-8 w-8 text-primary opacity-60" />
-                    <div className="flex gap-1">
-                      {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="h-4 w-4 fill-primary text-primary" />)}
-                    </div>
-                  </div>
-                  
-                  <blockquote className="text-foreground/90 mb-6 leading-relaxed font-medium">
-                    "{testimonial.text}"
-                  </blockquote>
-                  
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center mr-4 shadow-lg">
-                      <span className="text-black font-bold text-lg">
-                        {testimonial.name.charAt(0)}
-                      </span>
-                    </div>
-                    <div>
-                      <div className="font-semibold text-foreground">{testimonial.name}</div>
-                      <div className="text-sm text-primary font-medium">{testimonial.role}</div>
-                    </div>
-                  </div>
-                </CardContent>
+                
               </Card>)}
           </div>
         </div>
